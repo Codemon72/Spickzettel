@@ -11,9 +11,15 @@
 **ghost ls** to list all running Ghost blogs
 Run **ghost help** for a list of available commands, or explore the full [Ghost-CLI documentation](https://ghost.org/docs/api/v3/ghost-cli/).
 
-Installation of Handlebars is already done for you in Ghost
+Installation of Handlebars is already done for you in Ghost.
 
 [structure of a ghost theme](https://ghost.org/docs/api/v3/handlebars-themes/structure/)
+
+#### Bare minimum of a Ghost theme:
+A folder with `index.hbs`, `post.hbs` and `package.json`. This will bring up loads of warnings if you activate it in your admin view but it will work. Tutorial: https://www.youtube.com/watch?v=NqHw0we2WP4&list=PLtKjv92L0ihBBXGz7iCdtTkvdD0dXXy78&index=7 
+
+##### Ghost helpers
+from the docs: https://ghost.org/docs/themes/helpers/
 
 #### Core elements
 Ghost (and subsequently Ghost themes) have a few core concepts from which they build their structure. Most of these are standard elements of any blogging engine or platform.

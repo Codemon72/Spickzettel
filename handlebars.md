@@ -1,10 +1,11 @@
 Official page: https://handlebarsjs.com/
+Cheat sheet I like: https://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes
 
 Handlebars is a simple **templating language**.
 
 It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. Like this: `<p>{{firstname}} {{lastname}}</p>` 
 
-- can be downloaded or integrated with CDN
+- can be downloaded or integrated with [CDN](https://handlebarsjs.com/guide/#installation).
 
 
 #### From LeCoupa:
