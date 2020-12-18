@@ -15,12 +15,15 @@ More: http://handlebarsjs.com/
 
 
 `{{mustache}} `                                  : Handlebars expression (variable in the current context)
+
 `{{article.title}} `                             : Handlebars expressions can also be dot-separated paths
+
 `{{{foo}}}  `                                    : If you don't want Handlebars to escape a value
 
 `articles.[10].[#comments]   `                   : The template will treat it roughly eqivalent to this `javascript: articles[10]['#comments']`
 
 `{{! This comment will not be in the output }}`  : Any comments that must contain }} or other handlebars tokens should use the {{!-- --}} syntax.
+
 `<!-- This comment will be in the output -->`    : This comment will be in the output
 
 
@@ -28,7 +31,9 @@ More: http://handlebarsjs.com/
 
 
 `{{{link story}}}`                               : `link` is the name of a Handlebars helper, and story is a parameter to the helper
+
 `{{{link '...' story.url}}}`                     : You can also pass a simple String as a parameter to Handlebars helpers.
+
 `{{{link "..." href=story.url class="story"}}}`  : Handlebars helpers can also receive an optional sequence of key-value pairs as their final parameter
 
 
@@ -85,8 +90,13 @@ Note 2: Delegates to Handlebars.logger.log which may be overriden to perform cus
 
 
 `Handlebars.Utils.escapeExpression(string) `: HTML escapes the passed string, making it safe for rendering as text within HTML content.
+
 `Handlebars.Utils.isEmpty(value)           `: Determines if a given value is empty.
+
 `Handlebars.Utils.extend(obj, value)       `: Simple utility method to augment obj with all keys defined on value.
+
 `Handlebars.Utils.toString(obj)            `: Generic toString method.
+
 `Handlebars.Utils.isArray(obj)             `: Determines if an obj is an array.
+
 `Handlebars.Utils.isFunction(obj)          `: Determines if an obj is a function.
