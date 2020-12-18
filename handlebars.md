@@ -1,4 +1,10 @@
+Official page: https://handlebarsjs.com/
 
+Handlebars is a simple **templating language**.
+
+It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. Like this: `<p>{{firstname}} {{lastname}}</p>` 
+
+- can be downloaded or integrated with CDN
 
 
 #### From LeCoupa:
