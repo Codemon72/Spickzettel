@@ -9,8 +9,8 @@
 
 ```
 # this is a comment
-resources/_gen/ # this ignores the folder and everything in it
-partials/structure/stylesheet.html # note the file with its whole path from the (git -) root directory
+resources/_gen/                         # this ignores the folder and everything in it
+partials/structure/stylesheet.html      # note the file with its whole path from the (git -) root directory
 ```
 
 
