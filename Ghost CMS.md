@@ -9,7 +9,7 @@
 - empty folder
 - cd into it and: `ghost install local`
 - cd into themes and: `git init`
-  version control: "It is usually suggested to have just the theme (not the installation) as your git repository." (Ghost Forum)
+  ("It is usually suggested to have just the theme (not the installation) as your git repository." (Ghost Forum))
 - connect and upload to github 
 - download desired theme
 - copy theme, rename it and start working with it
