@@ -13,5 +13,6 @@ resources/_gen/                         # this ignores the folder and everything
 partials/structure/stylesheet.html      # note the file with its whole path from the (git -) root directory
 ```
 
+Tip: `stylesheet.html` will ignore all matching files in any directory.
 
 source: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
