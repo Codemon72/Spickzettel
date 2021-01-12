@@ -28,6 +28,7 @@ Installation of Handlebars is already done for you in Ghost.
 A folder with `index.hbs`, `post.hbs` and `package.json`. This will bring up loads of warnings if you activate it in your admin view but it will work. Tutorial: https://www.youtube.com/watch?v=NqHw0we2WP4&list=PLtKjv92L0ihBBXGz7iCdtTkvdD0dXXy78&index=7 
 
 ##### Ghost helpers
+This is where the magic lies! 🤓 😇
 from the docs: https://ghost.org/docs/themes/helpers/
 
 #### Core elements
@@ -45,3 +46,22 @@ You also have the ability to customize the login pages for Ghost, but doing so i
 #### How to modify a theme
 
 [blog](https://stanislas.blog/2018/02/my-custom-ghost-theme/) and his [code](https://github.com/angristan/Casper-XYZ/blob/master/assets/css/custom.css)
+
+
+#### Current Folder
+"Don’t worry about the current folder, that’s your installation of ghost; you don’t want to touch that."
+"...of course – naturally current should be (and is) a symlink to the currently active version’s folder."
+
+#### Version Folder
+"The version-level content folder is mainly used for developing Ghost, but also contains the latest release of casper."
+
+
+#### Version Control and pair development
+
+"First I would say separate the production instance…
+for developing theme setup a Development instance ghost install local
+
+On dev instance use github only for the theme folder content/themes/casper
+
+Deploy the theme to production with github action https://github.com/marketplace/actions/deploy-ghost-theme "
+https://forum.ghost.org/t/what-is-the-best-way-for-pair-ghost-theme-development/16797
