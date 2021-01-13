@@ -1,5 +1,8 @@
 installs stuff / package manager for macOS (or Linux)
 
+#### Docs
+https://docs.brew.sh/
+
 #### Get Info
 
 `brew services list` 
