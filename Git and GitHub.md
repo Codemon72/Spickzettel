@@ -1,5 +1,20 @@
 # Git and GitHub Cheatsheet
 
+Set new alias
+`git config --global alias.co checkout` 
+or (probably for more complex ones):
+`git config --global alias.acm '!git add -A && git commit -m'`
+
+sources: 
+- https://www.git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+- 
+
+List just aliases
+`git config --get-regexp alias`
+
+List all config parameters
+`git config --list`
+
 #### Gitignore file
 
 ###### How To
