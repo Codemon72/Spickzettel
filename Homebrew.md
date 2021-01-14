@@ -29,7 +29,6 @@ The remove Homebrew package command looks like this:
 
 `brew remove packageName`
 
-
 As you may have guessed by now, the remove and uninstall commands are exactly the same, and get the same result; the removal of the Homebrew package.
 
 For example, to remove and uninstall Telnet (assuming you installed telnet on the Mac with Homebrew anyway), you would use the following command string:
@@ -45,7 +44,7 @@ Removing a package from Homebrew is quick, as there is no need to download anyth
 You can confirm the package was removed by trying to run the command again, or by checking where Homebrew packages are installed to and you will find the package you removed is no longer there.
 
 source: https://osxdaily.com/2018/07/29/uninstall-packages-homebrew-mac/
-
+---
 
 sources: 
 - working with Simon
