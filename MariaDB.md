@@ -11,3 +11,7 @@
 `brew services stop mariadb`
 
 `brew services list`
+
+#### standard port
+
+3306
