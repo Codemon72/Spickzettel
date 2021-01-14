@@ -64,3 +64,14 @@ Non-Relational Database Management System
 - to create and maintain a non-relational database
 - 'implementation specific'; meaning: no standardized language
 
+
+## Core Concepts
+
+#### Database Queries
+
+
+
+
+
+
+source: https://www.mikedane.com/databases/
