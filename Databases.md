@@ -51,3 +51,10 @@ Structured Query Language
 - used to define tables and structures
 - SQL code used on one RDBMS is not always portable to another without modification 
 
+#### Non-Relational Databases 
+- document based
+- graph
+- key-value hash
+
+![non relational databases](non-relational-databases.png)
+
