@@ -11,3 +11,6 @@ Graphic User Interface
 #### MVP
 
 minimal viable product
+
+#### RDBMS
+Relational Database Management System
