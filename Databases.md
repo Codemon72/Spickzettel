@@ -21,7 +21,7 @@ Tasks:
 4 main operations a DBMS has to perform
 
 - C - Create
-- R - Read / Retreave
+- R - Read / Retrieve
 - U - Update
 - D - Delete
 
@@ -68,7 +68,9 @@ Non-Relational Database Management System
 ## Core Concepts
 
 #### Database Queries
-
+- queries are requests made to the database management system for specific information
+- more complex database structures make it more difficult to retrieve specific pieces of information
+- Example: a google search is a query
 
 
 
