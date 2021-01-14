@@ -23,7 +23,15 @@ To stop:
 - `\q` or CTRL + C
 
 
+#### absolute BASICS
+- write in ALLCAPS
+- end line with a `;`
 
+
+#### frequent commands:
+
+- `CREATE DATABASE example_name;` creates a database with that name
+- `SHOW DATABASES;` shows all created databases
 
 #### standard port
 3306
