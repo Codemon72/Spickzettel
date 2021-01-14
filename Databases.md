@@ -39,6 +39,7 @@ Tasks:
     - documents (JSON, XML, etc)
     - Graphs
     - Flexible Tables
+  Examples: MongoDB, dynamoDB, apache cassandra, firebase, etc
 
 
 #### RDBMS
@@ -57,4 +58,9 @@ Structured Query Language
 - key-value hash
 
 ![non relational databases](/images/non-relational-databases.png)
+
+#### NRDBMS
+Non-Relational Database Management System
+- to create and maintain a non-relational database
+- 'implementation specific'; meaning: no standardized language
 
