@@ -7,6 +7,7 @@ https://docs.brew.sh/
 
 `brew services list` 
 
+---
 
 #### Commands often used
 
@@ -44,6 +45,7 @@ Removing a package from Homebrew is quick, as there is no need to download anyth
 You can confirm the package was removed by trying to run the command again, or by checking where Homebrew packages are installed to and you will find the package you removed is no longer there.
 
 source: https://osxdaily.com/2018/07/29/uninstall-packages-homebrew-mac/
+
 ---
 
 sources: 
