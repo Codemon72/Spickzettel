@@ -12,5 +12,8 @@ Graphic User Interface
 
 minimal viable product
 
+#### NRDBMS
+Non-Relational Database Management System
+
 #### RDBMS
 Relational Database Management System
