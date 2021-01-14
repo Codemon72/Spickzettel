@@ -1,3 +1,4 @@
+MariaDB's basic commands: https://mariadb.com/kb/en/basic-sql-statements/
 Mike Dane's Overview: https://www.mikedane.com/databases/sql/
 
 #### install

@@ -73,7 +73,10 @@ Non-Relational Database Management System
 - Example: a google search is a query
 
 
-
+### Special Terms
+- primary key: a unique key that uniquely maps to one row (in a RDB)
+  - surrogate key: a key in a table that has no real-life relation. E.g. an id.
+  - natural key: a key that maps to something in the real world. Like a (US) social security number or email.
 
 
 source: https://www.mikedane.com/databases/
