@@ -32,6 +32,7 @@ Tasks:
   - organize data into one or more tables
     - each table has columns and rows
     - a unique key identifies each row
+  - Examples: mySQL, Oracle, postgreSQL, mariaDB, etc
 - Non-Relational DB (noSQL)
   - everything that is **not** a traditional table
     - key - value stores
@@ -40,4 +41,13 @@ Tasks:
     - Flexible Tables
 
 
+#### RDBMS
+Relational Database Management System
+
+#### SQL
+Structured Query Language
+- standardized language for interacting with RDBMS
+- used to perform C.R.U.D.  operations, as well as other administrative tasks (user management, security, backup, etc)
+- used to define tables and structures
+- SQL code used on one RDBMS is not always portable to another without modification 
 
