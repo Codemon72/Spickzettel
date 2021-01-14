@@ -56,5 +56,5 @@ Structured Query Language
 - graph
 - key-value hash
 
-![non relational databases](./images/non-relational-databases.png)
+![non relational databases](/images/non-relational-databases.png)
 
