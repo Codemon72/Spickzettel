@@ -12,10 +12,12 @@ https://docs.brew.sh/
 
 `brew update`
 
-Simon says: "run this every day":
+Simon says: "run this every day":  
 `brew update && brew upgrade && brew cleanup --prune 0`
 
 -> updates brew, updates everything installed with brew and throws everything redundant away.
+
+-------
 
 #### How to Uninstall & Remove Homebrew Packages
 The proper way to remove a Homebrew package is with the uninstall or remove command.  
