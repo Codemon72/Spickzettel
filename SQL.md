@@ -12,8 +12,15 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - **Data Manipulation Language (DML)**
   - used for inserting, updating and deleting data from the database.
 
-  #### Queries
-  - A query is a set of instructions given to the RDBMS (written in SQL) that tell the RDBMS what information you want it to retrieve for you.
-    - goal is to only get the data you need
-    - out of TONS of data in a DB
-    - often hidden in a complex schema
+#### Queries
+- A query is a set of instructions given to the RDBMS (written in SQL) that tell the RDBMS what information you want it to retrieve for you.
+  - goal is to only get the data you need
+  - out of TONS of data in a DB
+  - often hidden in a complex schema
+
+#### Basic Data Types
+
+- INT  - Whole Number
+- DECIMAL(M,N) - Decimal Numbers - Exact Value
+- VARCHAR(1)  - String of text of length 1
+- BLOB - Binary Large Object

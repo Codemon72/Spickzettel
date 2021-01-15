@@ -1,5 +1,8 @@
 and abbreviations
 
+#### BLOB 
+Binary Large Object
+
 #### DBMS
 Database Management System  
 - a special software program that helps users create and maintain a database
