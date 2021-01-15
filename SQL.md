@@ -5,6 +5,9 @@ Structured Query Language
 
 `CREATE DATABASE example_name;` creates a database with that name
 `SHOW DATABASES;` shows all created databases
+`DESCRIBE table_name;`
+`DROP table_name;` deletes table_name
+
 
 ```
 CREATE TABLE example_table_name (
