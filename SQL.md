@@ -18,9 +18,13 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - out of TONS of data in a DB
   - often hidden in a complex schema
 
-#### Basic Data Types
+#### Most Common Data Types
 
 - INT  - Whole Number
-- DECIMAL(M,N) - Decimal Numbers - Exact Value
+- DECIMAL(M,N) - Decimal Numbers - Exact Value  
+Example: DECIMAL(10,4) would have 10 digits in total, with 4 of those comming after the decimal place
 - VARCHAR(1)  - String of text of length 1
 - BLOB - Binary Large Object
+- DATE - 'YYYY-MM-DD'
+- TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' - used for recording
+- 
