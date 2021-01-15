@@ -41,3 +41,5 @@ To stop:
 `brew install mariadb`
 
 and then also go through some config process: https://mariadb.com/resources/blog/installing-mariadb-10-1-16-on-mac-os-x-with-homebrew/
+
+2021-01-15: didn't work for me and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
