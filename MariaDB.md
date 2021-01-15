@@ -21,12 +21,8 @@ To stop:
 - `\q` or CTRL + C
 
 
-#### absolute BASICS
-- write in ALLCAPS
-- end line with a `;`
 
-
-#### frequent commands:
+## frequent commands:
 
 - `CREATE DATABASE example_name;` creates a database with that name
 - `SHOW DATABASES;` shows all created databases
@@ -73,3 +69,8 @@ Login: TCP/IP:
 `create user clemens;`
 
 `grant all privileges on *.* to root@127.0.0.1;` 
+
+
+#### fledgling section / absolute BASICS
+
+- end every line with a `;`
