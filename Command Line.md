@@ -16,7 +16,9 @@ best sources:
 `who` - displays the users logged in to the system.  
 `who -aH` - displays more information, including the idle time and the process ID of the terminal
 
+### Tipps & Tricks
 
+shortcut to look up ALL previous commands: CTRL + R; start writing command; if correct command is displayed: hit ENTER. 🤓
  
 ## Fledgling Section / For Beginners
 
