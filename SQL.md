@@ -18,7 +18,7 @@ The PRIMARY KEY could also be set like this:
 
 ```
 example_id INT,
-INT PRIMARY KEY(student_id)
+PRIMARY KEY(student_id)
 ```
 
 ---
