@@ -3,9 +3,7 @@ a child of mySQL
 MariaDB's basic commands: https://mariadb.com/kb/en/basic-sql-statements/
 Mike Dane's Overview: https://www.mikedane.com/databases/sql/
 
-#### install
 
-`brew install mariadb`
 
 
 #### start and stop and info if it is running:
@@ -37,3 +35,9 @@ To stop:
 3306
 
 
+
+#### installation
+
+`brew install mariadb`
+
+and then also go through some config process: https://mariadb.com/resources/blog/installing-mariadb-10-1-16-on-mac-os-x-with-homebrew/
