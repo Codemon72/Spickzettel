@@ -20,3 +20,14 @@ best sources:
 
 - whenever you see instructions what to write in your CLI (Command Line Interface) they start with an `$`. The “$” in the code just symbolizes the command prompt. It’s not actually part of the command you run.
 
+
+
+## Examples / SimonSays
+
+`sudo rm -rf /usr/local/var/mysql/*` 
+- execute as sudo
+    - remove files or directories
+        - -r, -R, --recursive
+       remove directories and their contents recursively
+          - -f, --force
+          ignore nonexistent files, never prompt
