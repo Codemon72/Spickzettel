@@ -3,8 +3,8 @@ Structured Query Language
 
 ## frequent commands:
 
-- `CREATE DATABASE example_name;` creates a database with that name
-- `SHOW DATABASES;` shows all created databases
+`CREATE DATABASE example_name;` creates a database with that name
+`SHOW DATABASES;` shows all created databases
 
 ```
 CREATE TABLE example_table_name (
@@ -13,6 +13,15 @@ CREATE TABLE example_table_name (
   example_value VARCHAR(20)
 );
 ```
+
+The PRIMARY KEY could also be set like this:  
+
+```
+example_id INT,
+INT PRIMARY KEY(student_id)
+```
+
+---
 
 SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - **Data Query Language (DQL)**
