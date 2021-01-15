@@ -43,3 +43,19 @@ To stop:
 and then also go through some config process: https://mariadb.com/resources/blog/installing-mariadb-10-1-16-on-mac-os-x-with-homebrew/
 
 2021-01-15: didn't work for me and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
+
+
+## Examples / SimonSays
+
+`select user,host from mysql.user;`  
+
+`grant all privileges on *.* to 'clemens'@'%';`  
+
+`flush privileges;` 
+
+`create user clemens identified by 'foobar';` 
+`create user root@127.0.0.1;`  
+`create user root;` 
+`create user clemens;`
+
+`grant all privileges on *.* to root@127.0.0.1;` 
