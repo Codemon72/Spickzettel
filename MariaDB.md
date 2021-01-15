@@ -24,8 +24,18 @@ To stop:
 
 ## frequent commands:
 
-- `CREATE DATABASE example_name;` creates a database with that name
-- `SHOW DATABASES;` shows all created databases
+`CREATE DATABASE example_name;` creates a database with that name  
+`SHOW DATABASES;` shows all created databases  
+`DESCRIBE table_name;`  
+`DROP TABLE example_name;` - deletes table  
+
+```
+CREATE TABLE example_table_name (
+  example_id INT PRIMARY KEY,
+  example_name VARCHAR(30),
+  example_value VARCHAR(20)
+);
+```
 
 #### standard port
 3306
