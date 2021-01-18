@@ -59,6 +59,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 #### Statements
 
 - SELECT - extracts data from a database
+  - `SELECT * FROM example_table` 
 - UPDATE - updates data in a database
 - DELETE - deletes data from a database
 - INSERT INTO - inserts new data into a database
@@ -70,9 +71,17 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - CREATE INDEX - creates an index (search key)
 - DROP INDEX - deletes an index
 
+#### Operators
+
+
+
 #### Clauses
 
 - WHERE - 
+  - WHERE clause can be combined with AND, OR, and NOT operators:
+  - `WHERE name = "Tom" AND city = "Boston";`
+  - `WHERE NOT country = "Germany" AND NOT country = "USA";`
+
 
 --- 
 
