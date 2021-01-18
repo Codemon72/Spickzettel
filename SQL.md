@@ -60,6 +60,12 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 
 - SELECT - extracts data from a database
   - `SELECT * FROM example_table` 
+  - ORDER BY keyword:
+  ``` 
+  SELECT column1, column2, ...
+  FROM table_name
+  ORDER BY column1, column2, ... ASC|DESC;
+  ```
 - UPDATE - updates data in a database
 - DELETE - deletes data from a database
 - INSERT INTO - inserts new data into a database
