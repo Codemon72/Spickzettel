@@ -1,5 +1,8 @@
 Structured Query Language
 
+good general source: https://www.w3schools.com/sql/default.asp
+official docs: https://www.sqltutorial.org/ 
+
 
 ## frequent commands:
 
@@ -52,6 +55,24 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - goal is to only get the data you need
   - out of TONS of data in a DB
   - often hidden in a complex schema
+
+#### Statements
+
+- SELECT - extracts data from a database
+- UPDATE - updates data in a database
+- DELETE - deletes data from a database
+- INSERT INTO - inserts new data into a database
+- CREATE DATABASE - creates a new database
+- ALTER DATABASE - modifies a database
+- CREATE TABLE - creates a new table
+- ALTER TABLE - modifies a table
+- DROP TABLE - deletes a table
+- CREATE INDEX - creates an index (search key)
+- DROP INDEX - deletes an index
+
+#### Clauses
+
+- WHERE - 
 
 --- 
 
