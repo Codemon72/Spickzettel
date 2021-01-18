@@ -3,10 +3,18 @@ Structured Query Language
 
 ## frequent commands:
 
+- CREATE
 `CREATE DATABASE example_name;` creates a database with that name
+- SHOW
 `SHOW DATABASES;` shows all created databases
+- DROP
 `DROP TABLE example_name;` - deletes table  
 `DROP table_name;` deletes table_name
+- ALTER
+- ADD
+`ALTER TABLE table_name ADD colum_name DECIMAL(3,2);`
+`ALTER TABLE table_name DROP colum_name;`
+
 
 
 ```
@@ -22,6 +30,13 @@ The PRIMARY KEY could also be set like this:
 ```
 example_id INT,
 PRIMARY KEY(student_id)
+```
+to have it auto increment and start with 1:
+```
+CREATE TABLE (
+  ID_column INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  ...
+);
 ```
 
 ---
@@ -54,3 +69,17 @@ Example: DECIMAL(10,4) would have 10 digits in total, with 4 of those comming af
 - DATE - 'YYYY-MM-DD'
 - TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' - used for recording
 - 
+
+
+
+#### 10 Rules for a Better SQL Schema
+- Only Use Lowercase Letters, Numbers, and Underscores
+- Use Simple, Descriptive Column Names
+- Use Simple, Descriptive Table Names
+  We recommend using pluralized names for tables (e.g. packages), and pluralizing both words in the name of a join table (e.g. packages_users). Singular table names are more likely to accidentally collide with reserved keywords and are generally less readable in queries.
+- Have an Integer Primary Key
+  Avoid multi-column primary keys. They can be difficult to reason about when trying to write efficient queries, and very difficult to change. Use an integer primary key, a multi-column unique constraint, and several single-column indexes instead.
+-
+
+
+source: https://www.sisense.com/blog/better-sql-schema/
