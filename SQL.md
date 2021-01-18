@@ -19,9 +19,10 @@ Structured Query Language
 
 ```
 CREATE TABLE example_table_name (
-  example_id INT PRIMARY KEY,
+  example_id INT NOT NULL AUTO_INCREMENT,
   example_name VARCHAR(30),
-  example_value VARCHAR(20)
+  example_value VARCHAR(20),
+  PRIMARY KEY(example_id)
 );
 ```
 
@@ -30,13 +31,6 @@ The PRIMARY KEY could also be set like this:
 ```
 example_id INT,
 PRIMARY KEY(student_id)
-```
-to have it auto increment and start with 1:
-```
-CREATE TABLE (
-  ID_column INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-  ...
-);
 ```
 
 ---
@@ -59,6 +53,8 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - out of TONS of data in a DB
   - often hidden in a complex schema
 
+--- 
+
 #### Most Common Data Types
 
 - INT  - Whole Number
@@ -71,6 +67,30 @@ Example: DECIMAL(10,4) would have 10 digits in total, with 4 of those comming af
 - 
 
 
+#### Data Type Specifications
+Some data types you can specify even further:
+
+- UNSIGNED        - only positive numbers
+- SIGNED          - can have a sign (can be negative numbers as well)
+- NOT NULL        - cannot be null, is required
+- AUTO_INCREMENT  - if not set, increment automatically (used for IDs)
+- UNIQUE          - has to be unique for each entry
+- PRIMARY KEY     - automatically NOT NULL and UNIQUE?
+
+
+#### Constraints
+
+- DEFAULT         - provides a default value for a column
+  - to set:
+  `city VARCHAR(255) DEFAULT 'Chicago';`  
+  `orderdate DATE DEFAULT GETDATE();`  
+  - to alter:
+  `ALTER City SET DEFAULT 'Chicago';`
+
+
+--- 
+
+
 
 #### 10 Rules for a Better SQL Schema
 - Only Use Lowercase Letters, Numbers, and Underscores
@@ -80,6 +100,5 @@ Example: DECIMAL(10,4) would have 10 digits in total, with 4 of those comming af
 - Have an Integer Primary Key
   Avoid multi-column primary keys. They can be difficult to reason about when trying to write efficient queries, and very difficult to change. Use an integer primary key, a multi-column unique constraint, and several single-column indexes instead.
 -
-
 
 source: https://www.sisense.com/blog/better-sql-schema/
