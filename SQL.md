@@ -66,6 +66,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   FROM table_name
   ORDER BY column1, column2, ... ASC|DESC;
   ```
+- SELECT DISTINCT - statement is used to return only distinct (different) values
 - UPDATE - updates data in a database
 - DELETE - deletes data from a database
 - INSERT INTO - inserts new data into a database
