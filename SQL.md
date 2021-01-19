@@ -56,6 +56,11 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - out of TONS of data in a DB
   - often hidden in a complex schema
 
+#### Comments
+- Single line comments start with `--`.
+  Any text between `--` and the end of the line will be ignored (will not be executed).
+- Multi-line comments start with `/*` and end with `*/`.
+
 #### Statements
 
 - SELECT - extracts data from a database
@@ -97,7 +102,11 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - UNION - 
 - loads more, look here: 
 
+#### Keywords
 
+- FOREIGN KEY - The FOREIGN KEY constraint is a key used to link two tables together.
+  - ON DELETE SET NULL - to be used, when in this table, it is still functioning without this key.
+  - ON DELETE CASCADE - deletes the whole row it was in. For example if it was a component of a primary key.
 
 #### Clauses
 
@@ -107,8 +116,6 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
 - JOIN - used to combine rows from two or more tables, based on a related column between them.
-
-
 
 
 #### Functions
