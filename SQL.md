@@ -94,6 +94,9 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 
 #### Operators
 
+- UNION - 
+- loads more, look here
+
 
 
 #### Clauses
@@ -103,6 +106,9 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - `WHERE name = "Tom" AND city = "Boston";`
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
+- JOIN - used to combine rows from two or more tables, based on a related column between them.
+
+
 
 
 #### Functions
@@ -182,3 +188,93 @@ Some data types you can specify even further:
 -
 
 source: https://www.sisense.com/blog/better-sql-schema/
+
+
+
+#### Examples
+
+Code snippets of what I used for Hamburg Coding School LMS project:
+```
+CREATE TABLE bookings (
+	bookings_id INT NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (bookings_id),
+	course_id INT,
+	FOREIGN KEY (course_id) REFERENCES courses (course_id) ON DELETE SET NULL,
+	student_id INT,
+	FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE SET NULL
+);			
+
+DESCRIBE teachers;	
+DESCRIBE courses;
+
+
+INSERT INTO students (name, email) VALUES ('Jakob Schörle', 'jakobschoerle@googlemail.com');
+
+INSERT INTO teachers (name, email) VALUES ('Mary Vokicic', 'mary@hamburgcodingschool.com');
+
+INSERT INTO courses (name, start_date, end_date, hours, teacher_id) VALUES ("Databases", '2020-04-18', '2020-04-19', 12, 1);
+
+INSERT INTO bookings (course_id, student_id) VALUES 
+(1,2),(2,2),(4,2),(5,2),(6,2),(7,2),(8,2),
+(1,3),(2,3),(4,3),(5,3),(6,3),(7,3),
+(1,4),(2,4),(4,4),(5,4),(6,4),(7,4),(8,4),
+(1,5),(2,5),(4,5),(5,5),(6,5),(7,5),(8,5),
+(1,6),(2,6),(4,6),(5,6);
+
+ALTER TABLE students DROP COLUMN email;
+ALTER TABLE students ADD alumni BOOL DEFAULT '0';
+ALTER TABLE courses ADD end_date DATE;
+ALTER TABLE courses ADD FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id);
+ALTER TABLE courses ADD name VARCHAR (20);
+
+ALTER TABLE courses MODIFY COLUMN name VARCHAR(40);
+
+DROP TABLE bookings;
+DELETE FROM courses WHERE course_id = 3;
+
+UPDATE students
+SET fullstack = '1';
+
+UPDATE students SET alumni = '1' WHERE NOT student_id = 6;
+UPDATE courses SET hours = 24 WHERE course_id = 2;
+UPDATE teachers SET teacher_id = 15 WHERE name = 'Teresa Holfeld';
+
+SELECT * FROM courses;
+SELECT * FROM teachers;
+DESCRIBE bookings;
+SELECT * FROM bookings;
+
+SELECT name AS Name, email AS Email 
+FROM students 
+WHERE alumni = 1
+ORDER BY name
+LIMIT 3;
+
+SELECT DISTINCT teacher_id
+FROM courses;
+
+SELECT name, hours
+FROM courses
+GROUP BY hours, name;
+
+SELECT * FROM students
+WHERE name LIKE '%mann';
+
+-- show all teachers and students
+SELECT name FROM students
+UNION
+SELECT name FROM teachers;
+
+-- Nested Query
+-- show all courses Clemens has taken
+SELECT courses.name
+FROM courses
+WHERE courses.course_id IN (
+	SELECT bookings.course_id
+	FROM bookings
+	WHERE bookings.student_id = 1
+);
+
+-- who were Clemens' teachers?
+
+```
