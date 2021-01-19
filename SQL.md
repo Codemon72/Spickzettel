@@ -194,6 +194,9 @@ Some data types you can specify even further:
 
 #### Nested Queries
 
+What is in the innermost parenthesis gets calculated first.
+It is easier to read when you replace `IN` with 'equals'. You *can* use `=` instead of `IN` but will get errors if the embedded query returns more than one value (which than could be prevented by limiting your results to 1: `LIMIT 1`).
+
 ```
 -- show all courses Clemens has taken
 SELECT courses.name
