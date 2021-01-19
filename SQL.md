@@ -85,6 +85,12 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - DROP TABLE - deletes a table
 - CREATE INDEX - creates an index (search key)
 - DROP INDEX - deletes an index
+- GROUP BY - groups rows that have the same values into summary rows, like "find the number of customers in each country".
+  ```
+  SELECT COUNT (customer_id), country
+  FROM customers
+  GROUP BY country;
+  ```
 
 #### Operators
 
@@ -97,6 +103,24 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - `WHERE name = "Tom" AND city = "Boston";`
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
+
+
+#### Functions
+
+- COUNT() - returns the number of rows that matches a specified criterion.
+  ```
+  SELECT COUNT (student_id)
+  FROM students
+  WHERE gender = 'f' AND birth_date > 1980-01-01;
+  ```
+- AVG() - returns the average value of a numeric column.
+  ```
+  SELECT AVG (salary)
+  FROM employees
+  WHERE gender = 'f';
+  ```
+- SUM() - returns the total sum of a numeric column.
+
 
 
 --- 
