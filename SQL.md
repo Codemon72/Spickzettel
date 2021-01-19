@@ -125,11 +125,13 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 
 #### Wildcards
 
-- %	  - Represents zero or more characters	bl% finds bl, black, blue, and blob
-- _	  - Represents a single character	h_t finds hot, hat, and hit. Tipp: `__` represents exactly 2 characters.
-- []  - Represents any single character within the brackets	h[oa]t finds hot and hat, but not hit
-- ^	  - Represents any character not in the brackets	h[^oa]t finds hit, but not hot and hat
-- -	  - Represents a range of characters	c[a-b]t finds cat and cbt
+- `%`	  - Represents zero or more characters	bl% finds bl, black, blue, and blob
+- `_`	  - Represents a single character	h_t finds hot, hat, and hit. Tipp: `__` represents exactly 2 characters.
+- `[]`  - Represents any single character within the brackets	h[oa]t finds hot and hat, but not hit
+- `^`	  - Represents any character not in the brackets	h[^oa]t finds hit, but not hot and hat
+- `-`	  - Represents a range of characters	c[a-b]t finds cat and cbt
+
+source and more examples: https://www.w3schools.com/sql/sql_wildcards.asp 
 
 --- 
 
