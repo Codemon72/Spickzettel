@@ -69,6 +69,14 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - UPDATE - updates data in a database
 - DELETE - deletes data from a database
 - INSERT INTO - inserts new data into a database
+  `INSERT INTO teachers (name, email) VALUES ('Mary', 'mary@hcs.com');`
+  - it is easy to do multiple entries:
+  ```
+  INSERT INTO teachers (name, email) VALUES 
+  ('Mary', 'mary@hcs.com'),
+  ('Klaus', 'klaus@hcs.com'),
+  ('Lovejoy', 'lovejoy@hcs.com');
+  ```
 - CREATE DATABASE - creates a new database
 - ALTER DATABASE - modifies a database
 - CREATE TABLE - creates a new table
@@ -87,6 +95,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
   - WHERE clause can be combined with AND, OR, and NOT operators:
   - `WHERE name = "Tom" AND city = "Boston";`
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
+  - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
 
 
 --- 
