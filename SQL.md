@@ -95,7 +95,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 #### Operators
 
 - UNION - 
-- loads more, look here
+- loads more, look here: 
 
 
 
@@ -235,6 +235,8 @@ DELETE FROM courses WHERE course_id = 3;
 UPDATE students
 SET fullstack = '1';
 
+
+UPDATE courses SET teacher_id = 1 WHERE course_id = 2;
 UPDATE students SET alumni = '1' WHERE NOT student_id = 6;
 UPDATE courses SET hours = 24 WHERE course_id = 2;
 UPDATE teachers SET teacher_id = 15 WHERE name = 'Teresa Holfeld';
@@ -275,6 +277,21 @@ WHERE courses.course_id IN (
 	WHERE bookings.student_id = 1
 );
 
+
 -- who were Clemens' teachers?
+SELECT teachers.name
+FROM teachers
+WHERE teachers.teacher_id IN (
+	SELECT courses.teacher_id
+	FROM courses
+	WHERE courses.course_id IN (
+		SELECT bookings.course_id
+		FROM bookings
+		WHERE bookings.student_id = 1
+	)
+)
+GROUP BY name DESC;
+
+	
 
 ```
