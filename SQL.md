@@ -99,14 +99,24 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 
 #### Operators
 
-- UNION - 
-- loads more, look here: 
+list of operators: https://www.w3schools.com/sql/sql_operators.asp
+
+- UNION - The UNION operator is used to combine the result-set of two or more SELECT statements.
+  - Each SELECT statement within UNION must have the same number of columns
+  - The columns must also have similar data types
+  - The columns in each SELECT statement must also be in the same order
+  - https://www.w3schools.com/sql/sql_union.asp
+
 
 #### Keywords
+
+list of keywords: https://www.w3schools.com/sql/sql_ref_keywords.asp
 
 - FOREIGN KEY - The FOREIGN KEY constraint is a key used to link two tables together.
   - ON DELETE SET NULL - to be used, when in this table, it is still functioning without this key.
   - ON DELETE CASCADE - deletes the whole row it was in. For example if it was a component of a primary key.
+
+
 
 #### Clauses
 
@@ -180,6 +190,35 @@ Some data types you can specify even further:
   - to alter:
   `ALTER City SET DEFAULT 'Chicago';`
 
+---
+
+#### Nested Queries
+
+```
+-- show all courses Clemens has taken
+SELECT courses.name
+FROM courses
+WHERE courses.course_id IN (
+	SELECT bookings.course_id
+	FROM bookings
+	WHERE bookings.student_id = 1
+);
+
+
+-- who were Clemens' teachers?
+SELECT teachers.name
+FROM teachers
+WHERE teachers.teacher_id IN (
+	SELECT courses.teacher_id
+	FROM courses
+	WHERE courses.course_id IN (
+		SELECT bookings.course_id
+		FROM bookings
+		WHERE bookings.student_id = 1
+	)
+)
+GROUP BY name DESC;
+```
 
 --- 
 
