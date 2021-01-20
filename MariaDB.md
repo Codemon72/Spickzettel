@@ -57,12 +57,6 @@ Helder recommended: Sequel Ace (downloaded with homebrew)
 
 2021-01-15: very hard to connect it to the MariaDB and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
 
-Login: TCP/IP: 
-- Name: localhost
-- Host: 127.0.0.1
-- Username: clemens
-- Port: 3306
-
 
 
 ## Examples / SimonSays
