@@ -10,4 +10,4 @@ From stackoverflow: It stores an exact, versioned dependency tree rather than us
 
 `npm install example-package --save-dev ` - `--save-dev` tells npm to add the third-party package to the package's development dependencies (in package.json).
 
-**Tipp**: run `npm doc example_package_name` to visit the official README file in the browser.
+**Tipp**: run `npm docs example_package_name` to visit the official README file in the browser.
