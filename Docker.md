@@ -60,11 +60,10 @@ services:
 Docker is like a virtual machine but structured differently to save RAM and CPU.
 
 #### initiate and run a docker container:
+(Create instance from image)
 Beispiel: `docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost`
 Übersetzt: starte docker, (-d for 'detached') lass es im Hintergrund laufen, (--name) nenne es 'some-ghost', (-e) set environment variable: url=...., (-p) Portweiterleitung auf 3001 (von 2368), aus dem image 'ghost'
 
-#### start a docker container
-??
 
 #### show all (running) docker container:
 `docker ps -a`
