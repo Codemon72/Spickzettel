@@ -344,6 +344,4 @@ WHERE teachers.teacher_id IN (
 )
 GROUP BY name DESC;
 
-	
-
 ```
