@@ -36,3 +36,16 @@ If Suzy wants to talk to you she will ask you for the box and inside that box sh
 The only final piece of the puzzle is the verification that Suzy receives the real special box when she initially asks for this. She does this by asking the manufacturer of the special box (i.e. Verisign) if its real and comes from you.
 
 Unfortunately, none of this prevents Sandy from coming up to Suzy, punching her in the face, and taking the note after she unlocks everything.
+
+There are two different kinds of SSL authentication:
+
+- One-Way SSL Authentication: The client verifies the certificate of the server. This allows you to encrypt all exchanges and make sure that you are connecting to the expected server (to avoid a man-in-the-middle attack).
+- Two-Way SSL Authentication The client verifies the certificate of the server, the server verifies the certificate of the client. This is also called mutual authentication or client authentication. When using this system, the client also requires a dedicated certificate.
+
+---
+
+#### TSL
+Transport Layer Security protocol  
+TLS/SSL allows for transfer encryption, and can optionally use identity validation for the server and client.
+
+The term SSL (Secure Sockets Layer) is often used interchangeably with TLS, although strictly-speaking the SSL protocol is the predecessor of TLS, and is not implemented as it is now considered insecure.
