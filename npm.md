@@ -1,5 +1,12 @@
 is package manager for JavaScript - not the only one but the most popular one.
 
+
+#### workflow
+- create empty folder 
+  (without special characters like hyphen? 🤔 - had a problem when running npm init -y)
+- `cd` into it
+- `npm init -y`
+
 **package.json** [npm docs](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)
 
 **package-lock.json** is automatically generated for any operations where npm modifies either the node_modules tree, or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
@@ -11,3 +18,4 @@ From stackoverflow: It stores an exact, versioned dependency tree rather than us
 `npm install example-package --save-dev ` - `--save-dev` tells npm to add the third-party package to the package's development dependencies (in package.json).
 
 **Tipp**: run `npm docs example_package_name` to visit the official README file in the browser.
+
