@@ -6,6 +6,8 @@ Binary Large Object
 #### Connection Pooling
 You create a number of connections (for example to a database) which are always on and ready to use. If one of your functions needs to connect to the database, it can grab one out of the pool and as soon as the function is done the connection gets returned to the pool and is available again.
 
+ELI5: Think of it like a library: you take out a book when you need it and return it to the library when you are done with it. 
+
 Example:
 ```
 const mariadb = require('mariadb');
