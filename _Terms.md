@@ -3,6 +3,34 @@ and abbreviations
 #### BLOB 
 Binary Large Object
 
+#### Connection Pooling
+You create a number of connections (for example to a database) which are always on and ready to use. If one of your functions needs to connect to the database, it can grab one out of the pool and as soon as the function is done the connection gets returned to the pool and is available again.
+
+Example:
+```
+const mariadb = require('mariadb');
+const pool = mariadb.createPool({
+     host: '127.0.0.1',
+     port: '3306',
+     user: 'Codemon72', 
+     database: 'codingschool',
+     password: '',
+     connectionLimit: 5 // see 🤓: pool of 5
+});
+async function asyncFunction() {
+  let conn;
+  try {
+	conn = await pool.getConnection();
+  const courses = await conn.query("SELECT name FROM courses;")
+  console.log(courses);
+  } catch (err) {
+	throw err;
+  } finally {
+	if (conn) return conn.end();
+  }
+};
+```
+
 #### DBMS
 Database Management System  
 - a special software program that helps users create and maintain a database
