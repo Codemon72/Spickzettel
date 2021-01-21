@@ -4,5 +4,9 @@
 - google with "eli5". Meaning "explain it like I'm 5".
 - google with "visualization"
 - google with "meaning"
+- google in order:
+  1. name of the language you are using
+  2. other words
+- google: "github awesome javascript tutorial" (or book, blog, article)
 - search the term on youtube. Explained by a person, maybe even with imagery is often helpful.
 - take your time with the official docs or README files. They are frequently tricky to get into but *can* be quite enlightening.
