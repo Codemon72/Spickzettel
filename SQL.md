@@ -348,4 +348,26 @@ WHERE teachers.teacher_id IN (
 )
 GROUP BY name DESC;
 
+-- something with JOIN
+-- show all courses and the names of their teachers
+SELECT teachers.name, courses.name
+FROM teachers
+JOIN courses ON teachers.teacher_id = courses.teacher_id;
+
+-- all Clemens' teachers with JOIN
+SELECT teachers.name
+FROM teachers
+JOIN courses ON teachers.teacher_id = courses.teacher_id
+JOIN bookings ON courses.course_id = bookings.course_id
+WHERE bookings.student_id = 1
+GROUP BY name DESC;
+
+-- give me all students of 'learn to code'?
+SELECT students.name
+FROM students
+JOIN bookings ON students.student_id = bookings.student_id
+JOIN courses ON bookings.course_id = courses.course_id
+WHERE courses.name = "Learn To Code"
+GROUP BY NAME ASC;
+
 ```
