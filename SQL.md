@@ -7,8 +7,8 @@ good general source:
 official docs: https://www.sqltutorial.org/ 
 
 youtube: 
-- https://www.youtube.com/watch?v=xmwI6VB_wUM&list=PLLAZ4kZ9dFpMGXTKXsBM_ZNpJwowfsP49
-- https://www.youtube.com/watch?v=p3qvj9hO_Bo
+- [Series by Mike Dane](https://www.youtube.com/watch?v=xmwI6VB_wUM&list=PLLAZ4kZ9dFpMGXTKXsBM_ZNpJwowfsP49)
+- [Web Dev Simplified](https://www.youtube.com/watch?v=p3qvj9hO_Bo)
 
 
 ## frequent commands:
