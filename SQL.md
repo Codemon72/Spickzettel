@@ -335,6 +335,7 @@ WHERE courses.course_id IN (
 
 
 -- who were Clemens' teachers?
+-- solution with nesting
 SELECT teachers.name
 FROM teachers
 WHERE teachers.teacher_id IN (
@@ -348,12 +349,7 @@ WHERE teachers.teacher_id IN (
 )
 GROUP BY name DESC;
 
--- something with JOIN
--- show all courses and the names of their teachers
-SELECT teachers.name, courses.name
-FROM teachers
-JOIN courses ON teachers.teacher_id = courses.teacher_id;
-
+-- same task with JOIN
 -- all Clemens' teachers with JOIN
 SELECT teachers.name
 FROM teachers
@@ -361,6 +357,14 @@ JOIN courses ON teachers.teacher_id = courses.teacher_id
 JOIN bookings ON courses.course_id = bookings.course_id
 WHERE bookings.student_id = 1
 GROUP BY name DESC;
+
+
+-- something with JOIN
+-- show all courses and the names of their teachers
+SELECT teachers.name, courses.name
+FROM teachers
+JOIN courses ON teachers.teacher_id = courses.teacher_id;
+
 
 -- give me all students of 'learn to code'?
 SELECT students.name
