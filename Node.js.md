@@ -17,18 +17,13 @@ add **node_modules/** to your **.gitignore** file.
 - `node -h` show me all commands 
 - `npm init` initialisiert node.js im entsprechenden Ordner. Wegschmeißen des Ordners löscht das Projekt. 👍
   - mit der Initialisierung wird man im Terminal durch die Anlage des package.json. geführt. (just click 'enter' all the time or instead run: `npm init -y`)
-
-**node index.js**  startet node server mit entsprechender (in diesem Fall: index.js) Datei. 
-**CRTL + C** um den Server zu beenden.
-**npm install express --save** Paket 'Express' installieren
-**killall node** - kills all running node servers
-
-**npm install -g nodemon** installiert nodemon (bewirkt automatisches Neustarten des node servers). Hat bei mir nicht funktioniert - mit sudo ... ging es dann.
-**nodemon index.js** startet den node server mit index.js, allerdings mit nodemon, der bewirkt, dass sich der server nach jeder Änderung neu startet. (sollte das mal nicht klappen, try: **rs**).
-
-
-
-**ngrok http....**
+- `node index.js`  startet node server mit entsprechender (in diesem Fall: index.js) Datei. 
+- `CRTL + C` um den Server zu beenden.
+- `npm install express --save` Paket 'Express' installieren
+- `killall node` - kills all running node servers
+- `npm install -g nodemon` installiert nodemon (bewirkt automatisches Neustarten des node servers). Hat bei mir nicht funktioniert - mit sudo ... ging es dann.
+- `nodemon index.js` startet den node server mit index.js, allerdings mit nodemon, der bewirkt, dass sich der server nach jeder Änderung neu startet. (sollte das mal nicht klappen, try: `rs`).
+- `ngrok http 80` - expose a web server running on your local machine to the internet on port 80. https://ngrok.com/docs
 
 ---
 
