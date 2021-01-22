@@ -1,5 +1,6 @@
 is package manager for JavaScript - not the only one but the most popular one.
 
+npm - node package manager
 
 #### workflow
 - create empty folder 
