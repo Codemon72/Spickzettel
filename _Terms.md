@@ -48,6 +48,11 @@ minimal viable product
 #### NRDBMS
 Non-Relational Database Management System
 
+#### ORM
+An **object-relational mapper** is a library for an object-oriented programming language which aids in translating between that language's memory objects and a relational database.
+
+If you write your software well, you are going to package up all of your SQL calls into methods which take parameters in the language you are working with. You will want to save object instances as rows in your database (perhaps across several joined tables) and it shouldn't take too much information to store them there or retrieve them later. An ORM is simply a library which has done all of this work for you and creates a (hopefully) tidy API to do it with.
+
 #### RDBMS
 Relational Database Management System
 
