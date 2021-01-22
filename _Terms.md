@@ -51,6 +51,14 @@ Non-Relational Database Management System
 #### RDBMS
 Relational Database Management System
 
+#### Server
+A **server is a computer, a device or a program** that is dedicated to managing network resources. They are called that because they “serve” another computer, device, or program called “client” to which they provide functionality.
+
+**dedicated hosting** [Dedicated hosting is an Internet hosting option in which an organization leases an entire server.](https://www.techopedia.com/definition/23354/dedicated-hosting)
+**shared hosting** [Shared hosting is a type of Web hosting service that allows multiple websites to share a physical Web server and its resources among the hosted websites.](https://www.techopedia.com/definition/15726/shared-hosting)
+
+Go here for a: [really good ELI5 answer](https://www.reddit.com/r/explainlikeimfive/comments/650bre/eli5_what_exactly_is_a_server_how_does_a_server/)
+
 #### SSL
 Secure Sockets Layer
 ELI5: If you want to pass a note from you all the way across the room to Suzy. Normally, you just pass the note and say "get it to suzy" and the kids in the room will keep pushing it towards her until she gets it. The problem is, the teacher or anyone who gets the note can just open it up and read it.
