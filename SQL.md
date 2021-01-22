@@ -234,17 +234,16 @@ GROUP BY name DESC;
 
 
 
-#### 10 Rules for a Better SQL Schema
+#### Some Best Practices for SQL Schema
+source: https://www.sisense.com/blog/better-sql-schema/
 - Only Use Lowercase Letters, Numbers, and Underscores
 - Use Simple, Descriptive Column Names
 - Use Simple, Descriptive Table Names
   We recommend using pluralized names for tables (e.g. packages), and pluralizing both words in the name of a join table (e.g. packages_users). Singular table names are more likely to accidentally collide with reserved keywords and are generally less readable in queries.
 - Have an Integer Primary Key
   Avoid multi-column primary keys. They can be difficult to reason about when trying to write efficient queries, and very difficult to change. Use an integer primary key, a multi-column unique constraint, and several single-column indexes instead.
--
-
-source: https://www.sisense.com/blog/better-sql-schema/
-
+- Be Consistent with Foreign Keys
+  There are many styles for naming primary and foreign keys. Our recommendation, and the most popular, is to have a primary key called id for any table foo, and have all foreign keys be named foo_id.
 
 
 #### Examples
