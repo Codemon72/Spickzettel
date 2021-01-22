@@ -6,18 +6,17 @@ Until 2009, JavaScript could only run inside a browser. In 2009, Ryan Dahl took 
 
 single threaded!
 
-
 #### After installation: 
 add **node_modules/** to your **.gitignore** file.
 
 
 #### Basics
-**`node`** startet node und wartet, dass ich etwas sage. Wird zu einem repl.
-**node example-file.js** to run example-file.js in node
-** node -v** zeig mir die installierte Node-Version (same: `node --version`)
-**node -h** zeige mir die ganzen 
-**npm init** initialisiert node.js im entsprechenden Ordner. Wegschmeißen des Ordners löscht das Projekt. 👍
-- mit der Initialisierung wird man im Terminal durch die Anlage des package.json. geführt. (just click 'enter' all the time)
+- `node` startet node und wartet, dass ich etwas sage. Wird zu einem repl.
+- `node example-file.js` to run example-file.js in node
+- `node -v` zeig mir die installierte Node-Version (same: `node --version`)
+- `node -h` show me all commands 
+- `npm init` initialisiert node.js im entsprechenden Ordner. Wegschmeißen des Ordners löscht das Projekt. 👍
+  - mit der Initialisierung wird man im Terminal durch die Anlage des package.json. geführt. (just click 'enter' all the time or instead run: `npm init -y`)
 
 **node index.js**  startet node server mit entsprechender (in diesem Fall: index.js) Datei. 
 **CRTL + C** um den Server zu beenden.
