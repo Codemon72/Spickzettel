@@ -56,6 +56,20 @@ If you write your software well, you are going to package up all of your SQL cal
 #### RDBMS
 Relational Database Management System
 
+#### Runtime
+There are multiple uses for the word "runtime", and each one is slightly different. Here are some definitions:
+
+**At runtime**: Things that happen when the program executes are said to happen "at runtime".
+
+**Runtime system**: Think of this as the "behind-the-scenes" of a language. One might think that only VM and interpreted languages do things "behind-the-scenes", but this is not the case. For example: A C compiler adding instructions to create and manipulate the stack is an aspect of the C runtime system.
+
+**Runtime environment**: The environment in which a program runs, and interacts with by means of the runtime system. Java has a lot of things to interact with in its environment, and that's why people talk about the "Java Runtime Environment" all the time. However, contrary to what /u/lukasRS said, a C program also has a runtime environment, simply because it interacts with an OS. For example, if you query the state of a keyboard in C, your compiler will add instructions to perform a system call.
+
+**Runtime library**: A library which is used by the compiler to invoke interactions with the runtime environment.
+
+
+
+
 #### Server
 A **server is a computer, a device or a program** that is dedicated to managing network resources. They are called that because they “serve” another computer, device, or program called “client” to which they provide functionality.
 
