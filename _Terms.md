@@ -37,9 +37,16 @@ async function asyncFunction() {
 Database Management System  
 - a special software program that helps users create and maintain a database
 
+#### Event Loop
+![Event Loop](/images/Event_Loop.png)
+In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
 #### GUI
 Graphic User Interface
 
+#### Heap
+The heap is used for data allocated dynamically, for anything that needs to persist across function calls.
+The heap grows when you allocate memory in your program, and shrinks when you deallocate it. In languages like C and C++, you must manually deallocate memory or use objects that keep track of heap allocation for you.
 
 #### MVP
 
@@ -66,8 +73,6 @@ There are multiple uses for the word "runtime", and each one is slightly differe
 **Runtime environment**: The environment in which a program runs, and interacts with by means of the runtime system. Java has a lot of things to interact with in its environment, and that's why people talk about the "Java Runtime Environment" all the time. However, contrary to what /u/lukasRS said, a C program also has a runtime environment, simply because it interacts with an OS. For example, if you query the state of a keyboard in C, your compiler will add instructions to perform a system call.
 
 **Runtime library**: A library which is used by the compiler to invoke interactions with the runtime environment.
-
-
 
 
 #### Server
@@ -99,7 +104,11 @@ There are two different kinds of SSL authentication:
 - One-Way SSL Authentication: The client verifies the certificate of the server. This allows you to encrypt all exchanges and make sure that you are connecting to the expected server (to avoid a man-in-the-middle attack).
 - Two-Way SSL Authentication The client verifies the certificate of the server, the server verifies the certificate of the client. This is also called mutual authentication or client authentication. When using this system, the client also requires a dedicated certificate.
 
----
+#### Stack
+The stack grows with the depth of function calls, and shrinks with function exits.   
+A stack overflow happens when you've made too many function calls without exits.
+In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
 
 #### TSL
 Transport Layer Security protocol  
