@@ -1,5 +1,8 @@
 and abbreviations
 
+#### API
+An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application which shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
+
 #### BLOB 
 Binary Large Object
 
@@ -59,6 +62,30 @@ Non-Relational Database Management System
 An **object-relational mapper** is a library for an object-oriented programming language which aids in translating between that language's memory objects and a relational database.
 
 If you write your software well, you are going to package up all of your SQL calls into methods which take parameters in the language you are working with. You will want to save object instances as rows in your database (perhaps across several joined tables) and it shouldn't take too much information to store them there or retrieve them later. An ORM is simply a library which has done all of this work for you and creates a (hopefully) tidy API to do it with.
+
+#### REST API
+A restful API is just any API that obeys the REST standard. 
+Representational State Transfer (REST) is a set of commands commonly used with web transactions.
+
+Compare to standard web browsing: You will make an http request to http://fluffybunnies.com/picturesofbunnies, this will return you an html page that your browser will display.
+
+In REST you will send a read, write or delete command to such a place, i.e. http://fluffybunnies.com/picturesofbunnies?picture=pinkbunny if the other end has defined this point as some place from which you can 'GET'.
+
+You can't directly put in the read and write into a browser line, you have to use a tool that will create an http request with a payload of things to read or write.
+
+Where you will see this most often is between frontend and backend, i.e. you load a webpage into your browser. This webpage then wants to show you a value, so it sends a REST GET back to a point on the server it came from and loads a value.
+
+An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application which shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
+
+REST (**RE**presentation **S**tate **T**ransfer) is a protocol, or 'language', that applications can use for their APIs. Basically it allows a developer to perform commands or exchange data with a service over a network (eg. the Internet).
+
+RESTful simply means a service provides a REST interface that a developer can communicate with.
+
+How does it work? REST uses standard HTTP commands. While your web browser might use the GET command to retrieve a file or web page, or the POST command to submit the contents of a form, REST uses GET to retrieve data, POST to update data, PUT to create data, and DELETE to remove data. Usually what happens is the application makes a connection with the web server, sends the HTTP command (with any parameters or data required), and receives the result in the response, doing whatever it needs to with the result. HTTP is a text-based protocol, so the response is always text; but it could be plain text, base64-encoded binary, JSON, XML or another format, so the developer using the REST interface needs to read the interface documentation to know what commands are available, required parameters, format of the result data etc.
+
+Tipp: You can test an API in 'Postman' or in 'Rested' (extension in Chrome)
+
+Tipp from reddit (untested): the easiest way to create a REST message is to use something called cUrl.
 
 #### RDBMS
 Relational Database Management System
