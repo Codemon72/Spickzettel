@@ -1,3 +1,5 @@
+for version control
+
 # Git and GitHub Cheatsheet
 
 Set new alias
@@ -23,7 +25,7 @@ List all config parameters
 - note every file and folder into it that you wish to not be recorded by git like this
 
 ```
-# this is a comment
+#                                         hashtag allows comments
 resources/_gen/                         # this ignores the folder and everything in it
 partials/structure/stylesheet.html      # note the file with its whole path from the (git -) root directory
 ```
