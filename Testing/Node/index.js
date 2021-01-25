@@ -1,7 +1,9 @@
+// following Brad Traversy's Express JS Crash Course until about 45:.. 
+// https://youtu.be/L72fhGm1tfE
+
 const express = require('express');
 const path = require('path');
 const logger = require('./middleware/logger')
-const members = require('./Members');
 
 const app = express();
 
@@ -9,25 +11,10 @@ const app = express();
 // Init middleware
 // app.use(logger);
 
+// Body Parser Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-// Gets all Members from http://localhost:5000/api/members
-app.get('/api/members', (req, res) => {
-  res.json(members);
-});
-
-// Get Single Member
-app.get('/api/members/:id', (req, res) => {
-  // to simply return what was asked for after '..members/'
-  // res.send(req.params.id)
-
-  const found = members.some(member => member.id === parseInt(req.params.id));
-
-  if (found) {
-    res.json(members.filter(member => member.id === parseInt(req.params.id)));
-  } else {
-    res.status(400).json({ msg: `No member with the ID of ${req.params.id}.` });
-  }
-})
 
 // in order not to define every route manually instead of this
 // app.get('/', (req, res) => {
@@ -38,6 +25,8 @@ app.get('/api/members/:id', (req, res) => {
 // Set a Static Folder:
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Members API Routes
+app.use('/api/members', require('./routes/api/members'));
 
 const PORT = process.env.PORT || 5000;
 
