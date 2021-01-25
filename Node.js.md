@@ -27,7 +27,8 @@ add **node_modules/** to your **.gitignore** file.
 
 ---
 
-##### Most basic server:
+##### A couple of most basic servers:
+Create a file app.js:
 ```
 const http = require('http');
 
@@ -39,5 +40,71 @@ let server = http.createServer((request, response) => {
 server.listen(3000);
 ```
 Dann im Terminal:
-`node index.js`
+`node app.js`
 `curl localhost:3000`
+
+---
+
+Create a file app.js:
+```
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+
+let server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-type', 'text/plain');
+  res.end('Hello World!');
+});
+
+server.listen(port, hostname, () => {
+  console.log('Server started on port: ' + port) 
+});
+```
+Dann im Terminal:
+`node app.js`
+
+There it will log 'Server started on port: 3000'
+and in the browser on '127.0.0.1:3000' it will say: 'Hello World!'.
+
+source: https://www.youtube.com/watch?v=U8XF6AFGqlc
+
+---
+
+To serve a file:
+Create a file app.js:
+```
+const http = require('http');
+const fs = require('fs');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+fs.readFile('index.html', (err, html) => {
+  if(err){
+    throw err;
+  }
+
+  let server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-type', 'text/html');
+  res.write(html);
+  res.end();
+  });
+
+  server.listen(port, hostname, () => {
+    console.log('Server started on port: ' + port) 
+  });
+})
+```
+Create a file index.html with the basics of a page.
+
+Dann im Terminal:
+`node app.js`
+
+There it will log 'Server started on port: 3000'
+and in the browser on '127.0.0.1:3000' it will show whatever you put into the html file.
+
+source: https://www.youtube.com/watch?v=U8XF6AFGqlc
