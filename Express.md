@@ -37,3 +37,25 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
 
 '/' is the path to the root or home.
+
+#### Basic Route Handling
+```js
+app.get('/', function(req, res){
+  // Fetch from database
+  // Load pages
+  // Return JSON
+  // Full access to request and response
+});
+```
+- Handling requests/ routes is simple
+- app.get(), app.post(), app.put(), app.delete(), etc
+- Access to params, query strings, url parts, etc
+- Express has a router so we can store routes in separate files and export
+- We can parse incoming data with the Body Parser
+
+#### Express Middleware
+Middleware functions are functions that have access to the **request** and **response** object. Express has built in middleware but middleware can also come from 3rd party packages as well as custom middleware.
+- execute any code
+- make changes to the request/ response object
+- end response cycle
+- call next middleware in the stack
