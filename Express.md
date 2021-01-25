@@ -59,3 +59,9 @@ Middleware functions are functions that have access to the **request** and **res
 - make changes to the request/ response object
 - end response cycle
 - call next middleware in the stack
+
+#### Installation
+`npm install express`
+
+#### Methods
+- `app.use()` - for whenever we want to include middleware
