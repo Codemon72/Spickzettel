@@ -105,6 +105,9 @@ Tipp: You can test an API in 'Postman' or in 'Rested' (extension in Chrome)
 
 Tipp from reddit (untested): the easiest way to create a REST message is to use something called cUrl.
 
+#### REPL
+A read–eval–print loop (REPL), also termed an interactive toplevel or language shell, is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user; a program written in a REPL environment is executed piecewise. The term is usually used to refer to programming interfaces similar to the classic Lisp machine interactive environment. Common examples include command line shells and similar environments for programming languages, and the technique is very characteristic of scripting languages.
+
 #### RDBMS
 Relational Database Management System
 
