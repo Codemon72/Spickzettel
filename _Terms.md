@@ -83,6 +83,24 @@ RESTful simply means a service provides a REST interface that a developer can co
 
 How does it work? REST uses standard HTTP commands. While your web browser might use the GET command to retrieve a file or web page, or the POST command to submit the contents of a form, REST uses GET to retrieve data, POST to update data, PUT to create data, and DELETE to remove data. Usually what happens is the application makes a connection with the web server, sends the HTTP command (with any parameters or data required), and receives the result in the response, doing whatever it needs to with the result. HTTP is a text-based protocol, so the response is always text; but it could be plain text, base64-encoded binary, JSON, XML or another format, so the developer using the REST interface needs to read the interface documentation to know what commands are available, required parameters, format of the result data etc.
 
+Restful Apis describe a pattern for building Apis that are highly ordered and maintainable.
+
+You take advantage of http verbs, GET, POST, PUT, DELETE to reduce complexity of your Apis.
+
+For example. A bad api might be like: App.com/api/getadog/<id>/ App.com/api/update-a-dog/<id> App.com/api/addnewdog
+
+This is a bad design pattern, it leads to confusion on how to alter a dog object, relies on highly specific urls that must be remembered and might cause collisions with other endpoints
+
+Now a restful api would be just 2 urls to describe 4 endpoints App.com/api/dog/<id>/ App.com/api/dog/
+
+Here we would include GET, POST, PUT, DELETE In our queries to acheive the same thing. Want to get dog #345? Easy, just use GET on app.com/api/dog/345/
+
+Want to create a new dog object? POST to App.com/api/dog/
+
+Want to update dog 223 from sparky to Bowie? PUT to App.com/api/dog/223/
+
+Now, I'm leaving out the Json payloads, you'd send up a dog object to the post and put endpoints, To create an object and edit an object respectively.
+
 Tipp: You can test an API in 'Postman' or in 'Rested' (extension in Chrome)
 
 Tipp from reddit (untested): the easiest way to create a REST message is to use something called cUrl.
