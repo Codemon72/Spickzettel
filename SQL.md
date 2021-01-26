@@ -27,7 +27,7 @@ youtube:
 
 
 
-```
+```sql
 CREATE TABLE example_table_name (
   example_id INT NOT NULL AUTO_INCREMENT,
   example_name VARCHAR(30),
@@ -38,7 +38,7 @@ CREATE TABLE example_table_name (
 
 The PRIMARY KEY could also be set like this:  
 
-```
+```sql
 example_id INT,
 PRIMARY KEY(student_id)
 ```
@@ -73,7 +73,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - SELECT - extracts data from a database
   - `SELECT * FROM example_table` 
   - ORDER BY keyword:
-  ``` 
+  ```sql
   SELECT column1, column2, ...
   FROM table_name
   ORDER BY column1, column2, ... ASC|DESC;
@@ -84,7 +84,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - INSERT INTO - inserts new data into a database
   `INSERT INTO teachers (name, email) VALUES ('Mary', 'mary@hcs.com');`
   - it is easy to do multiple entries:
-  ```
+  ```sql
   INSERT INTO teachers (name, email) VALUES 
   ('Mary', 'mary@hcs.com'),
   ('Klaus', 'klaus@hcs.com'),
@@ -98,7 +98,7 @@ SQL is actually a hybrid language, it's basically 4 types of languages in one:
 - CREATE INDEX - creates an index (search key)
 - DROP INDEX - deletes an index
 - GROUP BY - groups rows that have the same values into summary rows, like "find the number of customers in each country".
-  ```
+  ```sql
   SELECT COUNT (customer_id), country
   FROM customers
   GROUP BY country;
@@ -138,13 +138,13 @@ list of keywords: https://www.w3schools.com/sql/sql_ref_keywords.asp
 #### Functions
 
 - COUNT() - returns the number of rows that matches a specified criterion.
-  ```
+  ```sql
   SELECT COUNT (student_id)
   FROM students
   WHERE gender = 'f' AND birth_date > 1980-01-01;
   ```
 - AVG() - returns the average value of a numeric column.
-  ```
+  ```sql
   SELECT AVG (salary)
   FROM employees
   WHERE gender = 'f';
@@ -204,7 +204,7 @@ Some data types you can specify even further:
 What is in the innermost parenthesis gets calculated first.
 It is easier to read when you replace `IN` with 'equals'. You *can* use `=` instead of `IN` but will get errors if the embedded query returns more than one value (which than could be prevented by limiting your results to 1: `LIMIT 1`).
 
-```
+```sql
 -- show all courses Clemens has taken
 SELECT courses.name
 FROM courses
@@ -249,7 +249,7 @@ source: https://www.sisense.com/blog/better-sql-schema/
 #### Examples
 
 Code snippets of what I used for Hamburg Coding School LMS project:
-```
+```sql
 CREATE TABLE bookings (
 	bookings_id INT NOT NULL AUTO_INCREMENT,
 	PRIMARY KEY (bookings_id),
