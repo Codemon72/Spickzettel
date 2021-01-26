@@ -11,7 +11,7 @@ add **node_modules/** to your **.gitignore** file.
 
 
 #### Basics
-- `node` startet node und wartet, dass ich etwas sage. Wird zu einem repl.
+- `node` starts Node.js and listens in the terminal. Becomes a REPL.
 - `node example-file.js` to run example-file.js in node
 - `node -v` zeig mir die installierte Node-Version (same: `node --version`)
 - `node -h` show me all commands 
@@ -25,8 +25,27 @@ add **node_modules/** to your **.gitignore** file.
 - `nodemon index.js` startet den node server mit index.js, allerdings mit nodemon, der bewirkt, dass sich der server nach jeder Änderung neu startet. (sollte das mal nicht klappen, try: `rs`).
 - `ngrok http 80` - expose a web server running on your local machine to the internet on port 80. https://ngrok.com/docs
 
----
+#### Middleware
+A middleware is a part of your node.js software that gets executed for every incoming request.
+You frequently use third-party packages for your middleware (most often Express) but you can also write it yourself.
+It is integrated with `app.use()`.
+Example:
+```
+const bodyParser = require(‘body-parser’);
+const app = express();
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+```
+
+In this example, we created two middlewares: the first is parsing the body in a url-encoded way, and the second is parsing the body as json content.
+You can add as many middlewares as you like. They are put on the **middleware stack**.
+
+💡 **Note**: Because a middleware is called for every incoming request, you need to make sure that your middleware does not do any long or expensive operations.
+
+
+---
+### Examples
 ##### A couple of most basic servers:
 Create a file app.js:
 ```
