@@ -66,7 +66,20 @@ Middleware functions are functions that have access to the **request** and **res
 #### Methods
 - `app.use()` - for whenever we want to include middleware
 - `app.listen()` - TODO
+  Example:
+  ```js
+  const express = require('express');
+  const app = express();
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, console.log(`Server started on ${PORT}`));
+  ```
 - `app.get()` - TODO
+  Example:
+  ```js
+  const express = require('express');
+  const app = express();
+  app.get('/', (req, res) => {res.send('INDEX')});
+  ```
 - `app.engine()` - TODO
   Example:
   ```js
