@@ -24,10 +24,11 @@ To stop:
 
 ## frequent commands:
 
-`CREATE DATABASE example_name;` creates a database with that name  
-`SHOW DATABASES;` shows all created databases  
-`DESCRIBE table_name;`  
-`DROP TABLE example_name;` - deletes table  
+- `CREATE DATABASE example_name;` - creates a database with that name  
+- `SHOW DATABASES;` - shows all created databases  
+- `DESCRIBE table_name;` - 
+- `DROP TABLE example_name;` - deletes table  
+- `ALTER TABLE example_name ...` - to make changes in a table https://mariadb.com/kb/en/alter-table/
 
 ```
 CREATE TABLE example_table_name (
@@ -36,6 +37,8 @@ CREATE TABLE example_table_name (
   example_value VARCHAR(20)
 );
 ```
+
+
 
 #### standard port
 3306
