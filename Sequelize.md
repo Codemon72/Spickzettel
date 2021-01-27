@@ -11,3 +11,5 @@ Docs:
 
 
 By default, Sequelize automatically adds the fields `createdAt` and `updatedAt` to every model, using the data type DataTypes.DATE. Apparently that causes errors if Sequelize is applied to a table without these fields.
+
+Might come in handy: https://grokonez.com/node-js/sequelize/sequelize-crud-mariadb-example-build-crud-node-js-express-restapis-example
