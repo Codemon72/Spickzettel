@@ -7,3 +7,7 @@ Docs:
 - https://github.com/sequelize/sequelize
 - youtube tutorial: https://www.youtube.com/watch?v=pxo7L5nd1gA
 - Brad Traversy: [Build a Node.js App With Sequelize](https://www.youtube.com/watch?v=bOHysWYMZM0&list=PLillGF-RfqbZyLc9sMQ72_u3FW9fVxo1p)
+
+
+
+By default, Sequelize automatically adds the fields `createdAt` and `updatedAt` to every model, using the data type DataTypes.DATE. Apparently that causes errors if Sequelize is applied to a table without these fields.
