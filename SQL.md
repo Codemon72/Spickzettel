@@ -276,14 +276,23 @@ INSERT INTO bookings (course_id, student_id) VALUES
 (1,5),(2,5),(4,5),(5,5),(6,5),(7,5),(8,5),
 (1,6),(2,6),(4,6),(5,6);
 
-ALTER TABLE students DROP COLUMN email;
+-- add a column to a table
 ALTER TABLE students ADD alumni BOOL DEFAULT '0';
-ALTER TABLE courses ADD end_date DATE;
+ALTER TABLE courses ADD createdAt DATE DEFAULT CURRENT_TIMESTAMP;
+ALTER TABLE courses
+    ADD updatedAt TIMESTAMP NOT NULL
+                    DEFAULT CURRENT_TIMESTAMP
+                    ON UPDATE CURRENT_TIMESTAMP;
 ALTER TABLE courses ADD FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id);
 ALTER TABLE courses ADD name VARCHAR (20);
-
+-- modify a column
 ALTER TABLE courses MODIFY COLUMN name VARCHAR(40);
+ALTER TABLE courses MODIFY COLUMN createdAt TIMESTAMP NOT NULL
+DEFAULT CURRENT_TIMESTAMP;
 
+-- delete a column from a table
+ALTER TABLE courses DROP COLUMN createdAt;
+-- delete a table
 DROP TABLE bookings;
 DELETE FROM courses WHERE course_id = 3;
 
@@ -296,11 +305,14 @@ UPDATE students SET alumni = '1' WHERE NOT student_id = 6;
 UPDATE courses SET hours = 24 WHERE course_id = 2;
 UPDATE teachers SET teacher_id = 15 WHERE name = 'Teresa Holfeld';
 
+-- show complete table content
+SELECT * FROM students;
 SELECT * FROM courses;
-SELECT * FROM teachers;
-DESCRIBE bookings;
 SELECT * FROM bookings;
+-- show table schema 
+DESCRIBE courses;
 
+-- queries
 SELECT name AS Name, email AS Email 
 FROM students 
 WHERE alumni = 1
@@ -348,7 +360,12 @@ WHERE teachers.teacher_id IN (
 )
 GROUP BY name DESC;
 
--- same task with JOIN
+-- something with JOIN
+-- show all courses and the names of their teachers
+SELECT teachers.name, courses.name
+FROM teachers
+JOIN courses ON teachers.teacher_id = courses.teacher_id;
+
 -- all Clemens' teachers with JOIN
 SELECT teachers.name
 FROM teachers
@@ -356,14 +373,6 @@ JOIN courses ON teachers.teacher_id = courses.teacher_id
 JOIN bookings ON courses.course_id = bookings.course_id
 WHERE bookings.student_id = 1
 GROUP BY name DESC;
-
-
--- something with JOIN
--- show all courses and the names of their teachers
-SELECT teachers.name, courses.name
-FROM teachers
-JOIN courses ON teachers.teacher_id = courses.teacher_id;
-
 
 -- give me all students of 'learn to code'?
 SELECT students.name
