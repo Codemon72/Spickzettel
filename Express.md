@@ -65,6 +65,12 @@ Middleware functions are functions that have access to the **request** and **res
 
 #### Methods
 - `app.use()` - for whenever we want to include middleware
-- `app.listen() - TODO
+- `app.listen()` - TODO
 - `app.get()` - TODO
 - `app.engine()` - TODO
+  Example:
+  ```js
+  const express = require('express');
+  const app = express();
+  app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+  ```
