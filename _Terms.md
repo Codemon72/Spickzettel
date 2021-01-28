@@ -6,6 +6,14 @@ An API (Application Programming Interface) is a way for two different applicatio
 #### BLOB 
 Binary Large Object
 
+#### Client Side Validation
+
+With Client Side Validation you can provide a better user experience by responding quickly at the browser level. When you perform a Client Side Validation, all the user inputs are validated in the user's browser itself. Client Side validation does not require a round trip to the server. This type of validation is done on the browser side using script languages such as JavaScript, VBScript or HTML5 attributes.
+
+Example: if the user enters an invalid email format, you can show an error message immediately before the user moves to the next field. The user can then correct every field before they submit the form.
+
+Mostly the Client Side Validation depends on the JavaScript Language, so if users turn JavaScript off, it can easily bypass and submit dangerous input to the server. Client Side Validation can not protect your application from malicious attacks on your server resources and databases.
+
 #### Connection Pooling
 You create a number of connections (for example to a database) which are always on and ready to use. If one of your functions needs to connect to the database, it can grab one out of the pool and as soon as the function is done the connection gets returned to the pool and is available again.
 
@@ -130,6 +138,9 @@ A **server is a computer, a device or a program** that is dedicated to managing 
 **shared hosting** [Shared hosting is a type of Web hosting service that allows multiple websites to share a physical Web server and its resources among the hosted websites.](https://www.techopedia.com/definition/15726/shared-hosting)
 
 Go here for a: [really good ELI5 answer](https://www.reddit.com/r/explainlikeimfive/comments/650bre/eli5_what_exactly_is_a_server_how_does_a_server/)
+
+#### Server Side Validation
+With Server Side Validation, the input submitted by the user is being sent to the server and validated using one of the server side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page. It is better to validate user input on the server side because you can protect against malicious users, who can easily bypass your Client Side scripting language and submit dangerous input to the server.
 
 #### SSL
 Secure Sockets Layer
