@@ -60,6 +60,13 @@ Middleware functions are functions that have access to the **request** and **res
 - end response cycle
 - call next middleware in the stack
 
+#### Body Parser
+Docs: https://github.com/expressjs/body-parser
+
+When you submit form data with a POST request, that form data can be encoded in many ways. The default type for HTML forms is application/x-www-urlencoded, but you can also submit data as JSON or any other arbitrary format.
+
+The body-parser module also provides middleware for parsing JSON, plain text, or just returning a raw Buffer object for you to deal with as needed.
+
 #### Installation
 `npm install express`
 
