@@ -71,6 +71,13 @@ An **object-relational mapper** is a library for an object-oriented programming 
 
 If you write your software well, you are going to package up all of your SQL calls into methods which take parameters in the language you are working with. You will want to save object instances as rows in your database (perhaps across several joined tables) and it shouldn't take too much information to store them there or retrieve them later. An ORM is simply a library which has done all of this work for you and creates a (hopefully) tidy API to do it with.
 
+#### Parsing
+ELI5: Ifyoureadthisstreamoflettersyoucanprobablystillunderstandwhatiamsaying.
+
+Your brain is parsing that long string of letters. It breaks it apart in to words, then as it assigns meaning to the words to form complete sentences.
+
+Parsing in computer syntax analysis works much the same way. You have some data that the computer can't really use in its current form: takes it in using some specified method, and assigns some meaning or arranges the data in to some structure it can utilize.
+
 #### REST API
 A restful API is just any API that obeys the REST standard. 
 Representational State Transfer (REST) is a set of commands commonly used with web transactions.
