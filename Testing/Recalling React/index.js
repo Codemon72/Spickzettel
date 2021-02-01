@@ -1,6 +1,17 @@
-const reactContentRoot = document.getElementById('root');
+// THIS IS WHAT A SIMPLE COUNTER WOULD LOOK LIKE IN VANILLA JS:
+// const incrementBtn = document.getElementById('increment-button');
+// const countDisplay = document.getElementById('count-display');
+
+// let currentCount = 0;
+
+// incrementBtn.addEventListener('click', () => {
+//   currentCount+=1;
+//   countDisplay.innerText = currentCount;
+// });
+
 
 // MOST SIMPLE REACT ELEMENT
+const reactContentRoot = document.getElementById("root");
 // takes the arguments: (html element, props, text/content)
 // const myFirstElement = React.createElement('li', {}, 'item1');
 
@@ -18,7 +29,6 @@ const reactContentRoot = document.getElementById('root');
 
 // ReactDOM.render(myFirstElement, reactContentRoot);
 
-
 // AND THE SAME IN JSX (after also installing a transpiler - in this case Babel)
 // const myJSXElement = (
 //   <ul>
@@ -29,7 +39,7 @@ const reactContentRoot = document.getElementById('root');
 // )
 
 // INSERTING A VARIABLE:
-// const newItem = 'new Item'; 
+// const newItem = 'new Item';
 
 // const myJSXElement = (
 //   <ul>
@@ -46,45 +56,21 @@ const reactContentRoot = document.getElementById('root');
 
 // AND AS A PROPER COMPONENT:
 
-
 const App = () => {
-  const newItem = 'new Item'; 
+  const newItem = "new Item";
 
   return (
-  <ul>
-    <li>JSX + Babel</li>
-    <li>item1</li>
-    <li>item2</li>
-    <li>{newItem}</li>
-    <li>{newItem.toUpperCase()}</li>
-  </ul>
-  )
-}
+    <ul>
+      <li>JSX + Babel</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>{newItem}</li>
+      <li>{newItem.toUpperCase()}</li>
+    </ul>
+  );
+};
 
 // we insert 'App' as a tag (with '< />') but it is basically just another way of calling the function - it also works by normally calling it:
 // ReactDOM.render(App(), reactContentRoot);
 
 ReactDOM.render(<App />, reactContentRoot);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const incrementBtn = document.getElementById('increment-button');
-// const countDisplay = document.getElementById('count-display');
-
-// let currentCount = 0;
-
-// incrementBtn.addEventListener('click', () => {
-//   currentCount+=1;
-//   countDisplay.innerText = currentCount;
-// });
