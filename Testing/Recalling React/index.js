@@ -1,7 +1,7 @@
 const reactContentRoot = document.getElementById('root');
 
 // MOST SIMPLE REACT ELEMENT
-// takes the arguments: html element, props, text/content
+// takes the arguments: (html element, props, text/content)
 // const myFirstElement = React.createElement('li', {}, 'item1');
 
 // BASIC _IDEA_ OF NESTED ITEMS
@@ -16,16 +16,55 @@ const reactContentRoot = document.getElementById('root');
 //   React.createElement('li', {}, 'item3')
 // ]);
 
+// ReactDOM.render(myFirstElement, reactContentRoot);
+
+
 // AND THE SAME IN JSX (after also installing a transpiler - in this case Babel)
-const myJSXElement = (
+// const myJSXElement = (
+//   <ul>
+//     <li>JSX + Babel</li>
+//     <li>item1</li>
+//     <li>item2</li>
+//   </ul>
+// )
+
+// INSERTING A VARIABLE:
+// const newItem = 'new Item'; 
+
+// const myJSXElement = (
+//   <ul>
+//     <li>JSX + Babel</li>
+//     <li>item1</li>
+//     <li>item2</li>
+//     <li>{newItem}</li>
+//     {/* and now we can do function on them */}
+//     <li>{newItem.toUpperCase()} (turned to uppercase)</li>
+//   </ul>
+// )
+
+// ReactDOM.render(myJSXElement, reactContentRoot);
+
+// AND AS A PROPER COMPONENT:
+
+
+const App = () => {
+  const newItem = 'new Item'; 
+
+  return (
   <ul>
     <li>JSX + Babel</li>
     <li>item1</li>
     <li>item2</li>
+    <li>{newItem}</li>
+    <li>{newItem.toUpperCase()}</li>
   </ul>
-)
+  )
+}
 
-ReactDOM.render(myJSXElement, reactContentRoot);
+// we insert 'App' as a tag (with '< />') but it is basically just another way of calling the function - it also works by normally calling it:
+// ReactDOM.render(App(), reactContentRoot);
+
+ReactDOM.render(<App />, reactContentRoot);
 
 
 
