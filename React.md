@@ -24,4 +24,7 @@ const reactContentRoot = document.getElementById('root');
 
 ReactDOM.render('Potztausend!', reactContentRoot);
 ```
+explained: `ReactDOM` has a function `render()` that takes 2 arguments:
+1. what to display
+2. where to display it
 
