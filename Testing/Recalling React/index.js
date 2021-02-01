@@ -1,6 +1,22 @@
 const reactContentRoot = document.getElementById('root');
 
-ReactDOM.render('blib', reactContentRoot);
+// MOST SIMPLE REACT ELEMENT
+// takes the arguments: html element, props, text/content
+// const myFirstElement = React.createElement('li', {}, 'item1');
+
+// BASIC IDEA OF NESTED ITEMS
+// const myFirstElement = React.createElement('ul', {},
+//   React.createElement('li', {}, 'item1')
+// );
+
+// BASIC IDEA OF AN ARRAY OF NESTED ITEMS
+const myFirstElement = React.createElement('ul', {}, [
+  React.createElement('li', {}, 'item1'),
+  React.createElement('li', {}, 'item2'),
+  React.createElement('li', {}, 'item3')
+]);
+
+ReactDOM.render(myFirstElement, reactContentRoot);
 
 
 
