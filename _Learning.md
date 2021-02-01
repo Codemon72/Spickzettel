@@ -40,6 +40,10 @@ M.L.S. basically means "Thinking about thinking."
 
 
 
+# Humor
+
+https://www.monkeyuser.com/
+
 
 
 # Cool Quotes
