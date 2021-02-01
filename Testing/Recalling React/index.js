@@ -4,19 +4,28 @@ const reactContentRoot = document.getElementById('root');
 // takes the arguments: html element, props, text/content
 // const myFirstElement = React.createElement('li', {}, 'item1');
 
-// BASIC IDEA OF NESTED ITEMS
+// BASIC _IDEA_ OF NESTED ITEMS
 // const myFirstElement = React.createElement('ul', {},
 //   React.createElement('li', {}, 'item1')
 // );
 
-// BASIC IDEA OF AN ARRAY OF NESTED ITEMS
-const myFirstElement = React.createElement('ul', {}, [
-  React.createElement('li', {}, 'item1'),
-  React.createElement('li', {}, 'item2'),
-  React.createElement('li', {}, 'item3')
-]);
+// BASIC _IDEA_ OF AN ARRAY OF NESTED ITEMS
+// const myFirstElement = React.createElement('ul', {}, [
+//   React.createElement('li', {}, 'item1'),
+//   React.createElement('li', {}, 'item2'),
+//   React.createElement('li', {}, 'item3')
+// ]);
 
-ReactDOM.render(myFirstElement, reactContentRoot);
+// AND THE SAME IN JSX (after also installing a transpiler - in this case Babel)
+const myJSXElement = (
+  <ul>
+    <li>JSX + Babel</li>
+    <li>item1</li>
+    <li>item2</li>
+  </ul>
+)
+
+ReactDOM.render(myJSXElement, reactContentRoot);
 
 
 

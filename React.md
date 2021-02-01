@@ -11,6 +11,7 @@ Implementing React gives us 2 new global variables to work with: `React` and `Re
 Both of them give us a whole library of methods and objects.
 
 `React` is what you'll work with 99% of the time. It gives us a set of JS functions that makes building UI elements really ease and easily reusable.
+- is used to create all the elements (while `ReactDOM` renders them to the DOM)
 
 `ReactDOM` is what allows React to render to the DOM. 
 Like this:
@@ -28,3 +29,30 @@ explained: `ReactDOM` has a function `render()` that takes 2 arguments:
 1. what to display
 2. where to display it
 
+Context Knowledge: There is also `ReactNative` which could e.g. render it to a mobile device. 
+
+#### JSX and Babel
+- conveniently looks like HTML but isn't. 
+- not part of JavaScript
+- needs a transpiler (e.g. Babel) which will transpile it into React code
+  - try it out: https://babeljs.io/repl
+- 'syntactic sugar'
+JSX is a syntax used to replicate stuff like this: 
+
+```js
+// instead of doing this:
+const myFirstElement = React.createElement('ul', {}, [
+  React.createElement('li', {}, 'item1'),
+  React.createElement('li', {}, 'item2'),
+  React.createElement('li', {}, 'item3')
+]);
+
+// you can go like this: 
+const myJSXElement = (
+  <ul>
+    <li>item1</li>
+    <li>item2</li>
+  </ul>
+)
+
+```
