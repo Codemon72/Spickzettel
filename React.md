@@ -62,6 +62,19 @@ const myJSXElement = (
 - components are functions that return JSX
 - by convention they begin with a capital letter
 
+#### Hooks
+Hooks are ways that you can tell React what's going on in your program or that you can respond to things that are happening in the program. 
+- `useState` - returns an array with the first element being the value, the second a function.
+  - integrate like this:
+  ```js
+  const [currentCount, setCurrentCount] = useState(0);
+
+  const handleclick = () => {
+    setCurrentCount(currentCount + 1)
+  };
+  ```
+  - another way to see this: we are basically registering the variable 'currentCount' with React
+
 
 #### A Couple Of Examples
 working through Mike Dane's tutorial: 
