@@ -3,6 +3,10 @@ and abbreviations
 #### API
 An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application which shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
 
+#### API Proxy
+An API proxy is your interface to developers that want to use your backend services. Rather than having them consume those services directly, they access an Edge API proxy that you create.
+API proxies decouple the app-facing API from your backend services, shielding those apps from backend code changes. As you make backend changes to your services, apps continue to call the same API without any interruption.
+
 #### BLOB 
 Binary Large Object
 
