@@ -1,5 +1,8 @@
 A JavaScript library for building user interfaces
 
+- excellent tutorial by Mike Dane: https://www.youtube.com/watch?v=ABQLwlE8MUA
+- freeCodeCamp Tutorial: https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/
+
 Every browser that loads your HTML & CSS creates a **D**ocument **O**bject **M**odel. 
 It is basically a representation of all the HTML as a JavaScript Object.
 In JavaScript you can refer to it with 'document':
@@ -64,7 +67,11 @@ const myJSXElement = (
 
 #### Hooks
 Hooks are ways that you can tell React what's going on in your program or that you can respond to things that are happening in the program. 
-- `useState` - returns an array with the first element being the value, the second a function.
+- **Note**: React wants to updates the DOM only when absolutely **necessary**. It's only gonna do that when we explicitly tell it to. And the way that we can tell it to do that is by using what is called a React Hook.
+
+- `useState` - returns an array with the first element being the value, the second a function. 
+  - the first value contains the variable, object or array we want to keep up to date, the second is the function to update it. Whatever we pass into the function is going to be the new value of the useState. 
+  - whatever we pass into useState() is going to be the default value.
   - integrate like this:
   ```js
   const [currentCount, setCurrentCount] = useState(0);
@@ -74,6 +81,84 @@ Hooks are ways that you can tell React what's going on in your program or that y
   };
   ```
   - another way to see this: we are basically registering the variable 'currentCount' with React
+  - **Note**: React only updates the DOM when absolutely **necessary**. Changing a variable that gets read out won't register with React. `useState` 
+
+- `useEffect` - allows us to run a function whenever something updates or has finished loading
+  - gets 2 parameters: a (callback) function and an array. Both are required, but the array can remain empty.
+  - in the array all 
+  - if the array has no values, useEffect will run only once.
+  ```js
+  useEffect(() => {
+    console.log("I was mounted and will not run again!");
+  }, []);
+  ```
+  -  
+
+#### Props
+Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
+- Syntax: 
+  ```js
+  return (
+    <div className="App">
+      <Menu />
+      <Header />
+      <List productsArray={products}/>
+    </div>
+  );
+  ```
+  which can be read out like this:
+  ```js
+  const List = (props) => {
+  return (
+    <div className="List">
+      {props.productsArray.map((product) => {
+        return <ListItem key={product.id} product={product} />;
+      })}
+    </div>
+    );
+  };
+  ```
+  or by Array Destructuring:
+  ```js
+  const List = ({ productsArray }) => {
+  return (
+    <div className="List">
+      {productsArray.map((product) => {
+        return <ListItem key={product.id} product={product} />;
+      })}
+    </div>
+    );
+  };
+  ```
+
+
+#### Forms and Input fields
+
+- `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
+We leverage that by registering that in a variable:
+```js
+const Form = () => {
+  const [changeValue, setChangeValue] = useState('');
+
+  const handleInputChange = (event) => {
+    setChangeValue(event.target.value);
+  };
+
+  return = (
+    ...
+    <input 
+      type="text" 
+      value={changeValue} 
+      onChange={handleInputChange} 
+    ...
+  )
+}
+```
+
+
+
+
+
 
 
 #### A Couple Of Examples
@@ -148,3 +233,13 @@ const App = () => {
 ReactDOM.render(<App />, reactContentRoot);
 
 ```
+
+#### Installation
+
+
+- by creating an instant with `create-react-app example-folder` you autmatically get
+  - a repository named example-folder
+  - a Node application
+  - git initialized
+  - JSX
+  - transpiler for JSX
