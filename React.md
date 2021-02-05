@@ -92,7 +92,69 @@ Hooks are ways that you can tell React what's going on in your program or that y
     console.log("I was mounted and will not run again!");
   }, []);
   ```
-  -  
+- `useContext`- With Context it is possible to pass data through the component tree without having to pass properties down manually at every level. Passing properties to components down in the tree is also known as Prop-Drilling.
+Context can be considered “global” for a tree of components. It is primarily used when some data for many components must be accessible at different nesting levels.
+To use them, a Context must first be created. It optionally takes an argument that contains the default value of the Context.
+`const AContext = React.createContext(‘a value');`
+
+To provide data to the Context the Provider is used. All your components which should have access to the Context needs to be wrapped by the Context.Provider.
+```js
+<AContext.Provider value={/* some value */}>
+    <AComponent />
+</AContext.Provider>
+```
+When React renders a component, which subscribes to this Context object, it will read the current context value from the closest matching Provider above it in the tree.
+To subscribe to a Context you can use the useContext Hook from React.
+```js
+import AContext from './AContext'
+// ...
+const value = useContext(AContext);
+```
+
+#### Conditional Rendering
+Consider you want to render something only when certain conditions are met. E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
+There are differen ways to do it:
+- If statement for whole components:
+  ```js
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+  }
+  ```
+- Inline If with Logical Operators
+  ```js
+  <div className="item__new-price">{product.newPrice >= 0 && product.newPrice}</div>
+  ```
+  If you want to conditionally display only small JSX elements use the `&&` operator. It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
+  Therefore, if the condition is true, the element right after `&&` will appear in the output. If it is false, React will ignore and skip it.
+  Better practice in the case above would be to conditionally render the whole element. To do that place the JSX element into parentheses after the `&&`operator:
+  ```js
+  {product.newPrice >= 0 && (
+        <div className="item__new-price">{product.newPrice}</div>
+      )}
+  ```
+  You can chain as many conditions as you like. What you will return is the expression after the last `&&` operator:
+  ```js
+  {loggedIn && premiumMember && (
+    <div className="user">{userName}</div>
+  )}
+  ```
+  You can use other logical operators like `||` etc just as well. Put more complex conditional statements into parenthesis
+- Ternary Operator
+  Another method for conditionally rendering elements inline is to use the JavaScript conditional operator `condition ? true : false`.
+  ```js
+  <div>
+      {isLoggedIn
+        ? <LogoutButton onClick={this.handleLogoutClick} />
+        : <LoginButton onClick={this.handleLoginClick} />
+      }
+  </div>
+  ```
+
+Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
+Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
 
 #### Props
 Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
