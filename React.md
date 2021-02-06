@@ -152,6 +152,7 @@ There are differen ways to do it:
       }
   </div>
   ```
+  If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
