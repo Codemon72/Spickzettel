@@ -311,7 +311,10 @@ ReactDOM.render(<App />, reactContentRoot);
 
 #### Packages I Have Used And Loved
 ... or that someone more experienced recommended to me:
+- `react-router-dom`
 - `@iconify/react` and
 - `@iconify/icons-mdi` - material design icons
   - [Iconify for React](https://www.npmjs.com/package/@iconify/react) - all available icons at: https://iconify.design/icon-sets/
 - `google-map-react`
+- `styled-components` - (recommended by Jonas Reitmann)
+- React Query (for HTTP calls) - (recommended by Jonas Reitmann)
