@@ -9,12 +9,25 @@ best sources:
 
 ### Info
 
+`cat` - concatenate files and print on the standard output
+  - `cat example.txt`
+
+`curl` - call url and log it
+  - `curl -i` - include header (-i: information)
+  - `curl --head` or `curl -I` - only header
+  - `curl -o filename.txt` - download output into file (output)
+  - `curl -O http...` - download file, img directly (and make a file if necessary - for example of JSON data)
+  - excellent Traversy walkthrough: https://www.youtube.com/watch?v=7XUibDYw4mc
+
 `ls` - list directory contents
 
 `whoami` - print effective userid
 
 `who` - displays the users logged in to the system.  
 `who -aH` - displays more information, including the idle time and the process ID of the terminal
+
+`rm` - remove
+
 
 ### Tipps & Tricks
 

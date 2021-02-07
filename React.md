@@ -299,10 +299,19 @@ ReactDOM.render(<App />, reactContentRoot);
 
 #### Installation
 
-
-- by creating an instant with `create-react-app example-folder` you autmatically get
+- install react globally with `npm install -g create-react-app` 
+- by creating an instant with `create-react-app example-repo` you autmatically get
   - a repository named example-folder
   - a Node application
   - git initialized
   - JSX
   - transpiler for JSX
+  - (tutorials with `npx create-react-app example-repo` do that kindly for everyone who has not or doesn't want to install React globally.)
+
+
+#### Packages I Have Used And Loved
+... or that someone more experienced recommended to me:
+- `@iconify/react` and
+- `@iconify/icons-mdi` - material design icons
+  - [Iconify for React](https://www.npmjs.com/package/@iconify/react) - all available icons at: https://iconify.design/icon-sets/
+- `google-map-react`
