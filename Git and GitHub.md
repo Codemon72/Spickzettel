@@ -46,6 +46,25 @@ git config --global core.excludesfile ~/.gitignore_global
 If you have already accidentally committed it to your repository, use:
 `git rm --cached .DS_Store`
 
+#### rename branch
+to rename the branch you are currently on, simply do:
+
+`git branch -m <newname>` - to remember this is -m is for "move" (or mv), which is how you rename files.
+
+If it is another local branch (you are not currently on):
+`git branch -m <old-name> <new-name>`
+
+If you are on Windows or another case-insensitive filesystem, and there are any capitalization change in the name, you need to use -M, otherwise, git will throw 'branch already exists' error:
+
+git branch -M <newname>
+
+If you need to rename a remote branch, simply rename your local branch, push it with the new name (and thereby create a new branch remotely) and delete the old branch.
+
+---
+
+source: https://www.git-tower.com/learn/git/faq/git-rename-branch/
+
+
 source: https://code.likeagirl.io/how-to-get-rid-of-ds-store-and-node-modules-in-git-repositories-d37b8a391247
 
 source: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
