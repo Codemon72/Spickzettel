@@ -13,11 +13,11 @@ sources:
 - https://www.git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 - https://stackoverflow.com/a/4299159/709467
 
-List just aliases
-`git config --get-regexp alias`
+- `git config --get-regexp alias` - List just aliases
 
-List all config parameters
-`git config --list`
+- `git config --list` - List all config parameters
+
+- `git log` - logs commit history
 
 #### Gitignore file
 
