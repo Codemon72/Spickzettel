@@ -116,11 +116,20 @@ Consider you want to render something only when certain conditions are met. E.g.
 There are differen ways to do it:
 - If statement for whole components:
   ```js
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
-    return <UserGreeting />;
-  }
-  return <GuestGreeting />;
+  render() {
+    let button;
+    if (isLoggedIn) {
+      button = <LogoutButton onClick={handleLogoutClick} />;
+    } else {
+      button = <LoginButton onClick={handleLoginClick} />;
+    }
+
+    return (
+      <div>
+        <Greeting isLoggedIn={isLoggedIn} />
+        {button}
+      </div>
+    );
   }
   ```
 - Inline If with Logical Operators
@@ -147,8 +156,8 @@ There are differen ways to do it:
   ```js
   <div>
       {isLoggedIn
-        ? <LogoutButton onClick={this.handleLogoutClick} />
-        : <LoginButton onClick={this.handleLoginClick} />
+        ? <LogoutButton onClick={handleLogoutClick} />
+        : <LoginButton onClick={handleLoginClick} />
       }
   </div>
   ```
