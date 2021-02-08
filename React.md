@@ -199,26 +199,47 @@ Props are values that can be passed into a component to be used for whatever. By
 
 - `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
 We leverage that by registering that in a variable:
-```js
-const Form = () => {
-  const [changeValue, setChangeValue] = useState('');
+  ```js
+  const Form = () => {
+    const [changeValue, setChangeValue] = useState('');
 
-  const handleInputChange = (event) => {
-    setChangeValue(event.target.value);
-  };
+    const handleInputChange = (event) => {
+      setChangeValue(event.target.value);
+    };
 
-  return = (
-    ...
-    <input 
-      type="text" 
-      value={changeValue} 
-      onChange={handleInputChange} 
-    ...
-  )
-}
-```
+    return = (
+      ...
+      <input 
+        type="text" 
+        value={changeValue} 
+        onChange={handleInputChange} 
+      ...
+    )
+  }
+  ```
+- select - option
+  might seem complex on first glance, but is quite simple
+  - instead of choosing an option with the `selected` attribute, the select element gets a value that will determine the presented option on first loading
+  - capture the selected option in a `useState` 
+  - give the select element a function that gets triggered `onChange`.
+  - handle all that you fancy in that function
+  ```js
+  const [selected, setSelected] = useState("coconuts");
 
+  const handleSelectorChange = (event) => {
+    setSelected(event.target.value);
+    setChangeValue('')
+    // other stuff ...
+  };            
 
+  <select 
+    id="selector" 
+    value={selected} 
+    onChange={handleSelectorChange}>
+      <option value="bananas">🍌 🐒</option>
+      <option value="coconuts">🥥 🌴</option>
+  </select>
+  ```
 
 
 
