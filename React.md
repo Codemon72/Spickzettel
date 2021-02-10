@@ -165,31 +165,7 @@ There are different ways to do it:
 - Conditional Rendering inside JSX elements attribute
   use template literals like so:
   ```js
-  import { Link, useLocation } from "react-router-dom";
-
-  const Menu = () => {
-    const location = useLocation();
-
-    const atHomePage = location.pathname === '/';
-
-    return (
-      <div className="Menu">
-        <div className="brand">Bulk Product Manager</div>
-        <Link 
-          to="/" 
-          className="menu-link"
-          >
-          <button 
-            className={`menu-link__button ${atHomePage ?  'active' : ''}`} 
-            >Home</button>
-        </Link>
-        <Link 
-          to="/prices" 
-          >
-          <button 
-            className={`menu-link__button ${atPricesPage ?  'active' : ''}`} >Prices</button>
-        </Link>
-    ...
+  <button className={`menu-link__button ${atHomePage ?  'active' : ''}`}>Home</button>
   ```
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
@@ -356,6 +332,36 @@ ReactDOM.render(<App />, reactContentRoot);
 
 ```
 
+- styling navigation buttons:
+
+```js
+  import { Link, useLocation } from "react-router-dom";
+
+  const Menu = () => {
+    const location = useLocation();
+
+    const atHomePage = location.pathname === '/';
+
+    return (
+      <div className="Menu">
+        <div className="brand">Bulk Product Manager</div>
+        <Link 
+          to="/" 
+          className="menu-link"
+          >
+          <button 
+            className={`menu-link__button ${atHomePage ?  'active' : ''}`} 
+            >Home</button>
+        </Link>
+        <Link 
+          to="/prices" 
+          >
+          <button 
+            className={`menu-link__button ${atPricesPage ?  'active' : ''}`} >Prices</button>
+        </Link>
+    ...
+  ```
+
 #### Installation
 
 - install react globally with `npm install -g create-react-app` 
@@ -370,7 +376,7 @@ ReactDOM.render(<App />, reactContentRoot);
 
 #### Packages I Have Used And Loved
 ... or that someone more experienced recommended to me:
-- `react-router-dom`
+- `react-router-dom` - (import { BrowserRouter as Router, Route, useLocation)
 - `@iconify/react` and
 - `@iconify/icons-mdi` - material design icons
   - [Iconify for React](https://www.npmjs.com/package/@iconify/react) - all available icons at: https://iconify.design/icon-sets/
