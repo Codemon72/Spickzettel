@@ -113,7 +113,7 @@ const value = useContext(AContext);
 
 #### Conditional Rendering
 Consider you want to render something only when certain conditions are met. E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
-There are differen ways to do it:
+There are different ways to do it:
 - If statement for whole components:
   ```js
   render() {
@@ -162,6 +162,35 @@ There are differen ways to do it:
   </div>
   ```
   If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
+- Conditional Rendering inside JSX elements attribute
+  use template literals like so:
+  ```js
+  import { Link, useLocation } from "react-router-dom";
+
+  const Menu = () => {
+    const location = useLocation();
+
+    const atHomePage = location.pathname === '/';
+
+    return (
+      <div className="Menu">
+        <div className="brand">Bulk Product Manager</div>
+        <Link 
+          to="/" 
+          className="menu-link"
+          >
+          <button 
+            className={`menu-link__button ${atHomePage ?  'active' : ''}`} 
+            >Home</button>
+        </Link>
+        <Link 
+          to="/prices" 
+          >
+          <button 
+            className={`menu-link__button ${atPricesPage ?  'active' : ''}`} >Prices</button>
+        </Link>
+    ...
+  ```
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
@@ -348,3 +377,4 @@ ReactDOM.render(<App />, reactContentRoot);
 - `google-map-react`
 - `styled-components` - (recommended by Jonas Reitmann)
 - React Query (for HTTP calls) - (recommended by Jonas Reitmann)
+- `react-spring` - for animations (Traversy: https://www.youtube.com/watch?v=S8yn3-WpVV8)
