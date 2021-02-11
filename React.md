@@ -162,10 +162,12 @@ There are different ways to do it:
   </div>
   ```
   If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
-- Conditional Rendering inside JSX elements attribute
-  use template literals like so:
+- Conditional Rendering inside JSX elements
   ```js
-  <button className={`menu-link__button ${atHomePage ?  'active' : ''}`}>Home</button>
+  <button 
+     className={`menu__btn ${atHomePage ?  'active' : ''}`}
+     onClick={priceValid ? handleApplyClick : undefined }
+     >Home</button>
   ```
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
@@ -210,6 +212,7 @@ Props are values that can be passed into a component to be used for whatever. By
 
 
 #### Forms and Input fields
+HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
 
 - `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
 We leverage that by registering that in a variable:
@@ -350,14 +353,14 @@ ReactDOM.render(<App />, reactContentRoot);
           className="menu-link"
           >
           <button 
-            className={`menu-link__button ${atHomePage ?  'active' : ''}`} 
+            className={`menu__btn ${atHomePage ?  'active' : ''}`} 
             >Home</button>
         </Link>
         <Link 
           to="/prices" 
           >
           <button 
-            className={`menu-link__button ${atPricesPage ?  'active' : ''}`} >Prices</button>
+            className={`menu__btn ${atPricesPage ?  'active' : ''}`} >Prices</button>
         </Link>
     ...
   ```
