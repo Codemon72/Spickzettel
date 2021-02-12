@@ -58,7 +58,6 @@ const myJSXElement = (
     <li>item2</li>
   </ul>
 )
-
 ```
 
 #### Components and Elements
@@ -263,6 +262,25 @@ We leverage that by registering that in a variable:
 
 
 #### A Couple Of Examples
+
+- event handlers /  attaching a function to an HTML element
+```js
+const toggleIsChecked = (event) => {
+  console.log(event.target.checked)
+}
+
+const logProductId = (id) => {
+  console.log('product-id: ' + id)
+}
+
+// the event is passed along by default
+onChange={toggleIsChecked}
+// to pass a value from the element:
+onClick={() => logProductId(product.id)}
+
+onDoubleClick={fancyFunction}
+```
+
 working through Mike Dane's tutorial: 
 
 ```js
