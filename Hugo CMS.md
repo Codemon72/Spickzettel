@@ -1,5 +1,40 @@
 # Hugo CMS
 
+__Mike Dane__ has quite good **[Hugo docs](https://www.mikedane.com/static-site-generators/hugo/installing-using-themes/)**
+
+Hugo Tutorial 2019/05: https://www.youtube.com/watch?v=u53xfby0EYI&list=PLbWvcwWtuDm1OpcbohZTOwwzmc8SMmlBD
+
+https://gohugo.io/commands/
+
+**[Install Hugo](https://gohugo.io/getting-started/installing)** before you can work with it.
+
+**update Hugo**: `brew upgrade hugo`
+
+#### regular workflow
+
+1. create or go to the folder where you want to have your project. Terminal: **hugo new site <fancy-name>**
+
+2. **git init**
+
+3. download a theme form https://themes.gohugo.io/ with 
+**git submodule add *hugo-theme-link***
+this will automatically create a file ".gitmodules" with something like this: 
+`````
+[submodule "themes/hugo-fresh"]
+	path = themes/hugo-fresh
+	url = git@github.com:StefMa/hugo-fresh.git
+`````
+4. follow the instructions in the theme documentation
+
+this might come in handy again:
+````
+cp -a themes/portio/exampleSite/* .
+````
+
+#### new file
+```hugo new example.md```
+```hugo new directory/example.md```
+
 
 #### Hugo operators
 `eq` = equals
