@@ -3,7 +3,7 @@
 #### Shortcuts (for Mac)
 
 typing:
-`div.number.number$*12{$}` will create:
+`div.number.number$*12{$}` will generate:
 ```html
 <div class="number number1">1</div>
 <div class="number number2">2</div>
