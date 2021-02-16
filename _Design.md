@@ -16,6 +16,7 @@ Kevin: "One is three already."
 **Tipp**: if it doesn't work, never be afraid to change it up a bit. E.g. in the dev tools color picker or just with opacity.
 
 - color picker: 
+  - for just one color: google 'color picker'
   - https://color.adobe.com/create/color-wheel
   - https://mycolor.space/
 
