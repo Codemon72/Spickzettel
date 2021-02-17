@@ -13,11 +13,21 @@
 
 
 #### Color Picker
+- google: 'color picker'
 - https://color.adobe.com/create/color-wheel
 
 
 #### CDNs
 - https://cdnjs.com/libraries
+
+
+#### `imagemagick` for Sizing Images
+(first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
+use command line to get into correct folder, then, eg:
+
+`convert anton.jpg -scale 500 anton.jpg`
+
+the value determines the width in px
 
 
 #### Brad Traversy's Humongous List
