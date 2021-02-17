@@ -16,7 +16,7 @@ start and stop with:
 - `brew services stop mariadb`
 
 To start it in the terminal:
-- `mariadb``
+- `mariadb`
 To stop:
 - `\q` or CTRL + C
 
