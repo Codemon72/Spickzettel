@@ -27,9 +27,17 @@ Kevin: "One is three already."
     - #003C57
     - #8FCBE6
 
+
+#### Gradients
+Malve / Pink
+```css
+background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92% );
+```
+
+
 source: Kevin Powell: https://www.youtube.com/watch?v=mq8LYj6kRyE&t=146s
 
 #### Fonts
 1. start with one font
-
+...
 source: Kevin Powell: https://www.youtube.com/watch?v=zUMAjJ88NJ0
