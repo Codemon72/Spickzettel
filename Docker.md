@@ -1,9 +1,12 @@
 like a virtual machine but structured differently to save RAM and CPU
 
+#### Gist from Brad:
+https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
+
 #### getting info
 `docker version`
 `docker info`
-`
+
 #### Momentaufnahme laufernder Prozesse:
 `docker ps -a` // show (-a) all (ps) **p**rocesse**s**
 
@@ -82,8 +85,6 @@ https://hub.docker.com/_/ghost/
 and
 `docker run --help` 
 
-#### Gist from Brad:
-https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
 
 #### very good ELI5: https://www.reddit.com/r/AskComputerScience/comments/9xktwl/eli5_please_what_is_docker/
 
