@@ -100,3 +100,16 @@ https://www.mikedane.com/static-site-generators/hugo/conditionals/
 `$` has special significance in your templates. `$` is set to the starting value of . (“the dot”) by default.
 
 source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-context
+
+## Hugo Theme Research
+
+### Good Theme for a Marketing Landingpage
+
+-Meghna - https://themes.gohugo.io/meghna-hugo/
+- from themefischer
+- simplicity 4/5
+- note: multilingual
+
+-Universal - https://themes.gohugo.io/hugo-universal-theme/
+- simplicity 3/5
+- notes: keine reine Landingpage, Menü müsste rausgenommen oder umdirigiert werden auf Elemente auf index.html, Probleme es lokal zu hosten ("Module "hugo-universal-theme" not found").
