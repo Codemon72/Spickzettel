@@ -23,5 +23,8 @@ DEFAULT CURRENT_TIMESTAMP
 ON UPDATE CURRENT_TIMESTAMP;
 ```
 
+### Use 'JOIN' in Sequelize
+https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins/
+
 
 Might come in handy: https://grokonez.com/node-js/sequelize/sequelize-crud-mariadb-example-build-crud-node-js-express-restapis-example
