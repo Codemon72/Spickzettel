@@ -8,6 +8,7 @@ Docs:
 - youtube tutorial: https://www.youtube.com/watch?v=pxo7L5nd1gA
 - Brad Traversy: [Build a Node.js App With Sequelize](https://www.youtube.com/watch?v=bOHysWYMZM0&list=PLillGF-RfqbZyLc9sMQ72_u3FW9fVxo1p)
 - looks like an in-depth tutorial: [Learn Sequelize ORM on Node.js with MySQL From Scratch in One Video](https://www.youtube.com/watch?v=pxo7L5nd1gA)
+- https://stackabuse.com/using-sequelize-orm-with-nodejs-and-express/
 
 
 

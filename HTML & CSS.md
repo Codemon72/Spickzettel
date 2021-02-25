@@ -25,9 +25,8 @@ Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are
 Source: https://web.dev/external-anchors-use-rel-noopener/
 
 
-#### On Form Validation
+#### Form Validation
 Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
-
 
 - where to show the error message: next to the input field
 - time to trigger the error: on focus change (onblur event)
