@@ -105,11 +105,30 @@ source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-co
 
 ### Good Theme for a Marketing Landingpage
 
--Meghna - https://themes.gohugo.io/meghna-hugo/
+Meghna - https://themes.gohugo.io/meghna-hugo/
 - from themefischer
 - simplicity 4/5
 - note: multilingual
 
--Universal - https://themes.gohugo.io/hugo-universal-theme/
+Universal - https://themes.gohugo.io/hugo-universal-theme/
 - simplicity 3/5
 - notes: keine reine Landingpage, Menü müsste rausgenommen oder umdirigiert werden auf Elemente auf index.html, Probleme es lokal zu hosten ("Module "hugo-universal-theme" not found").
+
+Vex - https://themes.gohugo.io/vex-hugo/
+- from themefischer
+- simplicity 3/5
+- notes: keine reine Landingpage, Menü müsste umgebaut werden, multilingual
+
+Airspace - https://themes.gohugo.io/airspace-hugo/
+- from themefischer
+- simplicity 3/5
+- notes: keine reine Landingpage, Menü müsste umgebaut werden, multilingual
+
+Bigspring - https://themes.gohugo.io/bigspring-hugo-startup-theme/
+- from themefischer
+- simplicity 3/5
+- notes: keine reine Landingpage, Menü müsste umgebaut werden, multilingual
+
+Grayscale - https://themes.gohugo.io/hugograyscale/
+- simplicity 3/5
+- notes: single landingpage; schlichtes Design, dass allerdings noch nachgebessert werden müsste; Struktur: geht so; jQuery
