@@ -277,14 +277,20 @@ INSERT INTO bookings (course_id, student_id) VALUES
 (1,6),(2,6),(4,6),(5,6);
 
 -- add a column to a table
+
 ALTER TABLE students ADD alumni BOOL DEFAULT '0';
-ALTER TABLE courses ADD createdAt DATE DEFAULT CURRENT_TIMESTAMP;
-ALTER TABLE courses
-    ADD updatedAt TIMESTAMP NOT NULL
-                    DEFAULT CURRENT_TIMESTAMP
-                    ON UPDATE CURRENT_TIMESTAMP;
+
+ALTER TABLE teachers ADD createdAt TIMESTAMP NOT NULL
+DEFAULT CURRENT_TIMESTAMP;
+
+ALTER TABLE courses ADD updatedAt TIMESTAMP NOT NULL
+DEFAULT CURRENT_TIMESTAMP
+ON UPDATE CURRENT_TIMESTAMP;
+
 ALTER TABLE courses ADD FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id);
+
 ALTER TABLE courses ADD name VARCHAR (20);
+
 -- modify a column
 ALTER TABLE courses MODIFY COLUMN name VARCHAR(40);
 ALTER TABLE courses MODIFY COLUMN createdAt TIMESTAMP NOT NULL
