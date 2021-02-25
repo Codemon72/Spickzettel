@@ -364,7 +364,14 @@ GROUP BY name DESC;
 -- show all courses and the names of their teachers
 SELECT teachers.name, courses.name
 FROM teachers
-JOIN courses ON teachers.teacher_id = courses.teacher_id;
+JOIN courses 
+ON teachers.teacher_id = courses.teacher_id;
+
+__ show everything from courses and the related teacher name
+SELECT c.*, t.name 
+FROM courses AS c
+JOIN teachers AS t
+ON t.teacher_id = c.teacher_id;
 
 -- all Clemens' teachers with JOIN
 SELECT teachers.name
