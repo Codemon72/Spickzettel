@@ -18,7 +18,7 @@ Prerequisites:
 - Basics of Node.js and NPM
 
 
-Basic server with express:
+Most basic bare bone server with express:
 ```
 const express = require(‘express’);
 
@@ -30,7 +30,9 @@ const port = 3000
 app.use(express.static(‘public’));
 
 // Create your endpoints/ route handlers
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
 // Listen on port
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
