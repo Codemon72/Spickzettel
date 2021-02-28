@@ -30,6 +30,25 @@ add **node_modules/** to your **.gitignore** file.
 - `ngrok http 80` - expose a web server running on your local machine to the internet on port 80. https://ngrok.com/docs
 
 #### Modules
+Consider modules to be the same as JavaScript libraries: A set of functions you want to include in your application.
+
+**Built-In or Core Modules**
+Node.js has a set of built-in modules which you can use without any further installation.
+- fs	- To handle the file system
+- http	- To make Node.js act as an HTTP server
+- https	- To make Node.js act as an HTTPS server.
+- path	- To handle file paths
+Overview: https://www.w3schools.com/nodejs/ref_modules.asp
+All core modules have documentation here: https://nodejs.org/dist/latest-v15.x/docs/api/
+
+
+**Include Modules**
+To include a module, use the require() function with the name of the module:
+`const http = require('http');`
+**Note**: This is CommonJS. ES6 would be: `import Person from './Person'` but is not yet supported by Node.js. Can be made possible by importing Babble.
+
+**Create Your Own Modules**
+Use the `exports` keyword to make properties and methods available outside the module file.
 Every JS file you create as a module will automatically (and invisibly) have **Module Wrapper Function** wrapped around it.
 ```js
 (function (exports, require, module, __filename, __dirname){
