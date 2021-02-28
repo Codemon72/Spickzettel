@@ -29,6 +29,14 @@ add **node_modules/** to your **.gitignore** file.
 - `nodemon index.js` startet den node server mit index.js, allerdings mit nodemon, der bewirkt, dass sich der server nach jeder Änderung neu startet. (sollte das mal nicht klappen, try: `rs`).
 - `ngrok http 80` - expose a web server running on your local machine to the internet on port 80. https://ngrok.com/docs
 
+#### Modules
+Every JS file you create as a module will automatically (and invisibly) have **Module Wrapper Function** wrapped around it.
+```js
+(function (exports, require, module, __filename, __dirname){
+
+})
+```
+
 #### Middleware
 A middleware is a part of your node.js software that gets executed for every incoming request.
 You frequently use third-party packages for your middleware (most often Express) but you can also write it yourself.
