@@ -1,3 +1,54 @@
+### Layout Debugger
+```css
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
+```
+or
+```css
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }
+```
+
+### Media Queries 
+Used for THE Software Company (bulma breakpoints): 
+
+```css
+@media only screen and (min-width: 769px) {
+}
+@media only screen and (min-width: 1088px) {
+}
+@media only screen and (min-width: 1280px) {
+}
+@media only screen and (min-width: 1408px) {
+}
+```
+
+Used for HCS:
+```css
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1440px) {
+}
+```
 
 #### Buttons
 - avoid outlines on click
@@ -44,7 +95,7 @@ box-shadow default:
 - color in general matches the color property (except Safari: there the default shadow color is transparent).
 
 It takes 2 - 6 values.
-1. but can be left out **inset** is set as first value, moves shadow inside of the box, displays above background color but the content
+(1. but can be left out **inset** is set as first value, moves shadow inside of the box, displays above background color but the content)
 **1. offset-x** - how far to push the shadow horizontally from the element - can also take negative values 
 **2. offset-y** - how far to push the shadow vertically from the element, can also take negative values 
 **3. blur-radius** (a radius from the most outer point of black it blurs in all directions) 
@@ -65,4 +116,13 @@ blue moon crescent:
 background-color: transparent;
 border-radius: 50%;
 box-shadow: 25px 10px 0 0 blue; 
+```
+
+very nice, realistic shadow 
+```css
+box-shadow: 
+    -8px 8px 15px rgba(255, 255, 255, .05),
+    inset -8px 8px 15px rgba(255, 255, 255, .05),
+    20px 20px 20px rgba(0, 0, 0, .2),
+    inset 20px 20px 20px rgba(0, 0, 0, .2);
 ```
