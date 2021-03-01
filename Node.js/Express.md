@@ -17,9 +17,11 @@ Prerequisites:
 - JavaScript Fundamentals
 - Basics of Node.js and NPM
 
+#### install express
+`npm i express`
 
-Most basic bare bone server with express:
-```
+#### Most basic bare bone server with express
+```js
 const express = require(‘express’);
 
 // Init express
@@ -38,8 +40,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
 
-'/' is the path to the root or home.
-
 #### Basic Route Handling
 ```js
 app.get('/', function(req, res){
@@ -56,7 +56,9 @@ app.get('/', function(req, res){
 - We can parse incoming data with the Body Parser
 
 #### Express Middleware
-Middleware functions are functions that have access to the **request** and **response** object. Express has built in middleware but middleware can also come from 3rd party packages as well as custom middleware.
+Middleware functions are just functions that have access to the **request** and **response** object. 
+Express has built in middleware but middleware can also come from 3rd party packages. Or you can write it your own custom middleware.
+
 - execute any code
 - make changes to the request/ response object
 - end response cycle
@@ -72,7 +74,14 @@ The body-parser module also provides middleware for parsing JSON, plain text, or
 #### Installation
 `npm install express`
 
-#### Methods
+#### Methods 
+- `app.get()` - basic creation of a route
+  Example:
+  ```js
+  const express = require('express');
+  const app = express();
+  app.get('/', (req, res) => {res.send('INDEX')});
+  ```
 - `app.use()` - for whenever we want to include middleware
   Examples:
   ```js
@@ -97,13 +106,6 @@ The body-parser module also provides middleware for parsing JSON, plain text, or
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, console.log(`Server started on ${PORT}`));
   ```
-- `app.get()` - TODO
-  Example:
-  ```js
-  const express = require('express');
-  const app = express();
-  app.get('/', (req, res) => {res.send('INDEX')});
-  ```
 - `app.engine()` - TODO
   Example:
   ```js
@@ -118,3 +120,16 @@ The body-parser module also provides middleware for parsing JSON, plain text, or
   const app = express();
   app.set('view engine', 'handlebars');
   ```
+
+  #### Methods on the `res` Object
+  - res.send() - to send text or HTML to the browser (not used too much)
+    ```js
+    res.send('hello world'); // or
+    res.send('<h1>hello world</h1>');
+    ```
+  - res.sendFile() - sends a file
+    ```js
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    ```
+  - res.json() - to send a JSON file. No JSON.stringify or anything needed because Express takes care of it.
+  - res.render() - when using a template engine (like Handlebars)
