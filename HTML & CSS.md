@@ -126,3 +126,18 @@ box-shadow:
     20px 20px 20px rgba(0, 0, 0, .2),
     inset 20px 20px 20px rgba(0, 0, 0, .2);
 ```
+
+### Reflection
+check this out: https://youtu.be/vmpAK2h0UeQ?t=952
+```css
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center,
+}
+.container {
+  background-color: white;
+  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0004);
+}
+```
