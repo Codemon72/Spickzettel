@@ -2,6 +2,7 @@
 
 - google - if you like the company or not: for finding programming related stuff it is most often the best. And therefore henceforth I'll use the word 'googling' instead of 'search via your favorite search engine'.
 - google with "eli5". Meaning "explain it like I'm 5".
+- google with "TIL". Meaning: "today I learned".
 - google with "visualization"
 - google with "meaning"
 - google in order:
