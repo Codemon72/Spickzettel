@@ -4,8 +4,7 @@
 For getting the basic concepts:
 - google with "eli5". Meaning "explain it like I'm 5".
 - google with "TIL". Meaning: "today I learned".
-- google with "visualization"
-- google with "meaning"
+- google with "visualization", "meaning", "basics", "cheat sheet"
 - google in order:
   1. name of the language you are using
   2. other words

@@ -72,6 +72,13 @@ The heap grows when you allocate memory in your program, and shrinks when you de
 
 minimal viable product
 
+#### MVC
+stands for Model, View, Controller
+- Model is the data of your application.
+- View is the presentation of the data.
+- Controller is the brains/logic of your application.
+ELI5: For instance, you're a car dealership, with many different cars in your inventory (model). When a customer asks to see a car, you (controller) look in the inventory (model), retrieve the car and present it to the customer (view).
+
 #### NRDBMS
 Non-Relational Database Management System
 
