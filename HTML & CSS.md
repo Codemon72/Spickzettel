@@ -60,7 +60,10 @@ Used for HCS:
     outline: none;
   }
   ```
+- fancy button hover effects
+  - https://youtu.be/cH0TC9gWiAg?t=46
 
+#### Blur Effect
   - apply a blur effect to something *behind* an element 
   ```css
     opacity: .9;
