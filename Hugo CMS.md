@@ -101,6 +101,61 @@ https://www.mikedane.com/static-site-generators/hugo/conditionals/
 
 source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-context
 
+### Setting Up Multilingual in Hugo
+
+- in config file:
+	```toml
+	DefaultContentLanguage = "de"
+
+	# for the i18n folder to work:
+	enableMissingTranslationPlaceholders = true
+
+	[languages]
+    [languages.en]
+        languagecode = "en"
+
+        [languages.en.params]
+            author = "Clemens Bruesch"
+            description = "Clemens Bruesch's personal website"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+            [[languages.en.menu.main]]
+                name = "About"
+                url = "about"
+
+            [[languages.en.menu.main]]
+                name = "Blog"
+                url = "posts"
+
+    [languages.de]
+        languagecode = "de"
+
+        [languages.de.params]
+            author = "Clemens Brüsch"
+            description = "Clemens Brüsch's personal website"
+
+        [languages.de.menu] # It is possible to change the menu too.
+
+            [[languages.de.menu.main]]
+                name = "About"
+                url = "about"
+
+            [[languages.de.menu.main]]
+                name = "Blog"
+                url = "posts"
+	```
+- i18n folder in root with one file each for respective languages (e.g. de.toml, en.toml)
+	en.toml:
+	```toml
+	[test]
+	other = "english"
+	```
+	html file:
+	```html
+	{{ i18n "test" }}
+	```
+
 ## Hugo Theme Research
 
 ### Good Theme for a Marketing Landingpage
