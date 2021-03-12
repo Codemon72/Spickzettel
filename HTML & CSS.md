@@ -144,3 +144,22 @@ body {
   -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0004);
 }
 ```
+
+### Special Characters and Entities
+An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
+
+`&nbsp;` "non blank space"
+
+###### how to break words
+`&shy;`
+creates a "**s**oft **hy**phen" that only appears when the word breaks.
+Works in HTML
+
+`\u00AD`
+also creates a soft hyphen and also works in markdown
+
+`<wbr>`
+does **not** create a hyphen.
+The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
+
+**Tip**: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
