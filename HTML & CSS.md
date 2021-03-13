@@ -23,7 +23,7 @@ or
 ```
 
 ### Media Queries 
-Used for THE Software Company (bulma breakpoints): 
+bulma breakpoints (used for Small and Modern website): 
 
 ```css
 @media only screen and (min-width: 769px) {
@@ -163,3 +163,61 @@ does **not** create a hyphen.
 The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
 
 **Tip**: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
+
+### how to break lines in preferred places
+-  setting divs to inline-block on media query
+```html
+<div class="foo">some text</div>
+<div class="foo">some more text</div>
+```
+```css
+@media only screen and (min-width: 1440px) {
+  .foo {
+    display: inline-block;
+  }
+}
+```
+- text in spans with display: inline-block
+
+By using
+```css
+span.avoidwrap { display:inline-block; }
+```
+and wrapping the text I want to be kept together in
+```html
+<span class="avoidwrap"> Text </span>
+```
+it will wrap first in preferred blocks and then in smaller fragments as needed.
+
+-  `<br>` depending on media query
+```html
+<span>Honey Nut Cheerios, <br class="rwd-break">Wheat Chex, etc.</span>
+And one line of CSS in you media query:
+```
+```css
+@media screen and (min-width: 768px) {
+    .rwd-break { display: none; }
+}
+```
+
+### prevent line from breaking
+```html
+<nobr></nobr>
+```
+```css
+whitespace: pre;
+```
+
+### scroll above anchor
+sometimes you might want to scroll a bit above your anchor.
+Since 2020 we got this beauty:
+```css
+#anchor {
+  scroll-margin-top: 100px;
+}
+```
+
+### CSS Fundamentals (and Quirks)
+- Margins will collapse any time they touch.
+That also means that the first child's margin-top will merge with the parent' margin-top. (And the last child's margin-bottom with the parent's margin-bottom.) 
+-> Use margins only between siblings.
