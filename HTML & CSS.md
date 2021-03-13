@@ -220,4 +220,24 @@ Since 2020 we got this beauty:
 ### CSS Fundamentals (and Quirks)
 - Margins will collapse any time they touch.
 That also means that the first child's margin-top will merge with the parent' margin-top. (And the last child's margin-bottom with the parent's margin-bottom.) 
--> Use margins only between siblings.
+**Tip**: Use margins only between siblings or line the parent with a padding, so that margins don't touch.
+**Note**: In flexbox and grid touching margins no longer collapse.
+- Block elements always have 
+  ```css
+  block-element {
+    height: 0;
+    width: 100%;
+  }
+  ```
+- Inline elements
+  - you can only nest other inline elements in them
+  - can't set width and height on them
+  - the only respect margin, padding and border placed on their sides, not on top and bottom.
+  **Note**: padding on top or bottom will work *in a way*: it will overlap the surrounding inline-elements.
+
+
+### CSS Boilerplate
+```css
+* {
+  margin: 0;
+}
