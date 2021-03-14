@@ -241,3 +241,23 @@ That also means that the first child's margin-top will merge with the parent' ma
 * {
   margin: 0;
 }
+```
+
+##### ... some good practices
+- always style link states! It should be super obvious that user can interact with them.
+```css
+a {
+  color: --all-link-states;
+} 
+a:visited {
+  color: --visited-link;
+}
+a:focus,
+a:hover {
+  color: --highlighted-link;
+}
+a:active {
+  color: --feedback-click;
+}
+```
+Especially if giving separate styling for every pseudo class: do them in above order! Why? Because links can have multiple states (e.g. hover and something else and if `:active` is not the last, it will _never_ work). 
