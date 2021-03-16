@@ -133,6 +133,7 @@ list of keywords: https://www.w3schools.com/sql/sql_ref_keywords.asp
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
 - JOIN - used to combine rows from two or more tables, based on a related column between them.
+  https://www.w3schools.com/sql/sql_join.asp
 
 
 #### Functions
@@ -296,10 +297,11 @@ ALTER TABLE courses MODIFY COLUMN name VARCHAR(40);
 ALTER TABLE courses MODIFY COLUMN createdAt TIMESTAMP NOT NULL
 DEFAULT CURRENT_TIMESTAMP;
 
--- delete a column from a table
-ALTER TABLE courses DROP COLUMN createdAt;
 -- delete a table
 DROP TABLE bookings;
+-- delete a column from a table
+ALTER TABLE courses DROP COLUMN createdAt;
+-- delete a row from a table
 DELETE FROM courses WHERE course_id = 3;
 
 UPDATE students

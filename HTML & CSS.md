@@ -244,7 +244,7 @@ That also means that the first child's margin-top will merge with the parent' ma
 ```
 
 ##### ... some good practices
-- always style link states! It should be super obvious that user can interact with them.
+- always style link states! It should be super obvious to the user that interaction is possible.
 ```css
 a {
   color: --all-link-states;
@@ -261,3 +261,5 @@ a:active {
 }
 ```
 Especially if giving separate styling for every pseudo class: do them in above order! Why? Because links can have multiple states (e.g. hover and something else and if `:active` is not the last, it will _never_ work). 
+
+- use padding to create the 'size' of a button, and not width and height. A ratio of 1 (top & bottom) to 2.5 (right & left) is a good rule of 👍.
