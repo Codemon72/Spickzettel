@@ -144,6 +144,15 @@ body {
   -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0004);
 }
 ```
+### Specificity
+source: https://css-tricks.com/specifics-on-css-specificity/
+
+- If the element has **inline styling**, that automatically1 wins (1,0,0,0 points)
+- For each **ID** value, apply 0,1,0,0 points
+- For each **class** value (or pseudo-class or attribute selector), apply 0,0,1,0 points
+- For each **element** reference, apply 0,0,0,1 point
+
+You can generally read the values as if they were just a number, like 1,0,0,0 is “1000”, and so clearly wins over a specificity of 0,1,0,0 or “100”. The commas are there to remind us that this isn’t really a “base 10” system, in that 0,0,1,0 would still rank higher than 0,0,0,13.
 
 ### Special Characters and Entities
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
