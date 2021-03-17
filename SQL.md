@@ -134,6 +134,21 @@ list of keywords: https://www.w3schools.com/sql/sql_ref_keywords.asp
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
 - JOIN - used to combine rows from two or more tables, based on a related column between them.
   https://www.w3schools.com/sql/sql_join.asp
+- USING
+  instead of:
+  ```sql
+  SELECT teachers.name, courses.name
+  FROM teachers
+  JOIN courses 
+  ON teachers.teacher_id = courses.teacher_id;
+  ```
+  we can go like this:
+  ```sql
+  SELECT teachers.name, courses.name
+  FROM teachers
+  JOIN courses 
+  USING(teacher_id);
+  ```
 
 
 #### Functions
@@ -384,17 +399,20 @@ ON t.teacher_id = c.teacher_id;
 -- all Clemens' teachers with JOIN
 SELECT teachers.name
 FROM teachers
-JOIN courses ON teachers.teacher_id = courses.teacher_id
-JOIN bookings ON courses.course_id = bookings.course_id
+JOIN courses 
+ON teachers.teacher_id = courses.teacher_id
+JOIN bookings 
+ON courses.course_id = bookings.course_id
 WHERE bookings.student_id = 1
 GROUP BY name DESC;
 
 -- give me all students of 'learn to code'?
 SELECT students.name
 FROM students
-JOIN bookings ON students.student_id = bookings.student_id
-JOIN courses ON bookings.course_id = courses.course_id
+JOIN bookings 
+ON students.student_id = bookings.student_id
+JOIN courses 
+ON bookings.course_id = courses.course_id
 WHERE courses.name = "Learn To Code"
 GROUP BY NAME ASC;
-
-```
+``` 
