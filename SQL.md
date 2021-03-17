@@ -133,8 +133,21 @@ list of keywords: https://www.w3schools.com/sql/sql_ref_keywords.asp
   - `WHERE NOT country = "Germany" AND NOT country = "USA";`
   - `WWHERE country IN ('Germany', 'Hungary') AND age > 25;`
 - JOIN - used to combine rows from two or more tables, based on a related column between them.
-  https://www.w3schools.com/sql/sql_join.asp
+  - LEFT JOIN returns also all (selected) data that is not connected with the right table
+  - RIGHT JOIN returns all (selected) data that is not connected with the left table
+  - FULL JOIN returns all (selected) data even if not connected to the other table
+  Example:
+  ```sql
+  SELECT teachers.name, courses.name
+  FROM courses
+  LEFT JOIN teachers 
+  ON courses.teacher_id = teachers.teacher_id;
+  ```
+  This would also show all courses who don't have a teacher_id yet (null) and therefore are not connected with the teachers table.
+  A RIGHT JOIN would also show all teachers that are not registered yet for a course.
+  A normal (INNER) JOIN only shows the courses who have that connection.
 - USING
+  when columns (foreign and primary key) in both tables are named exactly the same we can shorten our code a bit:
   instead of:
   ```sql
   SELECT teachers.name, courses.name
