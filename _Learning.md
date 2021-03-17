@@ -38,11 +38,21 @@ M.L.S. basically means "Thinking about thinking."
 
 
 
-
-
 # Humor
 
 https://www.monkeyuser.com/
+
+
+# When I'm stuck
+- zoom in and out - go really close into it, take you time to see the details, read the error message word for word OR zoom out and remind yourself about the big picture: where are you, what are you trying to achieve, what is the next step?
+- take a break
+- visualize it
+- verbalize it - talk to yourself or a colleague about what you are doing, write it down if necessary - than you can also put it on stackoverflow, etc
+- reflect about your expectations
+- back to the Kanban board, break down the ticket into smaller steps
+- write pseudo code
+- be conscious about your emotional level - you might need to take a break or do something else that will give you a success
+- when you get unstuck: reflect on how and why you got stock
 
 
 

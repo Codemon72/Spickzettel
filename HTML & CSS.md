@@ -154,6 +154,12 @@ source: https://css-tricks.com/specifics-on-css-specificity/
 
 You can generally read the values as if they were just a number, like 1,0,0,0 is “1000”, and so clearly wins over a specificity of 0,1,0,0 or “100”. The commas are there to remind us that this isn’t really a “base 10” system, in that 0,0,1,0 would still rank higher than 0,0,0,13.
 
+**Important Notes**:
+- The **universal selector (*)** has no specificity value (0,0,0,0)
+- **pseudo-elements** (e.g. :first-line) get 0,0,0,1 unlike their **psuedo-class** brethren which get 0,0,1,0
+- The **pseudo-class :not()** adds no specificity by itself, only what’s inside it’s parentheses.
+- The **!important** value appended a CSS property value is an **automatic win**. It overrides even inline styles from the markup. The only way an !important value can be overridden is with another !important rule declared later in the CSS and with equal or great specificity value otherwise. You could think of it as adding 1,0,0,0,0 to the specificity value.
+
 ### Special Characters and Entities
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
 
@@ -248,6 +254,9 @@ That also means that the first child's margin-top will merge with the parent' ma
 ### CSS Boilerplate
 ```css
 * {
+  box-sizing: border-box;
+}
+body {
   margin: 0;
 }
 ```
