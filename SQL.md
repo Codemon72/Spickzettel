@@ -203,7 +203,6 @@ Example: DECIMAL(10,4) would have 10 digits in total, with 4 of those comming af
 - BLOB - Binary Large Object
 - DATE - 'YYYY-MM-DD'
 - TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' - used for recording
-- 
 
 
 #### Data Type Specifications

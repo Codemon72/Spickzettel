@@ -1,0 +1,57 @@
+/* Hide my submenus by default */
+.my-menu ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+/* Position submenus relative to parent list item */
+.my-menu li {
+  position: relative;
+}
+
+/* Look, Ma! No onclick handler! */
+.my-menu li:hover > ul {
+  display: block;
+}
+
+/* Modern Browsers only */
+.my-menu li:focus-within > ul {
+  display: block;
+}
+
+
+
+/* DEMO STYLES */
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.my-menu {
+	display: flex;
+	justify-content: center;
+	margin: 100px auto;
+	max-width: 600px;
+	width: 80%;
+}
+
+.my-menu a {
+	display: block;
+	padding: .5em 0;
+	white-space: nowrap;
+}
+
+.my-menu a:hover {
+	text-decoration: none;
+}
+
+.my-menu a:focus {
+	outline: 2px dotted currentColor;
+	outline-offset: 3px;
+}
+
+.my-menu > li + li {
+	margin-left: 2em;
+}
