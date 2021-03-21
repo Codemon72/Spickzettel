@@ -1,0 +1,41 @@
+body {
+	background: #333;
+	font-size: 24px;
+}
+.body {
+	background: #fff;
+	padding: 50px;
+	margin: 50px auto;
+	width: 400px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+.button {
+	display: inline-block;
+	padding: 2rem 4rem;
+	font-size: 1.25rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 900;
+	background-color: darkslategray;
+	background-image: url(greens.jpeg);
+	background-position: 0 0;
+	animation: flyover 20s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused;
+  transition: background-color .25s;
+  will-change: background-position;	
+}
+.button:hover,
+.button:focus {
+	background-color: teal;
+	text-shadow: 1px 1px darkslategray;
+	animation-play-state: running;
+	// thank you https://codepen.io/mrwweb/pen/beqjvv and https://codepen.io/valhead/pen/rfump?editors=1100!
+}
+
+@keyframes flyover {
+	100% {
+		background-position: -194px -150px;
+	}
+}
