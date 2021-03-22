@@ -24,6 +24,7 @@ or
 
 ### Media Queries 
 bootstrap breakpoints
+
 ```css
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
@@ -36,6 +37,21 @@ bootstrap breakpoints
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+```
+
+tailwind breakpoints
+
+```css
+'sm': '640px',
+@media (min-width: 640px) { ... }
+'md': '768px',
+@media (min-width: 768px) { ... }
+'lg': '1024px',
+@media (min-width: 1024px) { ... }
+'xl': '1280px',
+@media (min-width: 1280px) { ... }
+'2xl': '1536px',
+@media (min-width: 1536px) { ... }
 ```
 
 bulma breakpoints (used for Small and Modern website): 
