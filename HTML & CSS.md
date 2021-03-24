@@ -81,6 +81,25 @@ Used for HCS:
 }
 ```
 
+WordPress Rocket CSS
+```css
+xs
+@media (max-width: 600px) {
+}
+sm
+@media (max-width: 900px) { 
+}
+md
+@media (max-width: 1200px) {
+}
+l
+@media (max-width: 1800px) {
+}
+xl
+@media screen and (min-width: 1800px) {
+}
+``` 
+
 #### Buttons
 - avoid outlines on click
   ```css
