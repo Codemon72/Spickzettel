@@ -57,7 +57,7 @@ source: https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
 Database Management System  
 - a special software program that helps users create and maintain a database
 
-### ERD - Entity Relationsship Diagram
+### ERD - Entity Relationship Diagram
 Useful to map out all relations in a relational database.
 
 #### Event Loop
