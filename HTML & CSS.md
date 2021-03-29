@@ -22,6 +22,7 @@ or
 * * * * * * * * * { background-color: rgba(0,0,255,.2); }
 ```
 
+---
 ### Media Queries 
 bootstrap breakpoints
 
@@ -100,6 +101,7 @@ xl
 }
 ``` 
 
+--- 
 #### Buttons
 - avoid outlines on click
   ```css
@@ -113,6 +115,7 @@ xl
 - fancy button hover effects
   - https://youtu.be/cH0TC9gWiAg?t=46
 
+--- 
 #### Blur Effect
   - apply a blur effect to something *behind* an element 
   ```css
@@ -122,13 +125,14 @@ xl
   ``` 
   source: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
 
+---
 #### _blank and noopener
 if a link is to open in a new tab it receives `target="_blank"`. 
 This apparently makes the page vulnerable to attacks.
 Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are golden.
 Source: https://web.dev/external-anchors-use-rel-noopener/
 
-
+---
 #### Form Validation
 Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
 
@@ -139,6 +143,7 @@ important terms:
 - **Server side validation** is performed by a web server, after input has been sent to the server.
 - **Client side validation** is performed by a web browser, before input is sent to a web server.
 
+---
 ### Box Shadows
 The box-shadow property applies one or more shadows to an element.
 
@@ -154,7 +159,6 @@ It takes 2 - 6 values.
 **3. blur-radius** (a radius from the most outer point of black it blurs in all directions) 
 **4. spread-radius** - how far to spread the shadow out **in all directions** _before_ starting the blur - can also take negative values
 **5. color** #00bfb3
-
 
 As a rule of thumb: on **hover** make the blur and offset-y 3 times as big as before. Natural shadows blur more the farther they are away from the surface and also the angle gets more pronounced.
 
@@ -215,7 +219,8 @@ An HTML entity is a string that begins with an `&` and ends with a `;`. Entities
 
 `&nbsp;` "non blank space"
 
-###### how to break words
+---
+### how to break words
 `&shy;`
 creates a "**s**oft **hy**phen" that only appears when the word breaks.
 Works in HTML
@@ -229,6 +234,7 @@ The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok 
 
 **Tip**: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
 
+---
 ### how to break lines in preferred places
 -  setting divs to inline-block on media query
 ```html
@@ -265,6 +271,7 @@ And one line of CSS in you media query:
 }
 ```
 
+---
 ### prevent line from breaking
 ```html
 <nobr></nobr>
@@ -273,6 +280,7 @@ And one line of CSS in you media query:
 whitespace: pre;
 ```
 
+---
 ### scroll above anchor
 sometimes you might want to scroll a bit above your anchor.
 Since 2020 we got this beauty:
@@ -281,6 +289,46 @@ Since 2020 we got this beauty:
   scroll-margin-top: 100px;
 }
 ```
+
+---
+### z-index, stacking order and stacking context
+
+- stacking order = the order in which the elements appear / are placed on the page
+
+- stacking context = a group of elements with **one common parent** that move forward or backward together in the stacking order
+
+**When elements are positioned to overlap, the element coming later in the HTML markup will, by default, appear on the top of the other elements.**
+
+- 'positioned' elements (and their childrend) are always displayed in front of 'non-positioned' elements. ('positioned' meaning other than `position: static`)
+- to give a z-index, the element has to be other than position: static
+- if you give a z-index to an element that has a parent with a z-index: there will be trouble ('stacking context', see element’s parent is in the same stacking context and is not the root element of that stacking context.
+- other things that create a new stacking context:
+      -- opacity other than 1
+      -- transform
+
+**Update**: In addition to opacity, several newer CSS properties also create stacking contexts. These include: **transforms**, **filters**, css-regions, paged media, and possibly others. As a general rule, it seems that if a CSS property requires rendering in an offscreen context, it must create a new stacking context.
+
+**The key** to avoid getting tripped up is being able to spot when new stacking contexts are formed. If you’re setting a z-index of a billion on an element and it’s not moving forward in the stacking order, **take a look up its ancestor tree and see if any of its parents form stacking contexts**. If they do, your z-index of a billion isn’t going to do you any good.
+
+#### Stacking Order Within the Same Stacking Context
+
+From back to front:
+
+1. The stacking context’s root element
+2. Positioned elements (and their children) with negative z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
+3. Non-positioned elements (ordered by appearance in the HTML)
+4. Positioned elements (and their children) with a z-index value of auto (ordered by appearance in the HTML)
+5. Positioned elements (and their children) with positive z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
+
+**Note**: positioned elements with negative z-indexes are ordered first within a stacking context, which means they appear behind all other elements. Because of this, it becomes possible for an element to appear behind its own parent, which is normally not possible. This will only work if the element’s parent is in the same stacking context and is not the root element of that stacking context.
+
+sources:
+- https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+- playground for testing: https://codepen.io/Codemon72/pen/KKagwRb
+- Docs: https://www.w3.org/TR/CSS2/zindex.html
+- Full list of stacking context scenarios: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+
+--- 
 
 ### CSS Fundamentals (and Quirks)
 - Margins will collapse any time they touch.
