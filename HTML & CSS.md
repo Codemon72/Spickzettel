@@ -133,17 +133,6 @@ Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are
 Source: https://web.dev/external-anchors-use-rel-noopener/
 
 ---
-#### Form Validation
-Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
-
-- where to show the error message: next to the input field
-- time to trigger the error: on focus change (onblur event)
-
-important terms: 
-- **Server side validation** is performed by a web server, after input has been sent to the server.
-- **Client side validation** is performed by a web browser, before input is sent to a web server.
-
----
 ### Box Shadows
 The box-shadow property applies one or more shadows to an element.
 
@@ -184,6 +173,27 @@ box-shadow:
     inset 20px 20px 20px rgba(0, 0, 0, .2);
 ```
 
+---
+### Form 
+
+- `<input type="hidden">` 
+  The <input type="hidden"> defines a hidden input field.
+  A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.
+  A hidden field often stores what database record that needs to be updated when the form is submitted.
+  **Note**: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
+
+---
+### Form Validation
+Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
+
+- where to show the error message: next to the input field
+- time to trigger the error: on focus change (onblur event)
+
+important terms: 
+- **Server side validation** is performed by a web server, after input has been sent to the server.
+- **Client side validation** is performed by a web browser, before input is sent to a web server.
+
+---
 ### Reflection
 check this out: https://youtu.be/vmpAK2h0UeQ?t=952
 ```css
