@@ -1,5 +1,7 @@
 source: https://github.com/ddbeck/readme-checklist/blob/main/checklist.md
 
+continue presentation: https://youtu.be/2dAK42B7qtw?t=797
+
 # README Checklist
 
 ## Help the reader identify the project
