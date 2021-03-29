@@ -300,13 +300,17 @@ Since 2020 we got this beauty:
 **When elements are positioned to overlap, the element coming later in the HTML markup will, by default, appear on the top of the other elements.**
 
 - 'positioned' elements (and their childrend) are always displayed in front of 'non-positioned' elements. ('positioned' meaning other than `position: static`)
-- to give a z-index, the element has to be other than position: static
+- to give a z-index, the element has to be other than `position: static`
 - if you give a z-index to an element that has a parent with a z-index: there will be trouble ('stacking context', see element’s parent is in the same stacking context and is not the root element of that stacking context.
 - other things that create a new stacking context:
-      -- opacity other than 1
-      -- transform
+      - opacity other than 1
+      - transform
+      - filter
+      - css-regions
+      - paged media
+      - possibly others...*
 
-**Update**: In addition to opacity, several newer CSS properties also create stacking contexts. These include: **transforms**, **filters**, css-regions, paged media, and possibly others. As a general rule, it seems that if a CSS property requires rendering in an offscreen context, it must create a new stacking context.
+* (As a general rule, it seems that if a CSS property requires rendering in an offscreen context, it must create a new stacking context.)
 
 **The key** to avoid getting tripped up is being able to spot when new stacking contexts are formed. If you’re setting a z-index of a billion on an element and it’s not moving forward in the stacking order, **take a look up its ancestor tree and see if any of its parents form stacking contexts**. If they do, your z-index of a billion isn’t going to do you any good.
 
@@ -314,11 +318,11 @@ Since 2020 we got this beauty:
 
 From back to front:
 
-1. The stacking context’s root element
-2. Positioned elements (and their children) with negative z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
-3. Non-positioned elements (ordered by appearance in the HTML)
-4. Positioned elements (and their children) with a z-index value of auto (ordered by appearance in the HTML)
-5. Positioned elements (and their children) with positive z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
+1. `root element` The stacking context’s root element
+2. `positioned and z-index: -` Positioned elements (and their children) with negative z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
+3. `non-positioned` Non-positioned elements (ordered by appearance in the HTML)
+4. `positioned and z-index: 0 / auto` Positioned elements (and their children) with a z-index value of auto (ordered by appearance in the HTML)
+5. `positioned and z-index: +` Positioned elements (and their children) with positive z-index values (higher values are stacked in front of lower values; elements with the same value are stacked according to appearance in the HTML)
 
 **Note**: positioned elements with negative z-indexes are ordered first within a stacking context, which means they appear behind all other elements. Because of this, it becomes possible for an element to appear behind its own parent, which is normally not possible. This will only work if the element’s parent is in the same stacking context and is not the root element of that stacking context.
 
