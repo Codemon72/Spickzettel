@@ -43,8 +43,9 @@ On terminal execute:
 echo .DS_Store >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
+###### Remove remote files
 If you have already accidentally committed it to your repository, use:
-`git rm --cached .DS_Store`
+`git rm -r --cached .DS_Store`
 
 #### rename branch
 to rename the branch you are currently on, simply do:
