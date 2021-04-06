@@ -20,7 +20,6 @@ More: http://handlebarsjs.com/
 
 #### 1.1 Basic usage.
 
-
 `{{mustache}} `                                  : Handlebars expression (variable in the current context)
 
 `{{article.title}} `                             : Handlebars expressions can also be dot-separated paths
@@ -34,14 +33,16 @@ More: http://handlebarsjs.com/
 `<!-- This comment will be in the output -->`    : This comment will be in the output
 
 
-#### 1.2 Helpers.
-
+### 1.2 Helpers.
 
 `{{{link story}}}`                               : `link` is the name of a Handlebars helper, and story is a parameter to the helper
 
 `{{{link '...' story.url}}}`                     : You can also pass a simple String as a parameter to Handlebars helpers.
 
 `{{{link "..." href=story.url class="story"}}}`  : Handlebars helpers can also receive an optional sequence of key-value pairs as their final parameter
+
+#### Create and Register Custom Helper
+source: https://www.npmjs.com/package/express-handlebars#helpers
 
 
 #### 1.3. Subexpressions.
