@@ -216,6 +216,10 @@ body {
 - https://css-tricks.com/comparing-browsers-for-responsive-design/
 
 ---
+### Social Media Tags
+- https://css-tricks.com/essential-meta-tags-social-media/#final-markup
+
+---
 ### Specificity
 source: https://css-tricks.com/specifics-on-css-specificity/
 
