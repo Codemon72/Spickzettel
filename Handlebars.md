@@ -1,5 +1,7 @@
 Official page: https://handlebarsjs.com/
 Cheat sheet I like: https://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes
+good source:  LeCoupa:
+https://gist.github.com/LeCoupa/6176077a9a8e2ad00eda
 
 Handlebars is a simple **templating language**.
 
@@ -8,8 +10,6 @@ It uses a template and an input object to generate HTML or other text formats. H
 - can be downloaded or integrated with [CDN](https://handlebarsjs.com/guide/#installation).
 
 
-#### From LeCoupa:
-https://gist.github.com/LeCoupa/6176077a9a8e2ad00eda
 
 Handlebars is a semantic web template system, started by Yehuda Katz in 2010.
 Handlebars.js is a superset of Mustache, and can render Mustache templates in addition to Handlebars templates.
@@ -33,16 +33,20 @@ More: http://handlebarsjs.com/
 `<!-- This comment will be in the output -->`    : This comment will be in the output
 
 
-### 1.2 Helpers.
+### Helpers.
+#### Block Helpers
+Docs: https://handlebarsjs.com/guide/block-helpers.html#basic-blocks
 
-`{{{link story}}}`                               : `link` is the name of a Handlebars helper, and story is a parameter to the helper
+#### Built-In Helpers
+Docs: https://handlebarsjs.com/guide/builtin-helpers.html#built-in-helpers
+Handlebars has built-in Helpers like `#if`, `#unless`, `#each`, `#with`, `lookup` and `log`.
 
-`{{{link '...' story.url}}}`                     : You can also pass a simple String as a parameter to Handlebars helpers.
-
-`{{{link "..." href=story.url class="story"}}}`  : Handlebars helpers can also receive an optional sequence of key-value pairs as their final parameter
+Helpers can be used to implement functionality that is not part of the Handlebars language itself.
+Docs: https://handlebarsjs.com/guide/expressions.html#helpers
 
 #### Create and Register Custom Helper
 source: https://www.npmjs.com/package/express-handlebars#helpers
+
 
 
 #### 1.3. Subexpressions.
