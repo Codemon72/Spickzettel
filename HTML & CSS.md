@@ -318,23 +318,30 @@ Since 2020 we got this beauty:
 - stacking order = the order in which the elements appear / are placed on the page
 
 - stacking context = a group of elements with **one common parent** that move forward or backward together in the stacking order
+The main point about stacking contexts is that z-index can be used to rearrange the stacking order of elements **only inside their own stacking context**. 
+Elements from different stacking contexts are therefore never interleaved in the final stacking order.
+When a stacking context is created, it “flattens” all of its descendants. Those children can still be rearranged internally, but we've essentially locked those children in.
 
 **When elements are positioned to overlap, the element coming later in the HTML markup will, by default, appear on the top of the other elements.**
 
 - 'positioned' elements (and their childrend) are always displayed in front of 'non-positioned' elements. ('positioned' meaning other than `position: static`)
 - to give a z-index, the element has to be other than `position: static`
-- if you give a z-index to an element that has a parent with a z-index: there will be trouble ('stacking context', see element’s parent is in the same stacking context and is not the root element of that stacking context.
+- if you give a z-index to an element that has a parent with a z-index: there might be trouble (see: 'stacking context')
+-  z-index still respects parent’s overflow. If you still can’t see something despite a z-index in the millions, check it’s not being cropped by an `overflow:hidden`.
 - other things that create a new stacking context:
       - opacity other than 1
       - transform
       - filter
+      - contain
+      - `isolation: isolate;`
+      - mix-blend-mode
       - css-regions
       - paged media
       - possibly others...*
 
 * (As a general rule, it seems that if a CSS property requires rendering in an offscreen context, it must create a new stacking context.)
 
-**The key** to avoid getting tripped up is being able to spot when new stacking contexts are formed. If you’re setting a z-index of a billion on an element and it’s not moving forward in the stacking order, **take a look up its ancestor tree and see if any of its parents form stacking contexts**. If they do, your z-index of a billion isn’t going to do you any good.
+**The key** to avoid getting tripped up is being able to spot when new stacking contexts are formed. If you’re setting a z-index of a billion on an element and it’s not moving forward in the stacking order, **take a look up its ancestor tree and see if any of its parents form stacking context**. If they do, your z-index of a billion isn’t going to do you any good.
 
 #### Stacking Order Within the Same Stacking Context
 
@@ -348,7 +355,12 @@ From back to front:
 
 **Note**: positioned elements with negative z-indexes are ordered first within a stacking context, which means they appear behind all other elements. Because of this, it becomes possible for an element to appear behind its own parent, which is normally not possible. This will only work if the element’s parent is in the same stacking context and is not the root element of that stacking context.
 
-sources:
+##### helpful tools:
+- VSCode Extension: https://marketplace.visualstudio.com/items?itemName=felixfbecker.css-stacking-contexts
+- Chrome Browser Extension: https://chrome.google.com/webstore/detail/z-context/jigamimbjojkdgnlldajknogfgncplbh
+
+##### sources:
+- https://www.joshwcomeau.com/css/stacking-contexts/
 - https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
 - playground for testing: https://codepen.io/Codemon72/pen/KKagwRb
 - Docs: https://www.w3.org/TR/CSS2/zindex.html
