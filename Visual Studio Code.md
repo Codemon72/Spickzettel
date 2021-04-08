@@ -1,6 +1,19 @@
+### Extensions I've Used and Loved
 
+- Auto Rename Tag
+- Bracket Pair Colorizer
+- Git Blame
+- Live Server
+- Markdown Preview Enhanced
+- Markdown Shortcuts
+- Prettier
+- ESLint
+- Live Share
+- Highlight Matching Tag
+- Remote Containers // for Dockers
+___
 
-#### Shortcuts (for Mac)
+### Shortcuts (for Mac)
 
 typing:
 `div.number.number$*12{$}` will generate:

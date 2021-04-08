@@ -1,10 +1,8 @@
-for version control
-
 recommended article: [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
 
 # Git and GitHub Cheatsheet
 
-Set new alias
+### Set new alias
 `git config --global alias.co checkout` 
 or (probably for more complex ones):
 `git config --global alias.acm '!git add -A && git commit -m'`
@@ -18,6 +16,7 @@ sources:
 - `git config --list` - List all config parameters
 
 - `git log` - logs commit history
+___
 
 #### Gitignore file
 
@@ -46,8 +45,9 @@ git config --global core.excludesfile ~/.gitignore_global
 ###### Remove remote files
 If you have already accidentally committed it to your repository, use:
 `git rm -r --cached .DS_Store`
+___
 
-#### rename branch
+#### Rename Branch
 to rename the branch you are currently on, simply do:
 
 `git branch -m <newname>` - to remember this is -m is for "move" (or mv), which is how you rename files.
