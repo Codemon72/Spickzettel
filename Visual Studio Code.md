@@ -16,6 +16,7 @@ ___
 ### Shortcuts (for Mac)
 
 - `CMD + J` - open terminal
+- `CMD + P` - open file (start typing name...)
 
 typing:
 `div.number.number$*12{$}` will generate:
