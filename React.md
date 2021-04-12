@@ -1,5 +1,6 @@
-A JavaScript library for building user interfaces
+A JavaScript library / framework for building user interfaces
 
+- Crash Course 2021 by Brad Traversy: https://www.youtube.com/watch?v=w7ejDZ8SWv8
 - excellent tutorial by Mike Dane: https://www.youtube.com/watch?v=ABQLwlE8MUA
 - freeCodeCamp Tutorial: https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/
 
@@ -8,7 +9,7 @@ It is basically a representation of all the HTML as a JavaScript Object.
 In JavaScript you can refer to it with 'document':
 `console.log(document)`
 
-At the end of the day all that React is doing is manipulationg the DOM. It is just really doing it in a really smart and fast and efficient way. 
+At the end of the day all that React is doing is manipulationg the DOM. It is just doing it in a really smart and fast and efficient way. 
 
 Implementing React gives us 2 new global variables to work with: `React` and `ReactDOM`. 
 Both of them give us a whole library of methods and objects.
@@ -33,7 +34,15 @@ explained: `ReactDOM` has a function `render()` that takes 2 arguments:
 2. where to display it
 
 Context Knowledge: There is also `ReactNative` which could e.g. render it to a mobile device. 
+___
 
+### Working With State
+- components can have 'state' which is an object that determines how a component renders and behaves
+- "App" or "global" state refers to state that is available to the entire UI, not just a single component.
+- Prior to React 16.8 we had tu use class based components to use state. 
+Now we can use functional components with hooks.
+
+___
 #### JSX and Babel
 - JSX = JavaScript Syntax Extension
 - conveniently looks like HTML but isn't. 
@@ -60,10 +69,12 @@ const myJSXElement = (
 )
 ```
 
+___
 #### Components and Elements
 - components are functions that return JSX
 - by convention they begin with a capital letter
 
+___
 #### Hooks
 Hooks are ways that you can tell React what's going on in your program or that you can respond to things that are happening in the program. 
 - **Note**: React wants to updates the DOM only when absolutely **necessary**. It's only gonna do that when we explicitly tell it to. And the way that we can tell it to do that is by using what is called a React Hook.
@@ -110,6 +121,7 @@ import AContext from './AContext'
 const value = useContext(AContext);
 ```
 
+___
 #### Conditional Rendering
 Consider you want to render something only when certain conditions are met. E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
 There are different ways to do it:
@@ -172,6 +184,7 @@ There are different ways to do it:
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
 
+___
 #### Props
 Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
 - Syntax: 
@@ -209,7 +222,7 @@ Props are values that can be passed into a component to be used for whatever. By
   };
   ```
 
-
+___
 #### Forms and Input fields
 HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
 
@@ -257,10 +270,7 @@ We leverage that by registering that in a variable:
   </select>
   ```
 
-
-
-
-
+___
 #### A Couple Of Examples
 
 - event handlers /  attaching a function to an HTML element
@@ -383,18 +393,20 @@ ReactDOM.render(<App />, reactContentRoot);
     ...
   ```
 
+___
 #### Installation
 
 - install react globally with `npm install -g create-react-app` 
 - by creating an instant with `create-react-app example-repo` you autmatically get
-  - a repository named example-folder
+  - a repository named example-repo
   - a Node application
   - git initialized
   - JSX
   - transpiler for JSX
-  - (tutorials with `npx create-react-app example-repo` do that kindly for everyone who has not or doesn't want to install React globally.)
 
+**Note**: `npx create-react-app example-repo` for everyone who has not or doesn't want to install React globally
 
+___
 #### Packages I Have Used And Loved
 ... or that someone more experienced recommended to me:
 - `react-router-dom` - (import { BrowserRouter as Router, Route, useLocation)
