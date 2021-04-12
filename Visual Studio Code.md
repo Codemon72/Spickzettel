@@ -15,6 +15,8 @@ ___
 
 ### Shortcuts (for Mac)
 
+- `CMD + J` - open terminal
+
 typing:
 `div.number.number$*12{$}` will generate:
 ```html
