@@ -18,6 +18,7 @@ ___
 - `CMD + J` - open terminal
 - `CMD + P` - open file (start typing name...)
 - `ALT + CMD + (up or down)` - expand cursor over more lines up or down
+- `SHIFT + ALT + (up or down)` - copy whole line up or down
 
 
 typing:
