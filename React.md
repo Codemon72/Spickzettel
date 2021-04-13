@@ -43,12 +43,13 @@ ___
 Now we can use functional components with hooks.
 
 ___
-#### JSX and Babel
+### JSX and Babel
 - JSX = JavaScript Syntax Extension
 - conveniently looks like HTML but isn't. 
 - not part of JavaScript
 - needs a transpiler (e.g. Babel) which will transpile it into React code
   - try it out: https://babeljs.io/repl
+  - transpiler is included when using `create-react-app`
 - 'syntactic sugar'
 JSX is a syntax used to replicate stuff like this: 
 
@@ -68,6 +69,14 @@ const myJSXElement = (
   </ul>
 )
 ```
+#### JSX ain't HTML
+remember:
+- `className` instead of `class` attribute
+- `htmlFor` instead of `for` attribute
+
+#### Tipps
+- recommended VSC extension: ES7 React/Redux/GraphQL/React-Native snippets
+  - gives the shortcut `rafce` for arrow function component that exports at bottom
 
 ___
 #### Components and Elements
@@ -397,7 +406,7 @@ ___
 #### Installation
 
 - install react globally with `npm install -g create-react-app` 
-- by creating an instant with `create-react-app example-repo` you autmatically get
+- by creating an instance with `create-react-app example-repo` you autmatically get
   - a repository named example-repo
   - a Node application
   - git initialized
