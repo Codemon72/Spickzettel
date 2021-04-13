@@ -73,6 +73,7 @@ const myJSXElement = (
 remember:
 - `className` instead of `class` attribute
 - `htmlFor` instead of `for` attribute
+- `style={{ color: 'red', backgroundColor: 'black' }}` for inline styling
 
 #### Tipps
 - recommended VSC extension: ES7 React/Redux/GraphQL/React-Native snippets
