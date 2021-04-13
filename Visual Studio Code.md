@@ -11,6 +11,8 @@
 - Live Share
 - Highlight Matching Tag
 - Remote Containers // for Dockers
+- ES7 React/Redux/GraphQL/React-Native snippets 
+  - gives the shortcut `rafce` for arrow function component that exports at bottom
 ___
 
 ### Shortcuts (for Mac)
