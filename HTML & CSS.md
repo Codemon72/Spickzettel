@@ -125,6 +125,10 @@ xl
   ``` 
   source: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
 
+___
+### Custom Checkbox
+- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+
 ---
 #### _blank and noopener
 if a link is to open in a new tab it receives `target="_blank"`. 
