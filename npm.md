@@ -18,6 +18,9 @@ From stackoverflow: It stores an exact, versioned dependency tree rather than us
 
 `npm install example-package --save-dev ` - `--save-dev` tells npm to add the third-party package to the package's development dependencies (in package.json).
 
+#### install multiple packages
+`npm install express body-parser sequelize`
+
 **Tipp**: run `npm docs example_package_name` to visit the official README file in the browser.
 
 ### Optional knowledge
