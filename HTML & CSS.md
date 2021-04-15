@@ -370,7 +370,26 @@ From back to front:
 - Docs: https://www.w3.org/TR/CSS2/zindex.html
 - Full list of stacking context scenarios: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
 
---- 
+___
+### Cool and Fancy
+
+##### CSS only dark mode
+https://www.youtube.com/watch?v=_yCgeXFAXTM
+
+##### Animated Gradients
+https://www.youtube.com/watch?v=f3mwKLXpOLk
+
+##### Clipping an image to your text
+https://www.youtube.com/watch?v=9Kr3T4Ndl-o
+
+##### shape-outside
+https://www.youtube.com/watch?v=X1dz0xRbSJc
+
+##### Masonry layout
+https://www.youtube.com/watch?v=KrPz_wmBsAE
+ 
+
+___
 
 ### CSS Fundamentals (and Quirks)
 - Margins will collapse any time they touch.
