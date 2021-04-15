@@ -1,8 +1,11 @@
 A JavaScript library / framework for building user interfaces
 
+### Tutorials and Documentation
 - Crash Course 2021 by Brad Traversy: https://www.youtube.com/watch?v=w7ejDZ8SWv8
 - excellent tutorial by Mike Dane: https://www.youtube.com/watch?v=ABQLwlE8MUA
 - freeCodeCamp Tutorial: https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/
+- Docs create-react-app: https://create-react-app.dev/docs/getting-started
+- Docs react: https://reactjs.org/docs/getting-started.html
 
 Every browser that loads your HTML & CSS creates a **D**ocument **O**bject **M**odel. 
 It is basically a representation of all the HTML as a JavaScript Object.
