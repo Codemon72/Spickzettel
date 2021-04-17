@@ -1,16 +1,21 @@
-and abbreviations
 
-#### API
+### API
 An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application which shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
 
-#### API Proxy
+___
+
+### API Proxy
 An API proxy is your interface to developers that want to use your backend services. Rather than having them consume those services directly, they access an Edge API proxy that you create.
 API proxies decouple the app-facing API from your backend services, shielding those apps from backend code changes. As you make backend changes to your services, apps continue to call the same API without any interruption.
 
-#### BLOB 
+___
+
+### BLOB 
 Binary Large Object
 
-#### Client Side Validation
+___
+
+### Client Side Validation
 
 With Client Side Validation you can provide a better user experience by responding quickly at the browser level. When you perform a Client Side Validation, all the user inputs are validated in the user's browser itself. Client Side validation does not require a round trip to the server. This type of validation is done on the browser side using script languages such as JavaScript, VBScript or HTML5 attributes.
 
@@ -18,7 +23,9 @@ Example: if the user enters an invalid email format, you can show an error messa
 
 Mostly the Client Side Validation depends on the JavaScript Language, so if users turn JavaScript off, it can easily bypass and submit dangerous input to the server. Client Side Validation can not protect your application from malicious attacks on your server resources and databases.
 
-#### Connection Pooling
+___
+
+### Connection Pooling
 You create a number of connections (for example to a database) which are always on and ready to use. If one of your functions needs to connect to the database, it can grab one out of the pool and as soon as the function is done the connection gets returned to the pool and is available again.
 
 ELI5: Think of it like a library: you take out a book when you need it and return it to the library when you are done with it. 
@@ -47,57 +54,104 @@ async function asyncFunction() {
   }
 };
 ```
-#### CORS
+___
+
+### CORS
 CORS stands for Cross-Origin Resource Sharing. It's a mechanism that restricts requests coming from a different origin (domain). A request coming from a different origin is known as a cross-origin request. Cross-origin requests are vital for when your site needs to load data from other services.
 
 CORS allows servers to specify who can access their resources and how. Browsers follow the servers' policies by sending a test request (preflight) to the server and checking whether it's allowed.
 source: https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
 
-#### DBMS
+##### More in-depth and ELI5 
+source: https://dev.to/dougblackjr/cors-in-a-way-i-can-understand-501d
+**My Imperfect Metaphor**
+My wife and I need to step out of the house and we leave our 10 year old daughter in charge.
+
+**Why You Need CORS**
+We don't give our daughter any instructions on who to let in and what they can do. Stranger knocks on door, daughter lets stranger in. Stranger invites more strangers, robs our house, spray paints the cat, and steals our personal information.
+
+CORS gives a framework of who is allowed in and allowed to call whom.
+
+**Setting the Access-Control-Allow-Origin**
+We tell our daughter, "Don't allow anyone in except for Miss Patty (our neighbor)." A knock at the door happens, and our daughter asks who it is. She then can make a decision based on who we told her to allow in.
+
+This allows you to tell the browser which sites you will allow in.
+
+**Setting the Access-Control-Allow-Credentials**
+We tell our daughter, "Don't allow anyone in except for Miss Patty, or anyone who knows our secret code word."
+
+Typically CORS doesn't include cookies or other authentication in its requests. Setting this to true throws cookies in the request as well.
+
+**Setting the Access-Control-Allow-Methods**
+We tell our daughter, "You can invite one friend over, but they can't paint the wall."
+
+This tells the CORS request to allow which methods of request: GET, POST, PUT, DELETE. So, if you wanted a site to do a GET, but not to update anything, you can do that.
+
+**Setting the Access-Control-Max-Age**
+We tell our daughter, "You can invite one friend over, but they have to leave at 6 PM."
+
+This one is really imperfect. This sets the value in seconds to cache preflight request results, such as the data in Access-Control-Allow-Headers and Access-Control-Allow-Methods headers.
+___
+
+### DBMS
 Database Management System  
 - a special software program that helps users create and maintain a database
+___
 
 ### ERD - Entity Relationship Diagram
 Useful to map out all relations in a relational database.
+___
 
-#### Event Loop
+### Event Loop
 ![Event Loop](/images/Event_Loop.png)
 In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+___
 
-#### GUI
+### GUI
 Graphic User Interface
+___
 
-#### Heap
+### Heap
 The heap is used for data allocated dynamically, for anything that needs to persist across function calls.
 The heap grows when you allocate memory in your program, and shrinks when you deallocate it. In languages like C and C++, you must manually deallocate memory or use objects that keep track of heap allocation for you.
+___
 
-#### MVP
+### MVP
 
 minimal viable product
+___
 
-#### MVC
+### MVC
 stands for Model, View, Controller
 - Model is the data of your application.
 - View is the presentation of the data.
 - Controller is the brains/logic of your application.
 ELI5: For instance, you're a car dealership, with many different cars in your inventory (model). When a customer asks to see a car, you (controller) look in the inventory (model), retrieve the car and present it to the customer (view).
 
-#### NRDBMS
+___
+
+### NRDBMS
 Non-Relational Database Management System
 
-#### ORM
+___
+
+### ORM
 An **object-relational mapper** is a library for an object-oriented programming language which aids in translating between that language's memory objects and a relational database.
 
 If you write your software well, you are going to package up all of your SQL calls into methods which take parameters in the language you are working with. You will want to save object instances as rows in your database (perhaps across several joined tables) and it shouldn't take too much information to store them there or retrieve them later. An ORM is simply a library which has done all of this work for you and creates a (hopefully) tidy API to do it with.
 
-#### Parsing
+___
+
+### Parsing
 ELI5: Ifyoureadthisstreamoflettersyoucanprobablystillunderstandwhatiamsaying.
 
 Your brain is parsing that long string of letters. It breaks it apart in to words, then as it assigns meaning to the words to form complete sentences.
 
 Parsing in computer syntax analysis works much the same way. You have some data that the computer can't really use in its current form: takes it in using some specified method, and assigns some meaning or arranges the data in to some structure it can utilize.
 
-#### REST API
+___
+
+### REST API
 A restful API is just any API that obeys the REST standard. 
 Representational State Transfer (REST) is a set of commands commonly used with web transactions.
 
@@ -139,13 +193,19 @@ Tipp: You can test an API in 'Postman' or in 'Rested' (extension in Chrome)
 
 Tipp from reddit (untested): the easiest way to create a REST message is to use something called cUrl.
 
-#### REPL
+___
+
+### REPL
 A read–eval–print loop (REPL), also termed an interactive toplevel or language shell, is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user; a program written in a REPL environment is executed piecewise. The term is usually used to refer to programming interfaces similar to the classic Lisp machine interactive environment. Common examples include command line shells and similar environments for programming languages, and the technique is very characteristic of scripting languages.
 
-#### RDBMS
+___
+
+### RDBMS
 Relational Database Management System
 
-#### Runtime
+___
+
+### Runtime
 There are multiple uses for the word "runtime", and each one is slightly different. Here are some definitions:
 
 **At runtime**: Things that happen when the program executes are said to happen "at runtime".
@@ -156,8 +216,9 @@ There are multiple uses for the word "runtime", and each one is slightly differe
 
 **Runtime library**: A library which is used by the compiler to invoke interactions with the runtime environment.
 
+___
 
-#### Server
+### Server
 A **server is a computer, a device or a program** that is dedicated to managing network resources. They are called that because they “serve” another computer, device, or program called “client” to which they provide functionality.
 
 **dedicated hosting** [Dedicated hosting is an Internet hosting option in which an organization leases an entire server.](https://www.techopedia.com/definition/23354/dedicated-hosting)
@@ -165,10 +226,14 @@ A **server is a computer, a device or a program** that is dedicated to managing 
 
 Go here for a: [really good ELI5 answer](https://www.reddit.com/r/explainlikeimfive/comments/650bre/eli5_what_exactly_is_a_server_how_does_a_server/)
 
-#### Server Side Validation
+___
+
+### Server Side Validation
 With Server Side Validation, the input submitted by the user is being sent to the server and validated using one of the server side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page. It is better to validate user input on the server side because you can protect against malicious users, who can easily bypass your Client Side scripting language and submit dangerous input to the server.
 
-#### SSL
+___
+
+### SSL
 Secure Sockets Layer
 ELI5: If you want to pass a note from you all the way across the room to Suzy. Normally, you just pass the note and say "get it to suzy" and the kids in the room will keep pushing it towards her until she gets it. The problem is, the teacher or anyone who gets the note can just open it up and read it.
 
@@ -189,13 +254,17 @@ There are two different kinds of SSL authentication:
 - One-Way SSL Authentication: The client verifies the certificate of the server. This allows you to encrypt all exchanges and make sure that you are connecting to the expected server (to avoid a man-in-the-middle attack).
 - Two-Way SSL Authentication The client verifies the certificate of the server, the server verifies the certificate of the client. This is also called mutual authentication or client authentication. When using this system, the client also requires a dedicated certificate.
 
-#### Stack
+___
+
+### Stack
 The stack grows with the depth of function calls, and shrinks with function exits.   
 A stack overflow happens when you've made too many function calls without exits.
 In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 
 
-#### TSL
+___
+
+### TSL
 Transport Layer Security protocol  
 TLS/SSL allows for transfer encryption, and can optionally use identity validation for the server and client.
 
