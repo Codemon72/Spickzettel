@@ -2,7 +2,7 @@ is a package manager for JavaScript - not the only one but the most popular one.
 
 npm - node package manager
 
-#### workflow
+### workflow
 - create empty folder 
   (without special characters like hyphen? 🤔 - had a problem when running npm init -y)
 - `cd` into it
@@ -18,14 +18,16 @@ From stackoverflow: It stores an exact, versioned dependency tree rather than us
 
 `npm install example-package --save-dev ` - `--save-dev` tells npm to add the third-party package to the package's development dependencies (in package.json).
 
-#### install multiple packages
+### install multiple packages
 `npm install express body-parser sequelize`
+
+### uninstall package
+`npm uninstall example-package`
+Docs: https://docs.npmjs.com/cli/v7/commands/npm-uninstall
 
 **Tipp**: run `npm docs example_package_name` to visit the official README file in the browser.
 
-### Optional knowledge
-
-#### '--save' flag
+### '--save' flag
 As of npm 5.0.0, installed modules are added as a dependency by default, so the --save option is no longer needed. The other save options still exist and are listed in the documentation for npm install.
 
 Before version 5, NPM simply installed a package under node_modules by default. When you were trying to install dependencies for your app/module, you would need to first install them, and then add them (along with the appropriate version number) to the dependencies section of your package.json.
