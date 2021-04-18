@@ -24,7 +24,9 @@ or
 
 ---
 ### Media Queries 
-bootstrap breakpoints
+- article from CSS-Tricks: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+##### bootstrap breakpoints
 
 ```css
 // Small devices (landscape phones, 576px and up)
@@ -40,7 +42,7 @@ bootstrap breakpoints
 @media (min-width: 1200px) { ... }
 ```
 
-tailwind breakpoints
+##### tailwind breakpoints
 
 ```css
 'sm': '640px',
@@ -55,7 +57,7 @@ tailwind breakpoints
 @media (min-width: 1536px) { ... }
 ```
 
-bulma breakpoints (used for Small and Modern website): 
+##### bulma breakpoints (used for Small and Modern website): 
 
 ```css
 @media only screen and (min-width: 769px) {
@@ -68,7 +70,7 @@ bulma breakpoints (used for Small and Modern website):
 }
 ```
 
-Used for HCS:
+##### Used for HCS:
 ```css
 @media only screen and (min-width: 480px) {
 }
@@ -82,7 +84,7 @@ Used for HCS:
 }
 ```
 
-WordPress Rocket CSS
+##### WordPress Rocket CSS
 ```css
 xs
 @media (max-width: 600px) {
@@ -101,8 +103,38 @@ xl
 }
 ``` 
 
---- 
-#### Buttons
+#### finding my own approach...
+- from stackoverflow: "Rather than try to target @media rules at specific devices, it is arguably more practical to base them on your particular layout instead. That is, gradually narrow your desktop browser window and observe the natural breakpoints for your content. It's different for every site. As long as the design flows well at each browser width, it should work pretty reliably on any screen size (and there are lots and lots of them out there.)"
+
+##### for orientation
+
+```css
+<-- Mobile devices -->
+<-- no query  -->
+
+<-- Mobile landscape and small devices -->
+@media screen and (min-width: 480px) {
+}
+
+<-- iPads, Tablets -->
+@media screen and (min-width: 768px) {
+}
+
+<-- small laptops, tablets landscape -->
+@media screen and (min-width: 1024px) {
+}
+
+<-- Desktops and laptops -->
+@media only screen  and (min-width : 1224px) {
+}
+
+<-- larger screens -->
+@media only screen  and (min-width : 1824px) {
+}
+```
+___
+
+### Buttons
 - avoid outlines on click
   ```css
   ::-moz-focus-inner {
@@ -116,7 +148,7 @@ xl
   - https://youtu.be/cH0TC9gWiAg?t=46
 
 --- 
-#### Blur Effect
+### Blur Effect
   - apply a blur effect to something *behind* an element 
   ```css
     opacity: .9;
