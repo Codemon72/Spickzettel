@@ -23,6 +23,9 @@ From stackoverflow: It stores an exact, versioned dependency tree rather than us
 
 ### uninstall package
 `npm uninstall example-package`
+
+Can also be done globally, without removing it from package.json, etc.
+
 Docs: https://docs.npmjs.com/cli/v7/commands/npm-uninstall
 
 **Tipp**: run `npm docs example_package_name` to visit the official README file in the browser.
