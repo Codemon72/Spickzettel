@@ -111,6 +111,13 @@ ___
 Graphic User Interface
 ___
 
+### [HMR] Waiting for update signal from WDS... 
+... is not an error. 
+**HMR**: Hot Module Reload. 
+**WDS**: Webpack Dev Server. This is just saying it's ready to refresh when you save a file so you don't need to manually refresh.
+
+___
+
 ### Heap
 The heap is used for data allocated dynamically, for anything that needs to persist across function calls.
 The heap grows when you allocate memory in your program, and shrinks when you deallocate it. In languages like C and C++, you must manually deallocate memory or use objects that keep track of heap allocation for you.
