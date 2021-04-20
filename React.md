@@ -255,7 +255,8 @@ We leverage that by registering that in a variable:
         type="text" 
         value={changeValue} 
         onChange={handleInputChange} 
-      ...
+      // ...
+      />
     )
   }
   ```
