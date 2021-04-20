@@ -236,54 +236,110 @@ Props are values that can be passed into a component to be used for whatever. By
   ```
 
 ___
-#### Forms and Input fields
+### Forms and Input fields
 HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
 
-- `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
+#### single input field
+`<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
 We leverage that by registering that in a variable:
-  ```js
-  const Form = () => {
-    const [changeValue, setChangeValue] = useState('');
+```js
+const Form = () => {
+  const [changeValue, setChangeValue] = useState('');
 
-    const handleInputChange = (event) => {
-      setChangeValue(event.target.value);
-    };
+  const handleInputChange = (event) => {
+    setChangeValue(event.target.value);
+  };
 
-    return = (
-      ...
-      <input 
-        type="text" 
-        value={changeValue} 
-        onChange={handleInputChange} 
-      // ...
-      />
-    )
+ return = (
+   // ...
+     <input 
+       type="text" 
+       value={changeValue} 
+       onChange={handleInputChange} 
+     // ...
+     />
+  )
+}
+```
+#### select - option
+might seem complex on first glance, but is quite simple
+- instead of choosing an option with the `selected`attribute, the select element gets a value that willdetermine the presented option on first loading
+- capture the selected option in a `useState` 
+- give the select element a function that gets triggered`onChange`.
+- handle all that you fancy in that function
+```js
+const [selected, setSelected] = useState("coconuts");
+
+const handleSelectorChange = (event) => {
+  setSelected(event.target.value);
+  setChangeValue('')
+  // other stuff ...
+};            
+
+<select 
+  id="selector" 
+  value={selected} 
+  onChange={handleSelectorChange}>
+    <option value="bananas">🍌 🐒</option>
+    <option value="coconuts">🥥 🌴</option>
+</select>
+```
+
+#### Handling multiple input fields
+You can handle multiple input fields in a single state. This example uses the `name` attribute of the input fields.
+
+```js
+const [formState, setFormState] = useState({
+    start_date: '',
+    end_date: ''
+  });
+
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    setFormState({
+      ...formState,
+      [event.target.name]: value
+    });
+  };       
+
+  const handleAddCourse = (e) => {
+    e.preventDefault()
+    setFormState({
+      start_date: '',
+      end_date: ''
+    })
+    // ...
   }
-  ```
-- select - option
-  might seem complex on first glance, but is quite simple
-  - instead of choosing an option with the `selected` attribute, the select element gets a value that will determine the presented option on first loading
-  - capture the selected option in a `useState` 
-  - give the select element a function that gets triggered `onChange`.
-  - handle all that you fancy in that function
-  ```js
-  const [selected, setSelected] = useState("coconuts");
 
-  const handleSelectorChange = (event) => {
-    setSelected(event.target.value);
-    setChangeValue('')
-    // other stuff ...
-  };            
+  return (
+    //...
 
-  <select 
-    id="selector" 
-    value={selected} 
-    onChange={handleSelectorChange}>
-      <option value="bananas">🍌 🐒</option>
-      <option value="coconuts">🥥 🌴</option>
-  </select>
-  ```
+    <form onSubmit={handleAddCourse}>
 
+    <div>
+      <label htmlFor="start_date">Start Date</label>
+      <input 
+        type="date"
+        name="start_date"
+        value={formState.start_date}
+        onChange={handleInputChange}
+        />
+    </div>
+    <div>
+      <label htmlFor="end_date">End Date</label>
+      <input 
+        type="date"
+        name="end_date"
+        value={formState.end_date}
+        onChange={handleInputChange}
+        />
+    </div>
+      
+    <input type="submit" />
+
+  </form>
+)
+```
 ___
 #### A Couple Of Examples
 
