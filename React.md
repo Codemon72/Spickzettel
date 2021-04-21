@@ -238,6 +238,7 @@ Props are values that can be passed into a component to be used for whatever. By
 ___
 ### Forms and Input fields
 HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
+good source: https://reactjs.org/docs/forms.html
 
 #### single input field
 `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
@@ -340,6 +341,10 @@ const [formState, setFormState] = useState({
   </form>
 )
 ```
+sources:
+- https://reactjs.org/docs/forms.html#handling-multiple-inputs
+- https://www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react
+
 ___
 #### A Couple Of Examples
 
