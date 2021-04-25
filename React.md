@@ -492,3 +492,4 @@ ___
 - `styled-components` - (recommended by Jonas Reitmann)
 - React Query (for HTTP calls) - (recommended by Jonas Reitmann)
 - `react-spring` - for animations (Traversy: https://www.youtube.com/watch?v=S8yn3-WpVV8)
+- `react-server` - Get a full fake REST API with zero coding https://www.npmjs.com/package/json-server (The Net Ninja: https://www.youtube.com/watch?v=eao7ABGFUXs&t=121s)
