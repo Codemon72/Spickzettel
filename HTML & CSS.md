@@ -1,3 +1,8 @@
+sources:
+- https://www.w3.org/wiki/CSS/Properties
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index
+- https://www.w3schools.com/css/default.asp
+
 ### Layout Debugger
 ```css
 * { outline: 2px dotted red }
@@ -22,7 +27,7 @@ or
 * * * * * * * * * { background-color: rgba(0,0,255,.2); }
 ```
 
----
+___
 ### Media Queries 
 - article from CSS-Tricks: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 
@@ -147,7 +152,7 @@ ___
 - fancy button hover effects
   - https://youtu.be/cH0TC9gWiAg?t=46
 
---- 
+___ 
 ### Blur Effect
   - apply a blur effect to something *behind* an element 
   ```css
@@ -161,14 +166,14 @@ ___
 ### Custom Checkbox
 - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
----
+___
 #### _blank and noopener
 if a link is to open in a new tab it receives `target="_blank"`. 
 This apparently makes the page vulnerable to attacks.
 Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are golden.
 Source: https://web.dev/external-anchors-use-rel-noopener/
 
----
+___
 ### Box Shadows
 The box-shadow property applies one or more shadows to an element.
 
@@ -209,7 +214,7 @@ box-shadow:
     inset 20px 20px 20px rgba(0, 0, 0, .2);
 ```
 
----
+___
 ### Form 
 
 - `<input type="hidden">` 
@@ -218,7 +223,7 @@ box-shadow:
   A hidden field often stores what database record that needs to be updated when the form is submitted.
   **Note**: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
 
----
+___
 ### Form Validation
 Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
 
@@ -229,7 +234,7 @@ important terms:
 - **Server side validation** is performed by a web server, after input has been sent to the server.
 - **Client side validation** is performed by a web browser, before input is sent to a web server.
 
----
+___
 ### Reflection
 check this out: https://youtu.be/vmpAK2h0UeQ?t=952
 ```css
@@ -245,17 +250,17 @@ body {
 }
 ```
 
----
+___
 ### Responsiveness
 
 #### Comparing Tools for Responsive Design
 - https://css-tricks.com/comparing-browsers-for-responsive-design/
 
----
+___
 ### Social Media Tags
 - https://css-tricks.com/essential-meta-tags-social-media/#final-markup
 
----
+___
 ### Specificity
 source: https://css-tricks.com/specifics-on-css-specificity/
 
@@ -277,7 +282,12 @@ An HTML entity is a string that begins with an `&` and ends with a `;`. Entities
 
 `&nbsp;` "non blank space"
 
----
+___
+### text-align
+- describes how **inline-level content** of a **block container** is aligned
+  - ... and this is why it also works on images ☝️💡🤓
+  
+___
 ### how to break words
 `&shy;`
 creates a "**s**oft **hy**phen" that only appears when the word breaks.
@@ -292,7 +302,7 @@ The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok 
 
 **Tip**: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
 
----
+___
 ### how to break lines in preferred places
 -  setting divs to inline-block on media query
 ```html
@@ -328,8 +338,9 @@ And one line of CSS in you media query:
     .rwd-break { display: none; }
 }
 ```
+___
 
----
+___
 ### prevent line from breaking
 ```html
 <nobr></nobr>
@@ -338,7 +349,7 @@ And one line of CSS in you media query:
 whitespace: pre;
 ```
 
----
+___
 ### scroll above anchor
 sometimes you might want to scroll a bit above your anchor.
 Since 2020 we got this beauty:
@@ -348,7 +359,7 @@ Since 2020 we got this beauty:
 }
 ```
 
----
+___
 ### z-index, stacking order and stacking context
 
 - stacking order = the order in which the elements appear / are placed on the page
