@@ -200,6 +200,8 @@ Tipp: You can test an API in 'Postman' or in 'Rested' (extension in Chrome)
 
 Tipp from reddit (untested): the easiest way to create a REST message is to use something called cUrl.
 
+source: https://www.reddit.com/r/learnprogramming/comments/40lfkn/eli5_rest_api/
+
 ___
 
 ### REPL
