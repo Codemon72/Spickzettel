@@ -5,6 +5,7 @@
 ### fetch()
 good source: https://github.github.io/fetch/
 - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+- From WHATWG (Web Hypertext Application Technology Working Group): https://fetch.spec.whatwg.org/
 
 - defaults:
   - method: 'GET'
