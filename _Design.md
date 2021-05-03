@@ -1,9 +1,10 @@
-#### Website Concept
+### Website Concept
 1. find your 3 prime messages you want to convey
-2. make sketches of you 
+2. make sketches for desktop and mobile conveying the messages  
+___ 
 
 
-#### Color Scheme
+### Color Scheme
 Kevin: "One is three already."
 
 1. start with black and white and make it work
@@ -26,18 +27,28 @@ Kevin: "One is three already."
     - #5BA1C1
     - #003C57
     - #8FCBE6
+___ 
 
 
-#### Gradients
+### Fonts
+1. start with one font
+...
+source: Kevin Powell: https://www.youtube.com/watch?v=zUMAjJ88NJ0
+___
+
+
+### Gradients
 Malve / Pink
 ```css
 background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92% );
 ```
-
-
 source: Kevin Powell: https://www.youtube.com/watch?v=mq8LYj6kRyE&t=146s
+___
 
-#### Fonts
-1. start with one font
-...
-source: Kevin Powell: https://www.youtube.com/watch?v=zUMAjJ88NJ0
+
+### Icons, Free
+- https://feathericons.com/
+- https://iconic.app/
+___
+
+
