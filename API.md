@@ -9,3 +9,18 @@ good source: https://github.github.io/fetch/
 
 - defaults:
   - method: 'GET'
+
+
+### JSON file
+
+I keep all my JSON notes here: https://github.com/Codemon72/JavaScript--Gym_and_Library/blob/master/JSON.md
+
+
+### Questions
+
+- when do I use what?
+  - JSON.parse(request.responseText) - client: turn JSON into JS object
+  - json() - watch out if you are in JS or in Express land! 
+
+### HTTP response status codes
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

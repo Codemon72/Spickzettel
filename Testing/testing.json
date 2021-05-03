@@ -1,0 +1,11 @@
+[
+  {
+    "person": "Shaun", "age": 45, "siblings": 12, "species": "Hobbit"
+  },
+  {
+    "person": "Billy", "age": 45, "siblings": 4, "species": "Hill Man"
+  },
+  {
+    "person": "Dakota", "age": 22, "siblings": 1, "species": "Freethinker"
+  }
+]
