@@ -2,6 +2,9 @@ sources:
 - https://www.w3.org/wiki/CSS/Properties
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index
 - https://www.w3schools.com/css/default.asp
+super cool tips:
+- https://markodenic.com/css-tips/
+
 
 ### Layout Debugger
 ```css
