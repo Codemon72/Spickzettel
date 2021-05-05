@@ -17,7 +17,7 @@ useEffect(() => {
       setIsPending(false);
       setError(null);
     })
-    .catch(err => { // auto catches network / connection error
+    .catch(err => { // network / connection error
       setIsPending(false);
       setError(err.message);
     });

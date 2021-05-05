@@ -55,7 +55,7 @@ ___
 
 
 ### QR Code Generator
-- from Marco Denic: https://markodenic.com/tools/qr-code-generator/
+- from Marko Denic: https://markodenic.com/tools/qr-code-generator/
 ___
 
 
