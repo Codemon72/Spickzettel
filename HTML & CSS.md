@@ -252,8 +252,9 @@ body {
   -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0004);
 }
 ```
-
 ___
+
+
 ### Responsiveness
 
 #### Comparing Tools for Responsive Design
@@ -284,13 +285,30 @@ You can generally read the values as if they were just a number, like 1,0,0,0 is
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
 
 `&nbsp;` "non blank space"
-
 ___
+
+
 ### text-align
 - describes how **inline-level content** of a **block container** is aligned
   - ... and this is why it also works on images ☝️💡🤓
-  
 ___
+
+
+### Variables
+Variables in CSS make it very easy to change styling of the entire page very fast.
+Inside the selectors you can set default values (see below).
+```css
+:root {
+  --black: #fcfcfc;
+}
+
+p {
+  color: var(--black, #fff);
+}
+```
+___
+
+
 ### how to break words
 `&shy;`
 creates a "**s**oft **hy**phen" that only appears when the word breaks.
