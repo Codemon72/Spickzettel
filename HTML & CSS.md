@@ -259,12 +259,19 @@ ___
 
 #### Comparing Tools for Responsive Design
 - https://css-tricks.com/comparing-browsers-for-responsive-design/
-
 ___
+
+
+### Root
+What the heck is a `:root`? It is a pseudo-class which represents the root of the document tree, which most of the time means the `<html>` element. If you are in a Custom Element, using the shadow DOM, though: the `:root` will represent the root of the shadow DOM instead of the `<html>` element.
+___
+
+
 ### Social Media Tags
 - https://css-tricks.com/essential-meta-tags-social-media/#final-markup
-
 ___
+
+
 ### Specificity
 source: https://css-tricks.com/specifics-on-css-specificity/
 
