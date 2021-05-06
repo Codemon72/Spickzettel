@@ -294,6 +294,19 @@ ___
 ___
 
 
+### transition-delay
+source: https://piccalil.li/quick-tip/define-delay-for-each-property-in-the-transition-shorthand/
+If you have a few properties that change with a transition, you can define a transition-delay for each of them, using the transition shorthand and separating each property with a comma.
+```css
+p {
+  ...
+  transition: width .3s ease-in-out .1s, color .3s ease-in-out .3s;
+}
+
+```
+___
+
+
 ### Variables
 Variables in CSS make it very easy to change styling of the entire page very fast.
 Inside the selectors you can set default values (see below).
