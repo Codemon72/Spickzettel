@@ -440,8 +440,9 @@ ___
 ### CSS Fundamentals (and Quirks)
 - Margins will collapse any time they touch.
 That also means that the first child's margin-top will merge with the parent' margin-top. (And the last child's margin-bottom with the parent's margin-bottom.) 
-**Tip**: Use margins only between siblings or line the parent with a padding, so that margins don't touch.
+**Tip**: Use margins only between siblings or line the parent with a padding, so that margins don't touch. Also: give the parent `display: flow-root`. This creates a new formatting context and margins only collapse with margins of the same formatting context.
 **Note**: In flexbox and grid touching margins no longer collapse.
+
 - Block elements always have 
   ```css
   block-element {
