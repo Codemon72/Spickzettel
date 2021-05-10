@@ -39,13 +39,15 @@ explained: `ReactDOM` has a function `render()` that takes 2 arguments:
 Context Knowledge: There is also `ReactNative` which could e.g. render it to a mobile device. 
 ___
 
+
 ### Working With State
 - components can have 'state' which is an object that determines how a component renders and behaves
 - "App" or "global" state refers to state that is available to the entire UI, not just a single component.
 - Prior to React 16.8 we had tu use class based components to use state. 
 Now we can use functional components with hooks.
-
 ___
+
+
 ### JSX and Babel
 - JSX = JavaScript Syntax Extension
 - conveniently looks like HTML but isn't. 
@@ -81,13 +83,15 @@ remember:
 #### Tipps
 - recommended VSC extension: ES7 React/Redux/GraphQL/React-Native snippets
   - gives the shortcut `rafce` for arrow function component that exports at bottom
-
 ___
+
+
 #### Components and Elements
 - components are functions that return JSX
 - by convention they begin with a capital letter
-
 ___
+
+
 #### Hooks
 Hooks are ways that you can tell React what's going on in your program or that you can respond to things that are happening in the program. 
 - **Note**: React wants to updates the DOM only when absolutely **necessary**. It's only gonna do that when we explicitly tell it to. And the way that we can tell it to do that is by using what is called a React Hook.
@@ -133,8 +137,9 @@ import AContext from './AContext'
 // ...
 const value = useContext(AContext);
 ```
-
 ___
+
+
 #### Conditional Rendering
 Consider you want to render something only when certain conditions are met. E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
 There are different ways to do it:
@@ -196,8 +201,16 @@ There are different ways to do it:
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
+___
+### Avoid Unnecessary Re-Rendering
+- every time the state of a component changes, React _schedules_ a render of that component. (This doesn't happen immediately, React will try to find the best moment for this.)
+- when a component renders all it's children will also re-render, regardless of whether their props have changed or not.
+- options to avoid unnecessary re-rendering are to use `memo()` or `createContext`/ `useContext`.
+
 
 ___
+
+
 #### Props
 Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
 - Syntax: 
@@ -234,8 +247,9 @@ Props are values that can be passed into a component to be used for whatever. By
     );
   };
   ```
-
 ___
+
+
 ### Forms and Input fields
 HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
 good source: https://reactjs.org/docs/forms.html
@@ -344,8 +358,9 @@ const [formState, setFormState] = useState({
 sources:
 - https://reactjs.org/docs/forms.html#handling-multiple-inputs
 - https://www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react
-
 ___
+
+
 #### A Couple Of Examples
 
 - event handlers /  attaching a function to an HTML element

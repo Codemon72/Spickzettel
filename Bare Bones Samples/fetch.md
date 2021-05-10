@@ -8,7 +8,7 @@ useEffect(() => {
   fetch('http://localhost:8000/blogs')
     .then(res => { // error coming back from server (e.g. invalid API endpoint)
       if (!res.ok) {
-        throw Error('could not fetch data from that endpoint');
+        throw Error('could not fetch data from that endpoint', res.statusText);
       }
       return res.json();
     })
