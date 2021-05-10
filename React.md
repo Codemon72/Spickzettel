@@ -206,6 +206,8 @@ ___
 - every time the state of a component changes, React _schedules_ a render of that component. (This doesn't happen immediately, React will try to find the best moment for this.)
 - when a component renders all it's children will also re-render, regardless of whether their props have changed or not.
 - options to avoid unnecessary re-rendering are to use `memo()` or `createContext`/ `useContext`.
+  - Example `memo()`: https://codesandbox.io/s/memo-for-child-of-context-provider-8rx8m
+  - Example Context: https://codesandbox.io/s/context-provider-prevents-unnecessary-rerendering-mop5d
 
 
 ___
