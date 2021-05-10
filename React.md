@@ -137,6 +137,44 @@ import AContext from './AContext'
 // ...
 const value = useContext(AContext);
 ```
+- custom hook - you can create your custom hook to dry out your code
+  - create a component and name it 'use' + 'Something' (e.g.: useForm). This is necessary for it to work
+  - put in all the logic you want, export, import and Bob's your uncle.
+
+```js
+import { useState } from 'react';
+
+const useForm = (callback) => {
+
+  const initialFormState = {
+    email: '',
+    password: ''
+  };
+
+  const [formState, setFormState] = useState(initialFormState);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value
+    });
+  };   
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    callback();
+  }
+
+  return {
+    formState,
+    handleInputChange,
+    handleSubmit
+  }
+}
+
+export default useForm;
+```
 ___
 
 
