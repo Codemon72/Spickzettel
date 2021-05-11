@@ -34,4 +34,25 @@ ul li {
   padding: 20px 40px;
   background-color: green;
 }
+
+.button20px {
+  border: none;
+  background-color: hotpink;
+  color: #333;
+  padding: 20px;
+}
+
+.button30px {
+  border: none;
+  background-color: hotpink;
+  color: #333;
+  padding: 30px;
+}
+
+.button40px {
+  border: none;
+  background-color: hotpink;
+  color: #333;
+  padding: 40px;
+}
 /*# sourceMappingURL=style.css.map */

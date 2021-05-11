@@ -44,3 +44,16 @@ ul {
   @include button(20px 40px)
   background-color: green;
 }
+
+// each loops
+$sizes: 20px, 30px, 40px;
+
+// creates 3 classes: .button-20px, .button-30px, ...
+@each $size in $sizes {
+  .button#{$size} {
+    border: none;
+    background-color: hotpink;
+    color: #333;
+    padding: $size;
+  }
+}

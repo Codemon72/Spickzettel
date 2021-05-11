@@ -12,6 +12,7 @@ sources:
   - nesting (don't go deeper than 3 levels), 
   - inheritance, 
   - mixins (re-usable functions), 
+  - each loops
 
 
 
