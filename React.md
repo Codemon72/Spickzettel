@@ -229,11 +229,15 @@ There are different ways to do it:
   </div>
   ```
   If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
-- Conditional Rendering inside JSX elements
+- Conditional Attributes inside JSX elements
   ```js
+  let formIsValid = !Object.values(formState).includes('') && !dateError; // returns boolean
+
   <button 
      className={`menu__btn ${atHomePage ?  'active' : ''}`}
+     className={`${errors.email && "inputError"}`}
      onClick={priceValid ? handleApplyClick : undefined }
+     disabled={!formIsValid}
      >Home</button>
   ```
 
