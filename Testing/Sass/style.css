@@ -29,4 +29,9 @@ ul li {
 .button-red {
   background-color: red;
 }
+
+.button-super {
+  padding: 20px 40px;
+  background-color: green;
+}
 /*# sourceMappingURL=style.css.map */

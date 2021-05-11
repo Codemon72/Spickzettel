@@ -35,3 +35,12 @@ ul {
   @extend %button-base;
   background-color: red;
 }
+
+// mixins
+@mixin button($padding) {
+  padding: $padding;
+}
+.button-super {
+  @include button(20px 40px)
+  background-color: green;
+}
