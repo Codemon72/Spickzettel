@@ -236,8 +236,14 @@ Best practices article: https://html.form.guide/best-practices/form-validations-
 important terms: 
 - **Server side validation** is performed by a web server, after input has been sent to the server.
 - **Client side validation** is performed by a web browser, before input is sent to a web server.
-
 ___
+
+
+### Perspectives
+- article from the master: https://css-tricks.com/how-css-perspective-works/
+___
+
+
 ### Reflection
 check this out: https://youtu.be/vmpAK2h0UeQ?t=952
 ```css
