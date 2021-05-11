@@ -1,0 +1,32 @@
+h1 {
+  color: rebeccapurple;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Verdana;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  color: rebeccapurple;
+}
+
+.button-purple, .button-red {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.button-purple {
+  background-color: rebeccapurple;
+}
+
+.button-red {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
