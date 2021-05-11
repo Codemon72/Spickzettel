@@ -231,14 +231,18 @@ There are different ways to do it:
   If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
 - Conditional Attributes inside JSX elements
   ```js
-  let formIsValid = !Object.values(formState).includes('') && !dateError; // returns boolean
-
   <button 
      className={`menu__btn ${atHomePage ?  'active' : ''}`}
      className={`${errors.email && "inputError"}`}
      onClick={priceValid ? handleApplyClick : undefined }
-     disabled={!formIsValid}
      >Home</button>
+  ```
+  also:
+
+  ```jsx
+  let formIsValid = !Object.values(formState).includes('') && !dateError; // returns boolean
+
+  <input type="submit" disabled={!formIsValid} >submit</input>
   ```
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
