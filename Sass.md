@@ -1,0 +1,6 @@
+- build with Ruby
+- needs Compiler (in Visual Studio Code: 'Live Sass Compiler')
+- 2 kinds of syntax: 
+  - Sass syntax: no curly braces, semicolons,
+  - Scss syntax: looks more like CSS 
+- enables variables, inheritance, mixins (re-usable functions), 
