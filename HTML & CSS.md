@@ -307,6 +307,21 @@ ___
 ___
 
 
+
+### Tooltip Magic
+- insert button text
+```html
+<button class="btn--tooltip " data-tooltip="🚫">Hover me!</button>
+```
+```css
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+}
+```
+___
+
+
 ### transition-delay
 source: https://piccalil.li/quick-tip/define-delay-for-each-property-in-the-transition-shorthand/
 If you have a few properties that change with a transition, you can define a transition-delay for each of them, using the transition shorthand and separating each property with a comma.
