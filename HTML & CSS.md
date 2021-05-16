@@ -216,8 +216,15 @@ box-shadow:
     20px 20px 20px rgba(0, 0, 0, .2),
     inset 20px 20px 20px rgba(0, 0, 0, .2);
 ```
-
 ___
+
+
+### Flex
+- CSS Tricks Overview: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- deep dive into edge cases and quirkyness: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
+___
+
+
 ### Form 
 
 - `<input type="hidden">` 
@@ -225,8 +232,9 @@ ___
   A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.
   A hidden field often stores what database record that needs to be updated when the form is submitted.
   **Note**: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
-
 ___
+
+
 ### Form Validation
 Best practices article: https://html.form.guide/best-practices/form-validations-definitive-guide/
 
