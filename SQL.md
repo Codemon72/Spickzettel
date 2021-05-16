@@ -319,6 +319,10 @@ ALTER TABLE courses ADD FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id)
 
 ALTER TABLE courses ADD name VARCHAR (20);
 
+-- rename column
+ALTER TABLE TableName
+RENAME COLUMN OldColumnName TO NewColumnName;
+
 -- modify a column
 ALTER TABLE courses MODIFY COLUMN name VARCHAR(40);
 ALTER TABLE courses MODIFY COLUMN createdAt TIMESTAMP NOT NULL
@@ -326,8 +330,10 @@ DEFAULT CURRENT_TIMESTAMP;
 
 -- delete a table
 DROP TABLE bookings;
+
 -- delete a column from a table
 ALTER TABLE courses DROP COLUMN createdAt;
+
 -- delete a row from a table
 DELETE FROM courses WHERE course_id = 3;
 
@@ -402,7 +408,7 @@ FROM teachers
 JOIN courses 
 ON teachers.teacher_id = courses.teacher_id;
 
-__ show everything from courses and the related teacher name
+-- show everything from courses and the related teacher name
 SELECT c.*, t.name 
 FROM courses AS c
 JOIN teachers AS t

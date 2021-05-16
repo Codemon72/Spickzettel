@@ -38,3 +38,47 @@ CREATE TABLE sessions (
 	FOREIGN KEY (course_event_id) REFERENCES course_events (course_event_id) ON DELETE SET NULL
 );
 ```
+
+
+#### Inserting Data
+```sql
+INSERT INTO teachers (name, email) VALUES ('Teresa Holfeld',teresa@hamburgcodingschool.com');
+INSERT INTO course_modules (name, hours) VALUES ('Workshop: Databases', '12');
+
+INSERT INTO course_events (start_date, end_date, course_module_id, teacher_id) VALUES ('2021-04-13', '2021-05-11', '1', '7');
+
+
+```
+
+
+#### Queries
+-- course with name, start and end date, teacher name
+```sql
+SELECT 
+	teachers.name, 
+	course_modules.name, 
+	course_events.start_date, 
+	course_events.end_date
+FROM course_events
+JOIN teachers
+	ON course_events.teacher_id = teachers.teacher_id
+JOIN course_modules
+	ON course_events.course_module_id = course_modules.course_module_id;
+
+-- course with name, start and end date, teacher name and all sessions
+SELECT  
+	course_modules.name, 
+	teachers.name,
+	course_events.start_date, 
+	course_events.end_date,
+	sessions.start, sessions.end
+FROM course_events
+JOIN course_modules
+	ON course_events.course_module_id = course_modules.course_module_id
+JOIN teachers
+	ON course_events.teacher_id = teachers.teacher_id
+JOIN sessions
+	ON course_events.course_event_id = sessions.course_event_id;
+
+
+```
