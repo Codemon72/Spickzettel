@@ -232,6 +232,19 @@ ___
   A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.
   A hidden field often stores what database record that needs to be updated when the form is submitted.
   **Note**: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
+
+- styling placeholder
+```css
+#mce-EMAIL::-webkit-input-placeholder{
+  color: #fff;
+}
+#mce-EMAIL:-moz-placeholder {
+  color: #fff;
+}
+#mce-EMAIL[placeholder] {
+  color: #fff;
+}
+```
 ___
 
 
