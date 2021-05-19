@@ -9,3 +9,15 @@ Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hiera
 - https://cyberduck.io/
 - https://localwp.com/
   basic setup tutorial: https://www.youtube.com/watch?v=uQCoTQAo3qo
+
+
+## Watch out
+- php or Wordpress loves to build `<p>` where it sees empty lines. For example in internal CSS!!
+
+
+## Handled Bugs
+
+### WP doesn't notice new CSS -> empty cache
+1. Plugins > WP Rocket > Einstellungen
+2. Cache leeren
+3. Cache neu füllen
