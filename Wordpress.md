@@ -10,6 +10,9 @@ Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hiera
 - https://localwp.com/
   basic setup tutorial: https://www.youtube.com/watch?v=uQCoTQAo3qo
 
+## Map
+- Design - Theme-Editor: header, footer, 404, style.css, all templates
+
 
 ## Watch out
 - php or Wordpress loves to build `<p>` where it sees empty lines. For example in internal CSS!!
