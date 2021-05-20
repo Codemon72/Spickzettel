@@ -10,8 +10,18 @@ Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hiera
 - https://localwp.com/
   basic setup tutorial: https://www.youtube.com/watch?v=uQCoTQAo3qo
 
-## Map
+### Map - Find Your Way Around
+the juicy bits:
+- Seiten
 - Design - Theme-Editor: header, footer, 404, style.css, all templates
+- Individuelle Felder
+
+### upload to site
+- open cyberduck
+- pick destination / destination folder (/webseiten/wildplastic.com/wp-content/themes/wildplastic)
+- right-click 'upload'
+- pick the file you want to upload
+- 'upload'
 
 
 ## Watch out
