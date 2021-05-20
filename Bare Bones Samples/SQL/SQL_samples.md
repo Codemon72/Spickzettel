@@ -42,18 +42,17 @@ CREATE TABLE sessions (
 
 #### Inserting Data
 ```sql
-INSERT INTO teachers (name, email) VALUES ('Teresa Holfeld',teresa@hamburgcodingschool.com');
+-- insert data
+INSERT INTO teachers (name, email) VALUES ('Teresa Holfeld', 'teresa@hamburgcodingschool.com');
 INSERT INTO course_modules (name, hours) VALUES ('Workshop: Databases', '12');
 
 INSERT INTO course_events (start_date, end_date, course_module_id, teacher_id) VALUES ('2021-04-13', '2021-05-11', '1', '7');
-
-
 ```
 
 
 #### Queries
--- course with name, start and end date, teacher name
 ```sql
+-- course with name, start and end date, teacher name
 SELECT 
 	teachers.name, 
 	course_modules.name, 
