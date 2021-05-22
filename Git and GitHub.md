@@ -18,6 +18,19 @@ sources:
 - `git log` - logs commit history
 ___
 
+
+### View and Change Remote Address
+`git config --list` - Einsehen, wohin commits gepushed werden. Angezeigt wird dann z.B.: remote.origin.url=https://github.com/appoll/git-rocks.git
+
+`git remote remove origin` - deletes the current remote address
+
+`git remote add origin https://github.com/appoll/git-rocks.git` - establishes the new address
+
+Now `git push` might not work. Then set the upstream with specified branch:
+`git push --set-upstream origin master` 
+___
+
+
 #### Gitignore file
 
 ###### How To
