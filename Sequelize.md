@@ -10,7 +10,16 @@ Docs:
 - looks like an in-depth tutorial: [Learn Sequelize ORM on Node.js with MySQL From Scratch in One Video](https://www.youtube.com/watch?v=pxo7L5nd1gA)
 - https://stackabuse.com/using-sequelize-orm-with-nodejs-and-express/
 
+### Multiple Eager Loading
+querying for multiple tables:
 
+```js
+Course_Events.findAll({ 
+    include: [{ model: Sessions },
+      { model: Course_Modules },
+      { model: Teachers }]
+    })
+```
 
 By default, Sequelize automatically adds the fields `createdAt` and `updatedAt` to every model, using the data type DataTypes.DATE. Apparently that causes errors if Sequelize is applied to a table without these fields.
 Remedy: 
