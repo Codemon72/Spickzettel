@@ -45,8 +45,8 @@ CREATE TABLE sessions (
 -- insert data
 INSERT INTO teachers (name, email) VALUES ('Teresa Holfeld', 'teresa@hamburgcodingschool.com');
 INSERT INTO course_modules (name, hours) VALUES ('Workshop: Databases', '12');
-
 INSERT INTO course_events (course_start_date, course_end_date, course_module_id, teacher_id) VALUES ('2021-04-13', '2021-05-11', '1', '7');
+INSERT INTO sessions (session_start, session_end, course_event_id) VALUES ('2021-05-17T18:00', '2021-05-17T21:00', 11);
 ```
 
 
