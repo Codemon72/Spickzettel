@@ -224,6 +224,7 @@ Some data types you can specify even further:
   `orderdate DATE DEFAULT GETDATE();`  
   - to alter:
   `ALTER City SET DEFAULT 'Chicago';`
+- `ON DELETE CASCADE` if you put this constraint on a foreign key the row will be deleted if the foreign key - related entry is deleted
 
 ---
 

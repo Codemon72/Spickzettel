@@ -8,6 +8,8 @@ CREATE TABLE course_modules (
 	course_module_id INT NOT NULL AUTO_INCREMENT,
 	PRIMARY KEY (course_module_id),
 	name VARCHAR(40),
+	createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	hours INT(2)
 );
 
@@ -15,6 +17,8 @@ CREATE TABLE teachers (
 	teacher_id INT NOT NULL AUTO_INCREMENT,
 	PRIMARY KEY (teacher_id),
 	name VARCHAR(40),
+	createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	email VARCHAR(40)
 );	
 
@@ -24,6 +28,8 @@ CREATE TABLE course_events (
 	start_date DATE,
 	course_end_date DATE,
 	course_course_module_id INT,
+	createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY (course_module_id) REFERENCES course_modules (course_module_id) ON DELETE SET NULL,
 	teacher_id INT,
 	FOREIGN KEY (teacher_id) REFERENCES teachers (teacher_id) ON DELETE SET NULL
@@ -35,7 +41,9 @@ CREATE TABLE sessions (
 	session_start DATETIME,
 	session_end DATETIME,
 	course_event_id INT,
-	FOREIGN KEY (course_event_id) REFERENCES course_events (course_event_id) ON DELETE SET NULL
+	createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	FOREIGN KEY (course_event_id) REFERENCES course_events (course_event_id) ON DELETE CASCADE
 );
 ```
 

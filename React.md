@@ -326,7 +326,7 @@ const Form = () => {
 ```
 #### select - option
 might seem complex on first glance, but is quite simple
-- instead of choosing an option with the `selected`attribute, the select element gets a value that willdetermine the presented option on first loading
+- instead of choosing an option with the `selected` attribute, the select element gets a value that will determine the presented option on first loading
 - capture the selected option in a `useState` 
 - give the select element a function that gets triggered`onChange`.
 - handle all that you fancy in that function
