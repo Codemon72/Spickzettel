@@ -41,7 +41,18 @@ typing:
 <div class="number number11">11</div>
 <div class="number number12">12</div>
 ```
+`div.box>div.cube.cube-$*4` will generate:
+```html
+<div class="box">
+  <div class="cube cube-1"></div>
+  <div class="cube cube-2"></div>
+  <div class="cube cube-3"></div>
+  <div class="cube cube-4"></div>
+</div>
+```
 ___
+
+
 ### Debugging in Node
 - https://code.visualstudio.com/docs/nodejs/nodejs-debugging
 
