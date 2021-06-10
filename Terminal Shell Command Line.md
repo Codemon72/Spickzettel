@@ -31,7 +31,7 @@ best sources:
 
 ### Tipps & Tricks
 
-shortcut to look up ALL previous commands: CTRL + R; start writing command; if correct command is displayed: hit ENTER. 🤓
+shortcut to look up ALL previous commands: `CTRL + R`; start writing command; if correct command is displayed: hit ENTER. 🤓
  
 ## Fledgling Section / For Beginners
 

@@ -41,6 +41,7 @@ typing:
 <div class="number number11">11</div>
 <div class="number number12">12</div>
 ```
+
 `div.box>div.cube.cube-$*4` will generate:
 ```html
 <div class="box">
