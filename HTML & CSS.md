@@ -142,6 +142,12 @@ xl
 ```
 ___
 
+
+### HTML5 Deep Dive
+- http://diveintohtml5.info/table-of-contents.html
+___
+
+
 ### Buttons
 - avoid outlines on click
   ```css
