@@ -345,6 +345,10 @@ An HTML entity is a string that begins with an `&` and ends with a `;`. Entities
 ___
 
 
+### table
+table styling: there is an example in Bare_Bones_Samples
+___
+
 ### text-align
 - describes how **inline-level content** of a **block container** is aligned
   - ... and this is why it also works on images ☝️💡🤓
