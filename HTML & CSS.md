@@ -251,6 +251,23 @@ input[placeholder] {
   color: #fff;
 }
 ```
+
+- styling option (of select)
+  - not yet without JavaScript
+
+- background of input fields
+Safari, Firefox:
+```css
+input {
+  background-color: #fff;
+}
+```
+for Chrome (autofill):
+```css
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+```
 ___
 
 
