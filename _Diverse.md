@@ -13,3 +13,17 @@ function disableSendingAnalytics() {
 ```
 ___
 
+
+### Format USB Drive
+- nowadays (2021): format to ExFat
+- (if it's already formatted with FAT32 you should be fine as well)
+
+1. Attach the drive to your Mac.
+2. Launch Disk Utility (from Applications > Utilities > Disk Utility).
+3. Select the drive in the left-hand sidebar.
+4. Click Erase.
+5. From the Format menu, select ExFAT.
+6. From the Scheme menu, select Master Boot Record.
+7. Click Erase and follow prompts to confirm.
+
+source: https://www.macworld.com/article/234613/how-to-format-a-thumb-drive-for-both-mac-and-windows.html
