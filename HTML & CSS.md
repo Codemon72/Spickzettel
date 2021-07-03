@@ -348,8 +348,12 @@ ___
 ### table
 table styling: there is an example in Bare_Bones_Samples
 also: 
-- border-spacing: 0; get rid of tiny lines around borders
-- border-spacing: 4px 12px; distance between horizontal and vertical borders of cells
+- borders
+  - you can only put borders on table, th and td
+  - border-spacing: 0; get rid of tiny lines around borders
+  - border-spacing: 4px 12px; distance between horizontal and vertical borders of cells
+  - margins don't work on table elements
+good source: https://www.w3docs.com/learn-css/css-tables.html
 ___
 
 ### text-align
