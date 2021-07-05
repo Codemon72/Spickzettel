@@ -2,6 +2,17 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 
 # Git and GitHub Cheatsheet
 
+### Basics
+
+##### git add | commit | push
+`git status` 
+`git add -A` - to add all files that are currently untracked or we made changes to
+`git add .` - 
+`git commit -m "[message]"`
+`git push -u origin [branch-name]` 
+or just `git push` - if the branch has been established before
+
+
 ### Set new alias
 `git config --global alias.co checkout` 
 or (probably for more complex ones):
