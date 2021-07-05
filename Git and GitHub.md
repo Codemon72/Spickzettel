@@ -9,7 +9,7 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 `git add -A` - to add all files that are currently untracked or we made changes to
 `git add .` - 
 `git commit -m "[message]"`
-`git push -u origin [branch-name]` 
+`git push -u origin [branch-name]` - first push from new branch
 or just `git push` - if the branch has been established before
 
 
