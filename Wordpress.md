@@ -5,7 +5,11 @@
 
 Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hierarchy/
 
-##### useful tools: 
+### Backup 
+to make a backup of a WordPress website you need to use plugins / go to marketplace and search for one
+- used by Teresa: UpdraftPlus
+
+### useful tools: 
 - https://cyberduck.io/
 - https://localwp.com/
   basic setup tutorial: https://www.youtube.com/watch?v=uQCoTQAo3qo
