@@ -29,6 +29,12 @@ _
 ___
 
 
+### DeadLinkChecker
+check for dead / broken links
+- https://www.deadlinkchecker.com/
+___
+
+
 ### `imagemagick` for Sizing Images
 (first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
 use command line to get into correct folder, then, eg:
