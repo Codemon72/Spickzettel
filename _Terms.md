@@ -123,6 +123,15 @@ The heap is used for data allocated dynamically, for anything that needs to pers
 The heap grows when you allocate memory in your program, and shrinks when you deallocate it. In languages like C and C++, you must manually deallocate memory or use objects that keep track of heap allocation for you.
 ___
 
+### Kernel
+- A Kernel is the core of an OS (operating system).
+- It manages all applications as well as hardware resources (like memory and CPU).
+- Every OS has it's own Kernel (or engine) and these kernels have different APIs.
+  - that's why we cannot run a Windows application on Linux: the app needs to talk to the kernel and can't
+  - (on a Windows machine we can now both run Windows and Linux containers, because since Windows10 they added a custom built Linux kernel)
+
+___
+
 ### MVP
 
 minimal viable product

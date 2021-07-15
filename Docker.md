@@ -19,6 +19,16 @@
   - slow to start (because entire OS has to be loaded)
   - resource intensive (CPU, Memory, Disk Space)
 
+### Docker Architecture
+- a client component talks to a server component via Restful API
+- the server component is here called **Docker Engine**
+- technically a container is a process
+- **on a Linux** machine we can run Linux containers
+- **on a Windows** machine we can now both run Windows and Linux containers, because since Windows10 they added a custom built Linux kernel
+- Docker **on Mac** uses a lightweight VM to run Linux containers
+  - Mac doesn't have native support for continuous applications
+
+
 
 ### Gist from Brad:
 https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
