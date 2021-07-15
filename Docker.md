@@ -22,12 +22,22 @@
 ### Docker Architecture
 - a client component talks to a server component via Restful API
 - the server component is here called **Docker Engine**
-- technically a container is a process
+- technically a container is a process, but a special kind of process with its own file system (which is provided by the image)
 - **on a Linux** machine we can run Linux containers
 - **on a Windows** machine we can now both run Windows and Linux containers, because since Windows10 they added a custom built Linux kernel
 - Docker **on Mac** uses a lightweight VM to run Linux containers
   - Mac doesn't have native support for continuous applications
 
+### What is a Dockerfile?
+- A dockerfile is a plaintext file that includes instructions that docker uses to package up this application into an image. This image contains everything our application needs to run.
+
+### What is an Image?
+An image contains everything an application needs to run.
+- a cut-down OS
+- a runtime environment (eg Node)
+- application files
+- third-party libraries
+- environment variables
 
 
 ### Gist from Brad:
@@ -42,19 +52,22 @@ Mosh: https://youtu.be/pTFZFxd4hOI
 `docker version`
 `docker info`
 
-#### Momentaufnahme laufernder Prozesse:
+#### Show all Containers / Prozesse:
+`docker ps` // show all (running) processes
+- show all processes, including stopped ones:
 `docker ps -a` // show (-a) all (ps) **p**rocesse**s**
 
 #### show only running containers:
 `docker container ls`
 
-#### Workflow after Setup:
+___
+### Workflow after Setup:
 
-In empty folder create 'docker-compose.yml' 
+1. In empty folder create 'docker-compose.yml' 
 
-#### to run start your docker containers:
+#### to run, start your docker containers:
 `docker-compose up -d`
-use `docker-compose up` without the `-d` to see what is happening (and know when it has finished)
+(use `docker-compose up` without the `-d` to see what is happening (and know when it has finished))
 
 #### to stop thus created docker containers:
 `docker-compose down`
@@ -128,14 +141,15 @@ and
 you do it automatically when you start a container:
 `docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost` // last part calls the respective image down from docker hub
 
-you can do it directly:
+or you can do it directly:
 `docker pull nginx`
 
 #### delete image
-`docker image rm exampleID`  // instead of exampleID use the first 3 digits of the image ID. To get the image ID:
+`docker image rm exampleID`  // instead of exampleID use the first 3 digits of the image ID. To get the image ID: list all images (see below)
 
 #### list all images
-`docker images`
+`docker images` or
+`docker image ls`
 
 #### remove container
 
