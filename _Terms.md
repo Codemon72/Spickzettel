@@ -278,3 +278,14 @@ Transport Layer Security protocol
 TLS/SSL allows for transfer encryption, and can optionally use identity validation for the server and client.
 
 The term SSL (Secure Sockets Layer) is often used interchangeably with TLS, although strictly-speaking the SSL protocol is the predecessor of TLS, and is not implemented as it is now considered insecure.
+___
+
+
+### Virtual Machine
+- A virtual machine is an abstract of a machine (or physical hardware). 
+- For this we need a Hypervisor: a tool to create and manage virtual machines. 
+  - Examples are VirtualBox, VMware (which are both cross-platform (running on Mac, Linux and Windows)) and Hyper-v (Windows only)
+- Problems
+  - each VM needs a full-blown OS (that needs to be licensed, patched and monitored)
+  - slow to start (because entire OS has to be loaded)
+  - resource intensive (CPU, Memory, Disk Space)

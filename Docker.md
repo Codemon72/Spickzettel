@@ -2,6 +2,24 @@
 - like a virtual machine but structured differently to save RAM and CPU
 - Docker is a platform for building, running and shipping applications in a consistent manner, so if your application works on your developing machine, it can run and function _the same way_ on other machines.
 
+### What is a Container
+- A Container is an isolated environment for running an application.
+- allows running multiple apps in isolation
+- are lightweight
+- use / share the OS of the host (every OS needs to be licensed, patched and monitored)
+- start quickly
+- need less hardware resources
+
+### What is a Virtual Machine?
+- A virtual machine is an abstract of a machine (or physical hardware). 
+- For this we need a Hypervisor: a tool to create and manage virtual machines. 
+  - Examples are VirtualBox, VMware (which are both cross-platform (running on Mac, Linux and Windows)) and Hyper-v (Windows only)
+- Problems
+  - each VM needs a full-blown OS (that needs to be licensed, patched and monitored)
+  - slow to start (because entire OS has to be loaded)
+  - resource intensive (CPU, Memory, Disk Space)
+
+
 ### Gist from Brad:
 https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
 
