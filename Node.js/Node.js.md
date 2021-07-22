@@ -73,9 +73,15 @@ In this example, we created two middlewares: the first is parsing the body in a 
 You can add as many middlewares as you like. They are put on the **middleware stack**.
 
 💡 **Note**: Because a middleware is called for every incoming request, you need to make sure that your middleware does not do any long or expensive operations.
+___
 
 
----
+### NVM - Switch Node Environments
+- node version manager
+- https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
+___
+
+
 ### Examples
 ##### A couple of most basic servers:
 Create a file app.js:
