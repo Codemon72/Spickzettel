@@ -65,3 +65,11 @@ On dev instance use github only for the theme folder content/themes/casper
 
 Deploy the theme to production with github action https://github.com/marketplace/actions/deploy-ghost-theme "
 https://forum.ghost.org/t/what-is-the-best-way-for-pair-ghost-theme-development/16797
+
+___
+
+
+### Docker | Git | DB
+upon start git notices content/data/ghost.db being modified.
+Why?
+You can reset this with `git restore content/data/ghost.db`.
