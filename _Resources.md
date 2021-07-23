@@ -1,5 +1,8 @@
 ### Brad Traversy's Humongous List
 https://github.com/bradtraversy/design-resources-for-developers/blob/master/readme.md
+
+### Marko Denic's List
+- https://markodenic.com/50-free-tools-and-resources/
 ___
 
 

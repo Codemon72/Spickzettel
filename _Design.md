@@ -43,6 +43,7 @@ Malve / Pink
 background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92% );
 ```
 source: Kevin Powell: https://www.youtube.com/watch?v=mq8LYj6kRyE&t=146s
+- https://uigradients.com/
 ___
 
 
@@ -57,3 +58,11 @@ ___
 ___
 
 
+### Remove Image Background
+- https://www.remove.bg/
+___
+
+
+### 3D Creation Suite
+Blender is the free and open-source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, video editing, and 2D animation pipeline.
+- https://www.blender.org/
