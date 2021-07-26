@@ -38,6 +38,16 @@ branch löschen
 ähnlich wie rebase master nur für den Fall, dass man mit einem anderen Teammitglied im **gleichen** branch arbeitet und sich beispielsweise die commits unter den eigenen ziehen will, die der andere schon vor einem committed hatte.
 
 
+### workflow on GitHub
+- check your code thorougly
+to request review:
+- click "pull request"
+- top right: 'reviews': choose reviewer 
+- wait for approval
+- "squash and merge"
+- delete branch
+
+
 ### Set new alias
 `git config --global alias.co checkout` 
 or (probably for more complex ones):
