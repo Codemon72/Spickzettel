@@ -9,8 +9,33 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 `git add -A` - to add all files that are currently untracked or we made changes to
 `git add .` - 
 `git commit -m "[message]"`
-`git push -u origin [branch-name]` - first push from new branch
+`git push -u origin example-branchName` - first push from new branch
 or just `git push` - if the branch has been established before
+
+### branches
+branch anlegen
+`git branch example-branchName`
+
+zum branch wechseln
+`git checkout example-branchName`
+
+gleichzeitig neuen branch anlegen und hineinwechseln
+`git checkout -b example-branchName`
+
+alle branches anzeigen lassen
+`git branch`
+
+neuen branch auf github pushen
+`git push -u origin example-branchName`
+
+auf github bereits existierenden branch auf github pushen
+`git push`
+
+branch löschen
+`git branch -d example-branchName`
+
+`git pull --rebase`
+ähnlich wie rebase master nur für den Fall, dass man mit einem anderen Teammitglied im **gleichen** branch arbeitet und sich beispielsweise die commits unter den eigenen ziehen will, die der andere schon vor einem committed hatte.
 
 
 ### Set new alias
