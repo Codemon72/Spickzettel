@@ -45,6 +45,10 @@ background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 
 source: Kevin Powell: https://www.youtube.com/watch?v=mq8LYj6kRyE&t=146s
 - https://uigradients.com/
 ___
+### Images workflow
+- crop with Photos.app on Mac - this will already reduce size
+- use imagemagick for further cropping and reducing size
+___
 
 
 ### Icons, Free
