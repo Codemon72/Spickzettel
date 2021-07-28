@@ -27,3 +27,5 @@ ___
 7. Click Erase and follow prompts to confirm.
 
 source: https://www.macworld.com/article/234613/how-to-format-a-thumb-drive-for-both-mac-and-windows.html
+___
+

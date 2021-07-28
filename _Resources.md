@@ -63,6 +63,11 @@ JSON Server is a Node Module that you can use to create demo rest json webservic
 ___
 
 
+### Network Connectivity Check
+- https://fast.com
+___
+
+
 ### QR Code Generator
 - from Marko Denic: https://markodenic.com/tools/qr-code-generator/
 ___
