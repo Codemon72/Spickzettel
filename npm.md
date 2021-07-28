@@ -38,3 +38,25 @@ Before version 5, NPM simply installed a package under node_modules by default. 
 The --save option instructed NPM to include the package inside of the dependencies section of your package.json automatically, thus saving you an additional step.
 
 In addition, there are the complementary options --save-dev and --save-optional which save the package under devDependencies and optionalDependencies, respectively. This is useful when installing development-only packages, like grunt or your testing library.
+
+
+### dependencies listed in package.json
+npm uses the tilde `~` and caret `^` to designate which patch and minor versions to use respectively.
+
+The version number is in semver syntax which designates each section with different meaning. semver is broken into three sections separated by a dot.
+```json
+major.minor.patch
+
+1.0.2
+```
+Major, minor and patch represent the different releases of a package.
+
+- `^` - caret
+  - If you see ^1.0.2 it means to install version 1.0.2 or the latest _minor or patch_ version such as 1.1.0.
+- `~` - tilde - 
+  - So if you see ~1.0.2 it means to install version 1.0.2 or the _latest patch version_ such as 1.0.4.
+
+source: https://michaelsoolee.com/npm-package-tilde-caret/
+___
+
+

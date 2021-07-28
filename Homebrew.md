@@ -20,6 +20,8 @@ Simon says: "run this every day":
 
 -> updates brew, updates everything installed with brew and throws everything redundant away.
 
+`brew reinstall example-package`
+
 -------
 
 #### How to Uninstall & Remove Homebrew Packages
