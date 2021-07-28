@@ -78,6 +78,12 @@ ___
 
 ### NVM - Switch Node Environments
 - node version manager
+
+- check which versions are available
+`nvm ls-remote`
+- in the relevant directory:
+`nvm install 11.15.0`
+
 - https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
 ___
 
