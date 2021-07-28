@@ -36,6 +36,21 @@ branch löschen
 
 `git pull --rebase`
 ähnlich wie rebase master nur für den Fall, dass man mit einem anderen Teammitglied im **gleichen** branch arbeitet und sich beispielsweise die commits unter den eigenen ziehen will, die der andere schon vor einem committed hatte.
+___
+
+
+### clone / downloading from GitHub
+
+`git clone [url] [where to clone]`
+
+Example:  
+`git clone https://github.com/CoreyMSchafer/remote_repo.git . `
+
+- `.` indicates the current directory
+
+or just go to the directory where you want to have it and just go
+`git clone [git.url]`
+___
 
 
 ### workflow on GitHub
