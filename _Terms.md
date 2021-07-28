@@ -236,6 +236,22 @@ There are multiple uses for the word "runtime", and each one is slightly differe
 
 ___
 
+
+### Semver Syntax
+it is used i.g. in package.json for version numbers, like `1.2.1`
+
+The number stands for MAJOR.MINOR.PATCH:
+
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards compatible manner, and
+- PATCH version when you make backwards compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+source: https://semver.org/
+___
+
+
 ### Server
 A **server is a computer, a device or a program** that is dedicated to managing network resources. They are called that because they “serve” another computer, device, or program called “client” to which they provide functionality.
 
