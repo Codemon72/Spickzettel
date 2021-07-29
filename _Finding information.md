@@ -31,6 +31,8 @@ Tips from Paul:
 - search the term on youtube. Explained by a person, maybe even with imagery is often helpful.
 
 - take your time with the official docs or README files. They are frequently tricky to get into but *can* be quite enlightening.
+___
+
 
 #### when lost
 The French build a road across the Sahara. Because of sand and wind the road can become  covered with sand and totally invisible. So they put up black oil drums at every 5 km (which is how far you can spot anything due to the curvature of the earth). 

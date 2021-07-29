@@ -3,6 +3,9 @@ https://github.com/bradtraversy/design-resources-for-developers/blob/master/read
 
 ### Marko Denic's List
 - https://markodenic.com/50-free-tools-and-resources/
+
+### Egghead's bite-size video tutorials for badass web developers
+- https://egghead.io/topics
 ___
 
 
