@@ -92,6 +92,12 @@ Now `git push` might not work. Then set the upstream with specified branch:
 ___
 
 
+### Visual Studio Code
+- restoring a deleted file: on the left click on the Source Control symbol, select deleted file and click the return symbol 'Discard Changes'
+
+___
+
+
 #### Gitignore file
 
 ###### How To
