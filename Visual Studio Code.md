@@ -56,7 +56,13 @@ ___
 
 ### Debugging in Node
 - https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+___
 
+
+### Reveal in Finder
+- right click on the tab of any file (open or not) and select 'reveal in finder'.
+Very nice for copying or sending it to another place. : )
+___
 
  
 
