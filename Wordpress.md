@@ -22,7 +22,7 @@ the juicy bits:
 
 ### upload to site
 - open cyberduck
-- pick destination / destination folder (/webseiten/wildplastic.com/wp-content/themes/wildplastic)
+- pick destination / destination folder (/webseiten/willowland.com/wp-content/themes/willowland)
 - right-click 'upload'
 - pick the file you want to upload
 - 'upload'
@@ -30,6 +30,14 @@ the juicy bits:
 
 ## Watch out
 - php or Wordpress loves to build `<p>` where it sees empty lines. For example in internal CSS!!
+
+### Workflow
+- get access to site
+- download site and save it to GitHub
+- work in small increments
+  - test your code in DevTools (in all browsers)
+  - apply to local files and upload them to site with cyberduck
+  - hard refresh page - if necessary: empty and refill cache via admin dashboard: plugins > WP Rocket > Einstellungen
 
 
 ## Handled Bugs
