@@ -54,6 +54,12 @@ typing:
 ___
 
 
+### Debugging
+
+- follow: https://www.youtube.com/watch?v=tC91t9OvVHA
+___
+
+
 ### Debugging in Node
 - https://code.visualstudio.com/docs/nodejs/nodejs-debugging
 ___
