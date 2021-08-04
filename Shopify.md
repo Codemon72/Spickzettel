@@ -1,15 +1,6 @@
 ### Shopify Basics
 [Help Center](https://help.shopify.com/en)
 
-#### workflow for development / publishing themes
-Jody Edgar's Advice: https://youtu.be/Tt-Wy-ZDwas?t=110
-- make a copy of the live theme and name it: "[current title] (Development)"
-- work on the copy
-- publish the finished version
-- rename the former active version to: "[current title] (date last saved)"
-- rename the published version to: "[current title] (active)"
-___
-
 
 ### Getting started with Shopify CLI
 - https://shopify.dev/themes/tools/cli/getting-started
@@ -20,7 +11,6 @@ brew install shopify-cli
 
 shopify version
 
-
 shopify login --store example-store.myshopify.com
 
 mkdir example-store
@@ -28,6 +18,17 @@ mkdir example-store
 shopify theme pull
 shopify theme serve
 ```
+- The terminal offers you pages in localhost and 'Online Store Editor' to work in
+___
+
+
+#### workflow for development 
+see above (Getting started with Shopify CLI)
+- work on theme
+- push changes to feature branch on GitHub
+- (?GitHub Integration?)
+- merge and tag the repo (-> "Create a new release")
+- push master branch to shopify: `shopify theme push --unpublished`
 ___
 
 
@@ -56,6 +57,13 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 
 ## MIGHT BE OUT-DATED:
+#### workflow for development / publishing themes
+Jody Edgar's Advice: https://youtu.be/Tt-Wy-ZDwas?t=110
+- make a copy of the live theme and name it: "[current title] (Development)"
+- work on the copy
+- publish the finished version
+- rename the former active version to: "[current title] (date last saved)"
+- rename the published version to: "[current title] (active)"
 
 #### workflow for new project:
 - open a folder: `mkdir example-folder` //use dashes between words
