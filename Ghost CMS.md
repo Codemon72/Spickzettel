@@ -69,7 +69,9 @@ https://forum.ghost.org/t/what-is-the-best-way-for-pair-ghost-theme-development/
 ___
 
 
-### Docker | Git | DB
-upon start git notices content/data/ghost.db being modified.
-Why?
-You can reset this with `git restore content/data/ghost.db`.
+### Workflow for Ghost in Docker
+- start Docker
+- in project directory: `docker-compose up -d`
+- (if JS and CSS compiled with gulp: 
+  - cd into content/themes/example-theme and run `gulp`)
+- after finishing: `docker-compose down`
