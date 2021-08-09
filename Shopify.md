@@ -35,6 +35,7 @@ ___
 ### Liquid Basics
 Documentation: https://shopify.dev/concepts/shopify-introduction
 CheatSheet: https://www.shopify.com/partners/shopify-cheat-sheet
+Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
 
 Chris the Freelancers:https://www.youtube.com/watch?v=zBtwd2OfZsI 
 Chris the Freelancer guide: https://www.christhefreelancer.com/shopify-liquid-guide/
