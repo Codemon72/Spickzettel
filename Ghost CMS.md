@@ -14,11 +14,13 @@
 - download desired theme
 - copy theme, rename it and start working with it
 
-**ghost stop** to stop Ghost
-**ghost start** to start Ghost
-**ghost log** views logs
-**ghost ls** to list all running Ghost blogs
-Run **ghost help** for a list of available commands, or explore the full [Ghost-CLI documentation](https://ghost.org/docs/api/v3/ghost-cli/).
+`ghost stop` to stop Ghost
+`ghost start` to start Ghost
+`ghost log` views logs
+`ghost ls` to list all running Ghost blogs
+`ghost help` for a list of available commands, or explore the full [Ghost-CLI documentation](https://ghost.org/docs/api/v3/ghost-cli/).
+`ghost version` to list versions of Ghost and Ghost-CLI
+
 
 Installation of Handlebars is already done for you in Ghost.
 
