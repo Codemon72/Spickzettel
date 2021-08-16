@@ -68,15 +68,25 @@ to request review:
 or (probably for more complex ones):
 `git config --global alias.acm '!git add -A && git commit -m'`
 
-sources: 
-- https://www.git-scm.com/book/en/v2/Git-Basics-Git-Aliases
-- https://stackoverflow.com/a/4299159/709467
-
 - `git config --get-regexp alias` - List just aliases
 
 - `git config --list` - List all config parameters
 
 - `git log` - logs commit history
+
+#### my favorite aliases
+```shell
+git config --global alias.co checkout
+git config --global alias.s status
+git config --global alias.acm '!git add -A && git commit -m'
+git config --global alias.lg "log --color --graph 
+--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
+%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+sources:
+- https://www.git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+- https://stackoverflow.com/a/4299159/709467
+- https://coderwall.com/p/euwpig/a-better-git-log
 ___
 
 
@@ -141,9 +151,51 @@ git branch -M <newname>
 
 If you need to rename a remote branch, simply rename your local branch, push it with the new name (and thereby create a new branch remotely) and delete the old branch.
 
----
-
 source: https://www.git-tower.com/learn/git/faq/git-rename-branch/
+___ 
+
+### Setting up git on new machine
+1. install git (it comes automatically with homebrew). If you use something else, look up how to install it.
+
+2. Setting your Git username for *every* repository on your computer:
+`git config --global user.name "Mona Lisa"`
+
+3. Setting your commit email address
+`git config --global user.email "email@example.com"`
+
+4. Set up you SSH key to connect safely to your GitHub account
+
+4. 1. Check for existing ssh key on your machine
+`ls -al ~/.ssh`
+if there are no files with stuff like
+
+    id_rsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+
+go and:
+
+4. 2. Generate a new ssh key for your machine
+`ssh-keygen -t ed25519 -C "your_email@example.com"`
+q: "enter file in which to enter..." - a: Enter
+q: "enter passphrase..." - a: Enter
+
+
+4. 3. Add the new SSH key to your SSH agent
+- best follow the tutorial: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+
+
+4. 4. and add your public key to your GitHub account
+copy your public key to your clipboard
+`pbcopy < ~/.ssh/id_ed25519.pub`
+
+and add it in your GitHub account
+account > SSH & GGP keys > add new SSH key
+
+Docs: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+___
+
+
 
 
 source: https://code.likeagirl.io/how-to-get-rid-of-ds-store-and-node-modules-in-git-repositories-d37b8a391247
