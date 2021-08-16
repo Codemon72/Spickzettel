@@ -108,7 +108,7 @@ ___
 ___
 
 
-#### Gitignore file
+### Gitignore file
 
 ###### How To
 
@@ -123,7 +123,7 @@ partials/structure/stylesheet.html      # note the file with its whole path from
 
 Tip: `stylesheet.html` will ignore all matching files in any directory.
 
-###### What is the `.DS_Store` file and why does it appear in my repository?
+#### What is the `.DS_Store` file and why does it appear in my repository?
 Navigating to a folder using the "Finder" on Mac generates a .DS_Store file holding metadata about the folder (e.g. thumbnails etc.). These files can pollute your git commits and are annoying.
 
 Luckily, you can add files of this kind to their global gitignore file to never commit these to their git projects:
@@ -132,9 +132,20 @@ On terminal execute:
 echo .DS_Store >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
-###### Remove remote files
+
+#### Delete .DS_STORE files in current folder and all subfolders from command line on Mac
+`find . -name ".DS_Store" -delete`
+
+#### Remove remote files
 If you have already accidentally committed it to your repository, use:
 `git rm -r --cached .DS_Store`
+
+##### good .gitignore boilerplate
+```
+.DS_Store
+
+project-notes.md
+```
 ___
 
 #### Rename Branch
