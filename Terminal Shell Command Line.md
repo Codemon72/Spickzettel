@@ -13,8 +13,7 @@ best sources:
   - `cat example.txt`
 
 `chown` - change file owner and group
-  - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen
-  - (homebrew was not functioning - "unlinked kegs in the cellar")
+  - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen (homebrew was not functioning - "unlinked kegs in the cellar" - see in "Examples / SimonSays" below)
 
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
@@ -24,6 +23,7 @@ best sources:
   - excellent Traversy walkthrough: https://www.youtube.com/watch?v=7XUibDYw4mc
 
 `ls` - list directory contents
+  - `ls -l /usr/local/` - list directory contents, using long listing format, information about the files (current directory by default) - also see in "Examples / SimonSays" below
 
 `whoami` - print effective userid
 
