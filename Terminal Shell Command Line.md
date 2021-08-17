@@ -12,6 +12,9 @@ best sources:
 `cat` - concatenate files and print on the standard output
   - `cat example.txt`
 
+`chown` - change file owner and group
+  - `sudo chown -R "$USER":admin /usr/local/*` (homebrew was not functioning - "unlinked kegs in the cellar")
+
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
   - `curl --head` or `curl -I` - only header
