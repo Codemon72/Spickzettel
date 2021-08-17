@@ -13,7 +13,8 @@ best sources:
   - `cat example.txt`
 
 `chown` - change file owner and group
-  - `sudo chown -R "$USER":admin /usr/local/*` (homebrew was not functioning - "unlinked kegs in the cellar")
+  - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen
+  - (homebrew was not functioning - "unlinked kegs in the cellar")
 
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
@@ -61,3 +62,21 @@ shortcut to look up ALL previous commands: `CTRL + R`; start writing command; if
 
 --- 
 
+`sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen
+  - homebrew was not functioning and gave warning: "unlinked kegs in the cellar"
+
+Simon says:
+"Die Permissions in /usr/local  waren kaputt. Das siehst du an dem 501 in der Liste. Die Verzeichnisse gehören einen Benutzer der nicht existiert. Das kann passieren wenn man z.B. ein Backup von einem Laptop auf einen anderen überträgt.
+Wir haben einfach alles in /usr/local auf deinen aktuellen Benutzer übertragen."
+
+```
+codemon72@Midas-MBP ~ % ls -l /usr/local/
+total 0
+drwxrwxr-x   12 501             admin   384 Aug 16 19:09 Caskroom
+drwxrwxr-x   43 501             admin  1376 Aug 16 16:23 Cellar
+drwxrwxr-x    4 501             admin   128 Aug 16 16:23 Frameworks
+drwxr-xr-x   21 clemensbruesch  admin   672 Aug 16 07:53 Homebrew
+drwxrwxr-x  205 501             admin  6560 Aug 17 09:36 bin
+drwxrwxr-x    9 501             admin   288 Aug 16 16:23 etc
+...
+```
