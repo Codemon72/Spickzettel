@@ -12,6 +12,9 @@ best sources:
 `cat` - concatenate files and print on the standard output
   - `cat example.txt`
 
+`cd` - change directory
+  - `mkdir example-title && cd $_` - create repository with title 'example-title' and enter it
+
 `chown` - change file owner and group
   - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen (homebrew was not functioning - "unlinked kegs in the cellar" - see in "Examples / SimonSays" below)
 
@@ -24,6 +27,12 @@ best sources:
 
 `ls` - list directory contents
   - `ls -l /usr/local/` - list directory contents, using long listing format, information about the files (current directory by default) - also see in "Examples / SimonSays" below
+
+`mkdir` - make directories
+  - `mkdire example_1 example_2` - create multiple directories
+  - `mkdir example-title && cd $_` - create repository with title 'example-title' and enter it
+
+`pwd` - print name of current/working directory
 
 `whoami` - print effective userid
 
