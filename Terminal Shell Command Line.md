@@ -18,6 +18,9 @@ best sources:
 `chown` - change file owner and group
   - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen (homebrew was not functioning - "unlinked kegs in the cellar" - see in "Examples / SimonSays" below)
 
+`grep` - print lines matching a pattern ('global regular expression print')
+  - `ls -a | grep .nvm` - list all directory content but filter them for names starting with `.nvm`
+
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
   - `curl --head` or `curl -I` - only header
@@ -27,6 +30,7 @@ best sources:
 
 `ls` - list directory contents
   - `ls -l /usr/local/` - list directory contents, using long listing format, information about the files (current directory by default) - also see in "Examples / SimonSays" below
+  - `ls -a` - list all directory contents, (-a, --all) do not ignore entries starting with `.`
 
 `mkdir` - make directories
   - `mkdire example_1 example_2` - create multiple directories

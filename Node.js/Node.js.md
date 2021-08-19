@@ -84,7 +84,8 @@ ___
 - in the relevant directory:
 `nvm install 11.15.0`
 
-- https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
+- source: https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
+- Doku: https://github.com/nvm-sh/nvm#installation-and-update
 ___
 
 
