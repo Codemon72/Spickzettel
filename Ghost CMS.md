@@ -2,7 +2,7 @@
 
 **Installation**: https://ghost.org/docs/install/local/
 **Ghost Forum**: https://forum.ghost.org/
-**[Ghost for Beginners Website](https://www.ghostforbeginners.com/)**
+
 
 ## Workflow for new Project
 

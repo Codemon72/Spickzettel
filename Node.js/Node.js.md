@@ -81,11 +81,18 @@ ___
 
 - check which versions are available
 `nvm ls-remote`
-- in the relevant directory:
+- show all installed versions available locally on your machine
+`nvm ls`
+
+In the relevant directory: 
+- install the latest version of Node.js to your machine
+`nvm install node`
+- install specific version
 `nvm install 11.15.0`
 
 - source: https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
-- Doku: https://github.com/nvm-sh/nvm#installation-and-update
+- Docs: https://github.com/nvm-sh/nvm#table-of-contents
+- Installation: https://github.com/nvm-sh/nvm#installation-and-update
 ___
 
 
