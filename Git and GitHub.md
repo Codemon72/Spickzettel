@@ -143,6 +143,7 @@ If you have already accidentally committed it to your repository, use:
 ##### good .gitignore boilerplate
 ```
 .DS_Store
+*/.DS_Store
 
 project-notes.md
 ```
