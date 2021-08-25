@@ -12,6 +12,9 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 `git push -u origin example-branchName` - first push from new branch
 or just `git push` - if the branch has been established before
 
+`git checkout -- example.html` reverts all changes in example.html, that had not been added
+`git checkout -- . ` reverts **all** all changes, that have not been added
+
 ### branches
 branch anlegen
 `git branch example-branchName`
