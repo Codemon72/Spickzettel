@@ -84,3 +84,14 @@ ___
 - (if JS and CSS compiled with gulp: 
   - cd into content/themes/example-theme and run `gulp`)
 - after finishing: `docker-compose down`
+
+
+##### updating Ghost:
+- Docker runterfahren `docker-compose down`
+- `docker system prune -af` löscht global _alle_ Images! 
+  - (`--all, -a`: Remove all unused images not just dangling ones)
+  - (`--force, -f`:	Do not prompt for confirmation)
+- Beim nächsten `docker-compose up -d` sollte er sich das aktuelle Image ziehen.
+Möglicherweise (2021-08-25) ein 2. Mal laufen lassen.
+
+Docs: https://docs.docker.com/engine/reference/commandline/system_prune/
