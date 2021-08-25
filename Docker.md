@@ -1,3 +1,13 @@
+Docs: https://docs.docker.com/
+
+Gist from Brad:
+https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
+
+Beginner Tutorial from Mosh: https://youtu.be/pTFZFxd4hOI
+
+very good ELI5: https://www.reddit.com/r/AskComputerScience/comments/9xktwl/eli5_please_what_is_docker/
+
+
 ### What is Docker?
 - like a virtual machine but structured differently to save RAM and CPU
 - Docker is a platform for building, running and shipping applications in a consistent manner, so if your application works on your developing machine, it can run and function _the same way_ on other machines.
@@ -40,13 +50,6 @@ An image contains everything an application needs to run.
 - environment variables
 
 
-### Gist from Brad:
-https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
-
-### Beginner Tutorial
-Mosh: https://youtu.be/pTFZFxd4hOI
-
-### very good ELI5: https://www.reddit.com/r/AskComputerScience/comments/9xktwl/eli5_please_what_is_docker/
 
 #### getting info
 `docker version`
