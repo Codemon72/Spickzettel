@@ -68,6 +68,13 @@ On dev instance use github only for the theme folder content/themes/casper
 Deploy the theme to production with github action https://github.com/marketplace/actions/deploy-ghost-theme "
 https://forum.ghost.org/t/what-is-the-best-way-for-pair-ghost-theme-development/16797
 
+
+### Update Ghost
+The command `ghost update` will coach you through the update.
+"If you installed Ghost using Ghost-CLI, the ghost update command will inform you of the commands to run to perform the necessary intermediate updates."
+
+Docs: https://ghost.org/docs/update/ 
+
 ___
 
 
