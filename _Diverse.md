@@ -1,3 +1,9 @@
+### Cyberduck
+- download with homebrew
+- connect to server:
+  - /file/open connection
+    - enter Server (z.Bsp.: ftp.12345.hostingkunde.de), Username (z.B.: 123456-xy), Password
+___
 
 
 ### Disable Google Analytics
