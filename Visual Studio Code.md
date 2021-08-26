@@ -2,10 +2,10 @@
 
 - Auto Rename Tag
 - Bracket Pair Colorizer
-- Git Blame
-- Live Server
+- Git Blame ✅
+- Live Server ✅
 - Live Sass Compiler
-- Markdown Preview Enhanced
+- Markdown Preview Enhanced ✅
 - Markdown Shortcuts
 - Prettier
 - ESLint
