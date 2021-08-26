@@ -140,6 +140,9 @@ xl
 @media only screen  and (min-width : 1824px) {
 }
 ```
+
+##### Screen sizes in Dev Tools
+- 13" screen is about 1000 x 650px
 ___
 
 
