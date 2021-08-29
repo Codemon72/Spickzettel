@@ -111,17 +111,28 @@ ___
 Graphic User Interface
 ___
 
+
 ### [HMR] Waiting for update signal from WDS... 
 ... is not an error. 
 **HMR**: Hot Module Reload. 
 **WDS**: Webpack Dev Server. This is just saying it's ready to refresh when you save a file so you don't need to manually refresh.
-
 ___
+
 
 ### Heap
 The heap is used for data allocated dynamically, for anything that needs to persist across function calls.
 The heap grows when you allocate memory in your program, and shrinks when you deallocate it. In languages like C and C++, you must manually deallocate memory or use objects that keep track of heap allocation for you.
 ___
+
+
+### MERN Stack
+The MERN Stack is a popular stack of technologies for building a modern, single-page application.
+- MongoDB is document based open source data base.
+- Express is a web application framework that makes it simpler to code a web server in JS
+- React is a JS frontend library for building user interfaces
+- Node.js allows JS to run outside of a browser, in places like a web server.
+___
+
 
 ### Kernel
 - A Kernel is the core of an OS (operating system).
