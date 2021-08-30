@@ -95,3 +95,7 @@ ___
 Möglicherweise (2021-08-25) ein 2. Mal laufen lassen.
 
 Docs: https://docs.docker.com/engine/reference/commandline/system_prune/
+
+
+### Ghost and Git
+- every login via admin (localhost:3001/ghost), resonates in the database - no problem; just so you know ; ) 
