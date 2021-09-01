@@ -66,6 +66,28 @@ JSON Server is a Node Module that you can use to create demo rest json webservic
 ___
 
 
+### placeholder images / Unsplash
+**Placeholder images**
+(source: https://www.youtube.com/watch?v=uc748NLoFT8)
+`<img src="https://source.unsplash.com/80x120" alt="random image">`
+
+multiple random images:
+```
+<img src="https://source.unsplash.com/random/200x200?sig=1" />
+<img src="https://source.unsplash.com/random/200x200?sig=2" />
+<img src="https://source.unsplash.com/random/200x200?sig=3" />
+```
+
+No longer valid(??):
+<img scr="https://unsplash.it/[width]/[height]" - finds random image with those parameters
+- for square images just use one value
+- **g** for grayscale: "//unsplash.it/g/500/500"  
+- **?blur** for blurry image: "//unsplash.it/g/600/400/?blur" 
+- go to www.unsplash.it or https://picsum.photos/ for specific image, 
+- get a specific image link from https://picsum.photos/images (they are somehow in bed with unsplash, just click www.unsplash.it to find out)
+___
+
+
 ### Network Connectivity Check
 - https://fast.com
 ___
