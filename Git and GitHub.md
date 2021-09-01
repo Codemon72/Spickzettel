@@ -13,7 +13,7 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 or just `git push` - if the branch has been established before
 
 `git checkout -- example.html` reverts all changes in example.html, that had not been added
-`git checkout -- . ` reverts **all** all changes, that have not been added
+`git checkout -- .` reverts **all** all changes, that have not been added
 
 ### branches
 branch anlegen
@@ -27,6 +27,9 @@ gleichzeitig neuen branch anlegen und hineinwechseln
 
 alle branches anzeigen lassen
 `git branch`
+
+rename a branch
+`git branch -m example-name`
 
 neuen branch auf github pushen
 `git push -u origin example-branchName`
