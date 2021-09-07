@@ -93,6 +93,20 @@ We tell our daughter, "You can invite one friend over, but they have to leave at
 This one is really imperfect. This sets the value in seconds to cache preflight request results, such as the data in Access-Control-Allow-Headers and Access-Control-Allow-Methods headers.
 ___
 
+
+### DevOps
+DevOp's has become a buzzword and means different things to different people.
+
+At it's most basic; it aligns with the "Agile" practices. One of the big issues with most companies is that there are distinct engineering departments all with separate goals.
+
+In this case; we are concerned with the almost polar opposite goals of development and operations. Developers want to make new features, improve the product; fix bugs, etc. Operations wants to get everything up and running and never change; since changes cause new errors, bugs, performance problems, etc.
+
+DevOps goal is to ease the tension between these two camps. Having operations people in the dev trenches is the main way this is achieved. Their job is to make it as easy as possible for developers and operations to do what they need to do. Providing identical dev, test, staging and QA environments; setting up automatic testing and deployment pipelines, while also being involved in the development process so they are more equipped to handle production errors. Traditionally, operations is almost oblivious to the code base since they only care about their infastructure.
+
+The goal is to make the entire process so seemless that you can do thousands of production deployments per day; as opposed to traditional methods of setting out a deployment window once every quarter or however long.
+___
+
+
 ### DBMS
 Database Management System  
 - a special software program that helps users create and maintain a database
