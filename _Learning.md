@@ -44,14 +44,15 @@ https://www.monkeyuser.com/
 
 
 # When I'm stuck
-- zoom in and out - go really close into it, take you time to see the details, read the error message word for word OR zoom out and remind yourself about the big picture: where are you, what are you trying to achieve, what is the next step?
+- "Have you tried turning it off and on again?" (Can also work with log out - log in. - Shopify CLI)
+- write pseudo code
+- zoom in and out - go really close into it, take your time to see the details, read the error message word for word OR zoom out and remind yourself about the big picture: where are you, what are you trying to achieve, what is the next step?
 - take a break
 - visualize it
 - verbalize it - talk to yourself or a colleague about what you are doing, write it down if necessary - than you can also put it on stackoverflow, etc
-- reflect about your expectations
+- reflect about your expectations (e.g.: yes it should be in the docs, but you'll find it in the forum).
 - back to the Kanban board, break down the ticket into smaller steps
-- write pseudo code
-- be conscious about your emotional level - you might need to take a break or do something else that will give you a success
+- reflect on your personal state of mind - you might need to take a break or do something else that will give you a success
 - when you get unstuck: reflect on how and why you got stock
 
 
