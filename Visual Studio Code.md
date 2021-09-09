@@ -1,18 +1,17 @@
 ### Extensions I've Used and Loved
 
-- Auto Rename Tag
-- Bracket Pair Colorizer
+- Auto Rename Tag ✅
+- Bracket Pair Colorizer ✅
 - Git Blame ✅
 - Live Server ✅
-- Live Sass Compiler
+- Live Sass Compiler ✅
 - Markdown Preview Enhanced ✅
-- Markdown Shortcuts
-- Prettier
+- Prettier ✅
 - ESLint
 - Live Share
-- Highlight Matching Tag
+- Highlight Matching Tag ✅
 - Remote Containers // for Dockers
-- ES7 React/Redux/GraphQL/React-Native snippets 
+- ES7 React/Redux/GraphQL/React-Native snippets  ✅
   - gives the shortcut `rafce` for arrow function component that exports at bottom
 ___
 

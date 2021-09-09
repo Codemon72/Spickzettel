@@ -1,5 +1,6 @@
 ### Shopify Basics
 [Help Center](https://help.shopify.com/en)
+- Liquid Basics: https://shopify.github.io/liquid/basics/introduction/
 
 
 ### Getting started with Shopify CLI
