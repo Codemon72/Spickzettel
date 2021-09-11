@@ -175,17 +175,31 @@ ___
   source: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
 
 ___
+
+
 ### Custom Checkbox
 - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-
 ___
+
+
+### BEM
+CSS naming convention with a high adoption rate.
+
+- Block__Element--Modifier
+- modal__button--highlighted
+
+Docs: http://getbem.com/naming/
+__
+
+
 #### _blank and noopener
 if a link is to open in a new tab it receives `target="_blank"`. 
 This apparently makes the page vulnerable to attacks.
 Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are golden.
 Source: https://web.dev/external-anchors-use-rel-noopener/
-
 ___
+
+
 ### Box Shadows
 The box-shadow property applies one or more shadows to an element.
 
