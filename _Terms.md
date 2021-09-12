@@ -95,6 +95,17 @@ ___
 
 
 ### DevOps
+tldr: Task of DevOps: Make software development and deployment as easy as possible for the dev team, make deployments and modifications to systems seamless and hands off.
+difference betweens Devs and Ops: they're both programmers - but one is focused on writing the software, one is focused on deploying it and keeping it running.
+--- 
+Traditionally, an IT company had two fully separate departments and processes. Development, and operations. Dev was responsible for writing, testing, debugging and maintaining the software. Dev was staffed by programmers and software engineers. Ops, in turn, was responsible for taking Dev's finished product, the completed software, and setting it up on servers to run it. They would take care of the server's operating system, and any networking services it depends on, and they would be responsible for stuff like capacity and load management. Ops was mostly staffed by sysadmins and networking/infrastructure engineers.
+
+This way of doing things worked well for a long time because these were quite different problem domains requiring different expertise. The role divisions were clean: Dev produces the software, Ops runs it. If a bug in the software was found in production, Ops would report it back to Dev and they would address the bug in their next version release, which Ops would then install.
+
+But nowadays, the stuff which Ops engineers are responsible for, has started to look more and more like what the Dev engineers work with. Instead of physical servers, they're dealing with virtual machines. And starting/stopping those virtual machines is done using automated, programmed API calls. And the code to do all that stuff is increasingly being treated just like the software that Dev is writing. The connectivity between servers and their storage backends is no longer described by a wiring diagram, but by a structured document which tells the VM host how to hook it up. They call this type of thing 'infrastructure as code'.
+
+So: Devops. It's a management and workflow philosophy in IT where 'ops', the process of getting the software hosted and running on a server, or a cluster of servers with load balancing or whatever, is treated as continuous with the software development process, instead of distinct from it.
+---
 DevOp's has become a buzzword and means different things to different people.
 
 At it's most basic; it aligns with the "Agile" practices. One of the big issues with most companies is that there are distinct engineering departments all with separate goals.
@@ -104,6 +115,23 @@ In this case; we are concerned with the almost polar opposite goals of developme
 DevOps goal is to ease the tension between these two camps. Having operations people in the dev trenches is the main way this is achieved. Their job is to make it as easy as possible for developers and operations to do what they need to do. Providing identical dev, test, staging and QA environments; setting up automatic testing and deployment pipelines, while also being involved in the development process so they are more equipped to handle production errors. Traditionally, operations is almost oblivious to the code base since they only care about their infastructure.
 
 The goal is to make the entire process so seemless that you can do thousands of production deployments per day; as opposed to traditional methods of setting out a deployment window once every quarter or however long.
+---
+practical example:
+Suppose you've got a small software company with a popular web app. The company comes up with an idea for a feature.
+
+Both the software engineer and the DevOps engineer have similar education - maybe a degree in C.S. or E.E. - but they have different specialties.
+
+The software engineer is the one who writes the code for the feature and creates a new version of the server software. She tests it carefully to make sure it does what it's supposed to do, but she can't be sure if it will work perfectly until it's deployed to millions of users.
+
+The DevOps engineer maintains the servers. She takes the new server software and installs it on just one server first, so only about 5% of the customers get the new software. She monitors the logs and system load for a few hours and everything seems fine, so she slowly ramps up to 95%, but leaving one server running the old software just in case.
+
+The next day two servers run out of memory and restart. Luckily the DevOps engineer designed a really fault-tolerant system, so everything keeps running, but she notices that other servers are also leaking memory too, while the one holdout running the old software is using much less memory and seems stable.
+
+Now that she's confirmed there's a memory leak, the DevOps engineer carefully rolls back all of the servers to the previous working version and files a ticket with the software engineer to fix the memory leak. The software engineer fixes the bug, writes a new test to prevent future regressions, and then releases a new version of the server software to try again the next day.
+
+Meanwhile, the DevOps engineer writes some scripts to automatically detect memory leaks and trigger an auto-rollback script, so that if something similar were to happen over the weekend, she wouldn't even have to necessarily do anything.
+
+So they're both programmers - but one is focused on writing the software, one is focused on deploying it and keeping it running.
 ___
 
 
