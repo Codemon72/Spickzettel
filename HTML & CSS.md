@@ -2,8 +2,13 @@ sources:
 - https://www.w3.org/wiki/CSS/Properties
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index
 - https://www.w3schools.com/css/default.asp
+
 super cool tips:
 - https://markodenic.com/css-tips/
+
+## Tools
+- PurgeCSS https://purgecss.com/ for filtering out unused CSS
+  - recommended by Syntax Podcast 2021-08
 
 
 ### Layout Debugger
@@ -377,7 +382,6 @@ ___
 - describes how **inline-level content** of a **block container** is aligned
   - ... and this is why it also works on images ☝️💡🤓
 ___
-
 
 
 ### Tooltip Magic
