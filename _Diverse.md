@@ -20,6 +20,11 @@ function disableSendingAnalytics() {
 ___
 
 
+### Excel, Spreadsheets, google sheets
+- Course by Barton Poulson: https://www.freecodecamp.org/news/learn-google-sheets/
+___
+
+
 ### Format USB Drive
 - nowadays (2021): format to ExFat
 - (if it's already formatted with FAT32 you should be fine as well)
