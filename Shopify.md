@@ -6,7 +6,7 @@
 ### Getting started with Shopify CLI
 - https://shopify.dev/themes/tools/cli/getting-started
 
-```shell
+```
 brew tap shopify/shopify
 brew install shopify-cli
 
@@ -20,6 +20,17 @@ shopify theme pull
 shopify theme serve
 ```
 - The terminal offers you pages in localhost and 'Online Store Editor' to work in
+___
+
+
+### Workflow with Shopify Cli
+
+- `shopify login --store https://example.myshopify.com/`
+- `shopify store` Display the store that you're currently connected to:
+- `shopify theme serve`
+- open in theme preview (not localhost - that seems to be buggy)
+- do your thing
+- `shopify logout`
 ___
 
 
@@ -40,12 +51,6 @@ Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
 
 Chris the Freelancers:https://www.youtube.com/watch?v=zBtwd2OfZsI 
 Chris the Freelancer guide: https://www.christhefreelancer.com/shopify-liquid-guide/
-___
-
-
-
-
-
 ___
 
 
