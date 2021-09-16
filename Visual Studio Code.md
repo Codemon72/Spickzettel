@@ -22,6 +22,7 @@ ___
 - `ALT + CMD + (up or down)` - expand cursor over more lines up or down
 - `SHIFT + ALT + (up or down)` - copy whole line up or down
 - `SHIFT + CMD + 7` - comment out line
+- `CMD + P` - open search field to find and open file by name
 
 
 typing:

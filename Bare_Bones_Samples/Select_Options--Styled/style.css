@@ -1,0 +1,15 @@
+.select-style {
+  width: 100%;
+  padding: 10px 28px 10px 14px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(14, 14, 14);
+  cursor: pointer;
+  outline: none;
+  /* get rid of custom nupsi */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  /* set own nupsi */
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 19 12' width='10' height='10' xmlns='http://www.w3.org/2000/svg'><polyline fill='none' stroke='currentColor' points='17 2 9.5 10 2 2' fill-rule='evenodd' stroke-width='2' stroke-linecap='square'></polyline></svg>") no-repeat;
+  background-position: right 15px top 50%;
+}
