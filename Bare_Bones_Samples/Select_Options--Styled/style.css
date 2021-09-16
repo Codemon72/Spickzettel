@@ -4,8 +4,9 @@
   margin-bottom: 10px;
   border: 1px solid rgb(14, 14, 14);
   cursor: pointer;
+  /* get rid of default outline on focus:visible */
   outline: none;
-  /* get rid of custom nupsi */
+  /* get rid of default nupsi */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; 
