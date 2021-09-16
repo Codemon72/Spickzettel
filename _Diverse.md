@@ -1,3 +1,12 @@
+
+### Browser Shortcuts (Mac)
+- ALT + CMD + I - open / close dev tools
+- ALT + CMD + C - open / close dev tools to inspect
+- ALT + CMD + left/right - change Tabs
+- CMD + T - open new tab
+- CMD + W - close tab
+
+
 ### Cyberduck
 - download with homebrew
 - connect to server:
