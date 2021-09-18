@@ -1,4 +1,4 @@
-is an API framework for a node application to create a REST API
+is an API framework for a server-side node application to create a REST API
 
 Getting started: http://expressjs.com/en/starter/installing.html
 Brad Traversy: [Crash Course](https://youtu.be/L72fhGm1tfE)

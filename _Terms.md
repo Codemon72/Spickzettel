@@ -1,6 +1,6 @@
 
 ### API
-An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application which shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
+An API (Application Programming Interface) is a way for two different applications to communicate. For example you want to build an application that shows the current weather, you will use the API of an online weather service to request the current weather for a given city, and you might request this say every 15 minutes.
 
 ___
 
@@ -21,7 +21,7 @@ With Client Side Validation you can provide a better user experience by respondi
 
 Example: if the user enters an invalid email format, you can show an error message immediately before the user moves to the next field. The user can then correct every field before they submit the form.
 
-Mostly the Client Side Validation depends on the JavaScript Language, so if users turn JavaScript off, it can easily bypass and submit dangerous input to the server. Client Side Validation can not protect your application from malicious attacks on your server resources and databases.
+Mostly the Client Side Validation depends on the JavaScript language, so if users turn JavaScript off, it can easily bypass and submit dangerous input to the server. Client Side Validation can not protect your application from malicious attacks on your server resources and databases.
 
 ___
 
@@ -350,6 +350,36 @@ In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 
 
 ___
+
+
+###### TDD - Test Driven Development
+is a method in which you constantly test your code while you write it.
+You can do TDD alone or with a peer.
+In TDD, you first write a failing test, then implement the function so that the test turns green. You then write another test that fails, and then improve the function. You go in this cycle until you reach a state where you tested all possible scenarios.
+  
+If you are working together with a peer, one of you writes the failing tests, and the other improves the implementation to get the test to turn green. This is also called Ping-Pong Pairing.
+
+- why?
+  - to prevent bugs
+  - safer refactoring
+  - for security reasons - pen-testing - 'pen' for 'penetration'
+  - can be a form of documentation (the tests tell you exactly what your code was meant to do)
+
+- Types of Testing:
+● Manual testing
+● Unit testing
+● Integration testing
+(and some we didn't cover:)
+● Robustness testing
+● Scalability testing
+● UI testing
+
+- CI - Continuous Integration e.g. with GitHub Actions
+- Unit testing - A method for testing only single units, mainly functions, of code in a separated, isolated way.
+- Integration testing - A method for testing applications with all components, including databases, for example. The opposite of unit testing.
+- Jest - a library for unit testing JavaScript code (installed with npm)
+___
+
 
 ### TSL
 Transport Layer Security protocol  
