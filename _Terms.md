@@ -140,6 +140,17 @@ Database Management System
 - a special software program that helps users create and maintain a database
 ___
 
+
+### Dynamic (Server Rendered) vs Static (Pre-Rendered) Sites
+- dynamic sites use server side languages to process requests at the time the request is made and generate a page and its contents in real-time. 
+- static pages are pre-rendered, cached, and delivered to the user.
+- but:
+  - Sites can be dynamically generated, cached, and served statically. 
+  - Static sites can have dynamic components. 
+- nice deep dive: https://www.zesty.io/mindshare/marketing-technology/dynamic-vs-static-websites/
+___
+
+
 ### ERD - Entity Relationship Diagram
 Useful to map out all relations in a relational database.
 ___
