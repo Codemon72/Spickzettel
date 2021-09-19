@@ -141,6 +141,16 @@ Database Management System
 ___
 
 
+### Design Patterns
+are about designing elegant solutions to repeating problems in object-oriented software. How you structure your classes and how they should collaborate. They should be _reusable_ and _extensible_. 
+- recommended read: Design Patterns by GoF (Gang of Four) 
+  - 23 design patterns in 3 categories
+    - creational: different ways to create objects
+    - structural: relationships between these objects
+    - behavioural: interaction/ communication between these objects
+___
+
+
 ### Dynamic (Server Rendered) vs Static (Pre-Rendered) Sites
 - dynamic sites use server side languages to process requests at the time the request is made and generate a page and its contents in real-time. 
 - static pages are pre-rendered, cached, and delivered to the user.
