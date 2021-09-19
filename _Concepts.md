@@ -1,3 +1,11 @@
+### Object Oriented Programming
+- core concepts: 
+  - encapsulation
+  - abstraction
+  - inheritance
+  - polymorphism 
+
+
 ### Recursion
 - recursion is when a function calls itself
 - To steal from Douglas Adams: Anything that, in happening, causes itself to happen again, happens again. That is recursion in a nutshell. Usually it is a function that calls itself inside the body of the function.

@@ -119,7 +119,7 @@ Hooks are ways that you can tell React what's going on in your program or that y
     console.log("I was mounted and will not run again!");
   }, []);
   ```
-  
+
 - `useContext`- With Context it is possible to pass data through the component tree without having to pass properties down manually at every level. Passing properties to components down in the tree is also known as Prop-Drilling.
 Context can be considered “global” for a tree of components. It is primarily used when some data for many components must be accessible at different nesting levels.
 To use them, a Context must first be created. It optionally takes an argument that contains the default value of the Context.
@@ -535,8 +535,7 @@ ReactDOM.render(<App />, reactContentRoot);
 ___
 #### Installation
 
-- install react globally with `npm install -g create-react-app` 
-- by creating an instance with `create-react-app example-repo` you autmatically get
+- install react and create an instance locally with `npx create-react-app example-repo`. You autmatically get
   - a repository named example-repo
   - a Node application
   - git initialized
