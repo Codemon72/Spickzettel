@@ -89,6 +89,11 @@ In the relevant directory:
 `nvm install node`
 - install specific version
 `nvm install 11.15.0`
+- set _newest_ version as default in all new terminals
+`nvm alias default node`
+- set _specific_ version as default in all new terminals
+`nvm alias default 11.15.0`
+
 
 - source: https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
 - Docs: https://github.com/nvm-sh/nvm#table-of-contents
