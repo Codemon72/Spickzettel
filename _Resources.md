@@ -18,6 +18,7 @@ ___
 - Pokemon API: https://pokeapi.co/
 - Star Wars API: https://swapi.dev/
 - list of public apis: https://github.com/public-apis/public-apis
+- random quote: https://api.quotable.io/random 
 - list of movies: https://www.themoviedb.org/
   - https://www.themoviedb.org/documentation/api/discover
   - https://www.themoviedb.org/settings/api
