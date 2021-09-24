@@ -17,6 +17,7 @@ ___
 - https://fakestoreapi.com/
 - JSONplaceholder API: http://jsonplaceholder.typicode.com/
 - NASA APIs: https://api.nasa.gov/
+- Pixabay Docs: https://pixabay.com/api/docs/
 - Pokemon API: https://pokeapi.co/
 - Star Wars API: https://swapi.dev/
 - list of public apis: https://github.com/public-apis/public-apis
