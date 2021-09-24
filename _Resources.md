@@ -16,6 +16,7 @@ ___
 - Entertainment APIs from rapidapi: https://rapidapi.com/category/Entertainment
 - https://fakestoreapi.com/
 - JSONplaceholder API: http://jsonplaceholder.typicode.com/
+- NASA APIs: https://api.nasa.gov/
 - Pokemon API: https://pokeapi.co/
 - Star Wars API: https://swapi.dev/
 - list of public apis: https://github.com/public-apis/public-apis
