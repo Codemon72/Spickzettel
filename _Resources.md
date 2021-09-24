@@ -13,6 +13,7 @@ ___
 - Beers: https://api.punkapi.com/v2/beers
 - Chuck Norris Jokes: https://api.chucknorris.io/
 - API of Ice and Fire: https://anapioficeandfire.com/
+- Entertainment APIs from rapidapi: https://rapidapi.com/category/Entertainment
 - https://fakestoreapi.com/
 - JSONplaceholder API: http://jsonplaceholder.typicode.com/
 - Pokemon API: https://pokeapi.co/
