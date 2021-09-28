@@ -5,6 +5,7 @@
 - ALT + CMD + left/right - change Tabs
 - CMD + T - open new tab
 - CMD + W - close tab
+- SHIFT + CMD + N - open window in incognito mode
 
 
 ### Cyberduck
