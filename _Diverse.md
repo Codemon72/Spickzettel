@@ -50,3 +50,11 @@ ___
 source: https://www.macworld.com/article/234613/how-to-format-a-thumb-drive-for-both-mac-and-windows.html
 ___
 
+
+### Gimp
+- beginners tutorial 2020-10-23: https://www.youtube.com/watch?v=x6pXJ7Ijir0
+- if erase, brush or pencil don't work anymore, you might have selected something (and outside selection nothing will work)
+  - select rectangular selection and just click somewhere once - this should unselect any areas
+___
+
+
