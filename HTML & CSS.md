@@ -284,7 +284,21 @@ input[placeholder] {
 }
 ```
 
-- styling option (of select)
+##### styling select arrow
+
+```css
+select {
+  /* Remove default arrow: */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+  /* custom arrow: */
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 width='10' height='10' xmlns='http://www.w3.org/2000/svg'><pofill='none' stroke='currentColor' points='17 2 9.5 1fill-rule='evenodd' stroke-width='2' stroke-linecap='square'></polylinefsvg>") no-repeat;
+  background-position: right 15px top 50%;
+}
+```
+
+##### styling option (of select)
   - not yet without JavaScript
 
 - background of input fields
