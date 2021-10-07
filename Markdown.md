@@ -7,3 +7,8 @@ cheat sheet: https://www.markdownguide.org/basic-syntax/
 - in square brackets: alt text
 - in parethesis: src
 - in quotes: title (displayed when hovering)
+
+### Mail-To Link
+```md
+[luke@skywalker.com](mailto:luke@skywalker.com)
+```
