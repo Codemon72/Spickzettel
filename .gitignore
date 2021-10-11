@@ -1,1 +1,7 @@
 Testing/Node/node_modules/
+
+.DS_Store
+*/.DS_Store
+
+project_notes.md
+

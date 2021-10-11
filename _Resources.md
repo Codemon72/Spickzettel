@@ -102,3 +102,7 @@ ___
 ### SVGs, Free
 - https://undraw.co/search
 ___
+
+
+### Web Components
+- https://lit.dev/ (recommended by Sven from Flavia)
