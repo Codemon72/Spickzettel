@@ -212,6 +212,7 @@ if a link is to open in a new tab it receives `target="_blank"`.
 This apparently makes the page vulnerable to attacks.
 Add `rel="noopener"` or `rel="noreferrer"` as attributes to the link and you are golden.
 Source: https://web.dev/external-anchors-use-rel-noopener/
+The noopener is needed to enhance the security of your website and prevent other websites from gaining access to your page (through the browser session). The noreferrer is used to protect referral information from being passed to the target website and this also hides referral traffic in Google analytics.
 ___
 
 
