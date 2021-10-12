@@ -1,3 +1,8 @@
+### Customizations I`ve Used and Loved
+- turn of minimap (mini map of your code on the right side)
+  - settings: uncheck 'enable'
+
+
 ### Extensions I've Used and Loved
 
 - Auto Rename Tag ✅
