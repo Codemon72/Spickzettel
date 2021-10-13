@@ -46,6 +46,14 @@ check for dead / broken links
 ___
 
 
+### images, illustrations
+- https://unsplash.com/
+- https://pixabay.com/de/
+- https://www.pexels.com/
+- free illustrations: https://mixkit.co/free-stock-art/
+___
+
+
 ### `imagemagick` for Sizing Images
 (first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
 use command line to get into correct folder, then, eg:
