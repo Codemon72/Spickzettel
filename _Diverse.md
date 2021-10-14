@@ -1,10 +1,11 @@
 
-### Browser Shortcuts (Mac)
+### Browser Short Cuts (Mac)
 - ALT + CMD + I - open / close dev tools
 - ALT + CMD + C - open / close dev tools to inspect
 - ALT + CMD + left/right - change Tabs
 - CMD + T - open new tab
 - CMD + W - close tab
+- CMD + left/ right arrows - previous/ next page
 - SHIFT + CMD + N - open window in incognito mode
 
 
