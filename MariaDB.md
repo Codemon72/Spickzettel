@@ -4,13 +4,14 @@ MariaDB's basic commands: https://mariadb.com/kb/en/basic-sql-statements/
 Mike Dane's Overview: https://www.mikedane.com/databases/sql/
 
 
-
-
-#### start and stop and info if it is running:
+####  info:
 
 first it needs to be running in the background.  
 check with: 
-- `brew services list`
+- `brew services list` - check if mariadb is running
+- `brew info mariadb` - to check for version 
+
+### start and stop 
 start and stop with:
 - `brew services start mariadb`
 - `brew services stop mariadb`
@@ -19,7 +20,6 @@ To start it in the terminal:
 - `mariadb`
 To stop:
 - `\q` or CTRL + C
-
 
 
 ## frequent commands:
@@ -52,15 +52,25 @@ CREATE TABLE example_table_name (
 and then also go through some config process: https://mariadb.com/resources/blog/installing-mariadb-10-1-16-on-mac-os-x-with-homebrew/
 
 2021-01-15: didn't work for me (when I tried to connect Sequel Ace with it) and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
+___
 
 
-#### GUI
+### GUI : Sequel Ace
+(recommended by Helder)
+Docs: https://sequel-ace.com/get-started/
 
-Helder recommended: Sequel Ace (downloaded with homebrew)
+##### installation with homebrew
+- https://formulae.brew.sh/cask/sequel-ace
+
+##### set up
+- start sequel ace (have mariadb running in background)
+- enter:
+  - Host: 127.0.0.1
+  - Username: exampleName
+  ... and connect
+
 
 2021-01-15: very hard to connect it to the MariaDB and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
-
-
 
 ## Examples / SimonSays
 
@@ -76,6 +86,7 @@ Helder recommended: Sequel Ace (downloaded with homebrew)
 `create user clemens;`
 
 `grant all privileges on *.* to root@127.0.0.1;` 
+___
 
 
 #### fledgling section / absolute BASICS

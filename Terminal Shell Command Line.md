@@ -21,6 +21,12 @@ best sources:
 `grep` - print lines matching a pattern ('global regular expression print')
   - `ls -a | grep .nvm` - list all directory content but filter them for names starting with `.nvm`
 
+`chmod` - the 'change mode' command is used to manage file system access permissions on Unix and Unix-like systems. There are three basic file system permissions, or modes, to files and directories:
+  - read (r)
+  - write (w)
+  - execute (x)
+- https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-chmod-command
+
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
   - `curl --head` or `curl -I` - only header
