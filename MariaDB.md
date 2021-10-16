@@ -55,7 +55,7 @@ and then also go through some config process: https://mariadb.com/resources/blog
 ___
 
 
-### Database Dump via terminal
+### DB backup / dump via terminal
 - open terminal
 - cd into directory where you want your backup
 - `mysqldump exampleDB > exampleDBdumpName.sql` (yeah, it's that simple)
@@ -63,6 +63,12 @@ ___
     - this will open up a request for your password
   - in case you want a dump of the structure without data use the `--no-data` flag
     `mysqldump --no-data exampleDB > exampleDBdumpName.sql`
+___
+
+
+### restore DB from dump / backup
+- inside SQL editor: create db: `CREATE DATABASE example_name;`
+- in Terminal: `mysqldump example_name < exampleDBdumpName.sql`
 ___
 
 
