@@ -45,6 +45,7 @@ best sources:
 `pwd` - print name of current/working directory
 
 `whoami` - print effective userid
+  - can be used like this: `mysql -u $(whoami)`
 
 `who` - displays the users logged in to the system.  
 `who -aH` - displays more information, including the idle time and the process ID of the terminal
