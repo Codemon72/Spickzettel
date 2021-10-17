@@ -1,4 +1,5 @@
 a child of mySQL
+MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.
 
 MariaDB's basic commands: https://mariadb.com/kb/en/basic-sql-statements/
 Mike Dane's Overview: https://www.mikedane.com/databases/sql/
@@ -98,14 +99,19 @@ ___
 
 ### GUI Sequel Ace
 2021-01-15: very hard to connect it to the MariaDB and Simon had to help bigtime; got it running with `sudo mysql_secure_installation` but Simon said there was still something broken (localhost).
+---
 
-## Examples / SimonSays
 
-`select user,host from mysql.user;`  
+## Troublshooting grants (SimonSays)
 
-`grant all privileges on *.* to 'clemens'@'%';`  
+`select user,host from mysql.user;`  - list all users and host in your installation
 
-`flush privileges;` 
+`SELECT User, Host, plugin FROM mysql.user;` - list users, hosts and potential (auth) plugins
+
+`grant all privileges on *.* to 'clemens'@'%';` - grant all privileges to user 'clemens' on _any_ network
+  - this grants all privileges BUT the privilege to grant grants
+
+`flush privileges;` - when we grant some privileges for a user, running the command `flush privileges` reloads the grant tables in the mysql database enabling the changes to take effect without reloading or restarting mysql service
 
 `create user clemens identified by 'foobar';` 
 `create user root@127.0.0.1;`  
@@ -113,4 +119,6 @@ ___
 `create user clemens;`
 
 `grant all privileges on *.* to root@127.0.0.1;` 
+
+`drop user 'david'@'localhost';` - delete a user
 ___
