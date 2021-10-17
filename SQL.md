@@ -15,6 +15,8 @@ youtube:
 
 - CREATE
 `CREATE DATABASE example_name;` creates a database with that name
+- USE
+`USE example_DB_name;` select a specific database
 - SHOW
 `SHOW DATABASES;` shows all created databases
 - DROP
