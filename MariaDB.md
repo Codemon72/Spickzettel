@@ -11,13 +11,17 @@ first it needs to be running in the background.
 check with: 
 - `brew services list` - check if mariadb is running
 - `brew info mariadb` - to check for version 
+  - or `SELECT VERSION();` in running MariaDB CLI
+
 
 ### start and stop 
 start and stop with:
 - `brew services start mariadb`
 - `brew services stop mariadb`
 
-To start it in the terminal:
+
+### open CLI in the terminal
+To open the CLI in the terminal:
 - `mariadb`
 To stop:
 - `exit;` or `\q` or CTRL + C
@@ -73,6 +77,14 @@ ___
 ___
 
 
+### set up new user
+`CREATE USER clemens@localhost IDENTIFIED BY 'foobar';`
+`show grants for clemens@localhost;`
+`grant all privileges on LearningManagementSystem.* to clemens@localhost identified by 'foobar';`
+`flush privileges;`
+___
+
+
 ### GUI : Sequel Ace
 (recommended by Helder)
 Docs: https://sequel-ace.com/get-started/
@@ -102,16 +114,29 @@ ___
 ---
 
 
-## Troublshooting grants (SimonSays)
+## Troublshooting connection issues and grants (SimonSays)
+Docs: 
+- https://mariadb.com/kb/en/troubleshooting-connection-issues/
+- https://mariadb.com/kb/en/grant/
 
 `select user,host from mysql.user;`  - list all users and host in your installation
 
 `SELECT User, Host, plugin FROM mysql.user;` - list users, hosts and potential (auth) plugins
 
+`show grants;` - shows grants for current user
+
+`show grants for 'clemens'@'localhost';` - shows grants for specific user
+
+`grant all privileges on LearningManagementSystem.* to clemens@localhost identified by 'foobar';` - grants all privileges for specific DB to specific user identified by password
+
 `grant all privileges on *.* to 'clemens'@'%';` - grant all privileges to user 'clemens' on _any_ network
   - this grants all privileges BUT the privilege to grant grants
 
 `flush privileges;` - when we grant some privileges for a user, running the command `flush privileges` reloads the grant tables in the mysql database enabling the changes to take effect without reloading or restarting mysql service
+
+`drop user 'david'@'localhost';` - delete a user
+
+
 
 `create user clemens identified by 'foobar';` 
 `create user root@127.0.0.1;`  
@@ -120,5 +145,4 @@ ___
 
 `grant all privileges on *.* to root@127.0.0.1;` 
 
-`drop user 'david'@'localhost';` - delete a user
 ___

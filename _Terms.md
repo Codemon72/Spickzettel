@@ -10,9 +10,14 @@ API proxies decouple the app-facing API from your backend services, shielding th
 
 ___
 
+
 ### BLOB 
 Binary Large Object
+___
 
+
+### CLI Command Line Interface
+Abbreviated as CLI, a Command Line Interface connects a user to a computer program or operating system. Through the CLI, users interact with a system or application by typing in text (commands). The command is typed on a specific line following a visual prompt from the computer.
 ___
 
 ### Client Side Validation
