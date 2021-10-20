@@ -59,3 +59,9 @@ ___
 ___
 
 
+### Microsoft AutoUpdate
+
+- what it is and how to delete it: https://www.guidingtech.com/what-is-microsoft-autoupdate-mac-how-to-delete/
+___
+
+

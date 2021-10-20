@@ -7,7 +7,8 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 ##### git add | commit | push
 `git status` 
 `git add -A` - to add all files that are currently untracked or we made changes to
-`git add .` - 
+`git add exampleFolder1/example-file` - to add a specific file
+`git add .` - to add all files
 `git commit -m "[message]"`
 `git push -u origin example-branchName` - first push from new branch
 or just `git push` - if the branch has been established before

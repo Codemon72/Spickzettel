@@ -388,7 +388,8 @@ You can generally read the values as if they were just a number, like 1,0,0,0 is
 ### Special Characters and Entities
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
 
-`&nbsp;` "non blank space"
+`&nbsp;` - non blank space
+`&zwnj;` - zero width non joiner / html code: `&#8204;`
 ___
 
 
@@ -463,9 +464,19 @@ also creates a soft hyphen and also works in markdown
 does **not** create a hyphen.
 The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
 
-**Tip**: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
+**Tip**: This might not work in some contexts when placed inside a link like so: 
 
+```html
+<a href="https://en.wikipedia.org/wiki/Joel_Salatin">https://en.wikipedia.org<wbr>/wiki/Joel_Salatin</a> 
+```
+In some cases I found it broke off the rest of the link. I found this bit hacky solution in puttin a 'zero width non joiner' (`&zwnj;` or `&#8204;`) in front of 'https':
+
+```html
+<a href="https://en.wikipedia.org/wiki/Joel_Salatin">&#8204;https://en.wikipedia.org<wbr>/wiki/Joel_Salatin</a> 
+```
 ___
+
+
 ### how to break lines in preferred places
 -  setting divs to inline-block on media query
 ```html
@@ -503,7 +514,7 @@ And one line of CSS in you media query:
 ```
 ___
 
-___
+
 ### prevent line from breaking
 ```html
 <nobr></nobr>
@@ -511,8 +522,9 @@ ___
 ```css
 whitespace: pre;
 ```
-
 ___
+
+
 ### scroll above anchor
 sometimes you might want to scroll a bit above your anchor.
 Since 2020 we got this beauty:
@@ -521,8 +533,9 @@ Since 2020 we got this beauty:
   scroll-margin-top: 100px;
 }
 ```
-
 ___
+
+
 ### z-index, stacking order and stacking context
 
 - stacking order = the order in which the elements appear / are placed on the page
@@ -575,8 +588,9 @@ From back to front:
 - playground for testing: https://codepen.io/Codemon72/pen/KKagwRb
 - Docs: https://www.w3.org/TR/CSS2/zindex.html
 - Full list of stacking context scenarios: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
-
 ___
+
+
 ### Cool and Fancy
 
 ##### CSS only dark mode
