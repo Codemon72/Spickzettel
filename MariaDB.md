@@ -78,9 +78,22 @@ ___
 
 
 ### set up new user
-`CREATE USER clemens@localhost IDENTIFIED BY 'foobar';`
-`show grants for clemens@localhost;`
-`grant all privileges on LearningManagementSystem.* to clemens@localhost identified by 'foobar';`
+Docs: https://mariadb.com/kb/en/authentication-plugin-mysql_native_password/#creating-users
+
+`SET old_passwords=0;` - this might be necessary only after installing MariaDB
+
+`SELECT User, Host, plugin FROM mysql.user;` - just to check
+
+`CREATE USER clemens@localhost;` 
+    or with password: `CREATE USER clemens@localhost IDENTIFIED BY 'foobar';`
+
+`SELECT User, Host, plugin FROM mysql.user;` - just to check
+
+`show grants for clemens@localhost;` - just to check
+
+`grant all privileges on *.* to clemens@localhost;` 
+    or with password and specified DB: `grant all privileges on LearningManagementSystem.* to clemens@localhost identified by 'foobar';`
+
 `flush privileges;`
 ___
 
