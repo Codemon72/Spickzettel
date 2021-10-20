@@ -464,16 +464,7 @@ also creates a soft hyphen and also works in markdown
 does **not** create a hyphen.
 The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
 
-**Tip**: This might not work in some contexts when placed inside a link like so: 
-
-```html
-<a href="https://en.wikipedia.org/wiki/Joel_Salatin">https://en.wikipedia.org<wbr>/wiki/Joel_Salatin</a> 
-```
-In some cases I found it broke off the rest of the link. I found this bit hacky solution in puttin a 'zero width non joiner' (`&zwnj;` or `&#8204;`) in front of 'https':
-
-```html
-<a href="https://en.wikipedia.org/wiki/Joel_Salatin">&#8204;https://en.wikipedia.org<wbr>/wiki/Joel_Salatin</a> 
-```
+**Interesting Error**: `<wbr>` broke a link. It was rendered from markdown and the content of the link started with `http`. Reason was, that the link was inside a markdown blockquote (`>`) or paragraph (one blank line) and this apparently confused the rendering what was markdown and what html. Solution: writing the blockquote / paragraph also with html (<blockquote> / <p>).
 ___
 
 
