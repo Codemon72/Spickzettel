@@ -166,6 +166,11 @@ ___
 ___
 
 
+### Error Messages
+- `ENOENT` - "No such file or directory",  abbreviation of Error NO ENTry or Error NO ENTity
+___
+
+
 ### ERD - Entity Relationship Diagram
 Useful to map out all relations in a relational database.
 ___
