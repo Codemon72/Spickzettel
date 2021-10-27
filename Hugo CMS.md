@@ -83,9 +83,9 @@ Mike Dane in answering someone:
 You wanna use an if statement to check whether or not a title has been passed into the partial. You could do something like this:
 
 ``````
-<h1>{{ if .myTitle }}{{ .myTitle }}
-{{ else }} 
-default value 
+<h1>
+{{ if .myTitle }}{{ .myTitle }}
+{{ else }}default value 
 {{ end }}
 </h1>
 ``````
@@ -93,9 +93,29 @@ default value
 This checks to see if the .myTitle variable has a value and if it does then it uses that value, otherwise it uses the default value
 
 https://www.mikedane.com/static-site-generators/hugo/conditionals/
+___
 
 
-#### The $ (Dollar sign) in Hugo
+### Hugo functions
+`range` - iterates over a map, array or slice
+```
+{{ range .Params.nextDates }}
+    <span class="course-card-item-value">{{ dateFormat "2.1.2006" .start_date }}</span>
+{{ end }}
+```
+
+- `range` with index:
+``` 
+{{range $index, $element := .columns}}
+    index:{{ $index }} 
+    name:{{ $element.name }} 
+{{ end }}
+```
+you can name or abbreviate the variables however you like, the order is defining 'index' and 'element'.
+___
+
+
+### The $ (Dollar sign) in Hugo
 
 `$` has special significance in your templates. `$` is set to the starting value of . (“the dot”) by default.
 
