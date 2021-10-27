@@ -10,7 +10,7 @@ https://gohugo.io/commands/
 
 **update Hugo**: `brew upgrade hugo`
 
-#### regular workflow
+### regular workflow
 
 1. create or go to the folder where you want to have your project. Terminal: **hugo new site <fancy-name>**
 
@@ -31,12 +31,21 @@ this might come in handy again:
 cp -a themes/portio/exampleSite/* .
 ````
 
-#### new file
+### new file
 ```hugo new example.md```
 ```hugo new directory/example.md```
+___
 
 
-#### Hugo operators
+## Hugo Templating
+Hugo uses the excellent [go html/template](http://golang.org/pkg/html/template/%3E) library for its template engine.
+
+good sources for an overview:
+- Docs: https://gohugo.io/templates/introduction/
+- article: https://knausb.github.io/2014/04/hugo-template-primer/
+
+
+### Hugo operators
 `eq` = equals
 `ne`= not equal
 `gt` = greater than
