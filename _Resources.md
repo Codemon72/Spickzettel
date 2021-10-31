@@ -46,7 +46,15 @@ check for dead / broken links
 ___
 
 
-### images, illustrations
+### icons (free)
+- https://feathericons.com/
+- https://iconic.app/
+- https://heroicons.com/
+- https://www.flaticon.com/
+___
+
+
+### images, illustrations (free)
 - https://unsplash.com/
 - https://pixabay.com/de/
 - https://www.pexels.com/

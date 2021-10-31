@@ -117,14 +117,14 @@ ___
 
 ### Gitignore file
 
-###### How To
+#### How To
 
 - create a file: '.gitignore' (no ending for file type)
 - note every file and folder into it that you wish to not be recorded by git like this
 
 ```
 #                                         hashtag allows comments
-resources/_gen/                         # this ignores the folder and everything in it
+resources/_gen/                         # this ignores the folder (wherever it is located) and everything in it
 partials/structure/stylesheet.html      # note the file with its whole path from the (git -) root directory
 ```
 
