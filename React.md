@@ -410,6 +410,49 @@ sources:
 ___
 
 
+### Images in React
+
+#### Where to put them?
+Adding images in the public folder and the src folder both are acceptable methods, however, importing images into your component has the benefit that your assets will be handled by the build system, and will receive hashes which improves caching/performance. You'll also have the added benefit that it will throw an error if the file is moved/renamed/deleted.
+
+#### How to reference them?
+- Option 1: import the image into the component
+  Put the image file somewhere under the src folder. This alone will not automatically make it available, so you have to import the image into the React component where you’re using it.
+
+  `import companyLogo from './path/to/logo.jpg';`
+  Then you can reference it by that variable name. 
+  Wherever you want to display the image, render your img tag and pass that variable as the src:
+  ```jsx
+  <div>
+    <img src={companyLogo} alt="BigCo Inc. logo"/>
+  </div>
+  ```
+  (Note: use src={companyLogo} and not src="companyLogo"! If you use the quoted string "companyLogo" it will try to fetch a file at /companyLogo and that will fail. Make sure to use curly braces if you’re using an imported image. Curly braces are the way to pass JS variables as props.)
+
+- Option 2: Put the image in the public directory
+  You can put the image file in the public folder (or if this is not Create React App… then any folder that will be copied to the server).
+  Then, assuming your server is treating the public folder as the “root” directory (/), then your images will be available relative to that – just like with plain HTML.
+  So if you had an image at public/images/thing.jpg, you could display that image this way:
+  ```jsx
+  <div>
+    <img src="images/logo.jpg" alt="BigCo Inc. logo"/>
+  </div>
+  ```
+  Because this method makes the image available as a regular file on the web server, and you can test it by opening http://localhost:3000/images/logo.jpg in the browser (or, you know, your actual domain name, once it’s deployed!)
+
+#### How Imported Images Work in React
+First, know that imports are not handled by React at all – they’re handled by your bundler, which is probably Webpack. (if you’re using Create React App, it is definitely Webpack)
+
+Webpack, Rollup, Parcel, and other bundlers all work conceptually the same way: when you import a static file, like an image or a CSS file, the bundler doesn’t literally paste that file in at the import location. Instead, it makes a note that this particular JS file depends on this particular image/CSS file/whatever.
+
+Then the bundler will copy the image to the output directory with a generated unique name (like a5c8d3f89cad.jpg) and, behind the scenes, it will replace <img src={yourName}/> with <img src="a5c8d3f89cad.jpg"/>.
+
+If the image is especially small, Webpack might even decide to inline it into the JS bundle, as an optimization.
+
+source: https://daveceddia.com/react-image-tag/
+___
+
+
 #### A Couple Of Examples
 
 - event handlers /  attaching a function to an HTML element
