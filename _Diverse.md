@@ -65,3 +65,6 @@ ___
 ___
 
 
+### Woocommerce
+- hidden products: https://pluginrepublic.com/woocommerce-hidden-products/
+___

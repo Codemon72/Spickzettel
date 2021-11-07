@@ -39,6 +39,11 @@ ___
 ### Media Queries 
 - article from CSS-Tricks: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 
+- with min and max:
+```css
+@media screen and (min-width: 1008px) and (max-width: 1139px) {
+```
+
 ##### bootstrap breakpoints
 
 ```css

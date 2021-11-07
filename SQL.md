@@ -19,6 +19,8 @@ youtube:
 `USE example_DB_name;` select a specific database
 - SHOW
 `SHOW DATABASES;` shows all created databases
+- DESCRIBE or DESC
+`DESCRIBE example_table;` or `DESC example_table;` show structure of a table
 - DROP
 `DROP TABLE example_name;` - deletes table  
 `DROP table_name;` deletes table_name
