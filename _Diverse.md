@@ -65,6 +65,37 @@ ___
 ___
 
 
+### Time Formats
+#### UTC vs ISO format for time
+tl;dr
+- Always use ISO 8601 format: `2019-11-14T00:55:31.820Z`
+- Avoid the legacy format of RFC 1123 & 822: `Thu, 14 Nov 2019 00:55:16 GMT`
+
+##### UTC & GMT are time-keeping, not formats
+UTC and GMT are not formats.
+
+UTC and GMT are two slightly different ways of tracking time. This is a complicated topic, so see the Wikipedia pages for the gory details if you really want to know.
+
+For common business apps, there is no significant difference, literally less than a second’s difference. Most programmers can use the terms interchangeably. If you work for NASA, or the GPS/Galileo navigation projects, then you’ll want to learn more.
+
+##### ISO 8601
+The format seen in your first example 2019-11-14T00:55:31.820Z is defined by the ISO 8601 standard.
+- The T in the middle separates the year-month-day portion from the hour-minute-second portion.
+- The Z on the end means UTC, that is, an offset-from-UTC of zero hours-minutes-seconds. The Z is pronounced "Zulu" per military/aviation tradition.
+The ISO 8601 standard is more modern. The formats are wisely designed to be easy to parse by machine as well as easy to read by humans across cultures.
+
+**Always choose ISO 8601** when serializing date-time values as text.
+
+##### RFC 1123 / RFC 822
+Your second example string Thu, 14 Nov 2019 00:55:16 GMT is defined in the older standards RFC 1123 & RFC 822.
+
+These are legacy formats. They are terrible, difficult to parse by machine. And they are bad for humans as they assume English language and particular cultural norms.
+
+Avoid this format whenever possible. Use this only when required for old protocols and systems not yet updated for ISO 8601.
+source: https://stackoverflow.com/questions/58847869/utc-vs-iso-format-for-time#58848028
+___
+
+
 ### Woocommerce
 - hidden products: https://pluginrepublic.com/woocommerce-hidden-products/
 ___

@@ -263,6 +263,55 @@ box-shadow:
 ___
 
 
+### Escape Characters in CSS
+CSS identifiers, such as classes and IDs, cannot begin with a digit (0 - 9).
+
+From the spec:
+
+> 4.1.3 Characters and case
+> In CSS, identifiers (including element names, classes, and IDs in selectors) can contain only the characters [a-z, A-Z, 0-9] and ISO 10646 characters U+0080 and higher, plus the hyphen (-) and the underscore (_); they **cannot start** with a digit, two hyphens, or a hyphen followed by a digit.
+
+However, the same section also says this:
+
+> Backslash escapes are always considered to be part of an identifier or a string.
+
+This means that, while you cannot start an identifier with a digit, you can use backslash escape code (\foo) that will convert to a digit. Note that this rule applies in CSS, but not HTML, where almost any character combination is an acceptable value.
+
+So that's what you're seeing in your code. Numerical HTML class values that must be escaped to work in CSS. Here are some examples:
+
+- `\31` is the Unicode Code Point for the digit `1`.
+- `\32` is the Unicode Code Point for the digit `2`.
+- `\33` is the Unicode Code Point for the digit `3`.
+Another purpose of the backslash escape in CSS is to cancel the meaning of special characters.
+
+The forward slash (/) has special meaning in CSS. It must, therefore, be escaped for proper use.
+
+So let's now decipher some class names:
+
+`.\31\/2, .\32\/4, .\36\/12 { width: 50%; }`
+The first escape (\31) is Unicode for "1".
+
+The second escape (\/2) cancels the special meaning of the forward slash.
+
+So the HTML looks like this:
+```html
+class = "1/2"
+class = "2/4"
+class = "6/12"
+```
+Here are a few more examples:
+```css
+.\31\/3, .\34\/12 { width: 33.33333%; } /* HTML class values = 1/3, 4/12 */
+.\32\/3, .\38\/12 { width: 66.66667%; } /* HTML class values = 2/3, 8/12 */
+.\31\/12          { width: 8.33333%;  } /* HTML class value  = 1/12      */
+.\35\/12          { width: 41.66667%; } /* HTML class value  = 5/12      */
+.\31\30\/12       { width: 83.33333%; } /* HTML class value  = 10/12     */
+.\31\31\/12       { width: 91.66667%; } /* HTML class value  = 11/12     */
+```
+source: https://stackoverflow.com/questions/55388828/what-is-the-meaning-of-this-unconventional-css-code#55389549
+___
+
+
 ### Flex
 - CSS Tricks Overview: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - deep dive into edge cases and quirkyness: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
