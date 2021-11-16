@@ -173,6 +173,13 @@ If you need to rename a remote branch, simply rename your local branch, push it 
 source: https://www.git-tower.com/learn/git/faq/git-rename-branch/
 ___ 
 
+
+### delete last commit - locally and remote
+`git reset --hard HEAD~1` to delete last commit locally, then
+`git push --force origin HEAD` This takes the current HEAD commit in local and overwrites the HEAD in the remote, removing the last commit. Note: This isn't a secure way to delete secrets accidentally pushed to a remote. Assume all secrets are compromised then watch out for caveats concerning '--force'.
+___
+
+
 ### Setting up git on new machine
 1. install git (it comes automatically with homebrew). If you use something else, look up how to install it.
 

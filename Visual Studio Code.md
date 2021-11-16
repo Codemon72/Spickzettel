@@ -66,7 +66,7 @@ ___
 
 
 ### Debugging in Node
-- https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+- https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach
 ___
 
 

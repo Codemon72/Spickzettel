@@ -63,6 +63,11 @@ To work on a theme as a developer create an account.
 check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 
+### Page Speed
+- good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
+___
+
+
 ## MIGHT BE OUT-DATED:
 #### workflow for development / publishing themes
 Jody Edgar's Advice: https://youtu.be/Tt-Wy-ZDwas?t=110
