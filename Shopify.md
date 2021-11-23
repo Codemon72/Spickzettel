@@ -44,13 +44,27 @@ see above (Getting started with Shopify CLI)
 ___
 
 
-### Liquid Basics
+## Liquid Basics
 Documentation: https://shopify.dev/concepts/shopify-introduction
 CheatSheet: https://www.shopify.com/partners/shopify-cheat-sheet
 Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
+Liquid Sandbox: https://jumpseller.com/support/liquid-sandbox/
 
 Chris the Freelancers:https://www.youtube.com/watch?v=zBtwd2OfZsI 
 Chris the Freelancer guide: https://www.christhefreelancer.com/shopify-liquid-guide/
+___
+
+
+### Metafields
+Docs: https://shopify.dev/api/liquid/objects/metafield
+recommended App: Metafields Guru
+```s
+{{ resource.metafields.namespace.key }}
+```
+ytube tutorial: https://www.youtube.com/watch?v=UnHf57_YwPA
+
+Apps/ Collections / Create metafield / multi-line text
+locally
 ___
 
 
@@ -61,6 +75,10 @@ To work on a theme as a developer create an account.
 
 ### How to Set Up a Local Theme Development Workflow
 check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
+
+
+### Apps I liked or come recommended
+- Metafields Guru - add custom fields #metafields
 
 
 ### Page Speed

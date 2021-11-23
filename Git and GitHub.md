@@ -176,7 +176,7 @@ ___
 
 ### delete last commit - locally and remote
 `git reset --hard HEAD~1` to delete last commit locally, then
-`git push --force origin HEAD` This takes the current HEAD commit in local and overwrites the HEAD in the remote, removing the last commit. Note: This isn't a secure way to delete secrets accidentally pushed to a remote. Assume all secrets are compromised then watch out for caveats concerning '--force'.
+`git push --force origin HEAD` This takes the current HEAD commit in local and overwrites the HEAD in the remote, removing the last commit. Note: This isn't a secure way to delete secrets accidentally pushed to a remote. Assume all secrets are compromised then watch out for caveats concerning '--force'. (https://evilmartians.com/chronicles/git-push---force-and-how-to-deal-with-it)
 ___
 
 
