@@ -378,12 +378,18 @@ ___
 The stack grows with the depth of function calls, and shrinks with function exits.   
 A stack overflow happens when you've made too many function calls without exits.
 In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
-
-
 ___
 
 
-###### TDD - Test Driven Development
+### Template Language
+A template language is used to build webpages that combine static content, which is the same on multiple pages, and dynamic content, which changes from one page to the next. 
+A template language makes it possible to re-use the static elements that define the layout of a webpage, while dynamically populating the page with data from a content directory or a Shopify store. The static elements are written in HTML, and the dynamic elements are written in the template language. The template elements in a file act as placeholders: when the code in the file is compiled and sent to the browser, the Liquid is replaced by data from the Shopify store where the theme is installed.
+
+Examples: Liquid in Shopify, Go Template Language for Hugo
+___
+
+
+### TDD - Test Driven Development
 is a method in which you constantly test your code while you write it.
 You can do TDD alone or with a peer.
 In TDD, you first write a failing test, then implement the function so that the test turns green. You then write another test that fails, and then improve the function. You go in this cycle until you reach a state where you tested all possible scenarios.

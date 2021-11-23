@@ -52,6 +52,9 @@ Liquid Sandbox: https://jumpseller.com/support/liquid-sandbox/
 
 Chris the Freelancers:https://www.youtube.com/watch?v=zBtwd2OfZsI 
 Chris the Freelancer guide: https://www.christhefreelancer.com/shopify-liquid-guide/
+
+`{{ }}` - double curly brackets act as placeholders
+`{% %}` - curly brackets with percentage signs contain logic
 ___
 
 
