@@ -518,6 +518,9 @@ also creates a soft hyphen and also works in markdown
 does **not** create a hyphen.
 The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
 
+`word-wrap: break-word;`
+allows long words to be able to break and wrap onto the next line (without a hyphen).
+
 **Interesting Error**: `<wbr>` broke a link. It was rendered from markdown and the content of the link started with `http`. Reason was, that the link was inside a markdown blockquote (`>`) or paragraph (one blank line) and this apparently confused the rendering what was markdown and what html. Solution: writing the blockquote / paragraph also with html (<blockquote> / <p>).
 ___
 

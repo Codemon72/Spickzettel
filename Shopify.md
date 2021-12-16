@@ -86,6 +86,16 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 ### Page Speed
 - good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
+
+
+### Preview Link
+Previewing the offline theme
+- Firstly, from your Shopify admin, navigate to Online Store > Themes.
+- Find the theme that you want to share and click on Actions > Preview. (if it is not there: upload it)
+- On the new page that appeared, wait for a second and at the bottom of the screen you’ll see a bar pop up.
+- On this bar, click on the button Share Preview > Copy Link.
+  Note: Make sure you click on this button, do not share the URL on the top of your page because it won’t work.
+- Now just share the generated link with whoever you wish!
 ___
 
 
