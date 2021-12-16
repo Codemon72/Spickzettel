@@ -58,6 +58,8 @@ I liked before but am not so sure anymore:
 - https://www.webpagetest.org/
 
 - Use **Lighthouse** (tab: audit) in the **dev tools** on chrome or @ https://www.webpagetest.org/easy.php
+- GTmetrix: https://gtmetrix.com/
+- Pingdom Website Speed Test: https://tools.pingdom.com/
 ___
 
 

@@ -47,6 +47,8 @@ ___
 
 
 ### DNS = Domain Name System
+The Domain Name System (DNS) maps hostnames to IP addresses, just like phonebooks map people's names to their phone numbers. When you type URL www.yahoo.com into the browser, the browser contacts a DNS resolver that returns the server's IP address. DNS has a cost; typically it takes 20 to 120 milliseconds for it to look up the IP address for a hostname. The browser cannot download anything from the host until the lookup completes.
+So it is a good idea to reduce your DNS lookups.
 - Mess with DNS: https://jvns.ca/blog/2021/12/15/mess-with-dns/
 ___
 

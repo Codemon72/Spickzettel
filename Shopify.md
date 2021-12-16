@@ -86,6 +86,16 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 ### Page Speed
 - good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
+- see also Async Script Loading
+___
+
+
+### Async Script Loading
+Change this:
+`{{ 'example.js' | asset_url | script_tag }}`
+to this:
+`<script src="{{ 'example.js' | asset_url }}" async></script>`
+___
 
 
 ### Preview Link
