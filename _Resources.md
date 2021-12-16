@@ -46,6 +46,11 @@ check for dead / broken links
 ___
 
 
+### DNS = Domain Name System
+- Mess with DNS: https://jvns.ca/blog/2021/12/15/mess-with-dns/
+___
+
+
 ### icons (free)
 - https://feathericons.com/
 - https://iconic.app/
