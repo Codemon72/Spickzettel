@@ -58,6 +58,17 @@ Chris the Freelancer guide: https://www.christhefreelancer.com/shopify-liquid-gu
 ___
 
 
+### Structure
+`theme.liquid` is the backbone and skeleton of your page. Gets loaded every time. 
+  - all apps get injected here
+___
+
+
+### Choosing a Theme
+- look for speed and performance (how much is already built in that you don't need an app for) mainly
+___
+
+
 ### Metafields
 Docs: https://shopify.dev/api/liquid/objects/metafield
 recommended App: Metafields Guru
@@ -86,7 +97,17 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 ### Page Speed
 - good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
-- see also Async Script Loading
+- the score shown in the admin interface comes from google/lighthouse and might NOT be the best source (maybe check out `pingdom.com`, `gtmetrix.com` and `https://pagespeed.web.dev/`)
+- number of apps are important factor here
+- check for the number of HTTP requests
+- see also "Async Script Loading" in this cheat sheet
+- homepage banners / sliders are heavy
+
+Tipp: deinstalled apps don't always remove all of their code. This might slow your page down and you have to do it by hand.
+- in theme.liquid search for `{%include `
+  - check if the name after `include` belongs to an app that is still in use (careful: could be name of the app or the creator of the app...)(google: shopify apps by exampleName)
+  - if you delete the `{% include 'exampleName' %}`, check for (additional) errors in the console of the live page 
+  - after deleting the `{% include 'exampleName' %}` line, delete the exampleName.liquid (probably in /snippets)
 ___
 
 

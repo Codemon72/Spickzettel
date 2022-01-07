@@ -96,6 +96,16 @@ source: https://stackoverflow.com/questions/58847869/utc-vs-iso-format-for-time#
 ___
 
 
+### SSH - Secure SHell
+A protocoll that allows 2 machines to communicate securely over a network.
+
+- 1960: precursor Telnet - was not secure.
+- since 1995: SSH - encrypted
+- allows you to do almost anything on the remote computer
+- used mostly in terminal / command line
+___
+
+
 ### Woocommerce
 - hidden products: https://pluginrepublic.com/woocommerce-hidden-products/
 ___

@@ -53,13 +53,13 @@ ___
 empfohlen von chip.de (neueste: 2017):
 - **[google webmaster tools](https://www.google.com/webmasters/tools/home?hl=de)** - eigenes Tool von google: lässt Inspektion von vielen Faktoren zu, allerdings sind Überprüfung und Optimierung nur möglich nach Nachweis, dass man Inhaber der Webseite ist.
 - **Topworld** von Abakus Internet Marketing - insbesondere gut um verschiedene Keywords und Kombinationen zu prüfen
+- PageSpeedTest: https://pagespeed.web.dev/
+- Lighthouse: tab in the DevTools on chrome or https://www.webpagetest.org/easy.php
+- GTmetrix: https://gtmetrix.com/
+- Pingdom Website Speed Test: https://tools.pingdom.com/
 
 I liked before but am not so sure anymore:
 - https://www.webpagetest.org/
-
-- Use **Lighthouse** (tab: audit) in the **dev tools** on chrome or @ https://www.webpagetest.org/easy.php
-- GTmetrix: https://gtmetrix.com/
-- Pingdom Website Speed Test: https://tools.pingdom.com/
 ___
 
 
