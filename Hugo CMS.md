@@ -216,3 +216,21 @@ Bigspring - https://themes.gohugo.io/bigspring-hugo-startup-theme/
 Grayscale - https://themes.gohugo.io/hugograyscale/
 - simplicity 3/5
 - notes: single landingpage; schlichtes Design, dass allerdings noch nachgebessert werden müsste; Struktur: geht so; jQuery
+___
+
+
+### Form to Email
+used and liked: 
+- Formspark
+came recommended:
+- Netlify (only if you host your site there)
+- Basin - https://usebasin.com/
+- KwesForms - https://kwesforms.com/pricing
+- Form-Data - http://form-data.com/
+- Formstack
+- Typeform
+- Formspree
+- Wufoo
+- JotForm
+- mailjet
+____

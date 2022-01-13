@@ -36,7 +36,7 @@ _
 
 
 ### CDNs
-- https://cdnjs.com/libraries
+- https://cdnjs.com/libraries for example: font-awesome
 ___
 
 
