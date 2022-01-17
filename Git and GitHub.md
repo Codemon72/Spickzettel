@@ -4,6 +4,8 @@ recommended article: [How to Make Your Code Reviewer Fall in Love with You](http
 
 ### Basics
 
+`git init` - initialize git in folder
+
 ##### git add | commit | push
 `git status` 
 `git add -A` - to add all files that are currently untracked or we made changes to
@@ -29,8 +31,20 @@ gleichzeitig neuen branch anlegen und hineinwechseln
 alle branches anzeigen lassen
 `git branch`
 
-rename a branch
-`git branch -m example-name`
+rename a branch (you are currently on)
+`git branch -m new-name`
+    - `-m` is for move
+
+rename a branch (you are currently not on)
+`git branch -m <old-name> <new-name>`
+
+>Tipp: If you are on Windows or another case-insensitive filesystem, and there are any capitalization change in the name, you need to use -M, otherwise, git will throw branch already exists error: `git branch -M <newname>`
+
+rename remote branch
+If you need to rename a remote branch, simply rename your local branch, push it with the new name (and thereby create a new branch remotely) and delete the old branch.
+
+renaming branches
+good source: https://www.git-tower.com/learn/git/faq/git-rename-branch/
 
 neuen branch auf github pushen
 `git push -u origin example-branchName`
