@@ -110,15 +110,22 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 ### Page Speed
 - good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
-- the score shown in the admin interface comes from google/lighthouse and might NOT be the best source (maybe check out `pingdom.com`, `gtmetrix.com` and `https://pagespeed.web.dev/`)
+- the score shown in the admin interface comes from google/lighthouse and might NOT be the best source (maybe check out `https://www.pingdom.com/`, `https://gtmetrix.com/` and `https://pagespeed.web.dev/`)
   - also: better check a couple of times for an average value
 - number of apps are an important factor here
 - check for the number of HTTP requests
 - see also "Async Script Loading" in this cheat sheet
 - homepage banners / sliders are heavy
+- wrap your App integrations in theme.liquid (and also header.liquid and footer.liquid) in conditionals.
+  - Example:
+  ```s
+  {% if template contains "shogun" %}
+    {% render 'shogun-head' %}
+  {% endif %}
+  ```
 
 Tipp: deinstalled apps don't always remove all of their code. This might slow your page down and you have to do it by hand.
-- in theme.liquid (and also header.liquid and footer.liquid) search for remains of apps (for example look for `{%include `)
+- in theme.liquid (and also header.liquid and footer.liquid) search for remains of apps (for example look for `{%include `, `{% include ` or `{%render `/ `{% render `)
   - check if the name after `include` belongs to an app that is still in use (careful: could be name of the app or the creator of the app...)(google: shopify apps by exampleName)
   - if you delete the `{% include 'exampleName' %}`, check for (additional) errors in the console of the live page 
   - after deleting the `{% include 'exampleName' %}` line, delete the exampleName.liquid (probably in /snippets)
