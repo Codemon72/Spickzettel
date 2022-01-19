@@ -72,13 +72,22 @@ ___
 ### Metafields
 Docs: https://shopify.dev/api/liquid/objects/metafield
 recommended App: Metafields Guru
+In the code create a metafield (`{{ resource.metafields.namespace.key }}`) where you want to have it. Choose a `namespace` and a `key` for this particular metafield. Probably wrap them in conditionals.
+Example for a metafield in collections: 
 ```s
-{{ resource.metafields.namespace.key }}
+{%- if collection.metafields.second.description != blank -%}
+  <div class="collection_second-description">
+    {{ collection.metafields.second.description }}
+  </div>
+{%- endif -%}
 ```
-ytube tutorial: https://www.youtube.com/watch?v=UnHf57_YwPA
 
-Apps/ Collections / Create metafield / multi-line text
-locally
+Then, on the admin page, go into the app and build the metafield there.
+In this example:
+> Apps/ Collections / Create metafield / multi-line text
+insert you chosen `namespace` under 'Namespace' and `key` und 'key' and Bob' your uncle.
+
+ytube tutorial: https://www.youtube.com/watch?v=UnHf57_YwPA
 ___
 
 
