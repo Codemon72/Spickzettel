@@ -57,6 +57,20 @@ branch löschen
 
 `git pull --rebase`
 ähnlich wie rebase master nur für den Fall, dass man mit einem anderen Teammitglied im **gleichen** branch arbeitet und sich beispielsweise die commits unter den eigenen ziehen will, die der andere schon vor einem committed hatte.
+
+rebase branch
+- to keep all commits from my branch, but get all the updates from the master branch. Like taking a branch from a lower part of the tree and and graft it back on the tree 2m higher
+git rebase master:
+- first make sure to update your local master
+- go in to branch you want to rebase and `git rebase master`
+- possible conflicts will be shown in the terminal 
+- solve any conflicts in VSC (find them by searching for '======'): go into file, solve conflict and add them separately with `git add /complete.path.and.name.of.file.md` 
+    - with `git status` you will be shown the rest of the conflicting files
+- afterwards you need to `git push -f` to the remote!!
+
+sometimes you might want to only rebase your last 3 commits or be in other ways more specific. Check out:
+**rebase -i ....** (interactive)
+**rebase onto**
 ___
 
 
