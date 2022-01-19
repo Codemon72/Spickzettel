@@ -6,19 +6,23 @@
 ### Getting started with Shopify CLI
 - https://shopify.dev/themes/tools/cli/getting-started
 
-```
-brew tap shopify/shopify
-brew install shopify-cli
+`brew tap shopify/shopify`
+`brew install shopify-cli`
 
-shopify version
+`shopify version`
 
-shopify login --store example-store.myshopify.com
+`shopify login --store example-store.myshopify.com`
 
-mkdir example-store
+`mkdir example-store`
 
-shopify theme pull
-shopify theme serve
-```
+`shopify theme pull` - download one of the themes (opens a dialogue) - Docs: https://shopify.dev/themes/tools/cli/theme-commands#pull
+`shopify theme serve`
+
+`shopify theme push --unpublished --json` 
+  - `--unpublished` - uploads the theme to the theme library as a new unpublished theme.
+  - `--json` - for better success or error messages)
+  - Docs: https://shopify.dev/themes/tools/cli/theme-commands#push
+
 - The terminal offers you pages in localhost and 'Online Store Editor' to work in
 ___
 
@@ -137,6 +141,21 @@ Previewing the offline theme
 - On this bar, click on the button Share Preview > Copy Link.
   Note: Make sure you click on this button, do not share the URL on the top of your page because it won’t work.
 - Now just share the generated link with whoever you wish!
+
+Workflow for Uploading the new Theme:
+- in your main/ master branch, download the live theme with `shopify theme pull` (Docs: https://shopify.dev/themes/tools/cli/theme-commands#pull)
+  - check for their changes with `git status`
+  - commit with "changes by client" or "current live theme version"
+- go into the local git branch with the new features you created
+  - `rebase master` and solve all conflicts
+  - `shopify theme serve` and check 
+    - for errors
+    - their recent changes
+    - your changes
+  - stay in this branch and upload it to shopify with `shopify theme push --unpublished --json`
+  - you will be asked for a theme name, choose something along the line: "GeneralThemeName-CoolNewFeature"
+    - this will make it easier for the client to find the theme herself in the library
+  - now the customer can preview the features easily himself (>Online Store >Themes >Action button on respective theme >Preview) or you can generate a link in the preview (at the bottom of the page: >Share Preview)
 ___
 
 
