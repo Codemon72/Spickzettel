@@ -110,7 +110,7 @@ check out: https://www.youtube.com/watch?v=SrtOXwjXJ1w
 
 ### Page Speed
 - good article: https://www.semrush.com/blog/9-tips-for-boosting-the-speed-of-your-shopify-website/
-- the score shown in the admin interface comes from google/lighthouse and might NOT be the best source (maybe check out `https://www.pingdom.com/`, `https://gtmetrix.com/` and `https://pagespeed.web.dev/`)
+- the score shown in the admin interface comes from google/lighthouse and might NOT be the best source (maybe check out `https://tools.pingdom.com/`, `https://gtmetrix.com/` and `https://pagespeed.web.dev/`)
   - also: better check a couple of times for an average value
 - number of apps are an important factor here
 - check for the number of HTTP requests

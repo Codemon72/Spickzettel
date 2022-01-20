@@ -201,10 +201,16 @@ If you need to rename a remote branch, simply rename your local branch, push it 
 source: https://www.git-tower.com/learn/git/faq/git-rename-branch/
 ___ 
 
-
+## git reset
 ### delete last commit - locally and remote
 `git reset --hard HEAD~1` to delete last commit locally, then
 `git push --force origin HEAD` This takes the current HEAD commit in local and overwrites the HEAD in the remote, removing the last commit. Note: This isn't a secure way to delete secrets accidentally pushed to a remote. Assume all secrets are compromised then watch out for caveats concerning '--force'. (https://evilmartians.com/chronicles/git-push---force-and-how-to-deal-with-it)
+
+`git reset HEAD <file>` - Removes a file from the stage
+`git reset HEAD .` - Removes all files from the stage
+`git reset --soft HEAD~1` - Undo the last commit by resetting it. 
+    - The --soft flag has the effect that all changes of your last commit are not deleted, but they are now uncommitted modified files.
+    The tilde ~ sign followed by a 1 means: take the HEAD (your current position in the git history) and reset one commit from there
 ___
 
 

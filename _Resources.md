@@ -69,7 +69,7 @@ ___
 ___
 
 
-### reducing image size
+### image size, reducing
 - `imagemagick` for Sizing Images
 (first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
 use command line to get into correct folder, then, eg:
@@ -95,7 +95,7 @@ JSON Server is a Node Module that you can use to create demo rest json webservic
 ___
 
 
-### placeholder images / Unsplash
+### placeholder IMAGES / Unsplash
 
 Docs: https://source.unsplash.com/
 
@@ -110,6 +110,11 @@ multiple random images:
 
 more parameters example:
 `<img src="https://source.unsplash.com/featured/100x160/?{sky},{sea}">`
+___
+
+
+### LMS
+- Canvas (TeSi's choice)
 ___
 
 
