@@ -49,7 +49,7 @@ ___
 
 
 ## Liquid Basics
-Documentation: https://shopify.dev/concepts/shopify-introduction
+Documentation: https://shopify.dev/api/liquid/
 CheatSheet: https://www.shopify.com/partners/shopify-cheat-sheet
 Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
 Liquid Sandbox: https://jumpseller.com/support/liquid-sandbox/

@@ -69,7 +69,7 @@ ___
 ___
 
 
-### image size, reducing
+### image size, reducing, compressing
 - `imagemagick` for Sizing Images
 (first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
 use command line to get into correct folder, then, eg:
@@ -132,6 +132,11 @@ ___
 - Read blog posts and guides on [how to contribute to an open source project](https://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx), then pick one!
 - [Get Involved in Tech](http://www.getinvolvedintech.com/) walks you through setting up your GitHub account, exploring StackOverflow, setting up a blog and starting to tweet!
 source: https://www.firsttimersonly.com/
+___
+
+
+### PDF, compressing
+- https://pdfcompressor.com/
 ___
 
 

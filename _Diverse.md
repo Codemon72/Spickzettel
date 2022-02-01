@@ -106,6 +106,14 @@ A protocoll that allows 2 machines to communicate securely over a network.
 ___
 
 
+### SVG
+- `viewport` - correlates with `height` and `width` but doesn't shrink or extend the displayed image (like we are used to from <img/>); does not control the size of the svg canvas, but how much we can see of it
+- `viewbox` - 4 parameters: minX, minY, width, height
+  - Example: `<svg viewBox= 0 0 50 70` - display the part of the svg starting from top left corner 50px to the right and 70px down of the svg canvas
+  - if we make width and height in the viewbox larger than in the viewport we zoom out, if we make them smaller, we zoom in
+___
+
+
 ### Woocommerce
 - hidden products: https://pluginrepublic.com/woocommerce-hidden-products/
 ___
