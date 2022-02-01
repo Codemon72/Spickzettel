@@ -135,8 +135,9 @@ source: https://www.firsttimersonly.com/
 ___
 
 
-### PDF, compressing
-- https://pdfcompressor.com/
+### PDF
+- compress, change, combine, crop, unlock, rotate: https://pdfcompressor.com/
+ - full list: PDF to DOC; DOC to PDF; PDF to JPG; JPG to PDF; PDF to PNG; PNG to PDF; PDF Compressor; Combine PDF; Rotate PDF; Unlock PDF; Crop PDF 
 ___
 
 
