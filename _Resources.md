@@ -73,7 +73,9 @@ ___
 - `imagemagick` for Sizing Images
 (first you need to install it. E.g. https://formulae.brew.sh/formula/imagemagick#default)
 use command line to get into correct folder, then, eg:
-`convert anton.jpg -scale 500 anton.jpg`
+```s
+convert anton.jpg -scale 500 anton.jpg
+```
   the value determines the width in px
 
 - https://tinyjpg.com/

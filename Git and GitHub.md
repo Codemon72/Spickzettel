@@ -60,6 +60,7 @@ branch löschen
 
 rebase branch
 - to keep all commits from my branch, but get all the updates from the master branch. Like taking a branch from a lower part of the tree and and graft it back on the tree 2m higher
+
 git rebase master:
 - first make sure to update your local master
 - go in to branch you want to rebase and `git rebase master`

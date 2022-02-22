@@ -1,6 +1,8 @@
 ### Shopify Basics
 [Help Center](https://help.shopify.com/en)
 - Liquid Basics: https://shopify.github.io/liquid/basics/introduction/
+CheatSheet: https://www.shopify.com/partners/shopify-cheat-sheet
+Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
 
 
 ### Getting started with Shopify CLI
@@ -149,12 +151,20 @@ Previewing the offline theme
   Note: Make sure you click on this button, do not share the URL on the top of your page because it won’t work.
 - Now just share the generated link with whoever you wish!
 
-Workflow for Uploading the new Theme:
+
+In German for customers:
+"Anleitung für Preview und erstellen von Preview Links:
+Auf eurer Admin Seite findest Du unten links "Online Store", wenn der aufgeklappt ist kommt als erstes "Themes". Dort gibt es jetzt in der "Theme library" die Themes "example_theme_1" und "example_theme_2". 
+Die haben jeweils einen Button "Action", dort kann man "Preview" auswählen. (Achtung: Nicht versehentlich auf "Publish" klicken, damit wird das Theme live geschaltet.)
+Für Dich selbst kannst Du diese Preview immer nutzen. Wenn Du die Preview mit jemandem teilen möchtest, gibt es unten auf der Preview Seite einen Button "Share Preview" und der erstellt Dir einen Link zum Teilen. "
+
+
+### Workflow for Uploading the new Theme:
 - in your main/ master branch, download the live theme with `shopify theme pull` (Docs: https://shopify.dev/themes/tools/cli/theme-commands#pull)
   - check for their changes with `git status`
   - commit with "changes by client" or "current live theme version"
 - go into the local git branch with the new features you created
-  - `rebase master` and solve all conflicts
+  - `git rebase main` and solve all conflicts
   - `shopify theme serve` and check 
     - for errors
     - their recent changes

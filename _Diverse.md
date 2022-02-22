@@ -1,12 +1,19 @@
 
-### Browser Short Cuts (Mac)
+### Browser Shortcuts (Mac)
 - ALT + CMD + I - open / close dev tools
 - ALT + CMD + C - open / close dev tools to inspect
 - ALT + CMD + left/right - change Tabs
 - CMD + T - open new tab
 - CMD + W - close tab
 - CMD + left/ right arrows - previous/ next page
+
+Chrome:
 - SHIFT + CMD + N - open window in incognito mode
+Firefox:
+- SHIFT + CMD + P 
+Safari:
+- File > New Private Window (A window that's using Private Browsing has a dark Smart Search field with white text.)
+___
 
 
 ### Cyberduck
@@ -110,7 +117,8 @@ ___
 - `viewport` - correlates with `height` and `width` but doesn't shrink or extend the displayed image (like we are used to from <img/>); does not control the size of the svg canvas, but how much we can see of it
 - `viewbox` - 4 parameters: minX, minY, width, height
   - Example: `<svg viewBox= 0 0 50 70` - display the part of the svg starting from top left corner 50px to the right and 70px down of the svg canvas
-  - if we make width and height in the viewbox larger than in the viewport we zoom out, if we make them smaller, we zoom in
+  - if we make width and height in the viewbox larger than in the viewport we zoom out, if we make them smaller, we zoom in...
+  ToDo: https://www.youtube.com/watch?v=TBYJ2V1jAlA
 ___
 
 
