@@ -200,6 +200,14 @@ guest_author:
   image: /assets/images/joana-vesuvio.jpg
 ```
 can be accessed by `guest_author.name`
+Example:
+```s
+{{ with .Params.guest_author }}
+    <img class="team-card--img" src="{{ .image }}" alt="{{ .name }}">
+    <div class="team-card--name"><sup>by</sup> <strong>{{ .firstname }}</strong> {{ .lastname }}</div>
+    <div class="team-card-jobtitle card-interline">{{ .job_title }}</div>
+{{ end}}
+```
 ___
 ___
 
