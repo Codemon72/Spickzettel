@@ -184,6 +184,25 @@ source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-co
 	```html
 	{{ i18n "test" }}
 	```
+___
+
+
+### frontmatter
+Hugo allows you to add front matter in yaml, toml, or json to your content files.
+
+how to write a cascade in yaml:
+```s
+guest_author: 
+  name: Joana Vesuvio
+  firstname: Joana
+  lastname: Vesuvio
+  job_title: Assistenz (formerly)
+  image: /assets/images/joana-vesuvio.jpg
+```
+can be accessed by `guest_author.name`
+___
+___
+
 
 ## Hugo Theme Research
 

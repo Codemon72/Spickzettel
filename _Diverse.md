@@ -125,3 +125,18 @@ ___
 ### Woocommerce
 - hidden products: https://pluginrepublic.com/woocommerce-hidden-products/
 ___
+
+
+### Yaml
+how to write a cascade:
+```s
+guest_author: 
+  name: Joana Vesuvio
+  firstname: Joana
+  lastname: Vesuvio
+  job_title: Assistenz (formerly)
+  image: /assets/images/joana-vesuvio.jpg
+```
+can be accessed by `guest_author.name`
+___
+
