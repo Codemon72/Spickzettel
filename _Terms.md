@@ -28,6 +28,19 @@ Example: if the user enters an invalid email format, you can show an error messa
 
 Mostly the Client Side Validation depends on the JavaScript language, so if users turn JavaScript off, it can easily bypass and submit dangerous input to the server. Client Side Validation can not protect your application from malicious attacks on your server resources and databases.
 
+- Built-in form validation uses `HTML5` form validation features (for exmple: the `required` attribute in input fields). It has better performance than JavaScript, but it is not as customizable as JavaScript validation.
+- `JavaScript` validation is coded using JavaScript. This validation is completely customizable, but you need to create it all (or use a library).
+
+JS form validation can be simple or complex:
+- Super basic: 'the field is not empty => ok'
+- Bit more nifty: 'check for valid email adress with a Regular Expression'
+- Depending on the form: 'compare start and end date of entered course and give useful hints'
+
+JS form validation can be blunt or enhance the UX
+- blunt: 'Err... wrong'
+- nice: checking during input (onChange) and responding immediately when entry is correct + giving valid hints from the start
+
+- https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
 ___
 
 ### Connection Pooling
