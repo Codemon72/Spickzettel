@@ -26,8 +26,9 @@ body {
   /* position it right over the checkbox */
   left: -22px;
   top: 2px;
-
+  /* make a space for the pseudo checkbox */
   padding-left: 30px;
+  
   cursor: pointer;
   display: inline-block;
   color: #666;
