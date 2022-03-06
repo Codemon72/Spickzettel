@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section>
+    <h2 class="section-headline">Custom Styled Checkbox</h2>
+    <div class="subtitle"></div>
+    <form>
+      <div class="Form__Group">
+        <div class="Form__Item">
+          <input type="text" class="Form__Input" name="contact[name]" placeholder="Name" required value="name">
+          <label class="Form__FloatingLabel">Name</label>
+        </div>
+
+        <div class="Form__Item">
+          <input type="email" class="Form__Input" name="contact[email]" placeholder="Email" required value="email">
+          <label class="Form__FloatingLabel">Email</label>
+        </div>
+      </div>
+
+      <div class="Form__Group">
+        <div class="Form__Item">
+          <input type="text" class="Form__Input" name="contact[company]"  placeholder="Company" required value="company">
+          <label class="Form__FloatingLabel">Company</label>
+        </div>
+      </div>
+
+      <div class="Form__Item">
+        <textarea name="contact[body]" cols="30" rows="5" class="Form__Textarea" placeholder="Anmerkungen / Produkte, die Dich ebenfalls interssieren"></textarea>
+        <label class="Form__FloatingLabel">Anmerkungen / Produkte, die Dich ebenfalls interssieren</label>
+      </div>
+
+      <div class="Form__Item privacy-box">
+          <input type="checkbox" id="Inputfield_privacy_policy" class="required input-lg has-value" name="privacy_policy" value="1" required>
+          <label for="Inputfield_privacy_policy"><span class="pw-no-select">Ich habe die Hinweise zum Datenschutz gelesen.</span></label>
+      </div>
+
+      <div class="Form__Item newsletter-box">
+        <input type="checkbox" id="Inputfield_newsletter" class="input-lg has-value" name="contact[newsletter]" value="1" checked=“checked”>
+        <label for="Inputfield_newsletter"><span class="pw-no-select">Ich möchte den Newsletter abonieren.</span></label>
+      </div>
+      
+      <button id="contact_form_submit" type="submit" name="product-form" class="Form__Submit Button Button--primary Button--full">Submit</button>
+    </form>
+  
+</body>
+</html>

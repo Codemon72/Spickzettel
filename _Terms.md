@@ -41,6 +41,7 @@ JS form validation can be blunt or enhance the UX
 - nice: checking during input (onChange) and responding immediately when entry is correct + giving valid hints from the start
 
 - https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+- https://www.makeuseof.com/implement-form-validation-javascript/
 ___
 
 ### Connection Pooling
