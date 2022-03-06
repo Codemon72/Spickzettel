@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #627b8a;
+}
+
+.container {
+  margin-bottom: 40vh;
+  width: 65vh;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+  padding: 2em;
+  background-color: #fff;
+}
+
+
+/* checkbox still there but not visible */
+[type="checkbox"]{
+  /* opacity: 0; */
+}
+
+/* styling on the label, because we hid the checkbox */
+[type="checkbox"] + label {
+  position: relative;
+  /* position it right over the checkbox */
+  left: -22px;
+  top: 2px;
+
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: #666;
+  line-height: 25px;
+}
+
+/* redrawing the box of the checkbox */
+[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: transparent;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #aaa;
+  background: #fff;
+  
+}
+
+[type="checkbox"]:checked + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid green;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::after {
+  content: '\2714';
+  color: green;
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  transition: color .2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label::after {
+  content: '\2714';
+  color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+}

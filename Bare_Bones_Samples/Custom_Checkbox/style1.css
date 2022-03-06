@@ -1,0 +1,122 @@
+/* 
+
+input[type=checkbox] + label {
+  display: flex;
+  align-items:center;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: grid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    line-height: 17px;
+    transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #b7b3b3;
+  border-color: grey;
+  color: #fff;
+}
+
+
+
+.newsletter-box {
+  margin-top: -15px;
+} */
+
+
+/* -------------------------------- */
+/* checkbox still there but not visible */
+[type="checkbox"]{
+  opacity: 0;
+}
+
+/* styling on the label, because we hid the checkbox */
+[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  /* Tutaka Code */
+  color: rgb(14, 14, 14);
+  line-height: 1.65;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+/* redrawing the box of the checkbox */
+[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  /* Tutaka Code */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 0px;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  line-height: 17px;
+  transition: .2s;
+}
+
+/* styling change for checked checkbox */
+[type="checkbox"]:checked + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* redrawing the checkmark of the checkbox */
+[type="checkbox"] + label::before {
+  content: '\2714';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #b7b3b3;
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 0px;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  line-height: 17px;
+  transition: .2s;  
+}
+[type="checkbox"]:checked + label::before {
+  background-color: #b7b3b3;
+  border-color: grey;
+  color: #fff;
+}
