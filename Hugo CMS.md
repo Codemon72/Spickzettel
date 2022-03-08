@@ -45,6 +45,19 @@ good sources for an overview:
 - article: https://knausb.github.io/2014/04/hugo-template-primer/
 
 
+### Hugo Variables
+```s
+{{ .Title }}<br>
+{{ .Site.Pages }}<br>
+{{ .File }}<br>
+{{ .File.ContentBaseName }}<br>
+{{ .File.TranslationBaseName }}<br>
+{{ .File.BaseFileName }}<br>
+```
+source: https://gohugo.io/variables/
+___
+
+
 ### Hugo operators
 `eq` = equals
 `ne`= not equal
@@ -57,8 +70,10 @@ Unlike most other logic languages, here we put the comparison operator before th
 ```
 {{ if ne .Section "blog" }}current{{ end }}
 ```
+___
 
-#### Hugo Conditionals
+
+### Hugo Conditionals
 
 #### if, if else, else
 ````
