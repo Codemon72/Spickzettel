@@ -121,6 +121,29 @@ ___
 
 
 ### Hugo functions
+
+`len`   - returns the length of a variable according to its type
+        - built-in function in Go
+
+From the Go documentation:
+- Array: the number of elements in v.
+- Pointer to array: the number of elements in *v (even if v is nil).
+- Slice, or map: the number of elements in v; if v is nil, len(v) is zero.
+- String: the number of bytes in v.
+- Channel: the number of elements queued (unread) in the channel buffer; if v is nil, len(v) is zero.
+
+Example:
+```s
+{{ $firstPrinted := false }}
+{{ range .Params.nextDates }}
+  {{ if (and ((time .start_date).After (now.AddDate 0 0 +1)) (not $firstPrinted)) }}
+    {{ len .courses }}
+    {{ $firstPrinted = true }}
+  {{ end }}
+{{ end }}
+```
+__
+
 `range` - iterates over a map, array or slice
 ```
 {{ range .Params.nextDates }}
