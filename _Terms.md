@@ -221,6 +221,16 @@ The MERN Stack is a popular stack of technologies for building a modern, single-
 ___
 
 
+### Open Source vs Proprietary Software
+- Proprietary: Software mit eingeschränkten Rechten zur Wiederverwendung, Verbreitung und Veränderung durch Dritte.
+- Open Source Software: Quelloffene Software, deren Code von Dritten eingesehen, genutzt und verändert werden darf.
+
+Digitale Souveränität: 
+- IT-Infrastrukturen sichern (z.B. Hosting in Deutschland)
+- Abhängigkeiten vermeiden
+___
+
+
 ### Kernel
 - A Kernel is the core of an OS (operating system).
 - It manages all applications as well as hardware resources (like memory and CPU).
@@ -332,6 +342,11 @@ There are multiple uses for the word "runtime", and each one is slightly differe
 
 **Runtime library**: A library which is used by the compiler to invoke interactions with the runtime environment.
 
+___
+
+
+### SaaS
+Software as a Service
 ___
 
 

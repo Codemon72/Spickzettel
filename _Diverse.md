@@ -119,6 +119,9 @@ ___
   - Example: `<svg viewBox= 0 0 50 70` - display the part of the svg starting from top left corner 50px to the right and 70px down of the svg canvas
   - if we make width and height in the viewbox larger than in the viewport we zoom out, if we make them smaller, we zoom in...
   ToDo: https://www.youtube.com/watch?v=TBYJ2V1jAlA
+- `fill:..``
+This will override a presentation attribute <path fill="#fff" ... />
+This will not override an inline style e.g. <path style="fill: #fff;" ... />
 ___
 
 
