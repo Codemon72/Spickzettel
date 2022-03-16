@@ -76,12 +76,20 @@ ___
 ### Hugo Conditionals
 
 #### if, if else, else
-````
+```s
 {{ if condition }}
 {{ else if condition }}
 {{ else }}
 {{ end }}
-````
+```
+Example:
+```s
+{{ with .File }}
+    {{ if (eq .File.TranslationBaseName "fullstackprogram") }}
+        {{ partial "start-date-section" $ }}
+    {{ end }}
+{{ end }}
+```
 
 #### not
 You can negate a conditional by using the not keyword. `not` should come before the conditional statement, the use of parenthesis here is important.
@@ -106,13 +114,13 @@ You can negate a conditional by using the not keyword. `not` should come before 
 Mike Dane in answering someone:
 You wanna use an if statement to check whether or not a title has been passed into the partial. You could do something like this:
 
-``````
+```s
 <h1>
 {{ if .myTitle }}{{ .myTitle }}
 {{ else }}default value 
 {{ end }}
 </h1>
-``````
+```
 
 This checks to see if the .myTitle variable has a value and if it does then it uses that value, otherwise it uses the default value
 
@@ -121,6 +129,24 @@ ___
 
 
 ### Hugo functions
+
+`slice` - creates a slice (array) of all passed arguments.
+- syntax (slice ITEM...):
+```s
+{{ delimit (slice "foo" "bar" "buzz") ", " }}
+<!-- returns the string "foo, bar, buzz" -->
+```
+---
+
+`delimit` - Loops through any array, slice, or map and returns a string of all the values separated by a delimiter.
+- syntax (delimit COLLECTION DELIMIT LAST):
+    `{{ delimit array/slice/map delimiter optionallastdelimiter}}`
+Example:
+```s
+{{ $path :=  delimit (slice "audiences/" (. | urlize) "/") "" }}
+<a href="{{ $path | relLangURL }}">{{  i18n . }}</a>
+```
+---
 
 `len`   - returns the length of a variable according to its type
         - built-in function in Go
@@ -171,57 +197,57 @@ source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-co
 ### Setting Up Multilingual in Hugo
 
 - in config file:
-	```toml
-	DefaultContentLanguage = "de"
+```s
+DefaultContentLanguage = "de"
 
-	# for the i18n folder to work:
-	enableMissingTranslationPlaceholders = true
+# for the i18n folder to work:
+enableMissingTranslationPlaceholders = true
 
-	[languages]
-    [languages.en]
-        languagecode = "en"
+[languages]
+[languages.en]
+    languagecode = "en"
 
-        [languages.en.params]
-            author = "Clemens Bruesch"
-            description = "Clemens Bruesch's personal website"
+    [languages.en.params]
+        author = "Clemens Bruesch"
+        description = "Clemens Bruesch's personal website"
 
-        [languages.en.menu] # It is possible to change the menu too.
+    [languages.en.menu] # It is possible to change the menu too.
 
-            [[languages.en.menu.main]]
-                name = "About"
-                url = "about"
+        [[languages.en.menu.main]]
+            name = "About"
+            url = "about"
 
-            [[languages.en.menu.main]]
-                name = "Blog"
-                url = "posts"
+        [[languages.en.menu.main]]
+            name = "Blog"
+            url = "posts"
 
-    [languages.de]
-        languagecode = "de"
+[languages.de]
+    languagecode = "de"
 
-        [languages.de.params]
-            author = "Clemens Brüsch"
-            description = "Clemens Brüsch's personal website"
+    [languages.de.params]
+        author = "Clemens Brüsch"
+        description = "Clemens Brüsch's personal website"
 
-        [languages.de.menu] # It is possible to change the menu too.
+    [languages.de.menu] # It is possible to change the menu too.
 
-            [[languages.de.menu.main]]
-                name = "About"
-                url = "about"
+        [[languages.de.menu.main]]
+            name = "About"
+            url = "about"
 
-            [[languages.de.menu.main]]
-                name = "Blog"
-                url = "posts"
-	```
+        [[languages.de.menu.main]]
+            name = "Blog"
+            url = "posts"
+```
 - i18n folder in root with one file each for respective languages (e.g. de.toml, en.toml)
 	en.toml:
-	```toml
-	[test]
-	other = "english"
-	```
-	html file:
-	```html
-	{{ i18n "test" }}
-	```
+    ```s
+    [test]
+    other = "english"
+    ```
+    html file:
+    ```s
+    {{ i18n "test" }}
+    ```
 ___
 
 
