@@ -18,7 +18,7 @@ or just `git push` - if the branch has been established before
 `git checkout -- example.html` reverts all changes in example.html, that had not been added
 `git checkout -- .` reverts **all** all changes, that have not been added
 
-### branches
+### Branches
 branch anlegen
 `git branch example-branchName`
 
@@ -60,6 +60,21 @@ branch löschen
 
 rebase branch
 - to keep all commits from my branch, but get all the updates from the master branch. Like taking a branch from a lower part of the tree and and graft it back on the tree 2m higher
+
+merge conflicting branches
+if it can't be done on GitHub use the terminal:
+- first: check for updated master
+- go into feature branch
+`git merge master` - merge the branch “master” into the branch you are currently on
+it will then show you the conflicting files (you can just click on one of the files to get there). In larger files search for "<<<<" or "====" to find the conflicts
+- solve all conflicts in one file
+- in terminal add this one file: `git add example.md`
+- `git status` to see all remaining, conflicted files
+- repeat for all conflicting files
+- if there is a deleted, conflicting file you wish to keep deleted: `git rm example.png`
+- when all conflicts are solved run `git commit`
+- `git push` normally
+- `git merge --abort` to abort the merge
 
 git rebase master:
 - first make sure to update your local master
