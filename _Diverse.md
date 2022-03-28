@@ -7,12 +7,20 @@
 - CMD + W - close tab
 - CMD + left/ right arrows - previous/ next page
 
+##### open window in incognito mode
 Chrome:
-- SHIFT + CMD + N - open window in incognito mode
+- SHIFT + CMD + N
 Firefox:
 - SHIFT + CMD + P 
 Safari:
 - File > New Private Window (A window that's using Private Browsing has a dark Smart Search field with white text.)
+
+##### hard refresh
+Chrome + Firefox: 
+- SHIFT + CMD + R
+Safari on Mac: 
+1. Go to Safari > Empty Cache, or hit Opt + Cmd + E.
+2. To refresh, click the refresh button on the address bar or press Cmd + R.
 ___
 
 

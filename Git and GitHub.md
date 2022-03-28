@@ -72,7 +72,19 @@ git rebase master:
 sometimes you might want to only rebase your last 3 commits or be in other ways more specific. Check out:
 **rebase -i ....** (interactive)
 **rebase onto**
+
+Note: If you don't know what's going on and just want to go back to where the repo was, then just do:
+`git rebase --abort`
 ___
+
+### Vim Editor
+(not: git terminal)
+if you (for example) forget to add a message to a commit you will end up in the vim editor.
+
+`i`        to insert/ write a message
+`ESC`      when you are finished
+`:wq!`     to exit the editor (try out: `:wq`)
+–––
 
 
 ### clone / downloading from GitHub
