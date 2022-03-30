@@ -107,6 +107,7 @@ Create separate images for Open Graph image and the Twitter Card image, for a pe
 
 ### Get more google reviews
 - respond to every review, good or bad
+- generate a review shortcut link 
 - do we already ask our participants after graduation for a google review? (with a google review shortcut link, so that it takes just a couple of seconds)
 - present a review shortcut link on our website (“check out our google reviews page here” or at the end of blogposts or on the resource page “if you like our content we’d be happy about a review” )
 - display our google reviews on our website with a cta
