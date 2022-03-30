@@ -16,6 +16,14 @@ Binary Large Object
 ___
 
 
+### Brand SERP
+SERP = Search Engine Results Page
+A Brand SERP is the result Google returns for a search on your exact match brand name. 
+Basically a digital business card.
+The Google Knowledge Graph is a part of that.
+––––
+
+
 ### CLI Command Line Interface
 Abbreviated as CLI, a Command Line Interface connects a user to a computer program or operating system. Through the CLI, users interact with a system or application by typing in text (commands). The command is typed on a specific line following a visual prompt from the computer.
 ___
@@ -80,6 +88,18 @@ CORS stands for Cross-Origin Resource Sharing. It's a mechanism that restricts r
 
 CORS allows servers to specify who can access their resources and how. Browsers follow the servers' policies by sending a test request (preflight) to the server and checking whether it's allowed.
 source: https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
+–––
+
+
+### Google Knowledge Graph
+Googles understanding of the world. 'Where' all of google's knowledge is stored. The Google Knowledge Panel is a result of that.
+–––
+
+
+### Google Knowledge Panel
+Panel on the right side in a google search generated from Google Knowledge Graph
+–––
+
 
 ##### More in-depth and ELI5 
 source: https://dev.to/dougblackjr/cors-in-a-way-i-can-understand-501d
