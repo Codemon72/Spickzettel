@@ -90,6 +90,10 @@ CORS allows servers to specify who can access their resources and how. Browsers 
 source: https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
 –––
 
+### Deep Link
+Deep links are a type of link that send users directly to an app instead of a website or a store.
+–––
+
 
 ### Google Knowledge Graph
 Googles understanding of the world. 'Where' all of google's knowledge is stored. The Google Knowledge Panel is a result of that.
@@ -399,6 +403,11 @@ ___
 With Server Side Validation, the input submitted by the user is being sent to the server and validated using one of the server side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page. It is better to validate user input on the server side because you can protect against malicious users, who can easily bypass your Client Side scripting language and submit dangerous input to the server.
 
 ___
+
+### SRS - Software Requirements Specification
+A software requirements specification is a description of a software system to be developed. It is modeled after business requirements specification.
+
+–––
 
 ### SSL
 Secure Sockets Layer

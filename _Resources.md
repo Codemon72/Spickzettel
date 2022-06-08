@@ -42,7 +42,8 @@ ___
 
 ### DeadLinkChecker
 check for dead / broken links
-- https://www.deadlinkchecker.com/
+- https://www.drlinkcheck.com/
+- https://www.deadlinkchecker.com/ (delivered a lot of false alarms 2022-05)
 ___
 
 
@@ -52,6 +53,9 @@ So it is a good idea to reduce your DNS lookups.
 - Mess with DNS: https://jvns.ca/blog/2021/12/15/mess-with-dns/
 ___
 
+### favicon checker
+https://realfavicongenerator.net/favicon_checker#
+–––
 
 ### icons (free)
 - https://feathericons.com/
@@ -140,6 +144,8 @@ ___
 ### PDF
 - compress, change, combine, crop, unlock, rotate: https://pdfcompressor.com/
  - full list: PDF to DOC; DOC to PDF; PDF to JPG; JPG to PDF; PDF to PNG; PNG to PDF; PDF Compressor; Combine PDF; Rotate PDF; Unlock PDF; Crop PDF 
+- edit metadata: https://www.sejda.com/edit-pdf-metadata
+   (free: 3 per hour)
 ___
 
 

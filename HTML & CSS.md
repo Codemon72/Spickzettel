@@ -581,6 +581,10 @@ Since 2020 we got this beauty:
 #anchor {
   scroll-margin-top: 100px;
 }
+/* or with varying header heights: */
+#anchor {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
 ```
 ___
 

@@ -100,10 +100,13 @@ You can negate a conditional by using the not keyword. `not` should come before 
 ```
 
 #### and / or
-````
+```s
 {{ if and (conditional1) (conditional2) }}
 {{ if or (conditional1) (conditional2) }}
-````
+
+// this also works:
+{{ if eq $FileDir "courses/" | or (eq .File.TranslationBaseName "android") | or (eq .Data.Plural "labels")  | or (eq .Data.Plural "audiences") }}
+```
 
 #### nesting and / or statements
 ````
@@ -185,6 +188,13 @@ __
 {{ end }}
 ```
 you can name or abbreviate the variables however you like, the order is defining 'index' and 'element'.
+
+- `range` with `where` function
+```s
+{{ range where .Pages.ByWeight ".Params.weight" "gt" 0 }}
+    {{ partial "course-preview-card" . }}
+{{ end }}
+```
 ___
 
 
@@ -248,6 +258,17 @@ enableMissingTranslationPlaceholders = true
     ```s
     {{ i18n "test" }}
     ```
+
+- you can also call it with 2 arguments:
+en.toml:
+```s
+[programWithNumberCourses]
+other = "Program with {{ . }} courses"
+```
+html file:
+```s
+{{ i18n "programWithNumberCourses" (partial "number-of-courses" . ) }}
+```
 ___
 
 

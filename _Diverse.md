@@ -21,6 +21,10 @@ Chrome + Firefox:
 Safari on Mac: 
 1. Go to Safari > Empty Cache, or hit Opt + Cmd + E.
 2. To refresh, click the refresh button on the address bar or press Cmd + R.
+Safari on iPhone:
+- Delete the cached data for a single site by going to Settings > Safari > Advanced > Website Data > Show All Sites.
+- Tap Edit on the top right of the screen, and then scroll in the list or search with the search field to find the website you want to clear. Tap the red - icon next to the site address, and then tap the Delete button that appears.
+- Return to Safari and reload the page, and all the site’s elements will be reloaded.
 ___
 
 
