@@ -22,12 +22,19 @@ ___
 
 ### Shortcuts (for Mac)
 
-- `CMD + J` - open terminal
-- `CMD + P` - open file (start typing name...)
-- `ALT + CMD + (up or down)` - expand cursor over more lines up or down
-- `SHIFT + ALT + (up or down)` - copy whole line up or down
-- `SHIFT + CMD + 7` - comment out line
-- `CMD + P` - open search field to find and open file by name
+- CMD + J - open terminal
+- ALT + CMD + (up or down) - extend cursor across more lines up or down
+- ALT + SHIFT + up/ down - duplicate whole line
+- SHIFT + CMD + 7 - comment out line
+- CMD + P - open search field to find and open file by name
+- CMD + D - highlight all matches - then mark other matches one by one
+- CMD + SHIFT + L - selects all the same words / elements as the one where the cursor is at
+- ALT + 'click' - cursor in many places at once
+- CMD + ALT + up/ down - cursor in many places
+- ALT + up/ down - to move a whole line or section
+- SHIFT + CMD + P - see all VS commands
+- ALT + CMD + left/right - change Tabs
+- SHIFT + ALT + 'click'  - select vertically across lines
 
 
 typing:

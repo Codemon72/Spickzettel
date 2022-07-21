@@ -90,6 +90,11 @@ Example:
     {{ end }}
 {{ end }}
 ```
+```s
+{{ if and (eq .Type "courses") (eq .Kind "page")}}
+  <script src="/assets/scripts/course-selector.js"></script>
+{{ end }}
+```
 
 #### not
 You can negate a conditional by using the not keyword. `not` should come before the conditional statement, the use of parenthesis here is important.

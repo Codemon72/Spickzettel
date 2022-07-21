@@ -35,6 +35,50 @@ ___
     - enter Server (z.Bsp.: ftp.12345.hostingkunde.de), Username (z.B.: 123456-xy), Password
 ___
 
+### Digitization in companies, how-tos and factors
+
+Presentation by Lennart Schneider, consultant at Die Zeit
+
+Checklist for factors that support or have to be considered when digitizing a company:
+- Fun/ enjoyment with the tool, good UX - a bad UX turns off even the enthusiasts
+- test: “does this (process, tool) spark joy?” based on Tidying with Marie Kondo
+- Team / employees should be allowed to choose the tech they use  (software or hardware) themselves
+- Saving on technology is very often saving at the wrong end. An employee who gets along better with another computer has more fun at work, less distraction / annoyance and that will pay off in the long run.
+- start small (but start)
+LinkedIn founder Reid Hoffman: “If you’re not embarrassed by the first version of your product, you’ve launched too late.”
+It is much better to take the first bumpy steps and be able to work with feedback than to plan far ahead and get bogged down by desires for perfection.
+- leave established routines / processes in place - if it works it’s fine and you don’t want to disrupt processes unnecessarily
+- Process descriptions should be as brief as possible
+- quickly set up a first prototype. Example: they hired an experienced podcaster who showed them all the necessary steps in a workshop and had them do them, so that after 3 hours they had their first podcast from interviewing each other and an overview and first impression of how it works.
+- Be aware and mind the existing company culture - Example: Die Zeit organized a hackathon in which 4 employees and 80 foreigners took part. The aim was to bring the freshness and joy of the creative start-up feeling into the company. The employees were mostly puzzled and bewildered by this and it had no effect.
+- Avoid technical jargon - use terms the employees can easily understand
+- Share expert knowledge - regularly and with humor and fun
+Example: Die Zeit held a workshop with many short lectures (with topics from introducing a Trello board to playing nose flute). It generated fascination with how much diverse and wild expert knowledge there was and humor / lightness because of the topics. This led to a regular event (every Thursday an employee makes a short presentation of their choice via zoom) with a positive influence on the company culture: it has become much more natural for most employees to hold a short meeting with interested parties and to share their knowledge
+- start with the employees who are interested in digitization. Sooner or later they will pull the others along. Start with the multipliers.
+Tobias Krüger, culture change at Otto: “You start with the 5% who want it.”
+
+German version:
+### Digitalisierung in Firmen, Anleitung, Faktoren
+Vortrag von Lennart Schneider, Berater bei der Zeit
+Checklist für Faktoren, die bei der Digitalisierung einer Firma unterstützden bzw zu beachten sind
+- Spaß/ Freude am Tool, gute UX
+- "does this (process, tool) spark joy?" angelehnt an Tidying mit Marie Kondo
+- Team / Mitarbeiter sollten Tech (Soft- oder Hardware) selber wählen dürfen
+- an der Technik zu sparen ist sehr oft sparen am falschen Ende. Ein Mitarbeiter, der mit einem anderen Rechner besser zurecht kommt, hat mehr Freude an der Arbeit, weniger Ablenkung / Ärger und das wird sich auf Dauer rechnen.
+- start small (but start)
+LinkedIn Gründer Reid Hoffman: „If you’re not embarrassed by the first version of your product, you’ve launched too late.“
+Es ist viel besser die ersten holperigen Schritte zu gehen und mit Feedback arbeiten zu können, als lange vorauszuplanen und sich durch Perfektionswünsche aufzuhalten.
+- etablierte Routinen / Prozesse bestehen lassen / beibehalten
+- möglichst knappe Prozessbeschreibungen 
+- schnell einen ersten Prototyp auf die Beine stellen. Beispiel: sie haben sich einen erfahrenen Podcaster geleistet, der ihnen in einem Workshop alle notwendigen Schritte gezeigt hat und hat machen lassen, so dass sie nach 3 Stunden ihre erste Sendung mit gegenseitigen Interviews zusammen hatten und einen Überblick und ersten Eindruck wie es geht.
+- Firmenkultur beherzigen - Beispiel: Hackathon veranstaltet, an dem 4 Mitarbeiter und 80 Auswärtige teilgenommen haben. Ziel war die Frische und Freude am kreativen Start-Up Feeling in die Firma zu holen. Stieß auf Unverständnis und konnte die Leute nicht abholen.
+- Fachjargon meiden - die Mitarbeiter auch sprachlich abholen wo sie stehen
+- Expertenwissen teilen - regelmäßig und mit Humor und Spaß
+Beispiel: bei der Zeit eingeführt mit einem Workshop-Tag mit vielen Kurzvorträgen (mit Themen von Trello-Board bis Nasenflöte). Erzeugte Faszination wie viel Expertenwissen da war und Humor / Leichtigkeit wegen der Themen. Führte zu regelmäßigem Event (jeden Donnerstag macht ein Mitarbeiter eine kurze Präsentation seiner Wahl via Zoom) mit positiven Einfluss auf die Firmenkultur - es ist viel selbstverständlicher geworden, das jemand ein kurzes Meeting mit Interessierten macht und sein Wissen teilt
+- anfangen mit den Mitarbeitern, die Lust auf Digitalisierung haben. Früher oder später werden sie die anderen mitziehen. #Multiplikatoren 
+Tobias Krüger, Kulturwandel bei Otto: "Du fängst mit den 5% an, die Bock darauf haben."
+–––
+
 
 ### Disable Google Analytics
 - https://developers.google.com/analytics/devguides/collection/ga4/disable-analytics
@@ -131,9 +175,26 @@ ___
   - Example: `<svg viewBox= 0 0 50 70` - display the part of the svg starting from top left corner 50px to the right and 70px down of the svg canvas
   - if we make width and height in the viewbox larger than in the viewport we zoom out, if we make them smaller, we zoom in...
   ToDo: https://www.youtube.com/watch?v=TBYJ2V1jAlA
-- `fill:..``
-This will override a presentation attribute <path fill="#fff" ... />
-This will not override an inline style e.g. <path style="fill: #fff;" ... />
+- `fill:..`
+  - basically like `background-color`
+  - Placed in CSS it will override a presentation attribute <path fill="#fff" ... />
+  - ... but it will not override an inline style e.g. <path style="fill: #fff;" ... />
+
+- `fill-rule: ...`
+  In most cases what is considered to be the “inside” of a graphic is straightforward. However, when the graphic involves more complex compound paths such as those that intersect or enclosed shapes, what defines the inside of the shape becomes less clear.
+  The fill-rule property indicates the algorithm to be used in determining what parts of the canvas are included inside more complex shapes.
+  - `nonzero` - takes into account the direction of each line drawn in determining what is 'inside'
+  - `evenodd` - counts each crossing of a line (no matter in which direction as +1). 'Even' then means outside, 'odd' inside.
+  - `inherit`
+  - excellently explained: https://www.sitepoint.com/understanding-svg-fill-rule-property/
+
+good sources:
+https://rafaltomal.com/svg-guide/
+https://css-tricks.com/using-svg/
+https://css-tricks.com/svg-properties-and-css/
+https://css-tricks.com/svg-line-animation-works/
+https://css-tricks.com/svg-use-with-external-reference-take-2/
+https://frontstuff.io/multi-colored-svg-symbol-icons-with-css-variables
 ___
 
 

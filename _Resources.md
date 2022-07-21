@@ -1,3 +1,7 @@
+### Learn X in Y minutes
+overview for a lot of languages
+- https://learnxinyminutes.com/
+
 ### Brad Traversy's Humongous List
 https://github.com/bradtraversy/design-resources-for-developers/blob/master/readme.md
 

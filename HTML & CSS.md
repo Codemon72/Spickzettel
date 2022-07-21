@@ -313,9 +313,13 @@ source: https://stackoverflow.com/questions/55388828/what-is-the-meaning-of-this
 ___
 
 
-### Flex
+### Flexbox
 - CSS Tricks Overview: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - deep dive into edge cases and quirkyness: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
+
+#### Why is there no `justify-self` property?
+Because it is not necessary. We have `justify-content` and `margin: auto;`. 
+Beautifully explained: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
 ___
 
 

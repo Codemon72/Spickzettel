@@ -215,7 +215,7 @@ ___
 #### Rename Branch
 to rename the branch you are currently on, simply do:
 
-`git branch -m <newname>` - to remember this is -m is for "move" (or mv), which is how you rename files.
+`git branch -m <newname>` - "-m" is for "move" (or mv), which is how you rename files.
 
 If it is another local branch (you are not currently on):
 `git branch -m <old-name> <new-name>`
