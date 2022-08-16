@@ -388,6 +388,11 @@ important terms:
 - **Client side validation** is performed by a web browser, before input is sent to a web server.
 ___
 
+### Grid 
+- http://cssgridgarden.com/
+- https://css-tricks.com/snippets/css/complete-guide-grid/
+–––
+
 
 ### Perspectives
 - article from the master: https://css-tricks.com/how-css-perspective-works/

@@ -187,6 +187,14 @@ ___
   - `evenodd` - counts each crossing of a line (no matter in which direction as +1). 'Even' then means outside, 'odd' inside.
   - `inherit`
   - excellently explained: https://www.sitepoint.com/understanding-svg-fill-rule-property/
+- `stroke: ...`
+  The stroke attribute is a presentation attribute defining the color (or any SVG paint servers like gradients or patterns) used to paint the outline of the shape;
+  *Note*: As a presentation attribute stroke can be used as a CSS property.
+  You can use this attribute with the following SVG elements: <altGlyph>, <circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>, <text>, <textPath>, <tref>, <tspan>
+  Usage notes:
+  - Value	<paint>
+  - Default value:	none
+  - Animatable:	Yes
 
 good sources:
 https://rafaltomal.com/svg-guide/
