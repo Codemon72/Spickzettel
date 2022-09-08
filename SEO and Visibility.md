@@ -124,3 +124,14 @@ add metadata to all files like pdfs and images
 - Subject
 - Keywords
   - i.e: git GitHub cheatsheet guide handout tutorial beginner
+___
+
+
+### Marketing
+headline analyzer: https://coschedule.com/headline-analyzer
+useful video with many tools: https://www.youtube.com/watch?v=qQdXB8qSY-E
+
+#### Keywords
+Tools:
+browser add-on: https://keywordseverywhere.com/
+

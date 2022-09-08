@@ -1,3 +1,6 @@
+### First Steps
+- Brads: Flutter Setup & Notes: https://gist.github.com/bradtraversy/f1af78251962bb210c2ebe5b4f9a5c35
+
 
 ### What is Flutter?
 - Google UI toolkit for building natively compiled apps for mobile, web and desktop
@@ -32,6 +35,8 @@
 - VSCode Extension
 
 
+### Basic Commands
+`flutter create example_app` 
 
 sources: 
 Brad Crash Course: https://youtu.be/1gDhl4leEzA?t=525

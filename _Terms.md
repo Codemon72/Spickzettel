@@ -261,8 +261,12 @@ ___
 - Every OS has it's own Kernel (or engine) and these kernels have different APIs.
   - that's why we cannot run a Windows application on Linux: the app needs to talk to the kernel and can't
   - (on a Windows machine we can now both run Windows and Linux containers, because since Windows10 they added a custom built Linux kernel)
-
 ___
+
+
+### KPI
+Key Performance Indicator
+- used for apps and App Store Optimization
 
 ### MVP
 

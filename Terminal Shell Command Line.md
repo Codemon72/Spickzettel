@@ -18,6 +18,10 @@ best sources:
 `chown` - change file owner and group
   - `sudo chown -R "$USER":admin /usr/local/*` - alles in /usr/local auf den aktuellen Benutzer übertragen (homebrew was not functioning - "unlinked kegs in the cellar" - see in "Examples / SimonSays" below)
 
+`echo` - prints to the output the argument passed to it.
+  - `echo $(pwd)/example_file` will print out full path of 'example_file'
+  - `echo "hello" >> output.txt` - appends output to a file
+
 `grep` - print lines matching a pattern ('global regular expression print')
   - `ls -a | grep .nvm` - list all directory content but filter them for names starting with `.nvm`
 
@@ -36,7 +40,7 @@ best sources:
 
 `ls` - list directory contents
   - `ls -l /usr/local/` - list directory contents, using long listing format, information about the files (current directory by default) - also see in "Examples / SimonSays" below
-  - `ls -a` - list all directory contents, (-a, --all) do not ignore entries starting with `.`
+  - `ls -a` - list all directory contents (also hidden files), (-a, --all)
 
 `mkdir` - make directories
   - `mkdire example_1 example_2` - create multiple directories
@@ -52,10 +56,16 @@ best sources:
 
 `rm` - remove
 
+`uptime` - tells how long the system has been running
+
 
 ### Tipps & Tricks
 
-shortcut to look up ALL previous commands: `CTRL + R`; start writing command; if correct command is displayed: hit ENTER. 🤓
+- shortcut to look up ALL previous commands: `CTRL + R`; start writing command; if correct command is displayed: hit ENTER. 🤓
+- whitespace - use backslash `\` or quotes `''`; `""`
+  `mkdir example\ folder\ #1`
+  `cd 'example folder #1'`
+  `rm "example folder #1"`
  
 ## Fledgling Section / For Beginners
 

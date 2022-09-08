@@ -31,7 +31,7 @@ this might come in handy again:
 cp -a themes/portio/exampleSite/* .
 ````
 
-### new file
+### new file or directory
 ```hugo new example.md```
 ```hugo new directory/example.md```
 ___

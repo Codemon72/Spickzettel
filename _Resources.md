@@ -5,6 +5,9 @@ overview for a lot of languages
 ### Brad Traversy's Humongous List
 https://github.com/bradtraversy/design-resources-for-developers/blob/master/readme.md
 
+### List of Sites with Free Tiers
+https://github.com/ripienaar/free-for-dev
+
 ### Marko Denic's List
 - https://markodenic.com/50-free-tools-and-resources/
 
@@ -155,6 +158,7 @@ ___
 
 ### QR Code Generator
 - from Marko Denic: https://markodenic.com/tools/qr-code-generator/
+- https://rebrandly.com/
 ___
 
 
@@ -162,6 +166,11 @@ ___
 - https://undraw.co/search
 - to create: https://app.svgator.com/
 ___
+
+
+### URL shortener
+https://rebrandly.com/
+––– 
 
 
 ### Web Components
