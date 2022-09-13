@@ -283,7 +283,9 @@ account > SSH & GGP keys > add new SSH key
 Docs: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 ___
 
-
+### GitHub Automating a Project
+- https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations
+___
 
 
 source: https://code.likeagirl.io/how-to-get-rid-of-ds-store-and-node-modules-in-git-repositories-d37b8a391247

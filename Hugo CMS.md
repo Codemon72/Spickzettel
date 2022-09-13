@@ -277,7 +277,7 @@ html file:
 ___
 
 
-### frontmatter
+### front matter
 Hugo allows you to add front matter in yaml, toml, or json to your content files.
 
 how to write a cascade in yaml:
@@ -298,7 +298,67 @@ Example:
     <div class="team-card-jobtitle card-interline">{{ .job_title }}</div>
 {{ end}}
 ```
+
+#### read out front matter in markdown
+one can read out front matter directly in the markdown by using shortcode:
+`{{< param example_param >}}`
 ___
+
+
+### Hugo Shortcodes
+
+#### read out front matter in markdown
+one can read out front matter directly in the markdown by using shortcode:
+`{{< param example_param >}}`
+
+#### built in shortcodes 
+like `figure`:
+```s
+{{< figure src="/blog/shredder.jpg" title="Büroalltag" alt="Büroalltag" class="util--image-right" >}}
+```
+#### custom shortcode templates
+
+SINGLE TAG SHORTCODE
+in markdown:
+```s
+{{< exampleShortCodeTemplateName variable="blue" >}}
+```
+in folder/file: /layouts/shortcodes/exampleShortCodeTemplateName.html
+```s
+<p style="color:{{.Get 'variable'}}">any kind of fancy html</p>
+```
+
+PASSING FRONT MATTER TO SHORTCODE
+to read it out from the shortcode put `.Page` in front of the `.Params`:
+`{{ .Page.Params.myParam }}`
+
+If you want some dynamics to this, just pass the name of the param as a shortcode parameter, then:
+`{{ index .Page.Params (.Get "some-shortcode-param" ) }}`
+source: https://discourse.gohugo.io/t/solved-passing-front-matter-variables-to-shortocode/11103
+
+
+PAIRED SHORTCODES
+in markdown:
+```s
+{{< exampleShortCodeTemplateName >}}
+This is the text inside the shortcode tags.
+{{< /exampleShortCodeTemplateName >}}
+```
+in folder/file: /layouts/shortcodes/exampleShortCodeTemplateName.html
+```s
+any kind of fancy html + {{.Inner}}
+```
+or
+
+
+if you need to use markdown inside your templates `` as delimiters:
+```s
+{{% exampleShortCodeTemplateName %}}
+This should be **bold**.
+{{% /exampleShortCodeTemplateName %}}
+```
+sources:
+- Mike Dane on shortcode templates: https://www.youtube.com/watch?v=Eu4zSaKOY4A
 ___
 
 
