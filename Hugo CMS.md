@@ -10,7 +10,7 @@ https://gohugo.io/commands/
 
 **update Hugo**: `brew upgrade hugo`
 
-### regular workflow
+### starting a project
 
 1. create or go to the folder where you want to have your project. Terminal: **hugo new site <fancy-name>**
 
@@ -30,6 +30,18 @@ this might come in handy again:
 ````
 cp -a themes/portio/exampleSite/* .
 ````
+___
+
+
+### cloning a project
+just run `git clone exampleSSHkey`
+
+if the repo uses a submodule (the themes folder will appear to just have and empty example_theme folder): after cloning and before running it run
+`git submodule init`
+and
+`git submodule update`
+___
+
 
 ### new file or directory
 ```hugo new example.md```

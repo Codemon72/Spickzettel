@@ -90,6 +90,14 @@ sometimes you might want to only rebase your last 3 commits or be in other ways 
 
 Note: If you don't know what's going on and just want to go back to where the repo was, then just do:
 `git rebase --abort`
+
+'Cut and Paste':
+`git stash` and `git stash pop`
+`git stash` + `git stash pop` work kind of like **cut & paste**: with `git stash` you 'cut' out all non-added changes you have made on that branch and stash them. You can switch branches, do whatever, and with `git stash pop` you paste them into the branch you are currently on.
+**Note**: other than 'cut & paste': `git stash` + `git stash pop` work with a stash: you can throw as many stash pan-cakes on top of it and get them back in the same order.
+`git stash` + `git stash pop`
+
+Also check out: `git stash show` and `git stash list`
 ___
 
 ### Vim Editor
