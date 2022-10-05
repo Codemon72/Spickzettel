@@ -52,6 +52,10 @@ ___
 
 
 ### Icons, Free
+- https://iconscout.com/
+- https://uxwing.com/
+- https://www.svgrepo.com/
+- https://freeicons.io/
 - https://feathericons.com/
 - https://iconic.app/
 ___

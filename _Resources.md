@@ -17,6 +17,9 @@ ___
 
 
 ### APIs
+- Lists of free APIs:
+  - https://publicapis.dev/
+  - https://github.com/toddmotto/public-apis
 - Beers: https://api.punkapi.com/v2/beers
 - Chuck Norris Jokes: https://api.chucknorris.io/
 - API of Ice and Fire: https://anapioficeandfire.com/

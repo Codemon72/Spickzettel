@@ -40,6 +40,8 @@ if the repo uses a submodule (the themes folder will appear to just have and emp
 `git submodule init`
 and
 `git submodule update`
+
+more on Hugo modules: https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/
 ___
 
 
@@ -423,3 +425,8 @@ came recommended:
 - JotForm
 - mailjet
 ____
+
+
+### Good Links
+- working with modules and submodules: https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/
+- How to Set Up a Hugo Site on Github Pages - with Git Submodules: https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/
