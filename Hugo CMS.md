@@ -225,9 +225,11 @@ source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-co
 
 ### Setting Up Multilingual in Hugo
 
+Docs: https://gohugo.io/content-management/multilingual/
+
 - in config file:
-```s
-DefaultContentLanguage = "de"
+```toml
+defaultContentLanguage = "de"
 
 # for the i18n folder to work:
 enableMissingTranslationPlaceholders = true

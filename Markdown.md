@@ -1,4 +1,4 @@
-cheat sheet: https://www.markdownguide.org/basic-syntax/
+Docs: https://www.markdownguide.org/
 
 
 ### Images
@@ -12,3 +12,11 @@ cheat sheet: https://www.markdownguide.org/basic-syntax/
 ```md
 [luke@skywalker.com](mailto:luke@skywalker.com)
 ```
+
+### New Line
+add 2 empty spaces to add a new line:
+```md
+Hello  
+World
+```
+This is rendered as a line break `<br>`.
