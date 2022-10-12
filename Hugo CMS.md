@@ -6,6 +6,8 @@ Hugo Tutorial 2019/05: https://www.youtube.com/watch?v=u53xfby0EYI&list=PLbWvcwW
 
 https://gohugo.io/commands/
 
+Go Template Language Documentation: https://pkg.go.dev/text/template
+
 **[Install Hugo](https://gohugo.io/getting-started/installing)** before you can work with it.
 
 **update Hugo**: `brew upgrade hugo`
@@ -231,7 +233,7 @@ Docs: https://gohugo.io/content-management/multilingual/
 ```toml
 defaultContentLanguage = "de"
 
-# for the i18n folder to work:
+# Show a placeholder instead of the default value or an empty string if a translation is missing:
 enableMissingTranslationPlaceholders = true
 
 [languages]
@@ -289,6 +291,39 @@ other = "Program with {{ . }} courses"
 html file:
 ```s
 {{ i18n "programWithNumberCourses" (partial "number-of-courses" . ) }}
+```
+
+- some useful things for HTML:
+```html
+<!-- 'Home button' -->
+<a href='{{ absLangURL "/" }}'>ExampleWebsiteLogo</a>
+
+<!-- language toggle -->
+{{ range .Translations }}
+    {{ if eq .Lang "en" }}
+    <a href="{{ .Permalink }}" aria-label="English">EN</a>
+    {{ else }}
+    <a href="{{ .Permalink }}" aria-label="Deutsch">DE</a>
+    {{ end }}
+{{end}}
+```
+
+- reading out from a JSON file in multilingual:
+data structure:
+data/
+├── de/
+│   └── features.json
+└── en/
+    └── features.json
+
+template
+```html
+{{ range index site.Data .Lang "features" }}
+  <div>
+    <h2>{{ .title }}</h2>
+    <p>{{ .description }}</p>
+  </div>
+{{ end }}
 ```
 ___
 

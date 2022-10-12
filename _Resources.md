@@ -175,6 +175,11 @@ ___
 https://rebrandly.com/
 ––– 
 
+### Test Google Structured Data for Correctness**
+works with URL or snippet
+https://validator.schema.org/
+___
+
 
 ### Web Components
 - https://lit.dev/ (recommended by Sven from Flavia)
