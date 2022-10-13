@@ -67,6 +67,11 @@ ___
 https://realfavicongenerator.net/favicon_checker#
 –––
 
+### games that teach programming
+- list: https://skillcrush.com/blog/free-coding-games/
+___
+
+
 ### icons (free)
 - https://feathericons.com/
 - https://iconic.app/
@@ -92,7 +97,9 @@ convert anton.jpg -scale 500 anton.jpg
 ```
   the value determines the width in px
 
-- https://tinyjpg.com/
+- online image compression for webp, jpeg, png: https://tinyjpg.com/
+- list of online image compression sites: https://enviragallery.com/best-free-image-optimization-tools-for-image-compression/
+
 ___
 
 
@@ -168,6 +175,11 @@ ___
 ### SVGs, Free
 - https://undraw.co/search
 - to create: https://app.svgator.com/
+___
+
+
+### Text Compare, online
+https://text-compare.com/
 ___
 
 
