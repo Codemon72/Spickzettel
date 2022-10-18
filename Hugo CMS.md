@@ -216,6 +216,27 @@ you can name or abbreviate the variables however you like, the order is defining
     {{ partial "course-preview-card" . }}
 {{ end }}
 ```
+
+- `absURL` and `relURL`
+Creates an absolute / relative URL based on the configured baseURL.
+```s
+{{ "mystyle.css" | absURL }} → "https://example.com/hugo/mystyle.css"
+{{ "mystyle.css" | relURL }} → "/hugo/mystyle.css"
+```
+
+- `absLangURL`
+Adds the absolute URL with correct language prefix according to site configuration for multilingual.
+```s
+{{ "blog/" | absLangURL }} → "https://example.com/hugo/en/blog/"
+``` 
+
+- `relLangURL`
+Adds the relative URL with correct language prefix according to site configuration for multilingual.
+
+```s
+{{ "blog/" | relLangURL }} → "/hugo/en/blog/"
+```
+
 ___
 
 
