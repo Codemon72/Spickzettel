@@ -36,6 +36,9 @@ ___
   - https://www.themoviedb.org/documentation/api/discover
   - https://www.themoviedb.org/settings/api
 - ISS location: https://wheretheiss.at/w/developer
+- Word Related APIs:
+  - https://www.datamuse.com/api/
+  - https://developer.wordnik.com/
 ___
 
 

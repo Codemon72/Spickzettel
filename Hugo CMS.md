@@ -413,6 +413,30 @@ sources:
 ___
 
 
+### Menu interactive
+example: menu: class shows current page:
+```html
+<a class='header__nav-link {{ if eq $FileDir "events/" }}menu-is-active{{end}}' href='{{ absLangURL "/events/" }}'>Events</a>
+<a class='header__nav-link 
+    {{ with .File }}
+        {{ if (eq .File.TranslationBaseName "android") }}menu-is-active{{ end }}
+    {{ end }}
+    {{ if eq $FileDir "courses/" | or (eq .Data.Plural "labels") | or (eq .Data.Plural "audiences") }}menu-is-active{{end}}' 
+    href='{{ absLangURL "/courses/" }}'>{{ i18n "menuCourses" }}</a>
+```
+or:
+```html
+{{ $currentPage := . }}
+{{ range .Site.Menus.main }}
+<li class="menu-item-{{ .Name | lower }}{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
+  <a href="{{.URL}}">
+    <span>{{ .Name | markdownify }}</span>
+  </a>
+</li>
+{{end}}
+``` 
+
+
 ## Hugo Theme Research
 
 ### Good Theme for a Marketing Landingpage
