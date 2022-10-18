@@ -103,6 +103,12 @@ different recommendations for different channels:
 One thing to be aware of is that the OG image does not fit perfectly into a tweet – content can be cut off.
 Create separate images for Open Graph image and the Twitter Card image, for a perfect fit. It doesn’t take long to resize an OG image to a Twitter Card image.
 **Twitter Card** image size should be **1024 pixels by 512 px**.
+
+Docs for Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
+
+Open Graph Checker: 
+- https://dnschecker.org/open-graph-preview-generate-metatags.php
+- https://www.opengraph.xyz/
 –––
 
 ### Get more google reviews

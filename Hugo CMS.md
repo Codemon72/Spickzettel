@@ -416,6 +416,12 @@ ___
 ### Menu interactive
 example: menu: class shows current page:
 ```html
+{{ $FileContentBaseName := "" }}
+{{ with .File }}{{ $FileContentBaseName = .ContentBaseName }}{{ end }}
+<a class='header__nav-link {{ if eq $FileContentBaseName "events/" }}menu-is-active{{end}}' href='{{ absLangURL "/events/" }}'>Events</a>
+```
+or
+```html
 <a class='header__nav-link {{ if eq $FileDir "events/" }}menu-is-active{{end}}' href='{{ absLangURL "/events/" }}'>Events</a>
 <a class='header__nav-link 
     {{ with .File }}

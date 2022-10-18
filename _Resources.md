@@ -121,6 +121,11 @@ JSON Server is a Node Module that you can use to create demo rest json webservic
 ___
 
 
+### Open Graph Checker: 
+- https://dnschecker.org/open-graph-preview-generate-metatags.php
+- https://www.opengraph.xyz/
+–––
+
 ### placeholder IMAGES / Unsplash
 
 Docs: https://source.unsplash.com/
