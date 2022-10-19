@@ -462,6 +462,24 @@ or:
 </li>
 {{end}}
 ``` 
+___
+
+### time
+format time
+(`time.Format` aka `dateFormat`)
+
+`{{ time.Format "Monday, Jan 2, 2006" "2015-01-21" }}` 
+→ "Wednesday, Jan 21, 2015"
+`{{ dateFormat "2.1.2006" now }}`
+ -> 19.10.2022 (example)
+
+### calculating with time
+calculate years since 2011:
+(calculate current date - 2011 and show only last to digits of year)
+```s
+{{ now.AddDate -2011 0 0 | dateFormat "06" }}
+```
+___
 
 
 ## Hugo Theme Research
