@@ -13,6 +13,14 @@ is the card or box that appears in the SERP when on Google we are looking for en
   - obtain “a significant coverage from multiple independent, reliable secondary sources”, or “confirmations about the brand on multiple third-party sites that are reliable, authoritative and independent”.
 - https://yoast.com/all-about-googles-knowledge-panels/
 
+
+## Schema
+founded by google, microsoft, yahoo, yandex; vocabulary developed by open community process
+https://schema.org/docs/full.html
+easy overview tutorial:
+https://www.youtube.com/watch?v=xQeRA-Ojq5c
+
+
 ### Google Structured Data - Schema
 Google Structured Data is like Google's native language.
 when you reiterate what you are saying in Google’s native language (structured data), it goes from about 40% confidence it has correctly understood, to 70% confidence.
@@ -27,11 +35,8 @@ https://developers.google.com/search/docs/guides/sd-policies
 https://developers.google.com/search/docs/data-types/article
 
 
-**Schema**
-founded by google, microsoft, yahoo, yandex; vocabulary developed by open community process
-https://schema.org/docs/full.html
-easy overview tutorial:
-https://www.youtube.com/watch?v=xQeRA-Ojq5c
+### Schema Markup Generator (JSON-LD) (Merkle)
+https://technicalseo.com/tools/schema-markup-generator/
 
 
 **Steal Our JSON-LD**

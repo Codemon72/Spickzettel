@@ -303,7 +303,7 @@ ___
 HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
 good source: https://reactjs.org/docs/forms.html
 
-#### single input field
+#### input field, single
 `<input type="text" value="mike" />` - whatever you write into value will be in the input field no matter what. You can't type anymore into it. 
 We leverage that by registering that in a variable:
 ```js

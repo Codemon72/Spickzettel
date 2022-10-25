@@ -6,7 +6,13 @@ Hugo Tutorial 2019/05: https://www.youtube.com/watch?v=u53xfby0EYI&list=PLbWvcwW
 
 https://gohugo.io/commands/
 
-Go Template Language Documentation: https://pkg.go.dev/text/template
+Forum: 
+- https://discourse.gohugo.io/
+
+Go Template Language Documentation: 
+- https://pkg.go.dev/
+- https://pkg.go.dev/text/template
+- https://pkg.go.dev/time#pkg-index
 
 **[Install Hugo](https://gohugo.io/getting-started/installing)** before you can work with it.
 
@@ -246,7 +252,7 @@ ___
 
 source: https://gohugo.io/templates/introduction/#2-use--to-access-the-global-context
 
-### Setting Up Multilingual in Hugo
+### Multilingual in Hugo, Setting Up 
 
 Docs: https://gohugo.io/content-management/multilingual/
 
@@ -321,12 +327,20 @@ html file:
 
 <!-- language toggle -->
 {{ range .Translations }}
-    {{ if eq .Lang "en" }}
+    {{ if eq $.Lang "de" }}
     <a href="{{ .Permalink }}" aria-label="English">EN</a>
     {{ else }}
     <a href="{{ .Permalink }}" aria-label="Deutsch">DE</a>
     {{ end }}
 {{end}}
+
+<!-- language toggle from the Hugo Docs: -->
+<!-- source: https://gohugo.io/content-management/multilingual/#reference-the-translated-content -->
+{{ range .Translations }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Lang }}</a>
+  </li>
+{{ end }}
 ```
 
 - reading out from a JSON file in multilingual:
@@ -465,6 +479,8 @@ or:
 ___
 
 ### time
+Docs: https://pkg.go.dev/time#pkg-index
+
 format time
 (`time.Format` aka `dateFormat`)
 
@@ -472,6 +488,7 @@ format time
 → "Wednesday, Jan 21, 2015"
 `{{ dateFormat "2.1.2006" now }}`
  -> 19.10.2022 (example)
+___
 
 ### calculating with time
 calculate years since 2011:
