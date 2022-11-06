@@ -80,6 +80,9 @@ ___
 - https://iconic.app/
 - https://heroicons.com/
 - https://www.flaticon.com/
+
+### Icon Generator for Apps
+https://appicon.co/
 ___
 
 
@@ -183,6 +186,10 @@ ___
 ### SVGs, Free
 - https://undraw.co/search
 - to create: https://app.svgator.com/
+
+
+### image converter
+https://convertio.co/pdf-svg/
 ___
 
 

@@ -12,7 +12,7 @@ Kevin: "One is three already."
 2.1. this can be an obvious color (like brown for a coffee website) or an opposite (e.g. brown - turquoise)
 **Tipp**: if you have a beautiful image or logo, try picking a color out of it
 3. *if* you wish to pick more than one color, consider choosing a variation of your first color.
-**Tipp**: go to https://mycolor.space/ and scroll down to 'shades'
+**Tipp**: go to https://mycolor.space/, choose a color and scroll down to 'shades'
 4. if you **really** want to bring in a second color, use a complementary one (to your first color).
 **Tipp**: if it doesn't work, never be afraid to change it up a bit. E.g. in the dev tools color picker or just with opacity.
 

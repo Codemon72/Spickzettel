@@ -506,11 +506,11 @@ Variables in CSS make it very easy to change styling of the entire page very fas
 Inside the selectors you can set default values (see below).
 ```css
 :root {
-  --black: #fcfcfc;
+  --white: #fcfcfc;
 }
 
 p {
-  color: var(--black, #fff);
+  color: var(--white, #fff);
 }
 ```
 ___
@@ -695,7 +695,7 @@ That also means that the first child's margin-top will merge with the parent' ma
 
 ### CSS Boilerplate
 ```css
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 body {
