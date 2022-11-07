@@ -152,6 +152,11 @@ ___
 ___
 
 
+### Maps
+Static Map Maker (Bing, Google, HERE, Mapbox, MapQuest): https://staticmapmaker.com/
+___
+
+
 ### Network Connectivity Check
 - https://fast.com
 ___
