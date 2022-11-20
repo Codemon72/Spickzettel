@@ -1,6 +1,7 @@
 A JavaScript library / framework for building user interfaces
 
 ### Tutorials and Documentation
+- Modern React Documentation (still in beta): https://beta.reactjs.org/
 - Crash Course 2021 by Brad Traversy: https://www.youtube.com/watch?v=w7ejDZ8SWv8
 - excellent tutorial by Mike Dane: https://www.youtube.com/watch?v=ABQLwlE8MUA
 - freeCodeCamp Tutorial: https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/
@@ -12,7 +13,7 @@ It is basically a representation of all the HTML as a JavaScript Object.
 In JavaScript you can refer to it with 'document':
 `console.log(document)`
 
-At the end of the day all that React is doing is manipulationg the DOM. It is just doing it in a really smart and fast and efficient way. 
+At the end of the day all that React is doing is manipulationg the DOM. It is just doing it in a really smart, fast and efficient way. 
 
 Implementing React gives us 2 new global variables to work with: `React` and `ReactDOM`. 
 Both of them give us a whole library of methods and objects.
@@ -43,7 +44,7 @@ ___
 ### Working With State
 - components can have 'state' which is an object that determines how a component renders and behaves
 - "App" or "global" state refers to state that is available to the entire UI, not just a single component.
-- Prior to React 16.8 we had tu use class based components to use state. 
+- Prior to React 16.8 we had to use class based components to use state. 
 Now we can use functional components with hooks.
 ___
 
@@ -82,20 +83,21 @@ remember:
 
 #### Tipps
 - recommended VSC extension: ES7 React/Redux/GraphQL/React-Native snippets
-  - gives the shortcut `rafce` for arrow function component that exports at bottom
+  - gives the shortcut `rafce` for arrow function component that exports
 ___
 
 
-#### Components and Elements
+## Components and Elements
 - components are functions that return JSX
-- by convention they begin with a capital letter
+- by convention they begin with a capital letter and use camel case (= PascalCase)
 ___
 
 
-#### Hooks
+### Hooks
 Hooks are ways that you can tell React what's going on in your program or that you can respond to things that are happening in the program. 
 - **Note**: React wants to updates the DOM only when absolutely **necessary**. It's only gonna do that when we explicitly tell it to. And the way that we can tell it to do that is by using what is called a React Hook.
 
+### useState
 - `useState` - returns an array with the first element being the value, the second a function. 
   - the first value contains the variable, object or array we want to keep up to date, the second is the function to update it. Whatever we pass into the function is going to be the new value of the useState. 
   - whatever we pass into useState() is going to be the default value.
@@ -110,6 +112,7 @@ Hooks are ways that you can tell React what's going on in your program or that y
   - another way to see this: we are basically registering the variable 'currentCount' with React
   - **Note**: React only updates the DOM when absolutely **necessary**. Changing a variable that gets read out won't register with React. `useState` 
 
+#### useEffect
 - `useEffect` - allows us to run a function whenever something updates or has finished loading
   - gets 2 parameters: a (callback) function and an array. Both are required, but the array can remain empty.
   - in the array all 
@@ -120,6 +123,7 @@ Hooks are ways that you can tell React what's going on in your program or that y
   }, []);
   ```
 
+#### useContext
 - `useContext`- With Context it is possible to pass data through the component tree without having to pass properties down manually at every level. Passing properties to components down in the tree is also known as Prop-Drilling.
 Context can be considered “global” for a tree of components. It is primarily used when some data for many components must be accessible at different nesting levels.
 To use them, a Context must first be created. It optionally takes an argument that contains the default value of the Context.
@@ -180,7 +184,9 @@ ___
 
 
 #### Conditional Rendering
-Consider you want to render something only when certain conditions are met. E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
+-render something only when certain conditions are met. 
+  - E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
+  
 There are different ways to do it:
 - If statement for whole components:
   ```js
@@ -200,25 +206,30 @@ There are different ways to do it:
     );
   }
   ```
-- Inline If with Logical Operators
+- Inline `if` with Logical Operators
   ```js
-  <div className="item__new-price">{product.newPrice >= 0 && product.newPrice}</div>
+  <div className="item__new-price">
+    {product.newPrice >= 0 && product.newPrice}
+  </div>
   ```
   If you want to conditionally display only small JSX elements use the `&&` operator. It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
   Therefore, if the condition is true, the element right after `&&` will appear in the output. If it is false, React will ignore and skip it.
   Better practice in the case above would be to conditionally render the whole element. To do that place the JSX element into parentheses after the `&&`operator:
   ```js
   {product.newPrice >= 0 && (
-        <div className="item__new-price">{product.newPrice}</div>
+        <div className="item__new-price">
+          {product.newPrice}
+        </div>
       )}
   ```
   You can chain as many conditions as you like. What you will return is the expression after the last `&&` operator:
   ```js
   {loggedIn && premiumMember && (
-    <div className="user">{userName}</div>
+    <span className="user">{userName}</span>
   )}
   ```
   You can use other logical operators like `||` etc just as well. Put more complex conditional statements into parenthesis
+
 - Ternary Operator
   Another method for conditionally rendering elements inline is to use the JavaScript conditional operator `condition ? true : false`.
   ```js
@@ -230,6 +241,7 @@ There are different ways to do it:
   </div>
   ```
   If condition is true the expression after `?` gets rendered, if it is falls the expression after `:` is rendered.
+
 - Conditional Attributes inside JSX elements
   ```js
   <button 
@@ -249,18 +261,18 @@ There are different ways to do it:
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
 ___
+
+
 ### Avoid Unnecessary Re-Rendering
 - every time the state of a component changes, React _schedules_ a render of that component. (This doesn't happen immediately, React will try to find the best moment for this.)
 - when a component renders all it's children will also re-render, regardless of whether their props have changed or not.
 - options to avoid unnecessary re-rendering are to use `memo()` or `createContext`/ `useContext`.
   - Example `memo()`: https://codesandbox.io/s/memo-for-child-of-context-provider-8rx8m
   - Example Context: https://codesandbox.io/s/context-provider-prevents-unnecessary-rerendering-mop5d
-
-
 ___
 
 
-#### Props
+### Props
 Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
 - Syntax: 
   ```js
