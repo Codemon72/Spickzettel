@@ -184,6 +184,22 @@ ___
 
 
 #### Conditional Rendering
+```js
+function Greeter({myBooleanCondition, myProperty}) {
+  return (
+    <>
+      {/* Logical AND: Render something ONLY when another variable is truthy */}
+      {myBooleanCondition && <h1>Hello</h1>}
+
+      {/* Logical OR: Render something ONLY when it is truthy OTHERWISE use a fallback value */}
+      {myProperty || "Fallback value"}
+      
+      {/* Ternary Operator: Render A or B, depending on a condition (like if/else) */}
+      {myBooleanCondition ? <h2>If true, this headline will appear</h2>:<p>If false, this paragraph will render</p>}
+    </>
+  );
+}
+```
 -render something only when certain conditions are met. 
   - E.g. you only want to display a list if you have actual data for it or display a logout button only if the user is logged in.
   
@@ -273,41 +289,48 @@ ___
 
 
 ### Props
-Props are values that can be passed into a component to be used for whatever. By default they are empty objects.
-- Syntax: 
-  ```js
-  return (
-    <div className="App">
-      <Menu />
-      <Header />
-      <List productsArray={products}/>
-    </div>
+Props are values that can be passed into a component. By default they are empty objects.
+Parent Component: 
+```js
+return (
+  <div className="App">
+    <List productsArray={products}/>
+  </div>
+);
+```
+Child Component:
+```js
+const List = (props) => {
+return (
+  <div className="List">
+    {props.productsArray.map((product) => {
+      return <ListItem key={product.id} product={product} />;
+    })}
+  </div>
   );
-  ```
-  which can be read out like this:
-  ```js
-  const List = (props) => {
+};
+```
+
+or by Object Destructuring:
+```js
+const List = ({ productsArray }) => {
+return (
+  <div className="List">
+    {productsArray.map((product) => {
+      return <ListItem key={product.id} product={product} />;
+    })}
+  </div>
+  );
+};
+```
+using this syntax also allows to set default values for each prop individually, in case they are not passed in:
+```js
+function Greeter({name, location = "Hamburg"}) {
   return (
-    <div className="List">
-      {props.productsArray.map((product) => {
-        return <ListItem key={product.id} product={product} />;
-      })}
-    </div>
-    );
-  };
-  ```
-  or by Array Destructuring:
-  ```js
-  const List = ({ productsArray }) => {
-  return (
-    <div className="List">
-      {productsArray.map((product) => {
-        return <ListItem key={product.id} product={product} />;
-      })}
-    </div>
-    );
-  };
-  ```
+    <h1>Hello, {name} from {location}!</h1>
+  );
+}
+```
 ___
 
 
