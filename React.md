@@ -193,7 +193,7 @@ function Greeter({myBooleanCondition, myProperty}) {
 
       {/* Logical OR: Render something ONLY when it is truthy OTHERWISE use a fallback value */}
       {myProperty || "Fallback value"}
-      
+
       {/* Ternary Operator: Render A or B, depending on a condition (like if/else) */}
       {myBooleanCondition ? <h2>If true, this headline will appear</h2>:<p>If false, this paragraph will render</p>}
     </>
@@ -488,9 +488,10 @@ source: https://daveceddia.com/react-image-tag/
 ___
 
 
-#### A Couple Of Examples
+### Event Handlers
 
-- event handlers /  attaching a function to an HTML element
+You can attach event handlers just like you do in regular HTML (but the event names are camelCased):
+
 ```js
 const toggleIsChecked = (event) => {
   console.log(event.target.checked)
@@ -507,81 +508,17 @@ onClick={() => logProductId(product.id)}
 
 onDoubleClick={fancyFunction}
 ```
-
-working through Mike Dane's tutorial: 
-
 ```js
-const reactContentRoot = document.getElementById('root');
-
-// MOST SIMPLE REACT ELEMENT
-// takes the arguments: (html element, props, text/content)
-// const myFirstElement = React.createElement('li', {}, 'item1');
-
-// BASIC _IDEA_ OF NESTED ITEMS
-// const myFirstElement = React.createElement('ul', {},
-//   React.createElement('li', {}, 'item1')
-// );
-
-// BASIC _IDEA_ OF AN ARRAY OF NESTED ITEMS
-// const myFirstElement = React.createElement('ul', {}, [
-//   React.createElement('li', {}, 'item1'),
-//   React.createElement('li', {}, 'item2'),
-//   React.createElement('li', {}, 'item3')
-// ]);
-
-// ReactDOM.render(myFirstElement, reactContentRoot);
-
-
-// AND THE SAME IN JSX (after also installing a transpiler - in this case Babel)
-// const myJSXElement = (
-//   <ul>
-//     <li>JSX + Babel</li>
-//     <li>item1</li>
-//     <li>item2</li>
-//   </ul>
-// )
-
-
-// INSERTING A VARIABLE:
-// const newItem = 'new Item'; 
-
-// const myJSXElement = (
-//   <ul>
-//     <li>JSX + Babel</li>
-//     <li>item1</li>
-//     <li>item2</li>
-//     <li>{newItem}</li>
-//     {/* and now we can do function on them */}
-//     <li>{newItem.toUpperCase()} (turned to uppercase)</li>
-//   </ul>
-// )
-
-// ReactDOM.render(myJSXElement, reactContentRoot);
-
-// NOW AS A PROPER COMPONENT:
-const App = () => {
-  const newItem = 'new Item'; 
-
-  return (
-  <ul>
-    <li>JSX + Babel</li>
-    <li>item1</li>
-    <li>item2</li>
-    <li>{newItem}</li>
-    <li>{newItem.toUpperCase()}</li>
-  </ul>
-  )
-}
-
-// we insert 'App' as a tag (with '< />') but it is basically just another way of calling the function - it also works by normally calling it:
-// ReactDOM.render(App(), reactContentRoot);
-
-ReactDOM.render(<App />, reactContentRoot);
-
+{/* You can pass a reference to a function that you defined somewhere else */}
+<MyComponent onClick={onClickHandler} />
+{/* You can also define an arrow function right here */}
+<MyComponent onClick={() => {console.log("I was clicked!")}} />
 ```
 
-- styling navigation buttons:
+## Examples 
+... that might come in handy again
 
+### Styling navigation buttons:
 ```js
   import { Link, useLocation } from "react-router-dom";
 
