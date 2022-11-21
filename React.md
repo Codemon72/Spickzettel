@@ -273,6 +273,14 @@ There are different ways to do it:
 
   <input type="submit" disabled={!formIsValid} >submit</input>
   ```
+  ternary operator can have deeper levels:
+  ```js
+  {product.newPrice >= 0 && product.selected 
+    ? (<div className="item__new-price">{product.newPrice} €</div>) 
+    : product.newPrice >= 0 
+      ? (<div className="item__active-price">{product.price} €</div>)
+      : ''}
+  ```
 
 Excellent walkthrough on [youtube](https://www.youtube.com/watch?v=fAUkKh-WfLM)
 Docs on [conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
