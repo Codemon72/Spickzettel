@@ -8,6 +8,9 @@ A JavaScript library / framework for building user interfaces
 - Docs create-react-app: https://create-react-app.dev/docs/getting-started
 - Docs react: https://reactjs.org/docs/getting-started.html
 
+
+
+### Basics
 Every browser that loads your HTML & CSS creates a **D**ocument **O**bject **M**odel. 
 It is basically a representation of all the HTML as a JavaScript Object.
 In JavaScript you can refer to it with 'document':
@@ -38,6 +41,17 @@ explained: `ReactDOM` has a function `render()` that takes 2 arguments:
 2. where to display it
 
 Context Knowledge: There is also `ReactNative` which could e.g. render it to a mobile device. 
+___
+
+### Deployment
+- Docs for Deploy: https://create-react-app.dev/docs/deployment/
+Recommended (2022): 
+1. Netlify
+2. vercel, aws, microsoft azure, ...
+
+If your app has more than one page / route (to index.html) you might need an extra file (called a 'front router'?) (.htcaccess for apache server).
+This is because when there is a fresh page load for a /todos/42, the server looks for the file build/todos/42 and does not find it. The server needs to be configured to respond to a request to /todos/42 by serving index.html.
+Docs: https://create-react-app.dev/docs/deployment/#serving-apps-with-client-side-routing
 ___
 
 

@@ -22,6 +22,7 @@ Kevin: "One is three already."
   - https://mycolor.space/
 
 - colors i have used and loved:
+  - #008080 - teal
   - #ff9606 - orange
   - #01627F - turquoise
     - #5BA1C1

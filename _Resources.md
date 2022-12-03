@@ -66,6 +66,14 @@ So it is a good idea to reduce your DNS lookups.
 - Mess with DNS: https://jvns.ca/blog/2021/12/15/mess-with-dns/
 ___
 
+
+### Domains to buy
+Recommended:
+- https://www.netcup.de/bestellen/domainangebote.php
+- https://www.inwx.com/en
+___
+
+
 ### favicon checker
 https://realfavicongenerator.net/favicon_checker#
 –––
@@ -153,7 +161,9 @@ ___
 
 
 ### Maps
+Mapbox GL JS (recommended by Moritz): https://docs.mapbox.com/mapbox-gl-js/example/
 Static Map Maker (Bing, Google, HERE, Mapbox, MapQuest): https://staticmapmaker.com/
+
 ___
 
 

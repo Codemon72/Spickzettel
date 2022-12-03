@@ -191,6 +191,8 @@ are about designing elegant solutions to repeating problems in object-oriented s
     - creational: different ways to create objects
     - structural: relationships between these objects
     - behavioural: interaction/ communication between these objects
+    
+Freecodecamp Introduction: https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/
 ___
 
 
