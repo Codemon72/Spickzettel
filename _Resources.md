@@ -38,7 +38,7 @@ ___
 - ISS location: https://wheretheiss.at/w/developer
 - Word Related APIs:
   - https://www.datamuse.com/api/
-  - https://developer.wordnik.com/
+  - http://developer.wordnik.com/docs
 ___
 
 

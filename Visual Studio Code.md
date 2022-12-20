@@ -1,3 +1,15 @@
+### Configurations
+open Settings with CMD + ,
+  or
+open with CMD + P and type `settings.json`
+
+```json
+"editor.tabSize": 2,
+"prettier.jsxSingleQuote": true,
+"prettier.semi": false,
+"prettier.singleQuote": true,
+```
+
 ### Customizations I`ve Used and Loved
 - turn of minimap (mini map of your code on the right side)
   - settings: uncheck 'enable'
