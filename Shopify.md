@@ -13,12 +13,17 @@ Shopify Community: https://community.shopify.com/c/Shopify-Community/ct-p/en
 
 `shopify version`
 
-`shopify login --store example-store.myshopify.com`
+To login use the `--store` flag + value with your first shopify command:
+`shopify theme dev --store example-store.myshopify.com`
+
+Run `shopify theme info` to view which store you're currently logged in to
 
 `mkdir example-store`
 
 `shopify theme pull` - download one of the themes (opens a dialogue) - Docs: https://shopify.dev/themes/tools/cli/theme-commands#pull
-`shopify theme serve`
+
+Run the theme on your local machine:
+`shopify theme dev`
 
 `shopify theme push --unpublished --json` 
   - `--unpublished` - uploads the theme to the theme library as a new unpublished theme.
@@ -31,9 +36,9 @@ ___
 
 ### Workflow with Shopify Cli
 
-- `shopify login --store https://example.myshopify.com/`
-- `shopify store` Display the store that you're currently connected to:
-- `shopify theme serve`
+- use store flag on first command to lgoin: `--store https://example.myshopify.com/`
+- `shopify theme info` - display the store that you're currently connected to
+- `shopify theme dev`
 - open in theme preview (not localhost - that seems to be buggy)
 - do your thing
 - `shopify logout`
@@ -165,7 +170,7 @@ Für Dich selbst kannst Du diese Preview immer nutzen. Wenn Du die Preview mit j
   - commit with "changes by client" or "current live theme version"
 - go into the local git branch with the new features you created
   - `git rebase main` and solve all conflicts
-  - `shopify theme serve` and check 
+  - `shopify theme dev` and check 
     - for errors
     - their recent changes
     - your changes
