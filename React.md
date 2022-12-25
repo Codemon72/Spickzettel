@@ -382,6 +382,37 @@ const Form = () => {
   )
 }
 ```
+
+#### multiple checkboxes
+```js
+const initialDashboardOptions = {
+    synonyms: true,
+    related: true,
+    rhymes: true,
+  }
+
+  const [dashboardOptions, setDashboardOptions] = useState(
+    initialDashboardOptions
+  )
+
+  const handleOptionsChange = (event) => {
+    const { name, checked } = event.target
+    setDashboardOptions({ ...dashboardOptions, [name]: checked })
+  }
+  // ...
+  <label>
+    <input
+      type='checkbox'
+      checked={dashboardOptions.synonyms}
+      onChange={handleOptionsChange}
+      name='synonyms'
+    />
+    Show synonyms
+  </label>
+  // ...
+```
+
+
 #### select - option
 might seem complex on first glance, but is quite simple
 - instead of choosing an option with the `selected` attribute, the select element gets a value that will determine the presented option on first loading
