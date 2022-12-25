@@ -150,7 +150,7 @@ ___
 ### Preview Link
 Previewing the offline theme
 - Firstly, from your Shopify admin, navigate to Online Store > Themes.
-- Find the theme that you want to share and click on Actions > Preview. (if it is not there: upload it)
+- Find the theme that you want to share and click on "..." > Preview. (if it is not there: upload it)
 - On the new page that appeared, wait for a second and at the bottom of the screen you’ll see a bar pop up.
 - On this bar, click on the button Share Preview > Copy Link.
   Note: Make sure you click on this button, do not share the URL on the top of your page because it won’t work.
@@ -158,9 +158,9 @@ Previewing the offline theme
 
 
 In German for customers:
-"Anleitung für Preview und erstellen von Preview Links:
+"Anleitung für Preview und Erstellen von Preview Links:
 Auf eurer Admin Seite findest Du unten links "Online Store", wenn der aufgeklappt ist kommt als erstes "Themes". Dort gibt es jetzt in der "Theme library" die Themes "example_theme_1" und "example_theme_2". 
-Die haben jeweils einen Button "Action", dort kann man "Preview" auswählen. (Achtung: Nicht versehentlich auf "Publish" klicken, damit wird das Theme live geschaltet.)
+Die haben jeweils einen Button "...", dort kann man "Preview" auswählen. (Achtung: Nicht versehentlich auf "Publish" klicken, damit wird das Theme live geschaltet.)
 Für Dich selbst kannst Du diese Preview immer nutzen. Wenn Du die Preview mit jemandem teilen möchtest, gibt es unten auf der Preview Seite einen Button "Share Preview" und der erstellt Dir einen Link zum Teilen. "
 
 
