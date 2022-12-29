@@ -5,14 +5,18 @@ overview for a lot of languages
 ### Brad Traversy's Humongous List
 https://github.com/bradtraversy/design-resources-for-developers/blob/master/readme.md
 
+### List of (Free) Online Courses
+https://www.frontendmentor.io/resources
+
 ### List of Sites with Free Tiers
 https://github.com/ripienaar/free-for-dev
 
 ### Marko Denic's List
 - https://markodenic.com/50-free-tools-and-resources/
 
-### Egghead's bite-size video tutorials for badass web developers
-- https://egghead.io/topics
+### Coding Challenges (with Community)
+- https://www.codewars.com/
+- https://www.frontendmentor.io/
 ___
 
 
