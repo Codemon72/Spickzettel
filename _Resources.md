@@ -42,7 +42,9 @@ ___
 - ISS location: https://wheretheiss.at/w/developer
 - Word Related APIs:
   - https://www.datamuse.com/api/
+  - Merriam Webster: https://dictionaryapi.com/
   - http://developer.wordnik.com/docs
+- Trivia: https://opentdb.com/api_config.php
 ___
 
 
