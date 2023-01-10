@@ -4,6 +4,8 @@ __Mike Dane__ has quite good **[Hugo docs](https://www.mikedane.com/static-site-
 
 Hugo Tutorial 2019/05: https://www.youtube.com/watch?v=u53xfby0EYI&list=PLbWvcwWtuDm1OpcbohZTOwwzmc8SMmlBD
 
+## Docs: 
+Hugo Template Language: https://gohugo.com.cn/templates/introduction/
 https://gohugo.io/commands/
 
 Forum: 
@@ -92,6 +94,37 @@ Unlike most other logic languages, here we put the comparison operator before th
 ```
 {{ if ne .Section "blog" }}current{{ end }}
 ```
+___
+
+
+### Hugo Pipes aka Go Pipes
+the concept is simple: each pipeline’s output becomes the input of the following pipe.
+Because of the very simple syntax of Go Templates, the pipe is essential to being able to chain together function calls. One limitation of the pipes is that they can only work with a single value and that value becomes the last parameter of the next pipeline.
+
+Examples:
+```s
+
+{{ i18n "aboutLocationDescription" | markdownify }}
+
+---
+{{ $.Params.course_image | absLangURL }}
+
+---
+
+{{ $events := slice }}
+  {{ range where .Params.nextDates "full" "!=" "true" }}
+    {{ if ((time .date).After now) }}
+      {{ $events = $events | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $events | first 4 }}
+  <span class="course-card-item-value">{{ dateFormat "2.1.2006" .date }}</span>
+  {{ end }}
+
+```
+
+source: https://gohugo.com.cn/templates/introduction/#pipes
 ___
 
 

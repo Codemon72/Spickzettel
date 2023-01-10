@@ -284,6 +284,12 @@ ELI5: For instance, you're a car dealership, with many different cars in your in
 
 ___
 
+### NFC - Near Field Communication
+A set of communication protocols that enables communication between two electronic devices over a distance of 4 cm (11⁄2 in) or less.
+For example: credit cards
+
+___
+
 ### NRDBMS
 Non-Relational Database Management System
 
