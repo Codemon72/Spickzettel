@@ -68,6 +68,15 @@ On dev instance use github only for the theme folder content/themes/casper
 Deploy the theme to production with github action https://github.com/marketplace/actions/deploy-ghost-theme "
 https://forum.ghost.org/t/what-is-the-best-way-for-pair-ghost-theme-development/16797
 
+### Multilingual
+From the docs: "A multi-language content site supports multiple languages at the same time, like publishing in Spanish and English.
+
+If you plan on publishing different content in each language, we recommend one Ghost install per language. Our experience shows that this approach is not only the easiest to get off the ground, but it’s also the most sustainable long-term.
+
+If you’re publishing the same content in different languages, then we recommend using a service like WeGlot or Transifex."
+
+source: https://ghost.org/docs/faq/translation/#multi-language-content
+
 
 ### Update Ghost
 The command `ghost update` will coach you through the update.
