@@ -20,6 +20,12 @@ https://github.com/ripienaar/free-for-dev
 ___
 
 
+### AI
+https://chat.openai.com/auth/login
+image AI - https://stablediffusionweb.com/#demo
+___
+
+
 ### APIs
 - Lists of free APIs:
   - https://publicapis.dev/
@@ -84,6 +90,11 @@ ___
 https://realfavicongenerator.net/favicon_checker#
 –––
 
+### Fonts
+hassle free / ohne Abmahnung: https://gwfh.mranftl.com/fonts
+___
+
+
 ### games that teach programming
 - list: https://skillcrush.com/blog/free-coding-games/
 ___
@@ -105,6 +116,7 @@ ___
 - https://pixabay.com/de/
 - https://www.pexels.com/
 - free illustrations: https://mixkit.co/free-stock-art/
+- image AI - https://stablediffusionweb.com/#demo
 ___
 
 
@@ -114,9 +126,11 @@ ___
 use command line to get into correct folder, then, eg:
 ```s
 convert anton.jpg -scale 500 anton.jpg
+convert Clemens_Bruesch_Photo.pdf -scale 192 Clemens_Bruesch_Photo.jpg
 ```
   the value determines the width in px
 
+- https://www.photopea.com/
 - online image compression for webp, jpeg, png: https://tinyjpg.com/
 - list of online image compression sites: https://enviragallery.com/best-free-image-optimization-tools-for-image-compression/
 

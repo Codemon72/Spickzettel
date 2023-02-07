@@ -76,6 +76,7 @@ If you plan on publishing different content in each language, we recommend one G
 If you’re publishing the same content in different languages, then we recommend using a service like WeGlot or Transifex."
 
 source: https://ghost.org/docs/faq/translation/#multi-language-content
+possibly useful article: https://www.benjaminrancourt.ca/how-to-support-multilingual-pages-in-ghost/
 
 
 ### Update Ghost
