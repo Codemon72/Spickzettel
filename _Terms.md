@@ -220,6 +220,12 @@ ___
 In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ___
 
+
+### FOUT - Flash Of Unstyled Text
+for example: the text shows up and only half a second later it changes to the correct font-style
+___
+
+
 ### GUI
 Graphic User Interface
 ___
