@@ -23,6 +23,7 @@ ___
 ### AI
 https://chat.openai.com/auth/login
 image AI - https://stablediffusionweb.com/#demo
+music AI - https://www.aiva.ai/
 ___
 
 
