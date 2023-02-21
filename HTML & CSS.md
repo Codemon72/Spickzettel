@@ -6,6 +6,7 @@ sources:
 super cool tips:
 - https://markodenic.com/css-tips/
 
+
 ## Tools
 - PurgeCSS https://purgecss.com/ for filtering out unused CSS
   - recommended by Syntax Podcast 2021-08
@@ -317,6 +318,7 @@ ___
 - CSS Tricks Overview: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - deep dive into edge cases and quirkyness: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
 
+
 #### Why is there no `justify-self` property?
 Because it is not necessary. We have `justify-content` and `margin: auto;`. 
 Beautifully explained: https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties#33856609
@@ -418,7 +420,7 @@ ___
 
 ### Responsiveness
 
-#### Comparing Tools for Responsive Design
+#### Responsive Design, Comparing Tools for 
 - https://css-tricks.com/comparing-browsers-for-responsive-design/
 ___
 
@@ -448,6 +450,14 @@ You can generally read the values as if they were just a number, like 1,0,0,0 is
 - **pseudo-elements** (e.g. :first-line) get 0,0,0,1 unlike their **psuedo-class** brethren which get 0,0,1,0
 - The **pseudo-class :not()** adds no specificity by itself, only what’s inside it’s parentheses.
 - The **!important** value appended a CSS property value is an **automatic win**. It overrides even inline styles from the markup. The only way an !important value can be overridden is with another !important rule declared later in the CSS and with equal or great specificity value otherwise. You could think of it as adding 1,0,0,0,0 to the specificity value.
+___
+
+
+### Spell Checking
+Some Browser add ugly markings to terms in input or textarea elements, that they don't recognize. For example when chossing a cool character name.
+Remedy: an HTML attribute: `spellcheck="false"`
+___
+
 
 ### Special Characters and Entities
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
