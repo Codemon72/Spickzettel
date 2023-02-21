@@ -176,6 +176,12 @@ more parameters example:
 ___
 
 
+### Presentation
+like powerpoint...
+- https://www.canva.com/
+___
+
+
 ### LMS
 - Canvas (TeSi's choice)
 ___
