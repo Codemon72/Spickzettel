@@ -1,3 +1,18 @@
+### installation
+https://mac.install.guide/ruby/13.html
+
+also possible to install it with `rbenv` (which I have)
+`rbenv` is a version manager tool for the Ruby programming language on Unix-like systems. It is useful for switching between multiple Ruby versions on the same machine and for ensuring that each project you are working on always runs on the correct Ruby version.
+`to activate this Ruby version as the new default, run: rbenv global 3.2.1` 
+
+### where is it installed
+`which ruby`
+
+### check for version
+`ruby -v`
+
+
+### snippets
 
 - `unless` 
   - `if`in reverse
