@@ -1,7 +1,5 @@
 ### Configurations
 open Settings with CMD + ,
-  or
-open with CMD + P and type `settings.json`
 
 ```json
 "editor.tabSize": 2,
@@ -9,6 +7,10 @@ open with CMD + P and type `settings.json`
 "prettier.semi": false,
 "prettier.singleQuote": true,
 ```
+Merge all VSC Windows into one with tabs:
+  - Window: Native Tabs ✅ (prompts for restart)
+  - in the Navbar choose: Windows -> Merge All Windows
+
 
 ### Customizations I`ve Used and Loved
 - turn of minimap (mini map of your code on the right side)

@@ -42,11 +42,17 @@ best sources:
   - `ls -l /usr/local/` - list directory contents, using long listing format, information about the files (current directory by default) - also see in "Examples / SimonSays" below
   - `ls -a` - list all directory contents (also hidden files), (-a, --all)
 
+`mdfind` - **only on mac** 
+  - https://metaredux.com/posts/2019/12/22/mdfind.html
+  - https://superuser.com/questions/51122/how-to-search-with-spotlight-more-effectively/412090
+
 `mkdir` - make directories
   - `mkdire example_1 example_2` - create multiple directories
   - `mkdir example-title && cd $_` - create repository with title 'example-title' and enter it
 
 `pwd` - print name of current/working directory
+
+`which` - locate a command
 
 `whoami` - print effective userid
   - can be used like this: `mysql -u $(whoami)`
@@ -56,11 +62,14 @@ best sources:
 
 `rm` - remove
 
+`realpath`- return the canonicalised absolute pathname
+
 `uptime` - tells how long the system has been running
 
 
 ### Tipps & Tricks
 
+- to get the full pathname of a file: drag and drop it into a terminal
 - shortcut to look up ALL previous commands: `CTRL + R`; start writing command; if correct command is displayed: hit ENTER. 🤓
 - whitespace - use backslash `\` or quotes `''`; `""`
   `mkdir example\ folder\ #1`

@@ -462,7 +462,7 @@ ___
 ### Special Characters and Entities
 An HTML entity is a string that begins with an `&` and ends with a `;`. Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard. 
 
-`&nbsp;` - non blank space
+`&nbsp;` - non-breaking space
 `&zwnj;` - zero width non joiner / html code: `&#8204;`
 ___
 
