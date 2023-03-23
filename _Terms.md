@@ -231,6 +231,17 @@ Graphic User Interface
 ___
 
 
+### GREP
+Grep is used to find patterns inside of files.
+
+Grep is one among the system administrator’s “Swiss Army knife” set of tools, and is extremely useful to search for strings and patterns in a group of files, or even sub-folders.
+
+In the simplest terms, grep (global regular expression print) is a small family of commands that search input files for a search string, and print the lines that match it. Although this may not seem like a terribly useful command at first, grep is considered one of the most useful commands in any Unix system.
+
+article: https://www.opensourceforu.com/2012/06/beginners-guide-gnu-grep-basics/
+–––
+
+
 ### [HMR] Waiting for update signal from WDS... 
 ... is not an error. 
 **HMR**: Hot Module Reload. 
