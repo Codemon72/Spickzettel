@@ -128,7 +128,7 @@ ___
 use command line to get into correct folder, then, eg:
 ```s
 convert anton.jpg -scale 500 anton.jpg
-convert Clemens_Bruesch_Photo.pdf -scale 192 Clemens_Bruesch_Photo.jpg
+convert MeetUp_with_superluminar.png -scale 800 MeetUp_with_superluminar.png
 ```
   the value determines the width in px
 

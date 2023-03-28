@@ -173,6 +173,11 @@ Now `git push` might not work. Then set the upstream with specified branch:
 ___
 
 
+### GitHub host key
+Der SSH Host key ist einfach nur eine Zahl, die den Server identifiziert. Diese wird beim ersten Connect mit einem neuen Server in einer Textdatei lokal gespeichert (~/.ssh/known_hosts). Bei allen nachfolgenden Verbindungsversuchen wird dann diese gespeicherte Zahl mit der vom Server abgeglichen. Das ist Teil eines Sicherheitsmechanimuses, um zu verhindern, dass Server fingiert werden und sicherzustellen, dass der Server, mit dem du dich verbindest, wirklich der Entität gehört, mit der du dich verbinden willst. 
+good article: https://www.ssh.com/blog/what-are-ssh-host-keys
+–––
+
 ### Visual Studio Code
 - restoring a deleted file: on the left click on the Source Control symbol, select deleted file and click the return symbol 'Discard Changes'
 

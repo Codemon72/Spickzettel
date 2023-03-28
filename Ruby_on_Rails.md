@@ -24,3 +24,14 @@
   <span>blub: 3</span>
 <% end %>
 ```
+
+### Add class to Rails element
+
+from this:
+```ruby
+<%= form_with url: buy_path do %>
+```
+to this
+```ruby
+<%= form_with url: buy_path, class: "h-9" do %>
+```
