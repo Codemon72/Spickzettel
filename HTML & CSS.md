@@ -325,6 +325,33 @@ Beautifully explained: https://stackoverflow.com/questions/32551291/in-css-flexb
 ___
 
 
+### Footer - good techniques
+
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+
+**Sticky Footers from CSS-Tricks**:
+https://css-tricks.com/couple-takes-sticky-footer/
+
+**Make footer stick to the bottom**: von [Dev.to](https://dev.to/dailydevtips1/making-a-footer-stick-to-the-bottom-with-css-212g?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email)
+
+**Simple concept with flex**: 
+(from Ahmad Shadeed)
+
+```css
+/* in react or vue: add these attributes to the div#app instead  */
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+footer {
+margin-top: auto;
+}
+```
+–––
+
+
 ### Form 
 
 - `<input type="hidden">` 

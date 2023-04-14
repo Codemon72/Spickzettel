@@ -58,9 +58,6 @@ branch löschen
 `git pull --rebase`
 ähnlich wie rebase master nur für den Fall, dass man mit einem anderen Teammitglied im **gleichen** branch arbeitet und sich beispielsweise die commits unter den eigenen ziehen will, die der andere schon vor einem committed hatte.
 
-rebase branch
-- to keep all commits from my branch, but get all the updates from the master branch. Like taking a branch from a lower part of the tree and and graft it back on the tree 2m higher
-
 merge conflicting branches
 if it can't be done on GitHub use the terminal:
 - first: check for updated master
@@ -75,6 +72,9 @@ it will then show you the conflicting files (you can just click on one of the fi
 - when all conflicts are solved run `git commit`
 - `git push` normally
 - `git merge --abort` to abort the merge
+
+rebase branch
+- to keep all commits from my branch, but get all the updates from the master branch. Like taking a branch from a lower part of the tree and and graft it back on the tree 2m higher
 
 git rebase master:
 - first make sure to update your local master

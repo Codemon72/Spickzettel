@@ -128,7 +128,7 @@ ___
 use command line to get into correct folder, then, eg:
 ```s
 convert anton.jpg -scale 500 anton.jpg
-convert MeetUp_with_superluminar.png -scale 800 MeetUp_with_superluminar.png
+convert meetup_sdc.png -scale 800 meetup_sdc.png
 ```
   the value determines the width in px
 
@@ -136,6 +136,11 @@ convert MeetUp_with_superluminar.png -scale 800 MeetUp_with_superluminar.png
 - online image compression for webp, jpeg, png: https://tinyjpg.com/
 - list of online image compression sites: https://enviragallery.com/best-free-image-optimization-tools-for-image-compression/
 
+___
+
+
+### image converter
+https://convertio.co/pdf-svg/
 ___
 
 
@@ -229,12 +234,12 @@ ___
 ### SVGs, Free
 - https://undraw.co/search
 - to create: https://app.svgator.com/
+–––
 
 
-### image converter
-https://convertio.co/pdf-svg/
-___
-
+### Terminal styling tools
+https://ohmyz.sh/
+–––
 
 ### Text Compare, online
 https://text-compare.com/

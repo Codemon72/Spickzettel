@@ -24,6 +24,8 @@ Simon says: "run this every day":
 
 -------
 
+### Homebrew
+
 #### How to Uninstall & Remove Homebrew Packages
 The proper way to remove a Homebrew package is with the uninstall or remove command.  
 The uninstall Homebrew package command looks like this:
@@ -49,6 +51,10 @@ Removing a package from Homebrew is quick, as there is no need to download anyth
 You can confirm the package was removed by trying to run the command again, or by checking where Homebrew packages are installed to and you will find the package you removed is no longer there.
 
 source: https://osxdaily.com/2018/07/29/uninstall-packages-homebrew-mac/
+
+#### Installing with Homebrew vs from Homepage
+
+When downloading / installing a language or tool on mac: when is it more advisable to do it from the respective homepage and when to use homebrew? Is there a rule of thumb? And what are the dis-/ advantages of one or the other?
 
 ---
 
