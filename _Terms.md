@@ -87,7 +87,9 @@ ___
 CORS stands for Cross-Origin Resource Sharing. It's a mechanism that restricts requests coming from a different origin (domain). A request coming from a different origin is known as a cross-origin request. Cross-origin requests are vital for when your site needs to load data from other services.
 
 CORS allows servers to specify who can access their resources and how. Browsers follow the servers' policies by sending a test request (preflight) to the server and checking whether it's allowed.
-source: https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
+sources: 
+https://blog.tecladocode.com/what-is-cors-and-how-to-fix-it/
+https://youtu.be/4KHiSt0oLJ0
 –––
 
 ### Deep Link

@@ -460,22 +460,26 @@ PAIRED SHORTCODES
 in markdown:
 ```s
 {{< exampleShortCodeTemplateName >}}
-This is the text inside the shortcode tags.
+  This is the text inside the shortcode tags.
 {{< /exampleShortCodeTemplateName >}}
 ```
 in folder/file: /layouts/shortcodes/exampleShortCodeTemplateName.html
 ```s
 any kind of fancy html + {{.Inner}}
 ```
-or
 
-
-if you need to use markdown inside your templates `` as delimiters:
-```s
-{{% exampleShortCodeTemplateName %}}
-This should be **bold**.
-{{% /exampleShortCodeTemplateName %}}
+CALCULATION
+in markdown
+```md
+{{< datediff year="1990" >}}
 ```
+in folder/file: /layouts/shortcodes/exampleShortCodeTemplateName.html
+```html
+{{ sub now.Year (int (.Get "year")) }}
+<!-- or -->
+{{ sub now.Year (.Get "year" | int) }}
+```
+
 sources:
 - Mike Dane on shortcode templates: https://www.youtube.com/watch?v=Eu4zSaKOY4A
 ___
@@ -528,6 +532,10 @@ calculate years since 2011:
 (calculate current date - 2011 and show only last to digits of year)
 ```s
 {{ now.AddDate -2011 0 0 | dateFormat "06" }}
+```
+more concise but with less options (date format or e.g. 'July 2011'):
+```s
+{{ sub now.Year 2011 }} 
 ```
 ___
 

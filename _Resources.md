@@ -88,6 +88,12 @@ Recommended:
 ___
 
 
+### Emojis
+
+https://slackmojis.com/
+–––
+
+
 ### favicon checker
 https://realfavicongenerator.net/favicon_checker#
 –––

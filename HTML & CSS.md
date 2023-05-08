@@ -735,6 +735,7 @@ That also means that the first child's margin-top will merge with the parent' ma
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
 }
