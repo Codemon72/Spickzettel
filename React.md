@@ -615,6 +615,7 @@ ___
 ___
 #### Packages I Have Used And Loved
 ... or that someone more experienced recommended to me:
+- Mapbox (recommended by Moritz): https://visgl.github.io/react-map-gl/
 - `react-router-dom` - (import { BrowserRouter as Router, Route, useLocation)
 - `@iconify/react` and
 - `@iconify/icons-mdi` - material design icons
