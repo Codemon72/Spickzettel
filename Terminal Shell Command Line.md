@@ -22,6 +22,12 @@ best sources:
   - `echo $(pwd)/example_file` will print out full path of 'example_file'
   - `echo "hello" >> output.txt` - appends output to a file
 
+`find` - search for files in a directory hierarchy
+  - `find / -name "filename"` 
+    - `/` specifies the starting directory for the search. In this case, `/` represents the root directory, which means the search will start from the root of your file system and search through all directories.
+    - `-name` is an option for find that specifies that you want to search for a file based on its name.
+    - `"filename"` is the name of the file you want to search for. 
+
 `grep` - print lines matching a pattern ('global regular expression print')
   - `ls -a | grep .nvm` - list all directory content but filter them for names starting with `.nvm`
 
@@ -62,7 +68,7 @@ best sources:
 
 `rm` - remove
 
-`realpath`- return the canonicalised absolute pathname
+`realpath`- return the canonical (absolute) pathname. You have to know where it is, either being in the same repo as the file or give directions. For example, if you are currently in the "/home/user" directory and you want to know the full path of "myfile.txt" located in "/home/user/documents," you would run the command realpath documents/myfile.txt.
 
 `uptime` - tells how long the system has been running
 
@@ -83,6 +89,14 @@ best sources:
 
 
 ## Examples / SimonSays
+
+`brew info postgresql@15 | grep files` retrieve information about a softwar package called PostgreSQL version 15 using Homebrew and search for lines containing the word "files."
+  - `brew info postgresql@15` retrieves information about the PostgreSQL version 15 software package using Homebrew
+  - `|` the pipe redirects the output of the previous command to the next command.
+  - `grep files` search for lines in the output that contain the word "files." grep is a command-line tool used for searching text patterns within files.
+
+It fetches information about the PostgreSQL version 15 software package using Homebrew, and then it searches through that information for any lines that include the word "files." This can be useful for finding specific details about the PostgreSQL installation related to files, such as file locations or other relevant file-related information.
+–––
 
 `sudo rm -rf /usr/local/var/mysql/*` 
 - execute as sudo
