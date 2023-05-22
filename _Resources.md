@@ -88,6 +88,12 @@ Recommended:
 ___
 
 
+### Down - Websites
+https://downdetector.com/
+https://downforeveryoneorjustme.com/
+–––
+
+
 ### Emojis
 
 https://slackmojis.com/
