@@ -48,11 +48,12 @@ ___
   - https://www.themoviedb.org/documentation/api/discover
   - https://www.themoviedb.org/settings/api
 - ISS location: https://wheretheiss.at/w/developer
+- Trivia: https://opentdb.com/api_config.php
+- Weather (recommended by Moritz): https://open-meteo.com/
 - Word Related APIs:
   - https://www.datamuse.com/api/
   - Merriam Webster: https://dictionaryapi.com/
   - http://developer.wordnik.com/docs
-- Trivia: https://opentdb.com/api_config.php
 ___
 
 
@@ -141,7 +142,7 @@ ___
 use command line to get into correct folder, then, eg:
 ```s
 convert anton.jpg -scale 500 anton.jpg
-convert meetup_sdc.png -scale 800 meetup_sdc.png
+convert meetup-work-as-a-dev.jpg -scale 800 meetup-work-as-a-dev.jpg
 ```
   the value determines the width in px
 
