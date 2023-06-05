@@ -321,6 +321,12 @@ If you write your software well, you are going to package up all of your SQL cal
 
 ___
 
+### Passkey vs Password
+tldr: Passkeys are typically used in specific device-to-device or wireless communication scenarios, while passwords are more commonly used for user authentication and access control in various systems and services.
+
+Passkeys and passwords are both used for authentication and access control, but they serve different purposes. Passkeys are typically used in technologies like Bluetooth or wireless devices to establish secure connections between devices by verifying their identities. They act as shared secrets ensuring authorized device communication. Passwords, on the other hand, are commonly used for user authentication in accounts, systems, or online services, providing access based on user identities. While both can be long and complex, passkeys focus on device-level security while passwords are primarily used for user authentication.
+
+___
 ### Parsing
 ELI5: Ifyoureadthisstreamoflettersyoucanprobablystillunderstandwhatiamsaying.
 
