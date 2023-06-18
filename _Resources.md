@@ -60,6 +60,7 @@ ___
 ### Color Picker
 - google: 'color picker'
 - https://color.adobe.com/create/color-wheel
+- for tailwind shades: https://www.tailwindshades.com/
 _
 
 
@@ -125,6 +126,14 @@ ___
 https://appicon.co/
 ___
 
+
+### IDEs, online + free
+
+JSFiddle: https://jsfiddle.net
+CodePen: https://codepen.io
+JS Bin: https://jsbin.com
+Repl.it: https://repl.it
+–––
 
 ### images, illustrations (free)
 - https://unsplash.com/
