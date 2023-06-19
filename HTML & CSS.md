@@ -505,6 +505,15 @@ also:
 good source: https://www.w3docs.com/learn-css/css-tables.html
 ___
 
+
+### Tailwind
+
+- Docs: https://tailwindcss.com/docs/
+- typography: https://tailwindcss.com/docs/typography-plugin
+- color shades: https://www.tailwindshades.com/
+___
+
+
 ### text-align
 - describes how **inline-level content** of a **block container** is aligned
   - ... and this is why it also works on images ☝️💡🤓
