@@ -98,6 +98,7 @@ remember:
 #### Tipps
 - recommended VSC extension: ES7 React/Redux/GraphQL/React-Native snippets
   - gives the shortcut `rafce` for arrow function component that exports
+- recommended linter (eslint): eslint
 ___
 
 

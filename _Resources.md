@@ -28,6 +28,11 @@ developer AI search engine - https://phind.com/
 ___
 
 
+### Animations
+https://animejs.com/
+___
+
+
 ### APIs
 - Lists of free APIs:
   - https://publicapis.dev/
@@ -66,6 +71,12 @@ _
 
 ### CDNs
 - https://cdnjs.com/libraries for example: font-awesome
+___
+
+
+### converter
+https://convertio.co/pdf-svg/ (image)
+https://www.xconvert.com/ (m4a -> mp3, images, loads!)
 ___
 
 
@@ -159,11 +170,6 @@ convert meetup-work-as-a-dev.jpg -scale 800 meetup-work-as-a-dev.jpg
 - online image compression for webp, jpeg, png: https://tinyjpg.com/
 - list of online image compression sites: https://enviragallery.com/best-free-image-optimization-tools-for-image-compression/
 
-___
-
-
-### image converter
-https://convertio.co/pdf-svg/
 ___
 
 

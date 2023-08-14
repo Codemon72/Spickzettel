@@ -178,6 +178,12 @@ Der SSH Host key ist einfach nur eine Zahl, die den Server identifiziert. Diese 
 good article: https://www.ssh.com/blog/what-are-ssh-host-keys
 –––
 
+
+### GitHub issue templates
+https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+___
+
+
 ### Visual Studio Code
 - restoring a deleted file: on the left click on the Source Control symbol, select deleted file and click the return symbol 'Discard Changes'
 
