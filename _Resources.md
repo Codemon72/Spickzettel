@@ -276,9 +276,17 @@ ___
 https://ohmyz.sh/
 –––
 
+
 ### Text Compare, online
 https://text-compare.com/
 ___
+
+
+### Transfer Data / Files
+
+https://wetransfer.com/
+https://www.uschovna.cz/en/
+–––
 
 
 ### URL shortener
