@@ -1,21 +1,21 @@
 Docs: https://vuejs.org/guide/introduction.html
 
 
-**1. Basic Structure of a Vue Instance**
+### Vue-specific properties and methods `$`
 
-```js
-new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello, Vue!'
-  },
-  methods: {
-    sayHello: function() {
-      alert(this.message);
-    }
-  }
-});
-```
+In Vue.js, the `$` prefix is used to denote a special property or method provided by Vue itself. It's a convention used to differentiate Vue-specific properties and methods from user-defined properties and methods. By doing this, Vue ensures that its built-in methods and properties won't conflict with any of your defined properties.
+
+- `$emit`: allows to trigger custom events. These events can then be caught and handled by parent components.
+- `$refs`: Used to access a reference to a DOM element or child component.
+- `$slots`: Provides access to content slots.
+- `$scopedSlots`: Used for accessing scoped slots.
+- `$set`: A method to add a reactive property on an object, especially useful since Vue cannot detect property addition or deletion.
+- `$watch`: Allows for the manual watching of a property.
+- `$nextTick`: Used to defer the execution of a function until the next DOM update cycle.
+
+The `$` prefix helps developers quickly recognize that they are working with Vue's internal features rather than custom-defined ones.
+
+
 
 **2. Template Syntax**
 
