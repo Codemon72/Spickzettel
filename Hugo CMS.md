@@ -110,6 +110,9 @@ Examples:
 {{ $.Params.course_image | absLangURL }}
 
 ---
+{{ $pages := where .Site.Pages "Section" "testimonials" | shuffle }}
+
+---
 
 {{ $events := slice }}
   {{ range where .Params.nextDates "full" "!=" "true" }}
