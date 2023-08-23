@@ -1,5 +1,25 @@
 Docs: https://vuejs.org/guide/introduction.html
 
+### Basic SetUp
+
+- Install Node
+```js
+npm init vue@latest
+// you'll be asked for a name of the project and a lot of other stuff
+// give it a name - to the rest you can say 'no'
+// cd into repo
+npm install
+// to run it:
+npm run dev
+```
+
+### Recommended Extensions for VSCode
+
+- Prettier
+- Prettier Eslint
+- Volar
+- Vue VSCode Snippets (allows you to use `vbase-css` when writing a new component)
+
 
 ### Vue-specific properties and methods `$`
 
