@@ -21,6 +21,16 @@ npm run dev
 - Vue VSCode Snippets (allows you to use `vbase-css` when writing a new component)
 
 
+
+### WRITE
+
+v-model
+input with @change
+`@input="` listens to change for input fields
+
+
+
+
 ### Vue-specific properties and methods `$`
 
 In Vue.js, the `$` prefix is used to denote a special property or method provided by Vue itself. It's a convention used to differentiate Vue-specific properties and methods from user-defined properties and methods. By doing this, Vue ensures that its built-in methods and properties won't conflict with any of your defined properties.
@@ -34,7 +44,32 @@ In Vue.js, the `$` prefix is used to denote a special property or method provide
 - `$nextTick`: Used to defer the execution of a function until the next DOM update cycle.
 
 The `$` prefix helps developers quickly recognize that they are working with Vue's internal features rather than custom-defined ones.
+–––
 
+
+### Directives
+
+Directives in Vue.js are special attributes with the `v-` prefix that you attach to DOM elements. They apply special reactive behavior to the DOM. Essentially, they are instructions to the Vue.js library on how to handle the DOM element they are attached to.
+
+For example, `v-if` is a directive that conditionally renders an element based on the truthiness of the expression value:
+
+```html
+<div v-if="isVisible">This text is visible</div>
+```
+
+In this case, the `v-if` directive will render the `div` element only if the `isVisible` data property is `true`.
+
+Here are a few commonly used Vue directives:
+
+- `v-model`: Creates a two-way binding between a form input and a data property.
+- `v-for`: Renders a list of items based on an array.
+- `v-if`, `v-else-if`, `v-else`: Conditionally render elements.
+- `v-on`: Attaches event listeners to elements (e.g., `v-on:click`).
+- `v-bind`: Dynamically bind one or more attributes or a component prop to an expression.
+- `v-html`: Dynamically binds and renders raw HTML content to an element. It updates the `innerHTML` of an element to the value of the provided expression. Note that using `v-html` can be risky because it can inadvertently expose your application to cross-site scripting (XSS) attacks if used on user-generated content.
+
+Directives are a key feature of Vue.js that help you build dynamic and interactive web applications by reacting to changes in your data and updating the DOM accordingly.
+–––
 
 
 **2. Template Syntax**
