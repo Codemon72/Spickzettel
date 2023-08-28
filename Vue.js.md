@@ -20,6 +20,8 @@ npm run dev
 - Volar
 - Vue VSCode Snippets (allows you to use `vbase-css` when writing a new component)
 
+### QUESTIONS
+- How Can I Best Catch Incomming URLs for new data; eg with swapi
 
 
 ### WRITE
@@ -29,6 +31,63 @@ input with @change
 `@input="` listens to change for input fields
 
 
+### Props
+
+To pass props from a parent component to a child component in Vue.js, you need to follow these steps:
+
+1. In the parent component, bind the data to be passed to the child component using `v-bind` or its shorthand `:`. 
+2. In the child component, declare the props that you expect to receive using the `props` option. 
+3. In the child component, you can then use the received props just like any other data property.
+
+Here's an example:
+
+Parent Component:
+```html
+<template>
+  <div>
+    <child-component :user="parentUser"/>
+  </div>
+</template>
+
+<script>
+import ChildComponent from './ChildComponent.vue'
+
+export default {
+  components: {
+    ChildComponent
+  },
+  data() {
+    return {
+      parentUser: {
+        name: 'John Doe',
+        image: 'path_to_image.jpg'
+      }
+    }
+  }
+}
+</script>
+```
+
+Child Component:
+```html
+<template>
+  <div>
+    <p>{{ user.name }}</p>
+    <img :src="user.image" alt="user image">
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    user: Object
+  }
+}
+</script>
+```
+
+In this example, the `parentUser` object from the parent component is passed down as a `user` prop to the child component. The child component declares `user` as a prop and then uses it in its template.
+–––
 
 
 ### Vue-specific properties and methods `$`

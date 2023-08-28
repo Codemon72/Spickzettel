@@ -750,6 +750,23 @@ body {
 }
 ```
 
+... and CSS Boilerplate for sketches
+```css
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+root {
+  box-shadow: 5px 5px 10px gray;
+}
+
+body {
+  margin: 0;
+}
+img {
+  object-fit: cover;
+}
+```
+
 ##### ... some good practices
 - always style link states! It should be super obvious to the user that interaction is possible.
 - good article: https://zellwk.com/blog/style-hover-focus-active-states/
