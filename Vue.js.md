@@ -89,6 +89,61 @@ export default {
 In this example, the `parentUser` object from the parent component is passed down as a `user` prop to the child component. The child component declares `user` as a prop and then uses it in its template.
 –––
 
+### Emitter
+Event emitting in Vue.js allows a child component to communicate with its parent component. Here is how you can use it:
+
+1. In the child component, use the `this.$emit` method to emit an event, optionally passing a value as an argument.
+2. In the parent component, listen for the emitted event using `v-on` directive or its shorthand `@`, and define a method that will be triggered when the event is emitted.
+
+Here's an example:
+
+Child Component:
+```html
+<template>
+  <div>
+    <button @click="notifyParent">Notify Parent</button>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    notifyParent() {
+      this.$emit('child-event', 'Hello, Parent!');
+    }
+  }
+}
+</script>
+```
+
+Parent Component:
+```html
+<template>
+  <div>
+    <child-component @child-event="handleChildEvent"/>
+  </div>
+</template>
+
+<script>
+import ChildComponent from './ChildComponent.vue'
+
+export default {
+  components: {
+    ChildComponent
+  },
+  methods: {
+    handleChildEvent(message) {
+      alert(message);
+    }
+  }
+}
+</script>
+```
+
+In this example, the child component emits a `child-event` event with a message when the button is clicked. The parent component listens for `child-event` and triggers the `handleChildEvent` method when the event is emitted, displaying an alert with the message passed from the child component.
+–––
+
+
 
 ### Vue-specific properties and methods `$`
 
