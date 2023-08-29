@@ -43,6 +43,7 @@ ___
 - Entertainment APIs from rapidapi: https://rapidapi.com/category/Entertainment
 - https://fakestoreapi.com/
 - JSONplaceholder API: http://jsonplaceholder.typicode.com/
+- Metmuseum: https://metmuseum.github.io/
 - NASA APIs: https://api.nasa.gov/
 - Pixabay Docs: https://pixabay.com/api/docs/
 - Pokemon API: https://pokeapi.co/
@@ -59,6 +60,7 @@ ___
   - https://www.datamuse.com/api/
   - Merriam Webster: https://dictionaryapi.com/
   - http://developer.wordnik.com/docs
+  - https://www.wordsapi.com/
 ___
 
 
