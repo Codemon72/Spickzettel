@@ -314,6 +314,15 @@ Non-Relational Database Management System
 
 ___
 
+### Opinionated vs Unopinionated
+
+"Opinionated" software refers to a system that provides a way of doing things and doesn't offer much flexibility for you to deviate from that way. It provides a certain structure and conventions that the developers should follow. This can make it easier to work with because many decisions are already made for you, but it can be restrictive if you want to do something the software doesn't support.
+
+In contrast, "unopinionated" software gives you the flexibility to decide how you want to handle certain tasks or structure your code. It doesn't enforce a particular way of doing things.
+
+For example, Vue.js is considered opinionated because it provides official solutions and conventions for state management, routing, etc. This makes it easier for new developers to get started because there are clear guidelines and best practices to follow, but can be restrictive if you have a very specific way you want to do things.
+___
+
 ### ORM
 An **object-relational mapper** is a library for an object-oriented programming language which aids in translating between that language's memory objects and a relational database.
 

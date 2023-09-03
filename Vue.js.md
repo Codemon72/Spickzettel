@@ -1,5 +1,20 @@
 Docs: https://vuejs.org/guide/introduction.html
 
+# Vue
+
+- `Reactivity`: Automatically updates the DOM when data changes.
+- `Components`: Build UI using reusable, self-contained components.
+- `Declarative Templates`: Write HTML-like syntax to declare your UI.
+- `Directives`: Use special attributes like `v-if`, `v-for` to apply logic in templates.
+- `Easy Integration`: Can be integrated into projects using other JS libraries.
+- `Opinionated`: Provides official packages for state management, routing, etc.
+
+1. **Declarative**: Vue.js allows you to declare your UI in the template syntax. You describe the desired state, and Vue takes care of rendering the UI based on the current state of your data.
+
+2. **Reactive**: Vue.js automatically updates the DOM when your data changes. It efficiently updates only the parts of the DOM that need to be updated when the underlying data changes.
+
+3. **Component-Based**: Vue.js allows you to build your app using reusable components, which are self-contained units with their own data, methods, and template. This helps you build complex applications from simple building blocks.
+
 ### Basic SetUp
 
 - Install Node
