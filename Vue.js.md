@@ -4,42 +4,42 @@ Docs: https://vuejs.org/guide/introduction.html
 
 - Install Node
 ```js
-npm init vue@latest
-// you'll be asked for a name of the project and a lot of other stuff
-// give it a name - to the rest you can say 'no'
+npm init vue@latest // give it a name - say 'no' to everything except ROUTER, ESLINT, PRETTIER 
 // cd into repo
-npm install
+npm install // or `npm i`
 // to run it:
 npm run dev
 ```
+When you run `npm init vue@latest`, you are using a package called `create-vue`, which is the official scaffolding tool for Vue.js. This command initializes a new Vue.js project with the latest version of Vue.
+
+`create-vue` uses `vite` as the build tool by default in Vue 3. So, when you create a new project using `npm init vue@latest`, it sets up a new Vue project using Vite behind the scenes.
+
+Vite is a build tool developed by the same person who created Vue.js, Evan You. It is designed to be fast and efficient, and it is the recommended build tool for Vue 3.
+
+You won't see any mention of Vite in the `npm init vue@latest` command, but if you look in the `package.json` file of the newly created project, you will see `vite` listed as a dependency. This means that `vite` is being used as the build tool for your Vue project.
+–––
+
 
 ### Recommended Extensions for VSCode
 
 - Prettier
 - Prettier Eslint
-- Volar
-- Vue VSCode Snippets (allows you to use `vbase-css` when writing a new component)
-
-### QUESTIONS
-- How Can I Best Catch Incomming URLs for new data; eg with swapi
-
-
-### WRITE
-
-v-model
-input with @change
-`@input="` listens to change for input fields
+- Volar 
+  - syntax highlighting, error checking, formatting, and other language features
+- Vue VSCode Snippets 
+  - allows you to use `vbase-css` for a new standard component
+–––
 
 
-### Props
+### PROPS
 
-To pass props from a parent component to a child component in Vue.js, you need to follow these steps:
+To pass props from a parent to a child component:
 
 1. In the parent component, bind the data to be passed to the child component using `v-bind` or its shorthand `:`. 
 2. In the child component, declare the props that you expect to receive using the `props` option. 
 3. In the child component, you can then use the received props just like any other data property.
 
-Here's an example:
+Example:
 
 Parent Component:
 ```html
@@ -90,7 +90,7 @@ In this example, the `parentUser` object from the parent component is passed dow
 –––
 
 ### Emitter
-Event emitting in Vue.js allows a child component to communicate with its parent component. Here is how you can use it:
+Event emitting allows a child component to communicate with its parent component.
 
 1. In the child component, use the `this.$emit` method to emit an event, optionally passing a value as an argument.
 2. In the parent component, listen for the emitted event using `v-on` directive or its shorthand `@`, and define a method that will be triggered when the event is emitted.
@@ -108,6 +108,7 @@ Child Component:
 <script>
 export default {
   methods: {
+    emits: ['child-event'], // not mandatory but provides better documentation and allows the Vue compiler to do some checks
     notifyParent() {
       this.$emit('child-event', 'Hello, Parent!');
     }
@@ -142,7 +143,6 @@ export default {
 
 In this example, the child component emits a `child-event` event with a message when the button is clicked. The parent component listens for `child-event` and triggers the `handleChildEvent` method when the event is emitted, displaying an alert with the message passed from the child component.
 –––
-
 
 
 ### Vue-specific properties and methods `$`
@@ -186,43 +186,17 @@ Directives are a key feature of Vue.js that help you build dynamic and interacti
 –––
 
 
-**2. Template Syntax**
+### TEMPLATE SYNTAX
 
 - Interpolation: `{{ message }}`
 - Directives: `v-bind:title="message"`, `v-model="message"`, `v-for="item in items"`, `v-on:click="sayHello"`
-- Shortcuts: `@click` for `v-on:click`, `:href` for `v-bind:href`
+- Shortcuts: 
+  - `@click` for `v-on:click`
+  - `:href` for `v-bind:href`
 
-**3. Components**
 
-```js
-Vue.component('my-component', {
-  template: '<p>{{ message }}</p>',
-  data: function() {
-    return {
-      message: 'Hello from component!'
-    };
-  }
-});
-```
 
-**4. Computed Properties**
-
-```js
-new Vue({
-  el: '#app',
-  data: {
-    a: 1,
-    b: 2
-  },
-  computed: {
-    sum: function() {
-      return this.a + this.b;
-    }
-  }
-});
-```
-
-**5. Watchers**
+### Watchers
 
 ```js
 new Vue({
@@ -238,14 +212,14 @@ new Vue({
 });
 ```
 
-**6. Lifecycle Hooks**
+### Lifecycle Hooks
 
 - `created()`: Called after the instance is created.
 - `mounted()`: Called after the DOM is mounted.
 - `updated()`: Called after a data change causes the virtual DOM to be re-rendered and patched.
 - `destroyed()`: Called after the instance is destroyed.
 
-**7. Conditional Rendering**
+### Conditional Rendering
 
 ```html
 <p v-if="seen">Now you see me</p>
@@ -253,7 +227,7 @@ new Vue({
 <p v-else>Now you don't</p>
 ```
 
-**8. List Rendering**
+### List Rendering
 
 ```html
 <ul>
@@ -261,16 +235,48 @@ new Vue({
 </ul>
 ```
 
-**9. Event Handling**
+### Event Handling
 
 - Listen to DOM events: `v-on:click="doSomething"`
 - Event modifiers: `v-on:click.prevent` (prevent default), `v-on:submit.prevent` (prevent form submission)
+–––
 
-**10. Two-Way Binding**
 
-- `v-model`: `v-model="message"`
+### Two-Way Data Binding
 
-**11. Vue Router (if using `vue-router`)**
+`v-model` is a directive used for two-way data binding between a form input and a piece of data in your component's data. It essentially combines `v-bind` (for binding a value to the input) and `v-on:input` (for updating the data when the input changes).
+
+Example:
+
+```html
+<template>
+  <div>
+    <input v-model="message">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: ''
+    }
+  }
+}
+</script>
+```
+
+In this example, the `message` data property is bound to the input field. As the user types into the input field, the `message` data property is automatically updated, and vice versa.
+
+Note: In Vue 3, `v-model` can also be used on components, allowing you to synchronize a prop's value with the parent component's state.
+–––
+
+
+### Vue Router (if using `vue-router`)
+
+- you can install it with npm but it's much easier during `npm init vue@latest`
+- /views folder represents pages
 
 ```js
 const routes = [
@@ -286,18 +292,5 @@ new Vue({
   router
 }).$mount('#app');
 ```
+–––
 
-**12. Vuex (for state management, if using `vuex`)**
-
-- State: `state: { count: 0 }`
-- Mutations: `mutations: { increment(state) { state.count++ } }`
-- Actions: 
-  ```js
-  actions: {
-    incrementAsync({ commit }) {
-      setTimeout(() => {
-        commit('increment');
-      }, 1000);
-    }
-  }
-  ```
