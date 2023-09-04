@@ -46,3 +46,49 @@ the juicy bits:
 1. Plugins > WP Rocket > Einstellungen
 2. Cache leeren
 3. Cache neu füllen
+
+
+
+### Grundlagen:
+
+#### Das Dashboard
+Nach dem Anmelden in WordPress gelangst du zum Dashboard. Hier erhältst du einen Überblick über Aktivitäten, Beiträge, Kommentare und viele andere Dinge.
+
+#### Beiträge und Seiten
+WordPress unterscheidet zwischen Beiträgen (für Blogposts) und Seiten (für statische Inhalte wie "Über uns", "Kontakt" usw.).
+
+#### Medien
+Unter "Medien" kannst du Bilder, Videos und andere Dateien hochladen und verwalten.
+
+#### Design/Themes
+Unter "Design" kannst du das Aussehen deiner Website anpassen. Hier wählst du das Theme (Designvorlage) aus und kannst es nach Belieben anpassen.
+
+#### Plugins
+Mit Plugins erweiterst du die Funktionalität deiner WordPress-Website. Es gibt Tausende von Plugins für alle erdenklichen Zwecke.
+
+#### Benutzer
+Hier verwaltest du alle Benutzer deiner Website und legst fest, welche Berechtigungen sie haben.
+
+#### Einstellungen
+Hier konfigurierst du grundlegende Website-Einstellungen wie die Sprache, den Seitentitel, das Datumformat und vieles mehr.
+–––
+
+### Vorsichtsmaßnahmen beim Arbeiten an der Seite eines Kunden:
+
+#### Backups
+Bevor du größere Änderungen an der Website vornimmst, solltest du immer ein Backup erstellen. Dies stellt sicher, dass du die Website wiederherstellen kannst, falls etwas schiefgeht.
+
+#### Aktualisierungen
+Sei vorsichtig, wenn du WordPress, Themes oder Plugins aktualisierst. Es kann zu Kompatibilitätsproblemen kommen, die die Website stören oder gar zum Absturz bringen.
+
+#### Plugin-Installation
+Installiere keine Plugins, ohne sie zuerst zu überprüfen. Schlecht codierte oder veraltete Plugins können Sicherheitsrisiken darstellen.
+
+#### Änderungen am Code
+Wenn du am Code (z. B. PHP oder JavaScript) von Themes oder Plugins Änderungen vornehmen musst, sei sehr vorsichtig und stelle sicher, dass du weißt, was du tust. Ein kleiner Fehler kann die gesamte Website unbrauchbar machen.
+
+#### Kommunikation
+Informiere deinen Kunden immer über geplante größere Änderungen oder potenzielle Ausfallzeiten.
+
+#### Testumgebungen
+Wenn möglich, arbeite zuerst in einer Testumgebung oder Staging-Umgebung, bevor du Änderungen an der Live-Website vornimmst.
