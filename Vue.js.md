@@ -9,11 +9,6 @@ Docs: https://vuejs.org/guide/introduction.html
 - `Easy Integration`: Can be integrated into projects using other JS libraries.
 - `Opinionated`: Provides official packages for state management, routing, etc.
 
-1. **Declarative**: Vue.js allows you to declare your UI in the template syntax. You describe the desired state, and Vue takes care of rendering the UI based on the current state of your data.
-
-2. **Reactive**: Vue.js automatically updates the DOM when your data changes. It efficiently updates only the parts of the DOM that need to be updated when the underlying data changes.
-
-3. **Component-Based**: Vue.js allows you to build your app using reusable components, which are self-contained units with their own data, methods, and template. This helps you build complex applications from simple building blocks.
 
 ### Basic SetUp
 
@@ -32,6 +27,15 @@ When you run `npm init vue@latest`, you are using a package called `create-vue`,
 Vite is a build tool developed by the same person who created Vue.js, Evan You. It is designed to be fast and efficient, and it is the recommended build tool for Vue 3.
 
 You won't see any mention of Vite in the `npm init vue@latest` command, but if you look in the `package.json` file of the newly created project, you will see `vite` listed as a dependency. This means that `vite` is being used as the build tool for your Vue project.
+–––
+
+### Deployment
+
+Recommended: Render: https://render.com/
+Why: free tier for small projects, easy to use
+
+Build command: `npm run build`
+Publish directory: `dist`
 –––
 
 
