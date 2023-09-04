@@ -34,6 +34,11 @@ You won't see any mention of Vite in the `npm init vue@latest` command, but if y
 Recommended: Render: https://render.com/
 Why: free tier for small projects, easy to use
 
+-> `New +` -> `static site`
+
+Name: example-name
+Branch: [name of main branch]
+Root directory: (whereever you package.json is - so most likely leave it empty)
 Build command: `npm run build`
 Publish directory: `dist`
 –––
