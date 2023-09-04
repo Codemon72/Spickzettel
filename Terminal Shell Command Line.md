@@ -37,6 +37,8 @@ best sources:
   - execute (x)
 - https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-chmod-command
 
+`code .` - open repo in Visual Studio Code
+
 `curl` - call url and log it
   - `curl -i` - include header (-i: information)
   - `curl --head` or `curl -I` - only header
@@ -55,6 +57,8 @@ best sources:
 `mkdir` - make directories
   - `mkdire example_1 example_2` - create multiple directories
   - `mkdir example-title && cd $_` - create repository with title 'example-title' and enter it
+
+`open .` - open repo in finder
 
 `pwd` - print name of current/working directory
 
