@@ -447,8 +447,21 @@ ___
 
 ### Server Side Validation
 With Server Side Validation, the input submitted by the user is being sent to the server and validated using one of the server side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page. It is better to validate user input on the server side because you can protect against malicious users, who can easily bypass your Client Side scripting language and submit dangerous input to the server.
-
 ___
+
+### SFC - Single File Component
+
+Ein Single File Component (SFC) bezieht sich in Vue.js auf eine Komponente, die in einer einzelnen Datei definiert ist. Diese Datei hat die Erweiterung `.vue` und kombiniert Template (HTML-Struktur), Skript (JavaScript-Logik) und Stil (CSS) in einem einzigen Dokument. Das macht es einfacher und organisierter, mit Vue-Komponenten zu arbeiten. Ein `.vue`-Dateibeispiel enthält alle diese Abschnitte (`<template>`, `<script>`, `<style>`) in einer einzigen Datei.
+
+A Single File Component (SFC) in Vue.js refers to a component defined in a single file. This file has the `.vue` extension and combines template (HTML structure), script (JavaScript logic), and style (CSS) within a single document. It streamlines and organizes working with Vue components. An example `.vue` file contains all these sections (`<template>`, `<script>`, `<style>`) in one file.
+–––
+
+### SPA - Single Page Application
+
+Eine Single Page Application (SPA) ist eine Webanwendung oder Website, die auf einer einzigen Webseite läuft und beim Navigieren zwischen verschiedenen Bildschirmen oder Seiteninhalten die Seite nicht neu lädt. Stattdessen werden Daten dynamisch nachgeladen und angezeigt, wodurch eine flüssigere Benutzererfahrung erzielt wird. Beliebte Frameworks wie Vue.js, React und Angular werden oft verwendet, um SPAs zu erstellen.
+
+A Single Page Application (SPA) is a web application or website that operates on a single web page. As users navigate between different screens or page contents, the page doesn't reload. Instead, data is dynamically loaded and displayed, offering a smoother user experience. Popular frameworks like Vue.js, React, and Angular are often used to create SPAs.
+–––
 
 ### SRS - Software Requirements Specification
 A software requirements specification is a description of a software system to be developed. It is modeled after business requirements specification.
