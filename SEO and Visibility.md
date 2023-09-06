@@ -1,5 +1,45 @@
 good introduction: https://moz.com/beginners-guide-to-seo
 
+### SEO Überblick
+
+SEO kann manchmal wie ein großes, komplexes Thema erscheinen, aber im Kern geht es einfach darum, eine Website so zu gestalten, dass sie von Suchmaschinen leicht gefunden und von Nutzern leicht genutzt werden kann. 
+Hier eine einfache Aufschlüsselung:
+
+#### 1. Technisches SEO
+
+Dies betrifft die Infrastruktur und Architektur Ihrer Website. Es sorgt dafür, dass Suchmaschinen Ihre Website leicht crawlen und indexieren können.
+
+*Wichtige Aspekte:*
+- Ladezeit der Website: Wie schnell lädt Ihre Seite?
+- Mobile Optimierung: Ist Ihre Website auf mobilen Geräten benutzerfreundlich?
+- Sitemap & robots.txt: Helfen Sie Suchmaschinen zu verstehen, welche Seiten zu crawlen bzw. zu ignorieren sind?
+- HTTPS: Ist Ihre Website sicher?
+- Strukturierte Daten: Geben Sie den Suchmaschinen zusätzliche Informationen über den Inhalt Ihrer Website?
+
+#### 2. Inhaltlich (Content) SEO
+
+Hier geht es darum, qualitativ hochwertige Inhalte zu erstellen, die für Ihre Zielgruppe relevant sind und die richtigen Keywords enthalten.
+
+*Wichtige Aspekte:*
+- Keyword-Recherche: Wissen Sie, nach welchen Begriffen Ihre Zielgruppe sucht?
+- Content-Qualität: Ist Ihr Inhalt nützlich, einzigartig und besser als der Ihrer Konkurrenten?
+- Frischer Inhalt: Aktualisieren Sie Ihre Inhalte regelmäßig?
+- Multimedia: Nutzen Sie Bilder, Videos und andere Medienformate, um Ihren Inhalt ansprechender zu gestalten?
+
+#### 3. Off-Page SEO
+
+Dies bezieht sich auf Maßnahmen außerhalb Ihrer Website, die Ihre Glaubwürdigkeit und Autorität erhöhen.
+
+*Wichtige Aspekte:*
+- Backlinks: Von welchen und wie vielen Websites wird auf Sie verwiesen?
+- Social Signals: Wie oft wird Ihr Inhalt in sozialen Medien geteilt oder erwähnt?
+- Online-Reputation: Was sagen andere über Ihre Marke oder Website?
+
+
+**Zusammenfassend:**
+Stellen Sie sich SEO als einen Drei-Beinigen-Hocker vor. Ein Bein steht für technisches SEO (Ladezeit, mobile Optimierung, Unterstützung von Crawlern), das zweite Bein für den Inhalt (was die Nutzer sehen und lesen, sprechen Sie Ihre Zielgruppe an, kommen die aktuellen Schlagwörter in ihren Texten und Überschriften vor?) und das dritte Bein für Off-Page-Aktivitäten (wie die Außenwelt Ihre Website sieht, führen viele Links von anderen Seiten oder Medien zu Ihnen, bekommen Sie gute Bewertungen). Wenn eines dieser Beine wackelig ist oder fehlt, ist der Hocker nicht instabil. 
+Ein guter SEO-Ansatz stellt sicher, dass alle drei Beine stark und stabil sind.
+–––
 
 ### Google Knowledge Graph
 Googles understanding of the world. 'Where' all of google's knowledge is stored. The Google Knowledge Panel is a result of that.
