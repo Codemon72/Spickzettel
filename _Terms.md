@@ -498,6 +498,26 @@ In depth: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ___
 
 
+### Staging Environment
+
+Also referred to as staging server or staging site, is a separate and isolated server / environment that is used by software development and IT teams to test, review, and refine changes to a website, application, or software system before those changes are deployed to the live or production environment that is accessible to users.
+–––
+
+
+### Static vs Dynamic Pages
+
+**Static Page:** 
+- Stays the same until manually changed.
+- Content is fixed and doesn't update on its own.
+- Good for simple websites like blogs.
+
+**Dynamic Page:**
+- Changes automatically.
+- Content is generated from databases or programs.
+- Ideal for interactive websites like social media and web apps.
+–––
+
+
 ### Template Language
 A template language is used to build webpages that combine static content, which is the same on multiple pages, and dynamic content, which changes from one page to the next. 
 A template language makes it possible to re-use the static elements that define the layout of a webpage, while dynamically populating the page with data from a content directory or a Shopify store. The static elements are written in HTML, and the dynamic elements are written in the template language. The template elements in a file act as placeholders: when the code in the file is compiled and sent to the browser, the Liquid is replaced by data from the Shopify store where the theme is installed.
