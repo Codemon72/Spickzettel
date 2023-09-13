@@ -55,8 +55,27 @@ source: https://osxdaily.com/2018/07/29/uninstall-packages-homebrew-mac/
 #### Installing with Homebrew vs from Homepage
 
 When downloading / installing a language or tool on mac: when is it more advisable to do it from the respective homepage and when to use homebrew? Is there a rule of thumb? And what are the dis-/ advantages of one or the other?
+–––
 
----
+
+### Formula vs Cask
+
+While "casks" are used for software with GUIs and macOS-specific software, "formulae" are generally used for command-line utilities and libraries, many of which can be installed across different operating systems.
+
+The terms "formula" and "cask" play into the brewing metaphor that Homebrew employs. Just as a brewer would follow a specific formula to create a beverage and might use a cask to store certain drinks, Homebrew follows the instructions in its formulae and casks to "brew" software. 
+
+Both formulae and casks have scripts that detail where to fetch the software and any post-installation steps. However, there are some differences in their typical use cases and the details they handle:
+
+1. **Where to fetch the software's source code**: Both formulae and casks specify this. While formulae often download source code to compile, casks typically download precompiled binaries or application bundles (like `.dmg` or `.pkg` files).
+
+2. **Which dependencies are needed**: This is more typical for formulae, which might need various libraries or other tools to compile or run. Casks can also have dependencies (or even depend on formulae), but it's less common since they usually deal with standalone macOS applications.
+
+3. **How to compile and install the software**: This is mainly a formula concern. Formulae often involve compilation steps since they're working from source code. Casks, dealing mostly with precompiled applications, focus more on installation steps like copying the `.app` bundle to the `/Applications` directory or running a `.pkg` installer.
+
+4. **Post-installation steps or patches**: Both formulae and casks can have post-installation steps. For formulae, it might be about setting up certain files or directories. For casks, it might be about granting specific permissions or setting up linked applications.
+
+
+–––
 
 sources: 
 - working with Simon
