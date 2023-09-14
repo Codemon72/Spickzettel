@@ -60,11 +60,12 @@ best sources:
 
 `pwd` - print name of current/working directory
 
-`openssl rand -base64 12` - Generate a secure random password with 12 characters
+`openssl rand -base64 12 | tr -dc 'A-Za-z0-9!@#$%^&*()_+{}|:<>?='` - Generate a secure random password with 12 characters
   - `openssl`: This is the command for OpenSSL, a widely used cryptographic library.
   - `rand`: Specifies that we want to generate random data.
   - `-base64`: Specifies the encoding format for the random data as Base64, which includes letters (both uppercase and lowercase), numbers, and some special characters.
   - `12`: This number represents the desired length of the password. You can adjust it to your preference. In this example, it generates a 12-character password.
+  - `tr -dc 'A-Za-z0-9!@#$%^&*()_+{}|:<>?='`: This command uses `tr` (a UNIX text manipulation utility) to delete all characters not in the specified set (A-Z, a-z, 0-9, and the listed special characters). This ensures the password only consists of the desired characters.
 
 `which` - locate a command
 
