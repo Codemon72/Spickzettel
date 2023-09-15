@@ -172,6 +172,13 @@ ___
 ___
 
 
+### Fonts
+
+B612 - https://b612-font.com/
+B612 is an highly legible open source font family designed and tested to be used on aircraft cockpit screens.
+–––
+
+
 ### Buttons
 - avoid outlines on click
   ```css
