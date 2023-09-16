@@ -318,3 +318,22 @@ new Vue({
 ```
 –––
 
+### Redux - ELI5
+
+Imagine you're building a toy city:
+
+In this city, you have different buildings like a school, a hospital, and a fire station. Each building has its activities and things happening inside, but they all need to know some common information. Let's say this common information is the weather because everyone in the city needs to know if it's raining, sunny, or snowing.
+
+**Redux is like a big, public bulletin board in the center of your city.**
+
+1. **The Bulletin Board (Redux Store)**: This board displays the current weather. It's the single source of truth. If anyone wants to know the weather, they just check this board.
+
+2. **Announcements (Actions)**: If the weather changes, someone makes an announcement. They can't directly change the board. Instead, they write a note (action) saying, "Hey, it's starting to rain!"
+
+3. **The Mayor (Reducer)**: The mayor is the only person with the authority to update the bulletin board. When he sees a note (action), he'll change the board's information accordingly. For example, he'll update it to say, "It's raining!"
+
+4. **Buildings (React Components)**: Whenever the weather changes, the buildings want to adjust. Maybe the school wants to bring kids inside, or the fire station wants to prepare for potential flooding. These buildings "subscribe" to the bulletin board, so whenever there's a change, they instantly know and can react.
+
+**So, in short**: Redux is like a centralized bulletin board where important city information is shared. Everyone knows where to get updates, and there's a clear process for how updates are made.
+
+In web apps, Redux helps different parts of your application (components) communicate and stay in sync by sharing a centralized "store" of state (data). Actions request changes, reducers make the changes, and components react to those changes.
