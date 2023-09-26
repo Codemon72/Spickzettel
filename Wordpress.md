@@ -31,14 +31,14 @@ the juicy bits:
 ## Watch out
 - php or Wordpress loves to build `<p>` where it sees empty lines. For example in internal CSS!!
 
-### Workflow
+## Workflow
 - get access to site
 - download site and save it to GitHub
 - work in small increments
   - test your code in DevTools (in all browsers)
   - apply to local files and upload them to site with cyberduck
   - hard refresh page - if necessary: empty and refill cache via admin dashboard: plugins > WP Rocket > Einstellungen
-
+–––
 
 ## Handled Bugs
 

@@ -420,10 +420,13 @@ Software as a Service
 ___
 
 
-### Semver Syntax
+### SemVer - Semantic Versioning Syntax
 it is used i.g. in package.json for version numbers, like `1.2.1`
 
 The number stands for MAJOR.MINOR.PATCH:
+```s
+<major>.<minor>.<patch>
+```
 
 - MAJOR version when you make incompatible API changes,
 - MINOR version when you add functionality in a backwards compatible manner, and
