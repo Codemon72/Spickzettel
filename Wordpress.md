@@ -6,7 +6,8 @@
 Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hierarchy/
 
 ### Backup 
-to make a backup of a WordPress website you need to use plugins / go to marketplace and search for one
+- Backups might be made by default by the server
+- ohterwise use plugins
 - used by Teresa: UpdraftPlus
 
 ### useful tools: 
@@ -38,6 +39,18 @@ the juicy bits:
   - test your code in DevTools (in all browsers)
   - apply to local files and upload them to site with cyberduck
   - hard refresh page - if necessary: empty and refill cache via admin dashboard: plugins > WP Rocket > Einstellungen
+
+### Workflow Updates
+
+- Test nach Updates:
+  - empty all cashes
+  - Smoke Test: hard refresh, does the website still look alright?
+  - check the forms
+    - video 
+    - slider
+    - maps
+  - check the Customizer - can all fields be accessed?
+
 –––
 
 ## Handled Bugs
@@ -92,3 +105,18 @@ Informiere deinen Kunden immer über geplante größere Änderungen oder potenzi
 
 #### Testumgebungen
 Wenn möglich, arbeite zuerst in einer Testumgebung oder Staging-Umgebung, bevor du Änderungen an der Live-Website vornimmst.
+
+–––
+
+### Local Setup
+
+#### local by flywheel
+
+Workflow
+- download files and put them in a folder "wordpress"
+- download DB
+- compress /wordpress and DB (DB should be sql file)
+- start local + Add local site
+  - select an existing ZIP
+    - continue / follow default...
+  - allow local to make changes
