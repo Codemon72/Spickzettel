@@ -1,5 +1,7 @@
 ### Configurations
-open Settings with CMD + ,
+
+open Settings with `CMD + ,`
+or go directly to the settings.json via `CMD + SHIFT + P` and type 'user settings'
 
 ```json
 "editor.tabSize": 2,

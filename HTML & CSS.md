@@ -361,6 +361,7 @@ margin-top: auto;
 
 ### Form 
 
+- `<input>` elements have a default size of 20 (characters). Use `width: ...px;` to override.
 - `<input type="hidden">` 
   The <input type="hidden"> defines a hidden input field.
   A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.
