@@ -57,7 +57,18 @@ Publish directory: `dist`
 
 ### PROPS
 
-To pass props from a parent to a child component:
+2 kinds: static and dynamic
+
+**Static Props**: 
+you pass a prop to a child component without any data binding (i.e., without the `v-bind` directive or its shorthand `:`), the value is interpreted as a string.
+
+```vue
+<child-component some-prop="value" />
+```
+In this example, the value of some-prop will be the string "value" in the child component.
+
+**Dynamic Props**: 
+uses data binding to pass variables or expressions, allowing for a variety of data types to be passed as props.
 
 1. In the parent component, bind the data to be passed to the child component using `v-bind` or its shorthand `:`. 
 2. In the child component, declare the props that you expect to receive using the `props` option. 
