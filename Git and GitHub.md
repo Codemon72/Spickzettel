@@ -132,6 +132,28 @@ to request review:
 - wait for approval
 - "squash and merge"
 - delete branch
+–––
+
+### Commit Messages (best practice - conventions)
+
+Use this syntax:
+```s
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+Examples for `types`: 
+- feat: 
+- fix: 
+- docs (React): 
+- style:
+- refactor:
+- chore:
+
+source: https://www.conventionalcommits.org/en/v1.0.0/#summary
+–––
 
 
 ### Set new alias
