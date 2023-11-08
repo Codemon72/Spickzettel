@@ -145,12 +145,12 @@ Use this syntax:
 [optional footer(s)]
 ```
 Examples for `types`: 
-- feat: 
-- fix: 
-- docs (React): 
-- style:
-- refactor:
-- chore:
+- `feat:` add search functionality to the navigation bar
+- `fix:` correct typo in checkout form field
+- `docs (React):` add notes about hooks
+- `style:` adjust CSS for mobile responsiveness
+- `refactor:` streamline fetchUser function using async/await for better readability and error handling
+- `chore:` update npm dependencies to latest versions
 
 source: https://www.conventionalcommits.org/en/v1.0.0/#summary
 –––
