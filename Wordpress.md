@@ -51,6 +51,12 @@ the juicy bits:
     - maps
   - check the Customizer - can all fields be accessed?
 
+
+### Plugins I Have Used And Liked
+- WP Mail SMTP von WPForms (recommended by Tobi): https://de.wordpress.org/plugins/wp-mail-smtp/ 
+- Booknetic: https://www.booknetic.com/
+  (and this - though poorly referenced in the documentation - is how you get hold of the button for the popup with caption, class or inline styling:
+  `[booknetic-booking-button caption="Jetzt Buchen" class="classname" style="color: green"]`)
 –––
 
 ## Handled Bugs
