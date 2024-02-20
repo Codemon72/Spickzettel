@@ -255,6 +255,7 @@ ___
 
 
 ### PDF
+- merge, reduce, edit, convert to or from word / doc or jpg, sign and some more:   https://smallpdf.com/de#r=app
 - compress, change, combine, crop, unlock, rotate: https://pdfcompressor.com/
  - full list: PDF to DOC; DOC to PDF; PDF to JPG; JPG to PDF; PDF to PNG; PNG to PDF; PDF Compressor; Combine PDF; Rotate PDF; Unlock PDF; Crop PDF 
 - edit metadata: https://www.sejda.com/edit-pdf-metadata
