@@ -68,8 +68,10 @@ In Browser Wireframing - https://app.moqups.com
 Very Basic In Browser Wireframing - https://wireframe.cc
 
 SPEED TEST:
-Speed & Performance Testing - https://tools.keycdn.com/speed
-Pingdom Speed Test - https://tools.pingdom.com/
+- Speed & Performance Testing - https://tools.keycdn.com/speed
+- Pingdom Speed Test - https://tools.pingdom.com/
+- https://www.speedtest.net
+- https://fast.com/
 
 OTHER:
 Public API Resources - https://github.com/toddmotto/public-apis?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more

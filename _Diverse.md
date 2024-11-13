@@ -176,6 +176,19 @@ A protocoll that allows 2 machines to communicate securely over a network.
 - since 1995: SSH - encrypted
 - allows you to do almost anything on the remote computer
 - used mostly in terminal / command line
+
+### SSH Key
+
+Needed for securely working with GitHub, GitLab, etc.
+Check for a public SSH key on your machine:
+`ls -al ~/.ssh`
+if you see things like `id_rsa.pub` oder `id_ed25519.pub` you already have one.
+To show your public SSH key: 
+`cat ~/.ssh/id_rsa.pub`
+copy the whole key and add it on GitLab.
+Then test it: 
+`ssh -T git@gitlab.com`
+
 ___
 
 

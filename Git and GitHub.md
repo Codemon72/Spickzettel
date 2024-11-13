@@ -155,6 +155,7 @@ Examples for `types`:
 source: https://www.conventionalcommits.org/en/v1.0.0/#summary
 –––
 
+## Aliases / Shortcuts
 
 ### Set new alias
 `git config --global alias.co checkout` 

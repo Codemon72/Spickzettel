@@ -22,6 +22,14 @@ Simon says: "run this every day":
 
 `brew reinstall example-package`
 
+`brew autoremove` 
+- cleans up packages that were installed as dependencies of other packages but are no longer needed. When you install a package that depends on other packages, Homebrew automatically installs those dependencies. However, if you later uninstall the main package, those dependencies might remain on your system, taking up space even though they're no longer required.
+- **Identifies Unused Dependencies**: It checks for packages installed solely as dependencies for other packages that have since been removed.
+- **Removes Unneeded Packages**: It removes these unused dependencies, freeing up disk space.
+- **Keeps Your System Clean**: This helps keep your Homebrew environment lean by removing packages you aren’t actively using.
+
+Running `brew autoremove` is a safe way to reclaim storage without affecting the software you currently use. You can run it periodically after uninstalling software to keep your system clean.
+
 -------
 
 ### Homebrew

@@ -115,8 +115,10 @@ https://slackmojis.com/
 –––
 
 
-### favicon checker
+### favicons 
+to check:
 https://realfavicongenerator.net/favicon_checker#
+to generate: https://realfavicongenerator.net/
 –––
 
 ### Fonts
